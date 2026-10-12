@@ -6,9 +6,10 @@ A nonpartisan tool that helps Iowa voters compare their views with candidates fo
 
 ## Stack
 
-- [Vite](https://vite.dev) + React + TypeScript, built to plain static files
-- React Router (client-side routing)
-- Candidate/issue data as static JSON in `public/data/`
+- [Next.js](https://nextjs.org) App Router + TypeScript, exported as static files (`output: 'export'`)
+- Tailwind CSS, Zod, custom SVG/HTML charts
+- Vitest (unit, acceptance tests A–J) and Playwright + axe (end-to-end, accessibility)
+- Research data as validated JSON in `data/`; assessment answers in the browser's localStorage only
 
 No server, database, or API is needed to view the site.
 
@@ -16,50 +17,72 @@ No server, database, or API is needed to view the site.
 
 ```bash
 npm install
-npm run dev        # http://localhost:5173/
-npm run build      # outputs dist/
-npm run preview    # serve the production build locally
+npm run dev          # http://localhost:3000/
+npm run check        # validate data, typecheck, lint, unit tests
+npm run build        # static site in out/
+npm start            # serve out/ (set BASE_PATH=/iowa-voter-match to mirror Pages)
+npm run test:e2e     # Playwright against the built site
 ```
 
 Requires Node 24 (see `.nvmrc`).
 
+## Research data
+
+```
+research/raw/                 research documents exactly as received (quote provenance)
+scripts/import-research.ts    raw research → data/issues.json, issue-evidence.json, categories, legislation
+scripts/curated/build-curated.py  editorial layer → questions, statements, positions, sources, candidates
+scripts/validate.ts           schema + integrity rules; CI fails on any error
+src/data/schema.ts            Zod schemas (single source of truth); db/ will mirror them for Postgres
+```
+
+Integrity rules enforced on every build include: every quotation appears verbatim in `research/raw/`;
+unknown values are `null`, never `false`/`0`; "No documented position" can't carry a stance; option
+relations require verified explicit/proposal/action evidence and cite statements; conflicting
+evidence keeps at least two dated statements; every candidate × question has an explicit record.
+
+Questions, options, and position-to-option mappings are editorial drafts (`reviewStatus: "draft"`)
+until reviewed on `/internal/audit`.
+
 ## Project structure
 
 ```
-public/data/        static JSON data (candidates, issues, etc.)
-src/components/     shared UI (layout, nav)
-src/pages/          route-level pages
-src/lib/data.ts     data access layer — the only place that knows where data lives
-deploy/             example production server config
-.github/workflows/  GitHub Pages CI/CD
+src/app/                 routes (/, /assessment, /results, /results/report, /compare, /issues, /issues/[slug],
+                         /candidates, /candidates/[slug], /methodology, /sources, /about, /privacy, /internal/audit)
+src/components/          UI (assessment, results, compare, evidence, issues, report, viz)
+src/lib/compare.ts       user choice × candidate record → labeled relation (never a number)
+src/lib/analytics/       the 20 descriptive analytics; every percentage carries numerator/denominator
+src/lib/assessment/      localStorage store and candidate column order
+tests/unit, tests/e2e    Vitest and Playwright suites
+deploy/                  example production server config
 ```
 
 ## Deployment
 
 ### GitHub Pages (current)
 
-Every push to `main` runs `.github/workflows/deploy.yml`, which builds with
-`BASE_PATH=/iowa-voter-match/` and publishes `dist/` to GitHub Pages.
-`404.html` is a copy of `index.html` so deep links and page refreshes work.
+Every push to `main` runs `.github/workflows/deploy.yml`: validate data, typecheck, lint, unit
+tests, build with `BASE_PATH=/iowa-voter-match`, end-to-end tests, then publish `out/` to Pages.
+Every route is pre-rendered (`trailingSlash: true`), so deep links and refreshes return HTTP 200.
 
 ### Moving to a production server / custom domain
 
 The app is the same build either way; only the base path changes.
 
-1. Build for the domain root: `BASE_PATH=/ npm run build`
-   (or a subpath: `BASE_PATH=/voter/ npm run build`).
-2. Copy `dist/` to the server's web root.
-3. Configure the server to fall back to `index.html` for unknown paths —
-   see `deploy/nginx.conf`.
+1. Build for the domain root: `npm run build` (leave `BASE_PATH` unset),
+   or for a subpath: `BASE_PATH=/voter npm run build`.
+2. Copy `out/` to the server's web root.
+3. Serve directories' `index.html` and `404.html` for misses — see `deploy/nginx.conf`.
 
 To serve a custom domain from GitHub Pages instead, add the domain in repo
-Settings → Pages and change `BASE_PATH` in the workflow to `/`.
+Settings → Pages and remove the `BASE_PATH` env from the workflow.
 
 ### Adding a backend later
 
-Components never fetch directly; they call functions in `src/lib/data.ts`.
-Set `VITE_DATA_URL` at build time to point at an API, or reimplement those
-functions against it. `deploy/nginx.conf` shows where an `/api/` proxy goes.
+Pages read research data only through `src/data/load.ts` (build time) and `src/lib/client-data.ts`.
+To move research data to PostgreSQL, implement those against the database (schemas in
+`src/data/schema.ts`), remove `output: 'export'` from `next.config.ts`, and run `next start`.
+`deploy/nginx.conf` shows where an `/api/` proxy goes.
 
 ## License
 
