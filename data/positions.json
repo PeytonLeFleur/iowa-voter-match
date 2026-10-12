@@ -93,9 +93,9 @@
     ],
     "sourceIds": [
       "src-cbs2-sand",
+      "src-icd-2026-06-04",
       "src-politifact-2026-09-17",
-      "src-radio-iowa-2025-05-12",
-      "src-uncited-2026-06-04"
+      "src-radio-iowa-2025-05-12"
     ],
     "statementDate": "2026-09-17",
     "verificationStatus": "verified",
@@ -164,7 +164,7 @@
       "st-sand-housing"
     ],
     "sourceIds": [
-      "src-sand-plans"
+      "src-sand-affordable"
     ],
     "statementDate": "2026",
     "verificationStatus": "verified",
@@ -185,7 +185,7 @@
     "positionSummary": "Ban hedge fund purchases of single-family homes; down payment accounts for young Iowans who stay.",
     "documentedStance": null,
     "declinedToCommit": false,
-    "proposal": "Hedge fund home-buying ban; income tax abatement deposited into a down payment account.",
+    "proposal": "Hedge fund home-buying ban; tax rebates for down payment assistance.",
     "comparableToUserPreference": true,
     "optionRelations": {
       "zoning": "unaddressed",
@@ -193,17 +193,17 @@
       "buyer-aid": "partial",
       "private-market": "unaddressed"
     },
-    "relationRationale": "Lahn proposes a hedge fund home-buying ban. His down payment account is funded by an income tax abatement for young Iowans who stay, a narrower form of buyer assistance.",
+    "relationRationale": "Lahn proposes a hedge fund home-buying ban. His down payment help is tied to his youth retention plan for young Iowans who stay, a narrower form of buyer assistance.",
     "statementIds": [
       "st-lahn-housing"
     ],
     "sourceIds": [
-      "src-lahn-site"
+      "src-lahn-policy"
     ],
     "statementDate": "2026",
     "verificationStatus": "verified",
     "researchCutoff": "2026-10-12",
-    "evidenceLimitations": "Required years of residency for the abatement are unspecified.",
+    "evidenceLimitations": "The research describes an income tax abatement deposited into a down payment account; his campaign site describes tax rebates for down payment assistance. Required years of residency are unspecified.",
     "reviewStatus": "draft"
   },
   {
@@ -236,7 +236,7 @@
     ],
     "sourceIds": [
       "src-ipr-debate",
-      "src-isl-farm"
+      "src-sand-opportunities"
     ],
     "statementDate": "2026-10-06",
     "verificationStatus": "verified",
@@ -270,12 +270,14 @@
     "relationRationale": "Lahn proposes antitrust suits and curbs on outside ownership, both active state roles. He has no documented position on tariffs.",
     "statementIds": [
       "st-lahn-antitrust",
+      "st-lahn-ag-funding",
       "st-lahn-land"
     ],
     "sourceIds": [
-      "src-lahn-site"
+      "src-ipr-debate",
+      "src-lahn-policy"
     ],
-    "statementDate": "2026",
+    "statementDate": "2026-10-06",
     "verificationStatus": "verified",
     "researchCutoff": "2026-10-12",
     "evidenceLimitations": "How confiscation or antitrust suits would work legally is not addressed.",
@@ -307,7 +309,7 @@
     "sourceIds": [
       "src-kcau"
     ],
-    "statementDate": null,
+    "statementDate": "2026-10-08",
     "verificationStatus": "verified",
     "researchCutoff": "2026-10-12",
     "evidenceLimitations": "No bill named. Whether he would sign HF 2104 is not documented.",
@@ -341,7 +343,7 @@
       "src-kcau",
       "src-lahn-policy"
     ],
-    "statementDate": "2026",
+    "statementDate": "2026-10-08",
     "verificationStatus": "verified",
     "researchCutoff": "2026-10-12",
     "evidenceLimitations": "No bill named. Whether he would sign HF 2104 is not documented.",
@@ -362,7 +364,7 @@
     "positionSummary": "Conservation tax credits, manure plan verification, wetlands, monitoring funding, a dirty water alert, and IWILL funding.",
     "documentedStance": null,
     "declinedToCommit": false,
-    "proposal": "Income and per-acre property tax credits for approved nutrient plans; restore monitoring funding; dirty water alert; fund IWILL.",
+    "proposal": "Income and per-acre property tax credits for approved nutrient plans; restore monitoring funding; dirty water alert.",
     "comparableToUserPreference": true,
     "optionRelations": {
       "incentives": "aligned",
@@ -377,7 +379,7 @@
     ],
     "sourceIds": [
       "src-ipr-water",
-      "src-sand-plans"
+      "src-sand-healthier"
     ],
     "statementDate": "2026-04",
     "verificationStatus": "verified",
@@ -397,30 +399,31 @@
     ],
     "evidenceClass": "SP",
     "positionFound": true,
-    "positionSummary": "Incentives for proven practices, deep-banding credits, buffer strip aid, and more monitoring.",
+    "positionSummary": "Incentives for farmers to adopt proven conservation practices.",
     "documentedStance": null,
     "declinedToCommit": false,
-    "proposal": "Refundable credits for deep-banding fertilizer; aid for buffer strips; more monitoring.",
+    "proposal": "Incentives for proven conservation practices.",
     "comparableToUserPreference": true,
     "optionRelations": {
       "incentives": "aligned",
       "enforceable-limits": "unaddressed",
-      "monitoring": "partial",
+      "monitoring": "unaddressed",
       "current-approach": "conflicting"
     },
-    "relationRationale": "Lahn proposes new incentives and more monitoring, which are changes to the current approach. He expressed confidence in voluntary action but did not state a position on enforceable limits.",
+    "relationRationale": "Lahn proposes new incentives, a change to the current approach. The research also lists more monitoring, but no cited source confirms it, so no relation is drawn for monitoring. He has not stated a position on enforceable limits.",
     "statementIds": [
       "st-lahn-water",
+      "st-lahn-water-practices",
       "st-lahn-water-right-thing"
     ],
     "sourceIds": [
-      "src-lahn-site",
+      "src-lahn-policy",
       "src-research-uncited"
     ],
     "statementDate": "2026",
     "verificationStatus": "verified",
     "researchCutoff": "2026-10-12",
-    "evidenceLimitations": null,
+    "evidenceLimitations": "Deep-banding credits, buffer strip aid, and more monitoring appear in the research without a confirmed source.",
     "reviewStatus": "draft"
   },
   {
@@ -479,11 +482,13 @@
     "relationRationale": "Lahn's central proposal is state testing of products used in Iowa. He would redirect research rather than add a task force, and supports expanded screening.",
     "statementIds": [
       "st-lahn-cancer",
+      "st-lahn-cancer-env",
       "st-lahn-screening"
     ],
     "sourceIds": [
       "src-icd-2026-05-19",
-      "src-kcrg-2026-10-07"
+      "src-kcrg-2026-10-07",
+      "src-lahn-policy"
     ],
     "statementDate": "2026-10-07",
     "verificationStatus": "verified",
@@ -544,10 +549,10 @@
       "st-lahn-prompt-payment"
     ],
     "sourceIds": [
-      "src-research-uncited"
+      "src-kff-2026-07-30"
     ],
-    "statementDate": null,
-    "verificationStatus": "unverified",
+    "statementDate": "2026-07-30",
+    "verificationStatus": "verified",
     "researchCutoff": "2026-10-12",
     "evidenceLimitations": "General statement; the research does not cite its source.",
     "reviewStatus": "draft"
@@ -669,7 +674,7 @@
       "st-lahn-public-school"
     ],
     "sourceIds": [
-      "src-lahn-site"
+      "src-lahn-policy"
     ],
     "statementDate": "2026",
     "verificationStatus": "verified",
@@ -707,7 +712,6 @@
     "sourceIds": [
       "src-esa-report-coverage",
       "src-ipr-debate",
-      "src-research-uncited",
       "src-sand-accountability"
     ],
     "statementDate": "2026-10-06",
@@ -798,21 +802,23 @@
       "easier-exemptions": "partial",
       "end-requirements": "aligned"
     },
-    "relationRationale": "Lahn has twice been reported supporting the end of school vaccine requirements. Making exemptions easier moves in the same direction but stops short of ending requirements.",
+    "relationRationale": "Radio Iowa reported he would end vaccine requirements for school enrollment, and he answered “Yes” on Iowa Press to repealing vaccine mandates. Making exemptions easier moves in the same direction but stops short of ending requirements.",
     "statementIds": [
       "st-lahn-vaccine-jan",
+      "st-lahn-vaccine-iowapress",
       "st-lahn-vaccine-kcci",
       "st-lahn-vaccine-benefits"
     ],
     "sourceIds": [
       "src-cbs2-lahn",
+      "src-iowapress-lahn-primary",
       "src-kcci-transcript",
-      "src-radio-iowa-2026-01-27"
+      "src-radio-iowa-2026-01-31"
     ],
     "statementDate": "2026-09",
     "verificationStatus": "verified",
     "researchCutoff": "2026-10-12",
-    "evidenceLimitations": "The September 2026 answer comes from a transcript published by the Iowa Democratic Party, corroborated by Studio 31. He later said vaccination has benefits; the research flags his mRNA statements as conflicting.",
+    "evidenceLimitations": "A September 2026 KCCI answer rests on a transcript published by the Iowa Democratic Party and could not be independently located. He has also said vaccination has benefits; the research flags his mRNA statements as conflicting.",
     "reviewStatus": "draft"
   },
   {
@@ -825,7 +831,7 @@
     ],
     "evidenceClass": "EP",
     "positionFound": true,
-    "positionSummary": "Opposes the six-week ban, supports the Roe framework, and would veto further restrictions.",
+    "positionSummary": "Says the six-week ban goes too far; would veto further restrictions.",
     "documentedStance": null,
     "declinedToCommit": false,
     "proposal": null,
@@ -835,19 +841,19 @@
       "keep-current": "conflicting",
       "broaden-access": "aligned"
     },
-    "relationRationale": "Sand says the six-week ban goes too far and supports the Roe framework.",
+    "relationRationale": "Sand says the six-week ban “goes too far,” which differs from keeping or tightening it, and would veto further restrictions.",
     "statementIds": [
       "st-sand-abortion",
       "st-sand-roe"
     ],
     "sourceIds": [
-      "src-gazette-2026-09",
-      "src-iowapress-sand"
+      "src-iowapress-sand",
+      "src-sand-healthier"
     ],
-    "statementDate": "2026-09",
+    "statementDate": "2026",
     "verificationStatus": "verified",
     "researchCutoff": "2026-10-12",
-    "evidenceLimitations": "He says he cannot repeal the six-week law unilaterally.",
+    "evidenceLimitations": "He says he cannot repeal the six-week law unilaterally. The research's report that he supports the Roe framework (The Gazette, September 2026) could not be located.",
     "reviewStatus": "draft"
   },
   {
@@ -877,13 +883,12 @@
       "st-lahn-ivf"
     ],
     "sourceIds": [
-      "src-iowapress-lahn-primary",
-      "src-research-uncited"
+      "src-iowapress-lahn-primary"
     ],
-    "statementDate": "2026",
+    "statementDate": "2026-04-02",
     "verificationStatus": "verified",
     "researchCutoff": "2026-10-12",
-    "evidenceLimitations": "Two of his abortion quotes are listed in the research without a named source. Exceptions and HF 2788: not verified.",
+    "evidenceLimitations": "Exceptions for rape, incest, or the life of the mother, and HF 2788: not verified.",
     "reviewStatus": "draft"
   },
   {
@@ -962,13 +967,12 @@
       "st-sand-sf418-limits"
     ],
     "sourceIds": [
-      "src-gazette-2025-hill",
-      "src-research-uncited"
+      "src-gazette-2025"
     ],
     "statementDate": "2025",
     "verificationStatus": "verified",
     "researchCutoff": "2026-10-12",
-    "evidenceLimitations": "He says he could not restore the protections with a Republican legislature. He also opposes transgender girls and women competing in female sports, a separate question.",
+    "evidenceLimitations": "He says a governor cannot restore the protections unilaterally; it would take the Legislature. He also opposes transgender girls and women competing in female sports, a separate question.",
     "reviewStatus": "draft"
   },
   {
@@ -1022,9 +1026,9 @@
       "src-isl-townhall"
     ],
     "statementDate": null,
-    "verificationStatus": "verified",
+    "verificationStatus": "unverified",
     "researchCutoff": "2026-10-12",
-    "evidenceLimitations": "From a town hall video reported by Iowa Starting Line, a Democratic-leaning outlet. ICE cooperation and 287(g): no documented position.",
+    "evidenceLimitations": "From a town hall video reported by Iowa Starting Line, a Democratic-leaning outlet; an independent check could not locate it. ICE cooperation and 287(g): no documented position.",
     "reviewStatus": "draft"
   },
   {
@@ -1049,10 +1053,12 @@
     },
     "relationRationale": "Lahn proposes barring benefits. He has no documented position on police cooperation with federal enforcement.",
     "statementIds": [
-      "st-lahn-immigration"
+      "st-lahn-immigration",
+      "st-lahn-immigration-contractors"
     ],
     "sourceIds": [
-      "src-icd-2026-05-19"
+      "src-icd-2026-05-19",
+      "src-lahn-policy"
     ],
     "statementDate": "2026-05-19",
     "verificationStatus": "verified",
@@ -1088,7 +1094,7 @@
       "st-sand-dc"
     ],
     "sourceIds": [
-      "src-sand-plans"
+      "src-sand-datacenters"
     ],
     "statementDate": "2026",
     "verificationStatus": "verified",
@@ -1165,7 +1171,7 @@
       "src-radio-iowa-2026-08-12",
       "src-times-republican"
     ],
-    "statementDate": "2026-10",
+    "statementDate": "2026-10-10",
     "verificationStatus": "verified",
     "researchCutoff": "2026-10-12",
     "evidenceLimitations": null,

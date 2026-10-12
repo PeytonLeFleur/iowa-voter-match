@@ -110,36 +110,33 @@ sources = [
         "2025", "Iowa Press, 2025"),
     src("src-x-lahn", "Zach Lahn on X", "Zach Lahn (official account)", "social",
         "https://x.com/ZachLahn/status/2024560019375571399", "2026-02-19", "X, February 19, 2026"),
-    src("src-lahn-site", "zachlahn.com (campaign site)", "Zach Lahn campaign", "campaign", None, None, "site"),
-    src("src-sand-accountability", "Accountability for All (campaign plan)", "Rob Sand campaign", "campaign", None, "2026", "Accountability plan"),
-    src("src-sand-plans", "Rob Sand published plans", "Rob Sand campaign", "campaign", None, "2026",
-        "Published plans named in the research; specific plan not cited"),
-    src("src-kcau", "KCAU report on eminent domain", "KCAU", "news", None, None, "KCAU"),
-    src("src-icd-2026-08-01", "Iowa Capital Dispatch report (Medicaid)", "Iowa Capital Dispatch", "news", None, "2026-08-01", "Iowa Capital Dispatch, August 1, 2026"),
-    src("src-icd-2026-05-19", "Iowa Capital Dispatch report", "Iowa Capital Dispatch", "news", None, "2026-05-19", "Iowa Capital Dispatch, May 19, 2026"),
-    src("src-icd-2026-05-05", "Iowa Capital Dispatch report (ESAs)", "Iowa Capital Dispatch", "news", None, "2026-05-05", "Iowa Capital Dispatch, May 5, 2026"),
-    src("src-icd-2026-08-24", "Iowa Capital Dispatch report", "Iowa Capital Dispatch", "news", None, "2026-08-24", "Iowa Capital Dispatch, August 24"),
-    src("src-radio-iowa-2026-08-12", "Radio Iowa report (Opportunities for All)", "Radio Iowa", "news", None, "2026-08-12", "Radio Iowa, August 12, 2026"),
-    src("src-times-republican", "Times-Republican report", "Times-Republican", "news", None, "2026-10", "Times-Republican, October 2026"),
-    src("src-nbc-debate", "NBC News report on the October 6 debate", "NBC News", "news", None, "2026-10", "NBC News paraphrase of the debate"),
-    src("src-radio-iowa-2026-01-27", "Radio Iowa report (vaccines)", "Radio Iowa", "news", None, "2026-01-27", "Radio Iowa, January 27, 2026"),
+    src("src-sand-accountability", "The Truer Better Agenda: Accountability for All", "Rob Sand campaign", "campaign", "https://robsand.com/issues/accountability-for-all", "2026", "Accountability plan"),
+    src("src-sand-healthier", "A Healthier Iowa for All", "Rob Sand campaign", "campaign", "https://robsand.com/issues/healthier-iowa", "2026", "A Healthier Iowa for All"),
+    src("src-sand-datacenters", "Data centers plan", "Rob Sand campaign", "campaign", "https://robsand.com/issues/data-centers", "2026", "data centers plan"),
+    src("src-sand-opportunities", "Opportunities for All", "Rob Sand campaign", "campaign", "https://robsand.com/issues/opportunities-for-all", "2026", "Opportunities for All"),
+    src("src-kcau", "Iowa Governor candidates oppose eminent domain for private use", "KCAU", "news", "https://www.kcau9.com/news/your-local-election-hq/iowa-governor-candidates-oppose-eminent-domain-for-private-use/", "2026-10-08", "KCAU"),
+    src("src-icd-2026-08-01", "Lahn clarifies position on privatized Medicaid, defends attack ad against Sand", "Iowa Capital Dispatch", "news", "https://iowacapitaldispatch.com/2026/08/01/lahn-advocates-for-privatized-medicaid-defends-attack-ad-against-sand/", "2026-08-01", "Iowa Capital Dispatch, August 1, 2026"),
+    src("src-icd-2026-05-19", "GOP gubernatorial candidates debate legal immigration, cancer prevention", "Iowa Capital Dispatch", "news", "https://iowacapitaldispatch.com/2026/05/19/gop-gubernatorial-candidates-debate-legal-immigration-cancer-prevention/", "2026-05-19", "Iowa Capital Dispatch, May 19, 2026"),
+    src("src-icd-2026-05-05", "Q&A: Iowa GOP gubernatorial candidates on abortion, eminent domain, ESAs", "Iowa Capital Dispatch", "news", "https://iowacapitaldispatch.com/2026/05/05/qa-iowa-gop-gubernatorial-candidates-on-abortion-eminent-domain-esas/", "2026-05-05", "Iowa Capital Dispatch, May 5, 2026"),
+    src("src-icd-2026-08-24", "Zach Lahn calls for state regulation of data centers, surveillance cameras", "Iowa Capital Dispatch", "news", "https://iowacapitaldispatch.com/?p=59243", "2026-08-24", "Iowa Capital Dispatch, August 24"),
+    src("src-icd-2026-06-04", "Democratic governor candidate Rob Sand warns that Iowa faces 'fiscal time bomb'", "Iowa Capital Dispatch", "news", "https://iowacapitaldispatch.com/2026/06/04/democratic-governor-candidate-rob-sand-warns-that-iowa-faces-fiscal-time-bomb/", "2026-06-04", "June 4, 2026"),
+    src("src-kff-2026-07-30", "Medicaid insurer contracts in the Iowa governor's race", "KFF Health News", "news", "https://kffhealthnews.org/health-industry/medicaid-insurer-contracts-iowa-governor-race/", "2026-07-30", None),
+    src("src-radio-iowa-2026-08-12", "Rob Sand, Democratic candidate for governor, releases economic agenda", "Radio Iowa", "news", "https://www.radioiowa.com/2026/08/12/rob-sand-democratic-candidate-for-governor-releases-economic-agenda/", "2026-08-12", "Radio Iowa, August 12, 2026"),
+    src("src-times-republican", "Gather 'round the table", "Times-Republican", "news", "https://www.timesrepublican.com/news/todays-news/2026/10/gather-round-the-table/", "2026-10-10", "Times-Republican, October 2026"),
+    src("src-nbc-debate", "Zach Lahn's residency history and Rob Sand's party come under fire in first Iowa governor debate", "NBC News", "news", "https://www.nbcnews.com/politics/2026-election/zach-lahns-residency-history-rob-sands-party-come-fire-first-iowa-gove-rcna601347", "2026-10-06", "NBC News paraphrase of the debate"),
+    src("src-radio-iowa-2026-01-31", "Four GOP candidates for Iowa governor back mRNA vaccine ban", "Radio Iowa", "news", "https://www.radioiowa.com/2026/01/31/four-gop-candidates-for-iowa-governor-back-mrna-vaccine-ban/", "2026-01-31", "Radio Iowa, January 27, 2026 (article dated January 31)"),
     src("src-kcci-transcript", "KCCI interview transcript", "Published by the Iowa Democratic Party (partisan); corroborated by Studio 31", "interview", None, "2026-09", "KCCI interview, September 2026"),
     src("src-cbs2-lahn", "CBS2 interview (vaccines)", "CBS2 Iowa", "interview", None, "2026", "CBS2"),
-    src("src-gazette-2026-09", "The Gazette report (abortion, IVF)", "The Gazette", "news", None, "2026-09", "The Gazette, September 2026"),
-    src("src-gazette-2025-hill", "The Gazette, via The Hill (SF 418)", "The Gazette", "news", None, "2025", "The Gazette, 2025, via The Hill"),
-    src("src-hill-debate", "The Hill report on the October 6 debate", "The Hill", "news", None, "2026-10", "The Hill"),
-    src("src-iowapress-lahn-primary", "Iowa Press interview (primary)", "Iowa PBS, Iowa Press", "interview", None, "2026", "Iowa Press, primary"),
-    src("src-radio-iowa-2026-01-28", "Radio Iowa report (IVF)", "Radio Iowa", "news", None, "2026-01-28", "Radio Iowa, January 28, 2026"),
-    src("src-radio-iowa-2025-05-12", "Radio Iowa report (income tax)", "Radio Iowa", "news", None, "2025-05-12", "Radio Iowa, May 12, 2025"),
-    src("src-politifact-2026-09-17", "PolitiFact fact-check (income tax ad)", "PolitiFact", "news", None, "2026-09-17", "PolitiFact, September 17, 2026"),
-    src("src-uncited-2026-06-04", "Statement of June 4, 2026 (source not named in research)", None, "other", None, "2026-06-04", "June 4, 2026"),
-    src("src-isl-farm", "Iowa Starting Line report (farm policy)", "Iowa Starting Line (Democratic-leaning)", "news", None, None, "Iowa Starting Line"),
+    src("src-gazette-2025", "Iowa gubernatorial candidate Sand pitches unity, faces pointed questions on transgender rights", "The Gazette", "news", "https://www.thegazette.com/multimedia/videos/iowa-gubernatorial-candidate-sand-pitches-unity-faces-pointed-questions-on-transgender-rights/article_bc98635a-9948-5caf-a9a2-8ec6325e0b4d.html", "2025", "The Gazette, 2025, via The Hill"),
+    src("src-hill-debate", "Sparks fly in first Iowa governor's debate between Rob Sand and Zach Lahn", "The Hill", "news", "https://thehill.com/homenews/campaign/6133056-iowa-governor-debate-lahn-sand/", "2026-10", "The Hill"),
+    src("src-iowapress-lahn-primary", "Republican Candidate for Governor, Zach Lahn", "Iowa PBS, Iowa Press", "interview", "https://www.iowapbs.org/shows/iowapress/episode/13995/republican-candidate-governor-zach-lahn", "2026-04-02", "Iowa Press, primary"),
+    src("src-radio-iowa-2026-01-28", "4 Iowa GOP candidates for governor call for life at conception law", "Radio Iowa", "news", "https://www.radioiowa.com/2026/01/28/4-iowa-gop-candidates-for-governor-call-for-life-at-conception-law/", "2026-01-28", "Radio Iowa, January 28, 2026"),
+    src("src-radio-iowa-2025-05-12", "Iowa State Auditor Rob Sand kicks off 2026 campaign for governor", "Radio Iowa", "news", "https://www.radioiowa.com/2025/05/12/iowa-state-auditor-rob-sand-kicks-off-2026-campaign-for-governor/", "2025-05-12", "Radio Iowa, May 12, 2025"),
+    src("src-politifact-2026-09-17", "In governor's race, Zach Lahn says Rob Sand wants to raise Iowans' taxes", "PolitiFact", "news", "https://politifact.com/factchecks/2026/sep/17/zach-lahn/rob-sand-7500-tax-increase-iowa-governor/", "2026-09-17", "PolitiFact, September 17, 2026"),
     src("src-isl-townhall", "Town hall video, via Iowa Starting Line", "Iowa Starting Line (Democratic-leaning)", "video", None, None, "town hall video, via Iowa Starting Line"),
-    src("src-kcrg-2026-10-07", "KCRG report (cancer screening)", "KCRG", "news", None, "2026-10-07", "KCRG, October 7"),
-    src("src-19th-news", "19th News report (water quality)", "19th News", "news", None, None, "19th News"),
-    src("src-little-village", "Little Village report (budget)", "Little Village", "news", None, "2026", "Little Village"),
-    src("src-ipr-water", "IPR reports on Sand and water regulation", "Iowa Public Radio", "news", None, "2026-04", "IPR"),
-    src("src-esa-report-coverage", "Coverage of the State Auditor's ESA Policy Impact Report", "WHO13 and Iowa Capital Dispatch; also The Gazette and CBS2", "news", None, "2026-06", "via WHO13 and Iowa Capital Dispatch; also The Gazette and CBS2"),
+    src("src-kcrg-2026-10-07", "FACT CHECK: How do Lahn and Sand's approaches to the cancer crisis differ?", "KCRG", "news", "https://www.kcrg.com/2026/10/07/fact-check-how-do-lahn-sands-approaches-cancer-crisis-differ/", "2026-10-07", "KCRG, October 7"),
+    src("src-ipr-water", "Rob Sand announces water quality and health plan, with emphasis on farmer support", "Iowa Public Radio", "news", "https://www.iowapublicradio.org/political-news/2026-04-30/rob-sand-announces-water-quality-and-health-plan-with-emphasis-on-farmer-support", "2026-04-30", "IPR"),
+    src("src-esa-report-coverage", "Auditor: School choice cost Iowans $258 million", "Iowa Capital Dispatch (via Little Village)", "news", "https://littlevillagemag.com/auditor-school-choice-cost-258-million/", "2026-06-18", "via WHO13 and Iowa Capital Dispatch; also The Gazette and CBS2"),
     src("src-research-uncited", "Cited in the research without a specific source", None, "research", None, None,
         "Statement listed in the research without a named source"),
 ]
@@ -152,7 +149,7 @@ statements = []
 def stmt(id, cand, summary, source, date, cls, issues, questions, quote=None, attribution="direct",
          verified=None, reported_via=None, conflicts=()):
     if verified is None:
-        verified = source not in ("src-research-uncited", "src-uncited-2026-06-04")
+        verified = source != "src-research-uncited"
     statements.append({
         "id": id, "candidateId": cand, "quote": quote, "summary": summary,
         "attribution": attribution, "reportedVia": reported_via, "date": date,
@@ -180,8 +177,8 @@ stmt("st-sand-tax-2025", SAND,
      "Said the flat tax is “of tremendous benefit” to the wealthiest and that some high earners “would feel some sense of patriotic willingness” given that “the budget's upside down.” He proposed no rate change.",
      "src-radio-iowa-2025-05-12", "2025-05-12", "EP", ["1.02"], ["q02"], attribution="paraphrase")
 stmt("st-sand-tax-2026-06", SAND,
-     "Said some reforms “have been necessary” but that he wants “to know where I am before I decide what direction I am going.”",
-     "src-uncited-2026-06-04", "2026-06-04", "EP", ["1.02"], ["q02"], attribution="paraphrase")
+     "Said some reforms “have been necessary” and that “you want to see where you are before you decide what direction you want to go in.”",
+     "src-icd-2026-06-04", "2026-06-04", "EP", ["1.02"], ["q02"], attribution="paraphrase")
 stmt("st-sand-tax-reasonable", SAND,
      "Called the income tax cuts reasonable and said his criticism was of the resulting budget deficit.",
      "src-cbs2-sand", "2026", "EP", ["1.02"], ["q02"],
@@ -198,47 +195,52 @@ stmt("st-lahn-income-zero", LAHN,
 # Q3 Housing
 stmt("st-sand-housing", SAND,
      "Proposes zoning that allows duplexes, quadplexes and accessory dwelling units, faster permitting, and interest-free down payment aid.",
-     "src-sand-plans", "2026", "SP", ["1.08"], ["q03"], attribution="paraphrase")
+     "src-sand-affordable", "2026", "SP", ["1.08"], ["q03"], attribution="paraphrase")
 stmt("st-lahn-housing", LAHN,
-     "Proposes banning hedge fund purchases of single-family homes, and an income tax abatement for young Iowans who stay, deposited into a down payment account.",
-     "src-lahn-site", "2026", "SP", ["1.08", "8.79"], ["q03"], attribution="paraphrase")
+     "Proposes banning hedge fund purchases of single-family homes, and tax rebates for down payment assistance.",
+     "src-lahn-policy", "2026", "SP", ["1.08", "8.79"], ["q03"], attribution="paraphrase")
 
 # Q4 Farm economy
 stmt("st-sand-farm", SAND,
      "Proposes higher taxes on out-of-state landowners, a ban on hedge funds and LLCs making large-scale land purchases, and an Office of Rural Prosperity.",
-     "src-isl-farm", None, "SP", ["2.11", "2.12", "2.13"], ["q04"], attribution="paraphrase")
+     "src-sand-opportunities", "2026", "SP", ["2.11", "2.12", "2.13"], ["q04"], attribution="paraphrase")
 stmt("st-sand-tariffs", SAND, "Criticized tariffs' effect on farmers.",
      "src-ipr-debate", "2026-10-06", "EP", ["2.18"], ["q04"], quote="Farmers can't wait anymore")
 stmt("st-lahn-antitrust", LAHN,
-     "Proposes state antitrust suits against large agricultural input companies, with more funding for the Attorney General.",
-     "src-lahn-site", "2026", "SP", ["2.11", "2.12", "2.13"], ["q04"],
+     "Proposes state antitrust suits against large agricultural input companies.",
+     "src-lahn-policy", "2026", "SP", ["2.11", "2.12", "2.13"], ["q04"],
      quote="File antitrust suits against the big agricultural input companies that have formed monopolies and are extorting our farmers")
+stmt("st-lahn-ag-funding", LAHN, "Said he would give the Attorney General more funding to pursue antitrust cases.",
+     "src-ipr-debate", "2026-10-06", "SP", ["2.11", "2.12", "2.13"], ["q04"], attribution="paraphrase")
 stmt("st-lahn-land", LAHN,
      "Proposes confiscating land illegally owned by China and reselling it to young families and veterans, and higher property tax rates on institutional investors.",
-     "src-lahn-site", "2026", "SP", ["2.11", "2.12", "2.13", "10.97"], ["q04"], attribution="paraphrase")
+     "src-lahn-policy", "2026", "SP", ["2.11", "2.12", "2.13", "10.97"], ["q04"], attribution="paraphrase")
 
 # Q5 Eminent domain
 stmt("st-sand-eminent", SAND, "Opposes taking private property when it is not for public use.",
-     "src-kcau", None, "EP", ["2.15"], ["q05"],
+     "src-kcau", "2026-10-08", "EP", ["2.15"], ["q05"],
      quote="The idea that you would have your private property taken just because there's someone who thinks they can put it to better use, but it's not for public use, doesn't sit right with me")
 stmt("st-lahn-eminent", LAHN, "Opposes eminent domain for private company profit.",
      "src-lahn-policy", "2026", "EP", ["2.15"], ["q05"],
      quote="Absolutely oppose use of eminent domain for private company profit")
 stmt("st-lahn-eminent-legal", LAHN, "Said he is still examining legal options and expects to work with the legislature.",
-     "src-kcau", None, "GS", ["2.15"], ["q05"],
+     "src-kcau", "2026-10-08", "GS", ["2.15"], ["q05"],
      quote="We'll see what the exact options are for that, and what the legality is of that... I think I can work with the Republican legislature")
 
 # Q6 Water quality
 stmt("st-sand-water", SAND,
-     "Proposes restoring water monitoring funding; income and per-acre property tax credits for farms with approved nutrient plans; verified, public manure plans; digesters; wetlands; a “dirty water” alert; and IWILL funding.",
-     "src-sand-plans", "2026", "SP", ["6.51", "6.52", "6.53", "6.60"], ["q06"], attribution="paraphrase")
+     "Proposes restoring water monitoring funding; income and per-acre property tax credits for farms with approved nutrient plans; verified, transparent manure plans; digesters; wetlands; and a “dirty water” alert.",
+     "src-sand-healthier", "2026", "SP", ["6.51", "6.52", "6.53"], ["q06"], attribution="paraphrase")
 stmt("st-sand-water-regulation", SAND,
-     "On regulation: did not rule it out in August 2025; did not say in April 2026.",
+     "Did not say whether he would support regulation when announcing his April 2026 water plan. The research also reports he did not rule regulation out in August 2025.",
      "src-ipr-water", "2026-04", "GS", ["6.51", "6.52", "6.53"], ["q06"], attribution="paraphrase")
 stmt("st-lahn-water", LAHN,
-     "Proposes incentives for proven practices, refundable credits for deep-banding fertilizer, aid for buffer strips, and more monitoring.",
-     "src-lahn-site", "2026", "SP", ["6.51", "6.52", "6.53"], ["q06"],
+     "Proposes incentives for farmers to adopt proven conservation practices.",
+     "src-lahn-policy", "2026", "SP", ["6.51", "6.52", "6.53"], ["q06"],
      quote="Give incentives to our farmers to use proven solutions")
+stmt("st-lahn-water-practices", LAHN,
+     "The research lists refundable credits for deep-banding fertilizer, aid for buffer strips, and more monitoring; these were not found on his campaign site or in a cited source.",
+     "src-research-uncited", None, "SP", ["6.51", "6.52", "6.53"], ["q06"], attribution="paraphrase")
 stmt("st-lahn-water-right-thing", LAHN, "Expressed confidence in voluntary action by farmers.",
      "src-research-uncited", None, "GS", ["6.51", "6.52", "6.53"], ["q06"],
      quote="I believe that people want to do the right thing in the first place")
@@ -248,9 +250,12 @@ stmt("st-sand-cancer", SAND,
      "Proposes a cabinet-level cancer task force, $20 million for cancer research, higher tobacco and nicotine taxes, nitrate alerts, and radon disclosure by home inspectors.",
      "src-ipr-debate", "2026-10-06", "SP", ["3.24"], ["q07"], attribution="paraphrase")
 stmt("st-lahn-cancer", LAHN,
-     "Proposes independent state safety testing of products used in Iowa and redirecting University of Iowa research; says environmental factors such as nitrates and glyphosate are “absolutely” involved.",
-     "src-icd-2026-05-19", "2026-05-19", "SP", ["3.24"], ["q07"],
+     "Proposes independent state safety testing of products used in Iowa and refocusing University of Iowa research.",
+     "src-lahn-policy", "2026", "SP", ["3.24"], ["q07"],
      quote="Conduct independent state safety tests on products used in Iowa")
+stmt("st-lahn-cancer-env", LAHN,
+     "Said environmental factors are “absolutely” involved in Iowa's cancer rates, citing nitrates and glyphosate.",
+     "src-icd-2026-05-19", "2026-05-19", "EP", ["3.24"], ["q07"], attribution="paraphrase")
 stmt("st-lahn-screening", LAHN, "Supports expanded cancer screenings.",
      "src-kcrg-2026-10-07", "2026-10-07", "SP", ["3.24"], ["q07"], attribution="paraphrase")
 
@@ -258,7 +263,7 @@ stmt("st-lahn-screening", LAHN, "Supports expanded cancer screenings.",
 stmt("st-sand-reimbursement", SAND, "Proposes raising Medicaid reimbursement rates.",
      "src-sand-affordable", "2026", "SP", ["3.21", "3.22"], ["q08", "q09"], attribution="paraphrase")
 stmt("st-lahn-prompt-payment", LAHN, "Called for prompt payment for providers.",
-     "src-research-uncited", None, "GS", ["3.21"], ["q08"], attribution="paraphrase")
+     "src-kff-2026-07-30", "2026-07-30", "GS", ["3.21"], ["q08"], attribution="paraphrase")
 
 # Q9 Medicaid
 stmt("st-sand-medicaid", SAND, "Would begin ending privatized Medicaid managed care on his first day.",
@@ -273,7 +278,7 @@ stmt("st-lahn-medicaid", LAHN,
 stmt("st-sand-school-aid", SAND, "Proposes a 5% increase in state school aid in his first year.",
      "src-ipr-debate", "2026-10-06", "SP", ["4.31"], ["q10"], attribution="paraphrase")
 stmt("st-lahn-public-school", LAHN, "Campaign site heading on public schools.",
-     "src-lahn-site", "2026", "GS", ["4.31"], ["q10"],
+     "src-lahn-policy", "2026", "GS", ["4.31"], ["q10"],
      quote="The Governor Must Be the #1 Advocate for Public School Kids")
 
 # Q11 ESAs
@@ -283,9 +288,8 @@ stmt("st-sand-esa-rules", SAND,
 stmt("st-sand-esa-wealthiest", SAND, "Said the wealthiest families do not need help paying private school tuition.",
      "src-ipr-debate", "2026-10-06", "EP", ["4.32"], ["q11"],
      quote="The wealthiest folks in Iowa, God bless them, good for them, they don't need help to send their kids to private school")
-stmt("st-sand-esa-no-repeal", SAND, "Is not proposing repeal of ESAs.",
-     "src-research-uncited", None, "EP", ["4.32"], ["q11"],
-     quote="I support Iowa families making the decision that's best for their kids")
+stmt("st-sand-esa-no-repeal", SAND, "His accountability plan proposes changes to ESAs, not repeal.",
+     "src-sand-accountability", "2026", "EP", ["4.32"], ["q11"], attribution="paraphrase")
 stmt("st-sand-esa-report", SAND,
      "As State Auditor, issued an ESA Policy Impact Report estimating that taxpayers paid about $258.7 million in FY26 for private school tuition that would otherwise have been paid privately.",
      "src-esa-report-coverage", "2026-06", "DA", ["4.32"], ["q11"], attribution="paraphrase")
@@ -300,29 +304,32 @@ stmt("st-lahn-esa-audits", LAHN, "Supports third-party audits of the ESA program
 # Q12 School vaccine requirements
 stmt("st-lahn-vaccine-jan", LAHN,
      "Radio Iowa reported he “would pull all COVID shots off the market in Iowa and end all childhood vaccine requirements connected to enrollment in Iowa schools.”",
-     "src-radio-iowa-2026-01-27", "2026-01-27", "EP", ["3.30", "5.48"], ["q12"], attribution="paraphrase")
+     "src-radio-iowa-2026-01-31", "2026-01-27", "EP", ["3.30", "5.48"], ["q12"], attribution="paraphrase")
+stmt("st-lahn-vaccine-iowapress", LAHN,
+     "Answered “Yes” on Iowa Press when asked whether vaccine mandates should be repealed.",
+     "src-iowapress-lahn-primary", "2026-04-02", "EP", ["3.30", "5.48"], ["q12"], attribution="paraphrase")
 stmt("st-lahn-vaccine-kcci", LAHN,
      "Answered “Yes” when asked if he would support eliminating school vaccine requirements.",
-     "src-kcci-transcript", "2026-09", "EP", ["3.30", "5.48"], ["q12"], attribution="paraphrase")
-stmt("st-lahn-vaccine-benefits", LAHN, "Said he believes vaccination has benefits.",
-     "src-cbs2-lahn", "2026", "GS", ["3.30"], ["q12"],
-     quote="My very firm belief is that there are benefits from vaccination, of course")
+     "src-kcci-transcript", "2026-09", "EP", ["3.30", "5.48"], ["q12"], attribution="paraphrase", verified=False)
+stmt("st-lahn-vaccine-benefits", LAHN,
+     "Has said vaccination has benefits. The research attributes this to CBS2; an independent check could not locate the exact wording, though he expressed a similar view on Iowa Press.",
+     "src-cbs2-lahn", "2026", "GS", ["3.30"], ["q12"], attribution="paraphrase", verified=False)
 
 # Q13 Abortion
 stmt("st-sand-abortion", SAND, "Opposes the six-week abortion ban and would veto further restrictions.",
      "src-iowapress-sand", "2025", "EP", ["5.41"], ["q13"],
      quote="I think that the six-week abortion ban goes too far... I can't unilaterally repeal a six-week ban, but I can stop us from making it worse")
 stmt("st-sand-roe", SAND,
-     "Supports the Roe framework and would veto restrictions “including IVF, surrogacy and contraception.”",
-     "src-gazette-2026-09", "2026-09", "EP", ["5.41", "5.42"], ["q13"], attribution="paraphrase")
+     "His campaign says he would veto “culture war bills” that threaten surrogacy, contraception, and IVF.",
+     "src-sand-healthier", "2026", "EP", ["5.41", "5.42"], ["q13"], attribution="paraphrase")
 stmt("st-lahn-protect-life", LAHN, "Wants to continue protecting life in Iowa.",
-     "src-research-uncited", None, "EP", ["5.41"], ["q13"],
+     "src-iowapress-lahn-primary", "2026-04-02", "EP", ["5.41"], ["q13"],
      quote="Yes, I would like to continue to protect life in our state.")
 stmt("st-lahn-conception", LAHN, "Holds that life begins at conception.",
-     "src-research-uncited", None, "EP", ["5.41"], ["q13"],
+     "src-iowapress-lahn-primary", "2026-04-02", "EP", ["5.41"], ["q13"],
      quote="If you believe that life begins at conception, then that decision is made for you.")
 stmt("st-lahn-ivf", LAHN, "Said IVF should be examined for regulation to protect life.",
-     "src-iowapress-lahn-primary", "2026", "EP", ["5.42"], ["q13"],
+     "src-iowapress-lahn-primary", "2026-04-02", "EP", ["5.42"], ["q13"],
      quote="I think we need to look at regulating that to promote and protect life")
 
 # Q14 Firearms
@@ -332,10 +339,10 @@ stmt("st-sand-firearms", SAND,
 
 # Q15 Civil rights (SF 418)
 stmt("st-sand-sf418", SAND, "Opposes SF 418's removal of gender identity from the Iowa Civil Rights Act.",
-     "src-gazette-2025-hill", "2025", "EP", ["5.46"], ["q15"], reported_via="The Hill",
+     "src-gazette-2025", "2025", "EP", ["5.46"], ["q15"],
      quote="You should not be fired from your job in the state of Iowa for being different. You should not be evicted from your apartment")
-stmt("st-sand-sf418-limits", SAND, "Said he could not restore the protections with a Republican legislature.",
-     "src-research-uncited", None, "EP", ["5.46"], ["q15"], attribution="paraphrase")
+stmt("st-sand-sf418-limits", SAND, "Said a governor cannot unilaterally restore the protections; it would take the Legislature.",
+     "src-gazette-2025", "2025", "EP", ["5.46"], ["q15"], attribution="paraphrase")
 stmt("st-lahn-book", LAHN,
      "At the debate, said Sand “would allow a book on transgenderism to be put in an elementary school.” No documented statement on SF 418.",
      "src-hill-debate", "2026-10-06", "IND", ["5.46", "4.37"], ["q15"], attribution="paraphrase")
@@ -343,17 +350,21 @@ stmt("st-lahn-book", LAHN,
 # Q16 Immigration
 stmt("st-sand-immigration", SAND,
      "Questioned why law-abiding, working immigrants should feel unsafe in Iowa.",
-     "src-isl-townhall", None, "GS", ["7.67"], ["q16"],
+     "src-isl-townhall", None, "GS", ["7.67"], ["q16"], verified=False,
      quote="If you are working, if you are following the rules, and have no criminal record, if you're paying your taxes, why would you want people who are doing those things to feel unsafe in the state of Iowa?")
 stmt("st-lahn-immigration", LAHN,
-     "Would ban state benefits for people in the country illegally and stop H-1B hiring in state government and universities; state contractors would disclose how many Iowans they hire.",
-     "src-icd-2026-05-19", "2026-05-19", "SP", ["7.67"], ["q16"],
+     "Would ban state benefits for people in the country illegally and stop H-1B hiring in state government and universities.",
+     "src-lahn-policy", "2026", "SP", ["7.67"], ["q16"],
      quote="We will ban benefits for illegal immigrants, and stop issuing H1B visas for jobs that Iowans can do in state government and in our universities.")
+
+stmt("st-lahn-immigration-contractors", LAHN,
+     "Said state contractors should disclose how many Iowans they hire, and supported ending H-1B hiring in state government.",
+     "src-icd-2026-05-19", "2026-05-19", "SP", ["7.67"], ["q16"], attribution="paraphrase")
 
 # Q17 Data centers
 stmt("st-sand-dc", SAND,
      "Would end data center tax breaks and require data centers to cover their own costs, including utility cost increases; would block NDAs.",
-     "src-sand-plans", "2026", "SP", ["6.59", "11.101", "1.04"], ["q17"],
+     "src-sand-datacenters", "2026", "SP", ["6.59", "11.101", "1.04"], ["q17"],
      quote="I will end these tax breaks")
 stmt("st-lahn-dc-moratorium", LAHN,
      "Called for a data center moratorium, said each county should assess its own situation, and said there should be no incentives.",
@@ -366,7 +377,7 @@ stmt("st-lahn-dc-state", LAHN, "Called for data center regulation at the state l
 stmt("st-sand-min-wage", SAND, "Proposes raising the minimum wage from $7.25 to $12 in phases, then indexing it.",
      "src-radio-iowa-2026-08-12", "2026-08-12", "SP", ["8.71"], ["q18"], attribution="paraphrase")
 stmt("st-sand-min-wage-phases", SAND, "Said the increase would be phased in.",
-     "src-times-republican", "2026-10", "SP", ["8.71"], ["q18"],
+     "src-times-republican", "2026-10-10", "SP", ["8.71"], ["q18"],
      quote="You don't just flip the switch and say now it's $12")
 stmt("st-lahn-min-wage", LAHN,
      "NBC News reported that he “wouldn't commit to raise the minimum wage” at the October 6 debate.",
@@ -677,9 +688,9 @@ position("q03", SAND, "SP", "Zoning reform for more housing types, faster permit
 position("q03", LAHN, "SP", "Ban hedge fund purchases of single-family homes; down payment accounts for young Iowans who stay.",
     ["st-lahn-housing"],
     {"zoning": U, "investor-limits": "aligned", "buyer-aid": "partial", "private-market": U},
-    "Lahn proposes a hedge fund home-buying ban. His down payment account is funded by an income tax abatement for young Iowans who stay, a narrower form of buyer assistance.",
-    proposal="Hedge fund home-buying ban; income tax abatement deposited into a down payment account.",
-    limitations="Required years of residency for the abatement are unspecified.")
+    "Lahn proposes a hedge fund home-buying ban. His down payment help is tied to his youth retention plan for young Iowans who stay, a narrower form of buyer assistance.",
+    proposal="Hedge fund home-buying ban; tax rebates for down payment assistance.",
+    limitations="The research describes an income tax abatement deposited into a down payment account; his campaign site describes tax rebates for down payment assistance. Required years of residency are unspecified.")
 
 # Q4
 position("q04", SAND, "SP", "Limit outside farmland ownership; Office of Rural Prosperity; critical of tariffs.",
@@ -689,7 +700,7 @@ position("q04", SAND, "SP", "Limit outside farmland ownership; Office of Rural P
     proposal="Higher taxes on out-of-state landowners; hedge fund and LLC land purchase ban; Office of Rural Prosperity.",
     limitations="Farm proposals are reported by Iowa Starting Line, a Democratic-leaning outlet.")
 position("q04", LAHN, "SP", "State antitrust suits against agricultural input companies; confiscate land illegally owned by China.",
-    ["st-lahn-antitrust", "st-lahn-land"],
+    ["st-lahn-antitrust", "st-lahn-ag-funding", "st-lahn-land"],
     {"antitrust": "aligned", "ownership-limits": "aligned", "trade": U, "limited-role": "conflicting"},
     "Lahn proposes antitrust suits and curbs on outside ownership, both active state roles. He has no documented position on tariffs.",
     proposal="Antitrust suits with more Attorney General funding; confiscate and resell land illegally owned by China; higher property tax on institutional investors.",
@@ -712,13 +723,14 @@ position("q06", SAND, "SP", "Conservation tax credits, manure plan verification,
     ["st-sand-water", "st-sand-water-regulation"],
     {"incentives": "aligned", "enforceable-limits": U, "monitoring": "partial", "current-approach": "conflicting"},
     "Sand proposes new farm tax credits (incentives) alongside more monitoring and alerts. These are major changes to the current approach. His position on enforceable limits is unclear: he did not rule them out in 2025 and did not say in 2026.",
-    proposal="Income and per-acre property tax credits for approved nutrient plans; restore monitoring funding; dirty water alert; fund IWILL.",
+    proposal="Income and per-acre property tax credits for approved nutrient plans; restore monitoring funding; dirty water alert.",
     limitations="Silent on regulation in his 2026 plan.")
-position("q06", LAHN, "SP", "Incentives for proven practices, deep-banding credits, buffer strip aid, and more monitoring.",
-    ["st-lahn-water", "st-lahn-water-right-thing"],
-    {"incentives": "aligned", "enforceable-limits": U, "monitoring": "partial", "current-approach": "conflicting"},
-    "Lahn proposes new incentives and more monitoring, which are changes to the current approach. He expressed confidence in voluntary action but did not state a position on enforceable limits.",
-    proposal="Refundable credits for deep-banding fertilizer; aid for buffer strips; more monitoring.")
+position("q06", LAHN, "SP", "Incentives for farmers to adopt proven conservation practices.",
+    ["st-lahn-water", "st-lahn-water-practices", "st-lahn-water-right-thing"],
+    {"incentives": "aligned", "enforceable-limits": U, "monitoring": U, "current-approach": "conflicting"},
+    "Lahn proposes new incentives, a change to the current approach. The research also lists more monitoring, but no cited source confirms it, so no relation is drawn for monitoring. He has not stated a position on enforceable limits.",
+    proposal="Incentives for proven conservation practices.",
+    limitations="Deep-banding credits, buffer strip aid, and more monitoring appear in the research without a confirmed source.")
 
 # Q7
 position("q07", SAND, "SP", "Cabinet-level cancer task force, $20 million for research, tobacco and nicotine taxes, nitrate alerts, radon disclosure.",
@@ -727,7 +739,7 @@ position("q07", SAND, "SP", "Cabinet-level cancer task force, $20 million for re
     "Sand proposes research funding and a task force, plus prevention measures. Nitrate alerts address an environmental exposure but are not a testing program.",
     proposal="$20 million for cancer research; cabinet-level task force; higher tobacco and nicotine taxes; radon disclosure.")
 position("q07", LAHN, "SP", "Independent state safety testing of products; redirect University of Iowa research; expanded screenings.",
-    ["st-lahn-cancer", "st-lahn-screening"],
+    ["st-lahn-cancer", "st-lahn-cancer-env", "st-lahn-screening"],
     {"research-task-force": "partial", "environmental-testing": "aligned", "prevention": "partial", "existing-programs": "conflicting"},
     "Lahn's central proposal is state testing of products used in Iowa. He would redirect research rather than add a task force, and supports expanded screening.",
     proposal="Independent state safety testing of products used in Iowa; refocus University of Iowa research.")
@@ -779,22 +791,22 @@ position("q11", LAHN, "EP", "ESAs are a foundational freedom; would expand them;
 position("q12", SAND, "IND", "His campaign has criticized Lahn's mRNA stance; no documented position on school vaccine requirements.",
     [], limitations="Indirect evidence only. HPV consent law: no documented position.")
 position("q12", LAHN, "EP", "Supports ending school vaccine requirements.",
-    ["st-lahn-vaccine-jan", "st-lahn-vaccine-kcci", "st-lahn-vaccine-benefits"],
+    ["st-lahn-vaccine-jan", "st-lahn-vaccine-iowapress", "st-lahn-vaccine-kcci", "st-lahn-vaccine-benefits"],
     {"keep-requirements": "conflicting", "easier-exemptions": "partial", "end-requirements": "aligned"},
-    "Lahn has twice been reported supporting the end of school vaccine requirements. Making exemptions easier moves in the same direction but stops short of ending requirements.",
-    limitations="The September 2026 answer comes from a transcript published by the Iowa Democratic Party, corroborated by Studio 31. He later said vaccination has benefits; the research flags his mRNA statements as conflicting.")
+    "Radio Iowa reported he would end vaccine requirements for school enrollment, and he answered “Yes” on Iowa Press to repealing vaccine mandates. Making exemptions easier moves in the same direction but stops short of ending requirements.",
+    limitations="A September 2026 KCCI answer rests on a transcript published by the Iowa Democratic Party and could not be independently located. He has also said vaccination has benefits; the research flags his mRNA statements as conflicting.")
 
 # Q13
-position("q13", SAND, "EP", "Opposes the six-week ban, supports the Roe framework, and would veto further restrictions.",
+position("q13", SAND, "EP", "Says the six-week ban goes too far; would veto further restrictions.",
     ["st-sand-abortion", "st-sand-roe"],
     {"further-restrict": "conflicting", "keep-current": "conflicting", "broaden-access": "aligned"},
-    "Sand says the six-week ban goes too far and supports the Roe framework.",
-    limitations="He says he cannot repeal the six-week law unilaterally.")
+    "Sand says the six-week ban “goes too far,” which differs from keeping or tightening it, and would veto further restrictions.",
+    limitations="He says he cannot repeal the six-week law unilaterally. The research's report that he supports the Roe framework (The Gazette, September 2026) could not be located.")
 position("q13", LAHN, "EP", "Holds that life begins at conception and wants to continue protecting life.",
     ["st-lahn-protect-life", "st-lahn-conception", "st-lahn-ivf"],
     {"further-restrict": U, "keep-current": U, "broaden-access": "conflicting"},
     "Lahn's statements oppose broadening access. Whether he would keep the current law or restrict it further is not established: a report that he called for a total ban is not verified.",
-    limitations="Two of his abortion quotes are listed in the research without a named source. Exceptions and HF 2788: not verified.")
+    limitations="Exceptions for rape, incest, or the life of the mother, and HF 2788: not verified.")
 
 # Q14
 position("q14", SAND, "IND", "Gun owner and hunter; no verified current firearms policy position.",
@@ -806,15 +818,15 @@ position("q15", SAND, "EP", "Opposes SF 418's removal of gender identity from th
     ["st-sand-sf418", "st-sand-sf418-limits"],
     {"restore": "aligned", "keep-sf-418": "conflicting"},
     "Sand opposes the removal of gender identity protections.",
-    limitations="He says he could not restore the protections with a Republican legislature. He also opposes transgender girls and women competing in female sports, a separate question.")
+    limitations="He says a governor cannot restore the protections unilaterally; it would take the Legislature. He also opposes transgender girls and women competing in female sports, a separate question.")
 position("q15", LAHN, "IND", "No documented statement on SF 418.",
     ["st-lahn-book"], limitations="His debate remark about a school library book is indirect and does not establish a position on SF 418.")
 
 # Q16
 position("q16", SAND, "GS", "Questioned why law-abiding, working immigrants should feel unsafe; no specific policy.",
-    ["st-sand-immigration"], limitations="From a town hall video reported by Iowa Starting Line, a Democratic-leaning outlet. ICE cooperation and 287(g): no documented position.")
+    ["st-sand-immigration"], limitations="From a town hall video reported by Iowa Starting Line, a Democratic-leaning outlet; an independent check could not locate it. ICE cooperation and 287(g): no documented position.")
 position("q16", LAHN, "SP", "Ban state benefits for people in the country illegally; end H-1B hiring in state government and universities.",
-    ["st-lahn-immigration"],
+    ["st-lahn-immigration", "st-lahn-immigration-contractors"],
     {"cooperate-enforcement": U, "bar-benefits": "aligned", "leave-to-federal": U, "worker-safety": U},
     "Lahn proposes barring benefits. He has no documented position on police cooperation with federal enforcement.",
     proposal="Ban benefits for illegal immigrants; stop H-1B hiring in state government and universities; contractor disclosure of Iowan hires.",
@@ -885,6 +897,23 @@ for q in questions:
     for c in (SAND, LAHN):
         assert any(p["questionId"] == q["id"] and p["candidateId"] == c for p in positions), (q["id"], c)
 
+check = json.loads((ROOT / "research/verification/source-check-2026-10-12.json").read_text())
+verifications = []
+for v in check["statements"]:
+    if v["statementId"] not in stmt_by_id:
+        continue
+    if v.get("quoteFound") is False or v.get("summarySupported") in ("false", "partial"):
+        result = "corrected"
+    elif v.get("summarySupported") == "true" or v.get("quoteFound"):
+        result = "confirmed"
+    else:
+        result = "unconfirmed"
+    verifications.append({
+        "id": f"ver-{v['statementId']}", "entityType": "statement", "entityId": v["statementId"],
+        "verifiedDate": CUTOFF, "method": "Independent web check of the original source (research/verification/source-check-2026-10-12.json)",
+        "result": result, "notes": v.get("notes") or None,
+    })
+
 def write(name, rows):
     (DATA / name).write_text(json.dumps(rows, indent=2, ensure_ascii=False) + "\n")
 
@@ -893,4 +922,5 @@ write("sources.json", sources)
 write("statements.json", statements)
 write("questions.json", questions)
 write("positions.json", positions)
+write("verifications.json", verifications)
 print(f"{len(questions)} questions, {len(statements)} statements, {len(positions)} positions, {len(sources)} sources")

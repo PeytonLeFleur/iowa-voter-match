@@ -1,1 +1,380 @@
-[]
+[
+  {
+    "id": "ver-st-lahn-housing",
+    "entityType": "statement",
+    "entityId": "st-lahn-housing",
+    "verifiedDate": "2026-10-12",
+    "method": "Independent web check of the original source (research/verification/source-check-2026-10-12.json)",
+    "result": "corrected",
+    "notes": "Hedge-fund ban confirmed. The site says 'tax rebates ... for down payment assistance'. It does not say 'income tax abatement ... deposited into a down payment account'."
+  },
+  {
+    "id": "ver-st-lahn-antitrust",
+    "entityType": "statement",
+    "entityId": "st-lahn-antitrust",
+    "verifiedDate": "2026-10-12",
+    "method": "Independent web check of the original source (research/verification/source-check-2026-10-12.json)",
+    "result": "corrected",
+    "notes": "Quote is verbatim. 'More funding for the Attorney General' is not on the page."
+  },
+  {
+    "id": "ver-st-lahn-land",
+    "entityType": "statement",
+    "entityId": "st-lahn-land",
+    "verifiedDate": "2026-10-12",
+    "method": "Independent web check of the original source (research/verification/source-check-2026-10-12.json)",
+    "result": "confirmed",
+    "notes": null
+  },
+  {
+    "id": "ver-st-lahn-water",
+    "entityType": "statement",
+    "entityId": "st-lahn-water",
+    "verifiedDate": "2026-10-12",
+    "method": "Independent web check of the original source (research/verification/source-check-2026-10-12.json)",
+    "result": "corrected",
+    "notes": "Deep-banding, buffer strips and monitoring are not on the site. ICD 2026-05-19 partly supports the credits: Lahn wants to 'incentivize different types of nitrogen application' through refundable tax credits for best practices."
+  },
+  {
+    "id": "ver-st-lahn-public-school",
+    "entityType": "statement",
+    "entityId": "st-lahn-public-school",
+    "verifiedDate": "2026-10-12",
+    "method": "Independent web check of the original source (research/verification/source-check-2026-10-12.json)",
+    "result": "confirmed",
+    "notes": null
+  },
+  {
+    "id": "ver-st-sand-esa-rules",
+    "entityType": "statement",
+    "entityId": "st-sand-esa-rules",
+    "verifiedDate": "2026-10-12",
+    "method": "Independent web check of the original source (research/verification/source-check-2026-10-12.json)",
+    "result": "confirmed",
+    "notes": null
+  },
+  {
+    "id": "ver-st-sand-auditor",
+    "entityType": "statement",
+    "entityId": "st-sand-auditor",
+    "verifiedDate": "2026-10-12",
+    "method": "Independent web check of the original source (research/verification/source-check-2026-10-12.json)",
+    "result": "confirmed",
+    "notes": null
+  },
+  {
+    "id": "ver-st-sand-housing",
+    "entityType": "statement",
+    "entityId": "st-sand-housing",
+    "verifiedDate": "2026-10-12",
+    "method": "Independent web check of the original source (research/verification/source-check-2026-10-12.json)",
+    "result": "confirmed",
+    "notes": null
+  },
+  {
+    "id": "ver-st-sand-water",
+    "entityType": "statement",
+    "entityId": "st-sand-water",
+    "verifiedDate": "2026-10-12",
+    "method": "Independent web check of the original source (research/verification/source-check-2026-10-12.json)",
+    "result": "corrected",
+    "notes": "Confirmed: monitoring funding, both tax credits, transparent manure plans ('trust, but verify'), digesters, wetlands and the dirty-water alert. IWILL / Natural Resources Trust Fund funding is NOT on this page."
+  },
+  {
+    "id": "ver-st-sand-dc",
+    "entityType": "statement",
+    "entityId": "st-sand-dc",
+    "verifiedDate": "2026-10-12",
+    "method": "Independent web check of the original source (research/verification/source-check-2026-10-12.json)",
+    "result": "confirmed",
+    "notes": null
+  },
+  {
+    "id": "ver-st-sand-eminent",
+    "entityType": "statement",
+    "entityId": "st-sand-eminent",
+    "verifiedDate": "2026-10-12",
+    "method": "Independent web check of the original source (research/verification/source-check-2026-10-12.json)",
+    "result": "confirmed",
+    "notes": "KCAU story (2026-10-08), read via Yahoo syndication."
+  },
+  {
+    "id": "ver-st-lahn-eminent-legal",
+    "entityType": "statement",
+    "entityId": "st-lahn-eminent-legal",
+    "verifiedDate": "2026-10-12",
+    "method": "Independent web check of the original source (research/verification/source-check-2026-10-12.json)",
+    "result": "confirmed",
+    "notes": "The research quote is an accurate excerpt. Context: Lahn says he is against eminent domain for private gain."
+  },
+  {
+    "id": "ver-st-lahn-medicaid",
+    "entityType": "statement",
+    "entityId": "st-lahn-medicaid",
+    "verifiedDate": "2026-10-12",
+    "method": "Independent web check of the original source (research/verification/source-check-2026-10-12.json)",
+    "result": "confirmed",
+    "notes": "The research's ellipsis leaves out two intervening sentences, but the meaning is preserved."
+  },
+  {
+    "id": "ver-st-lahn-cancer",
+    "entityType": "statement",
+    "entityId": "st-lahn-cancer",
+    "verifiedDate": "2026-10-12",
+    "method": "Independent web check of the original source (research/verification/source-check-2026-10-12.json)",
+    "result": "confirmed",
+    "notes": "MISATTRIBUTION: the quote is NOT in the ICD 2026-05-19 article. It is verbatim on zachlahn.com/policy, which also has the University of Iowa research item. The 'absolutely'/nitrates/glyphosate part IS in ICD 5/19. Cite both."
+  },
+  {
+    "id": "ver-st-lahn-immigration",
+    "entityType": "statement",
+    "entityId": "st-lahn-immigration",
+    "verifiedDate": "2026-10-12",
+    "method": "Independent web check of the original source (research/verification/source-check-2026-10-12.json)",
+    "result": "confirmed",
+    "notes": "MISATTRIBUTION: the quote is NOT in ICD 2026-05-19. It is verbatim on zachlahn.com/policy. The contractor-disclosure and H-1B points ARE in ICD 5/19."
+  },
+  {
+    "id": "ver-st-lahn-esa-expand",
+    "entityType": "statement",
+    "entityId": "st-lahn-esa-expand",
+    "verifiedDate": "2026-10-12",
+    "method": "Independent web check of the original source (research/verification/source-check-2026-10-12.json)",
+    "result": "confirmed",
+    "notes": "Also in ICD 8/1: the expansion he sees is 'making sure that innovative schools can take part in it.' At ICD 5/5 he also said: \"The governor of Iowa must be the number one advocate for public school kids in the state.\""
+  },
+  {
+    "id": "ver-st-lahn-dc-state",
+    "entityType": "statement",
+    "entityId": "st-lahn-dc-state",
+    "verifiedDate": "2026-10-12",
+    "method": "Independent web check of the original source (research/verification/source-check-2026-10-12.json)",
+    "result": "confirmed",
+    "notes": "Text verified via the KCRG republication."
+  },
+  {
+    "id": "ver-st-sand-min-wage",
+    "entityType": "statement",
+    "entityId": "st-sand-min-wage",
+    "verifiedDate": "2026-10-12",
+    "method": "Independent web check of the original source (research/verification/source-check-2026-10-12.json)",
+    "result": "confirmed",
+    "notes": "Also on robsand.com/issues/opportunities-for-all: 'I support raising the minimum wage to $12/hour.'"
+  },
+  {
+    "id": "ver-st-sand-min-wage-phases",
+    "entityType": "statement",
+    "entityId": "st-sand-min-wage-phases",
+    "verifiedDate": "2026-10-12",
+    "method": "Independent web check of the original source (research/verification/source-check-2026-10-12.json)",
+    "result": "confirmed",
+    "notes": null
+  },
+  {
+    "id": "ver-st-lahn-min-wage",
+    "entityType": "statement",
+    "entityId": "st-lahn-min-wage",
+    "verifiedDate": "2026-10-12",
+    "method": "Independent web check of the original source (research/verification/source-check-2026-10-12.json)",
+    "result": "confirmed",
+    "notes": "NBC's paraphrase. Side note: NBC says 2009, but other outlets say 2008. Iowa's $7.25 took effect Jan 1, 2008."
+  },
+  {
+    "id": "ver-st-lahn-vaccine-jan",
+    "entityType": "statement",
+    "entityId": "st-lahn-vaccine-jan",
+    "verifiedDate": "2026-10-12",
+    "method": "Independent web check of the original source (research/verification/source-check-2026-10-12.json)",
+    "result": "confirmed",
+    "notes": "Article is dated 2026-01-31, not 01-27 (01-27 is the debate date)."
+  },
+  {
+    "id": "ver-st-lahn-vaccine-kcci",
+    "entityType": "statement",
+    "entityId": "st-lahn-vaccine-kcci",
+    "verifiedDate": "2026-10-12",
+    "method": "Independent web check of the original source (research/verification/source-check-2026-10-12.json)",
+    "result": "unconfirmed",
+    "notes": "KCCI transcript not found. Related, from Iowa Press (iowapbs.org episode 13995): '[Kay] Should vaccine mandates be repealed? [Zach] Yes.' That question is about mandates in general, not specifically school requirements."
+  },
+  {
+    "id": "ver-st-lahn-vaccine-benefits",
+    "entityType": "statement",
+    "entityId": "st-lahn-vaccine-benefits",
+    "verifiedDate": "2026-10-12",
+    "method": "Independent web check of the original source (research/verification/source-check-2026-10-12.json)",
+    "result": "corrected",
+    "notes": "CBS2 source and exact wording not found. Similar sentiment is in the Iowa Press interview, followed by criticism of pharma financial incentives."
+  },
+  {
+    "id": "ver-st-sand-roe",
+    "entityType": "statement",
+    "entityId": "st-sand-roe",
+    "verifiedDate": "2026-10-12",
+    "method": "Independent web check of the original source (research/verification/source-check-2026-10-12.json)",
+    "result": "corrected",
+    "notes": "September 2026 Gazette source NOT found. The Gazette 2026-05-19 piece says he disagreed with overturning Roe and would veto further abortion restrictions. It does not say 'supports the Roe framework' or mention IVF/surrogacy/contraception. The quoted phrase 'including IVF, surrogacy and contraception' was not found verbatim anywhere."
+  },
+  {
+    "id": "ver-st-sand-sf418",
+    "entityType": "statement",
+    "entityId": "st-sand-sf418",
+    "verifiedDate": "2026-10-12",
+    "method": "Independent web check of the original source (research/verification/source-check-2026-10-12.json)",
+    "result": "confirmed",
+    "notes": "Gazette original. The Hill relay article was not located."
+  },
+  {
+    "id": "ver-st-lahn-book",
+    "entityType": "statement",
+    "entityId": "st-lahn-book",
+    "verifiedDate": "2026-10-12",
+    "method": "Independent web check of the original source (research/verification/source-check-2026-10-12.json)",
+    "result": "confirmed",
+    "notes": "From a search-result snippet; the page itself is behind a bot challenge. Confirming no Lahn SF 418 statement exists is outside this check."
+  },
+  {
+    "id": "ver-st-lahn-ivf",
+    "entityType": "statement",
+    "entityId": "st-lahn-ivf",
+    "verifiedDate": "2026-10-12",
+    "method": "Independent web check of the original source (research/verification/source-check-2026-10-12.json)",
+    "result": "confirmed",
+    "notes": "Iowa Press, about April 2, 2026."
+  },
+  {
+    "id": "ver-st-sand-tax-2025",
+    "entityType": "statement",
+    "entityId": "st-sand-tax-2025",
+    "verifiedDate": "2026-10-12",
+    "method": "Independent web check of the original source (research/verification/source-check-2026-10-12.json)",
+    "result": "confirmed",
+    "notes": "All three fragments are verbatim. No rate change is proposed in the article."
+  },
+  {
+    "id": "ver-st-sand-tax-politifact",
+    "entityType": "statement",
+    "entityId": "st-sand-tax-politifact",
+    "verifiedDate": "2026-10-12",
+    "method": "Independent web check of the original source (research/verification/source-check-2026-10-12.json)",
+    "result": "confirmed",
+    "notes": null
+  },
+  {
+    "id": "ver-st-sand-tax-2026-06",
+    "entityType": "statement",
+    "entityId": "st-sand-tax-2026-06",
+    "verifiedDate": "2026-10-12",
+    "method": "Independent web check of the original source (research/verification/source-check-2026-10-12.json)",
+    "result": "corrected",
+    "notes": "WORDING DIFFERS: the research's 'to know where I am before I decide what direction I am going' is not what the article says. Use the exact wording above. ABI conference, June 4 2026. Verified in the Little Village version (2026-06-05)."
+  },
+  {
+    "id": "ver-st-sand-farm",
+    "entityType": "statement",
+    "entityId": "st-sand-farm",
+    "verifiedDate": "2026-10-12",
+    "method": "Independent web check of the original source (research/verification/source-check-2026-10-12.json)",
+    "result": "confirmed",
+    "notes": "Iowa Starting Line source not found. The campaign site is the primary source."
+  },
+  {
+    "id": "ver-st-sand-immigration",
+    "entityType": "statement",
+    "entityId": "st-sand-immigration",
+    "verifiedDate": "2026-10-12",
+    "method": "Independent web check of the original source (research/verification/source-check-2026-10-12.json)",
+    "result": "unconfirmed",
+    "notes": "Not found."
+  },
+  {
+    "id": "ver-st-lahn-screening",
+    "entityType": "statement",
+    "entityId": "st-lahn-screening",
+    "verifiedDate": "2026-10-12",
+    "method": "Independent web check of the original source (research/verification/source-check-2026-10-12.json)",
+    "result": "confirmed",
+    "notes": "KCRG describes his website plan. Expanded screenings do not appear in the current zachlahn.com/policy text."
+  },
+  {
+    "id": "ver-st-sand-water-regulation",
+    "entityType": "statement",
+    "entityId": "st-sand-water-regulation",
+    "verifiedDate": "2026-10-12",
+    "method": "Independent web check of the original source (research/verification/source-check-2026-10-12.json)",
+    "result": "corrected",
+    "notes": "The April 2026 half is confirmed. The August 2025 IPR item was not located."
+  },
+  {
+    "id": "ver-st-sand-esa-report",
+    "entityType": "statement",
+    "entityId": "st-sand-esa-report",
+    "verifiedDate": "2026-10-12",
+    "method": "Independent web check of the original source (research/verification/source-check-2026-10-12.json)",
+    "result": "confirmed",
+    "notes": "ICD story by Cami Koons. Report released 2026-06-17."
+  },
+  {
+    "id": "ver-st-lahn-water-right-thing",
+    "entityType": "statement",
+    "entityId": "st-lahn-water-right-thing",
+    "verifiedDate": "2026-10-12",
+    "method": "Independent web check of the original source (research/verification/source-check-2026-10-12.json)",
+    "result": "unconfirmed",
+    "notes": "Not found. Possible lead, not checked: KCAU 'Sand, Lahn discuss Iowa's water quality' (https://www.kcau9.com/news/your-local-election-hq/sand-lahn-discuss-iowas-water-quality/), which returned 403."
+  },
+  {
+    "id": "ver-st-lahn-prompt-payment",
+    "entityType": "statement",
+    "entityId": "st-lahn-prompt-payment",
+    "verifiedDate": "2026-10-12",
+    "method": "Independent web check of the original source (research/verification/source-check-2026-10-12.json)",
+    "result": "confirmed",
+    "notes": "KFF Health News, 2026-07-30. ICD 8/1 also quotes Lahn on 'proper payment'."
+  },
+  {
+    "id": "ver-st-sand-esa-no-repeal",
+    "entityType": "statement",
+    "entityId": "st-sand-esa-no-repeal",
+    "verifiedDate": "2026-10-12",
+    "method": "Independent web check of the original source (research/verification/source-check-2026-10-12.json)",
+    "result": "corrected",
+    "notes": "The summary (no repeal) is supported by the plan. The quote 'I support Iowa families making the decision that's best for their kids' was NOT found anywhere."
+  },
+  {
+    "id": "ver-st-lahn-protect-life",
+    "entityType": "statement",
+    "entityId": "st-lahn-protect-life",
+    "verifiedDate": "2026-10-12",
+    "method": "Independent web check of the original source (research/verification/source-check-2026-10-12.json)",
+    "result": "confirmed",
+    "notes": "Iowa Press, about April 2, 2026, answering whether the six-week ban goes far enough."
+  },
+  {
+    "id": "ver-st-lahn-conception",
+    "entityType": "statement",
+    "entityId": "st-lahn-conception",
+    "verifiedDate": "2026-10-12",
+    "method": "Independent web check of the original source (research/verification/source-check-2026-10-12.json)",
+    "result": "confirmed",
+    "notes": "Said in the IVF / embryo-destruction exchange on Iowa Press."
+  },
+  {
+    "id": "ver-st-sand-firearms",
+    "entityType": "statement",
+    "entityId": "st-sand-firearms",
+    "verifiedDate": "2026-10-12",
+    "method": "Independent web check of the original source (research/verification/source-check-2026-10-12.json)",
+    "result": "unconfirmed",
+    "notes": "Not found in one search."
+  },
+  {
+    "id": "ver-st-sand-sf418-limits",
+    "entityType": "statement",
+    "entityId": "st-sand-sf418-limits",
+    "verifiedDate": "2026-10-12",
+    "method": "Independent web check of the original source (research/verification/source-check-2026-10-12.json)",
+    "result": "corrected",
+    "notes": "Sand said he could not restore protections unilaterally and would need the Legislature. That is more nuanced than 'could not restore with a Republican legislature'."
+  }
+]
