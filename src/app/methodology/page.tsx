@@ -20,8 +20,9 @@ export default function MethodologyPage() {
           <h2>What this site does and does not do</h2>
           <p>
             Iowa Voter Match helps you see your own priorities and compare them with what each candidate has publicly
-            documented. It shows a match percentage based only on documented positions. It does not endorse a candidate,
-            predict how you will vote, or estimate whether a candidate will keep a promise.
+            documented. Based on your answers, it tells you which candidate you should vote for and each candidate’s
+            agreement percentage, using only documented positions. The site itself doesn’t favor either candidate, and it
+            can’t predict whether a candidate will keep a promise.
           </p>
         </section>
 
@@ -69,7 +70,7 @@ export default function MethodologyPage() {
         </section>
 
         <section id="match">
-          <h2>How your match percentage is calculated</h2>
+          <h2>How your result and percentages are calculated</h2>
           <p>
             For each issue where you chose a position, a candidate earns full credit if their documented position aligns
             with your choice, half credit if it partly overlaps, and none if it differs. Each issue is weighted by the
@@ -80,8 +81,9 @@ export default function MethodologyPage() {
             Only issues where the candidate has a verified explicit statement, specific proposal, or documented action
             that speaks to your choice are counted. Issues where the position is not found, only general, indirect,
             unverified, or conflicting are left out of that candidate’s percentage entirely, so each percentage shows how
-            many issues it is based on. A closest match is named only when both candidates have at least three comparable
-            issues, and results within five points are reported as close to even.
+            many issues it is based on. The candidate with the higher percentage is the one we say you should vote for. We
+            name a candidate only when both have at least three comparable issues; a margin under five points is labeled
+            a narrow edge, and an exact tie names no one.
           </p>
           <p>
             Answers from the optional Go deeper round count the same way. When you rate a core question Very important or

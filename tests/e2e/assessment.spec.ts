@@ -36,7 +36,8 @@ test('completes 20 screens, autosaves, and produces results with denominators', 
   await page.getByRole('button', { name: 'See my results' }).click()
 
   await expect(page).toHaveURL(/results\/$/)
-  await expect(page.getByRole('heading', { name: 'Your priorities', level: 1 })).toBeVisible()
+  await expect(page.getByRole('heading', { name: 'Your Iowa governor match', level: 1 })).toBeVisible()
+  await expect(page.locator('#match').getByText(/you should vote for|A dead heat|Answer a few more questions/).first()).toBeVisible()
   // Every rating level was used 4 times.
   await expect(page.getByText('4 of 20 questions (20%)').first()).toBeVisible()
   // Completeness: 10 options chosen, 10 unsure.
@@ -107,7 +108,7 @@ test('report renders and prints', async ({ page }) => {
   await expect(page.getByText('Medicaid and health coverage (Extremely passionate)')).toBeVisible()
 })
 
-test('match section shows weighted percentages with their basis and a closest match', async ({ page }) => {
+test('result names who to vote for, with percentages and reasons', async ({ page }) => {
   const picks: [number, string][] = [
     [1, 'Wait and see'], [2, 'Get rid of it over time'], [9, 'The state'], [11, 'Yes, and grow the program'],
     [13, 'Less strict than now'], [17, 'No tax breaks; they pay their own way'], [18, 'Yes, and keep it rising with prices'],
@@ -119,12 +120,13 @@ test('match section shows weighted percentages with their basis and a closest ma
   }
   await page.goto('results/#match')
   const match = page.locator('#match')
-  await expect(match.getByText('Your closest match')).toBeVisible()
+  await expect(match.getByText('Based on your answers, you should vote for')).toBeVisible()
+  await expect(match.getByText(/agrees with you on \d+% of what you care about, compared with \d+%/)).toBeVisible()
+  await expect(match.getByText('Why', { exact: true })).toBeVisible()
   // 8 answered + 1 assumed (strong abortion view pre-fills the IVF question).
   await expect(match.getByText(/agreement, based on \d+ of 9/).first()).toBeVisible()
   await expect(match.getByText(/Includes 1 assumed answer/).first()).toBeVisible()
   await expect(match.getByText(/^\d+%$/).first()).toBeVisible()
-  await expect(match).not.toContainText('you should vote for')
 })
 
 test('go deeper: strong view pre-fills a related question as assumed, and it can be changed', async ({ page }) => {

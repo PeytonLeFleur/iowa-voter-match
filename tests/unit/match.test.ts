@@ -57,13 +57,14 @@ describe('match percentage', () => {
     ({ candidateId, value, basis, eligible, earned: 0, possible: 0, agree: [], partly: [], disagree: [], assumed: 0 })
 
   it('names a closest match only with enough documented positions on both sides', () => {
-    expect(matchOutcome([m('a', 0.8, 6), m('b', 0.5, 5)])).toEqual({ kind: 'closest', candidateId: 'a', margin: 30 })
+    expect(matchOutcome([m('a', 0.8, 6), m('b', 0.5, 5)])).toEqual({ kind: 'recommend', candidateId: 'a', otherId: 'b', margin: 30, strength: 'clear' })
     expect(matchOutcome([m('a', 0.8, 6), m('b', 0.5, 2)])).toEqual({ kind: 'not-enough', reason: 'too-few-documented' })
     expect(matchOutcome([m('a', null, 0, 0), m('b', null, 0, 0)])).toEqual({ kind: 'not-enough', reason: 'no-choices' })
   })
 
-  it('reports near ties instead of a winner', () => {
-    expect(matchOutcome([m('a', 0.62, 6), m('b', 0.6, 5)])).toEqual({ kind: 'near-tie', margin: 2 })
+  it('names a narrow edge when close, and no one only on an exact tie', () => {
+    expect(matchOutcome([m('a', 0.62, 6), m('b', 0.6, 5)])).toEqual({ kind: 'recommend', candidateId: 'a', otherId: 'b', margin: 2, strength: 'narrow' })
+    expect(matchOutcome([m('a', 0.6, 6), m('b', 0.6, 5)])).toEqual({ kind: 'tie' })
   })
 
   it('research volume does not change a per-issue score (Test H)', () => {

@@ -17,8 +17,8 @@ export default function Home() {
           Know where they stand.
         </h1>
         <p className="mt-6 text-xl text-ink-soft">
-          Answer 20 questions about Iowa’s future. Discover which issues matter most to you, explore where each
-          candidate stands, and compare their documented positions using original sources.
+          Answer 20 quick questions about Iowa’s future and find out which candidate for governor agrees with you most,
+          by how much, and why, based on what each candidate has actually said.
         </p>
         <div className="mt-8 flex flex-wrap gap-3">
           <Link href="/assessment/" className="rounded bg-ink px-6 py-3 font-medium text-paper no-underline hover:bg-ink-soft">
@@ -46,16 +46,15 @@ export default function Home() {
         <div>
           <h2 className="text-xl">How it works</h2>
           <p className="mt-3 text-ink-soft">
-            For each of 20 issues you say how important it is to you and, if you want, which direction Iowa should
-            take. You see your own priorities first, then each candidate’s documented record, and finally how closely
-            each one matches you.
+            For each of 20 issues you pick the answer closest to your view and say how much it matters to you. At the end
+            you see who you should vote for, each candidate’s agreement percentage, and the issues behind it.
           </p>
         </div>
         <div>
           <h2 className="text-xl">Evidence, not endorsements</h2>
           <p className="mt-3 text-ink-soft">
-            Every candidate position links to its original source and date. Where no position has been documented,
-            we say so plainly, and it never counts for or against a candidate in your match.{' '}
+            Every candidate position links to its original source and date. Where a candidate hasn’t taken a position,
+            we say so plainly, and it never counts for or against them in your result.{' '}
             <Link href="/methodology/">Read the methodology</Link>.
           </p>
         </div>

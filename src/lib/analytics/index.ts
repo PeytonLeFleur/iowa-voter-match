@@ -267,15 +267,20 @@ export function matchScore(data: ClientData, answers: Answers, candidateId: stri
 }
 
 export type MatchOutcome =
-  | { kind: 'closest'; candidateId: string; margin: number }
-  | { kind: 'near-tie'; margin: number }
+  | { kind: 'recommend'; candidateId: string; otherId: string; margin: number; strength: 'clear' | 'narrow' }
+  | { kind: 'tie' }
   | { kind: 'not-enough'; reason: 'no-choices' | 'too-few-documented' }
 
-/** Names the closest match only when both candidates have enough documented positions to compare. */
+/**
+ * Who the voter's answers point to. Requires enough documented positions on
+ * both sides to compare; within NEAR_TIE_POINTS the leader is named as a narrow
+ * edge, and only an exact tie names no one.
+ */
 export function matchOutcome(matches: CandidateMatch[]): MatchOutcome {
   if (matches.every((m) => m.eligible === 0)) return { kind: 'not-enough', reason: 'no-choices' }
   if (matches.some((m) => m.basis < MIN_COMPARABLE || m.value === null)) return { kind: 'not-enough', reason: 'too-few-documented' }
   const [a, b] = [...matches].sort((x, y) => y.value! - x.value!)
   const margin = Math.round((a!.value! - b!.value!) * 100)
-  return margin < NEAR_TIE_POINTS ? { kind: 'near-tie', margin } : { kind: 'closest', candidateId: a!.candidateId, margin }
+  if (margin === 0) return { kind: 'tie' }
+  return { kind: 'recommend', candidateId: a!.candidateId, otherId: b!.candidateId, margin, strength: margin < NEAR_TIE_POINTS ? 'narrow' : 'clear' }
 }
