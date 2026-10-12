@@ -99,7 +99,8 @@ function Why({ winner, loser, wm, lm, data, answers }: {
   winner: Candidate; loser: Candidate; wm: CandidateMatch; lm: CandidateMatch; data: ClientData; answers: Answers
 }) {
   const reasons = wm.agree.slice(0, 3)
-  const theyDiffer = lm.disagree.slice(0, 2)
+  const shown = new Set(reasons.map((i) => i.question.id))
+  const theyDiffer = lm.disagree.filter((i) => !shown.has(i.question.id)).slice(0, 2)
   const caveats = wm.disagree.slice(0, 2)
   const stance = (cid: string, i: MatchItem) => positionFor(data.positions, cid, i.question.id)?.positionSummary
   const yourChoice = (i: MatchItem) => choiceLabel(i.question, answers[i.question.id]?.choice)
@@ -107,7 +108,8 @@ function Why({ winner, loser, wm, lm, data, answers }: {
     <div className="mt-6 grid gap-6 border-t border-rule pt-5 md:grid-cols-2">
       <div>
         <p className="text-sm font-semibold uppercase tracking-wide text-ink">Why</p>
-        <ul className="mt-2 space-y-3 text-sm">
+        {reasons.length > 0 && <p className="mt-2 text-xs font-semibold uppercase tracking-wide text-muted">You agree with {winner.name} on</p>}
+        <ul className="mt-1 space-y-3 text-sm">
           {reasons.map((i) => (
             <li key={i.question.id}>
               <span className="font-medium">{i.question.title}</span>
@@ -115,14 +117,21 @@ function Why({ winner, loser, wm, lm, data, answers }: {
               <span className="block text-ink-soft">You: {yourChoice(i)}. {winner.name}: {stance(winner.id, i)}</span>
             </li>
           ))}
-          {theyDiffer.map((i) => (
-            <li key={`l-${i.question.id}`}>
-              <span className="font-medium">{i.question.title}</span>
-              <span className="text-muted"> · {importanceLabel(i.importance)}</span>
-              <span className="block text-ink-soft">You: {yourChoice(i)}. {loser.name} differs: {stance(loser.id, i)}</span>
-            </li>
-          ))}
         </ul>
+        {theyDiffer.length > 0 && (
+          <>
+            <p className="mt-4 text-xs font-semibold uppercase tracking-wide text-muted">{loser.name} differs from you on</p>
+            <ul className="mt-1 space-y-3 text-sm">
+              {theyDiffer.map((i) => (
+                <li key={i.question.id}>
+                  <span className="font-medium">{i.question.title}</span>
+                  <span className="text-muted"> · {importanceLabel(i.importance)}</span>
+                  <span className="block text-ink-soft">You: {yourChoice(i)}. {loser.name}: {stance(loser.id, i)}</span>
+                </li>
+              ))}
+            </ul>
+          </>
+        )}
       </div>
       <div>
         <p className="text-sm font-semibold uppercase tracking-wide text-ink">Where you and {winner.name} disagree</p>
