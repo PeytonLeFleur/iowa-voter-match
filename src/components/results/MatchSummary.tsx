@@ -125,7 +125,7 @@ function Why({ winner, loser, wm, lm, data, answers }: {
               {theyDiffer.map((i) => (
                 <li key={i.question.id}>
                   <span className="font-medium">{i.question.title}</span>
-                  <span className="text-muted"> · {importanceLabel(i.importance)}</span>
+                  <span className="text-muted"> · {importanceLabel(i.importance)}{i.assumedFrom && ' · assumed'}</span>
                   <span className="block text-ink-soft">You: {yourChoice(i)}. {loser.name}: {stance(loser.id, i)}</span>
                 </li>
               ))}
