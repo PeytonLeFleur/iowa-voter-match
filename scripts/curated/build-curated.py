@@ -1332,8 +1332,9 @@ position("d17", SAND, "SP", "Supports the Work Without Worry bill.", ["st-sand-w
 position("d17", LAHN, "NDP")
 position("d18", SAND, "SP", "Universal free school meals.", ["st-sand-school-meals"],
     {"yes": "aligned", "keep": "conflicting"}, "Sand proposes universal school meals.")
-position("d18", LAHN, "EP", "Universal free breakfast and lunch; 80% Iowa-grown school food.", ["st-lahn-school-meals", "st-lahn-iowa-grown"],
-    {"yes": "aligned", "keep": "conflicting"}, "Lahn said he wants universal free breakfast and lunch.")
+position("d18", LAHN, "EP", "Universal free breakfast and lunch; 80% Iowa-grown school food.", ["st-lahn-school-meals"],
+    {"yes": "aligned", "keep": "conflicting"}, "Lahn said he wants universal free breakfast and lunch.",
+    limitations="His goal of 80% Iowa-grown school food is confirmed (Radio Iowa, September 8, 2026); the universal-meals quote is not yet.")
 position("d19", SAND, "NDP")
 position("d19", LAHN, "EP", "Called for state regulation of license-plate cameras.", ["st-lahn-flock"],
     {"regulate": "aligned", "local": "conflicting", "ban": U}, "Lahn called for state-level regulation.")

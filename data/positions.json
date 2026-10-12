@@ -2408,24 +2408,19 @@
     "documentedStance": null,
     "declinedToCommit": false,
     "proposal": null,
-    "comparableToUserPreference": true,
-    "optionRelations": {
-      "yes": "aligned",
-      "keep": "conflicting"
-    },
+    "comparableToUserPreference": false,
+    "optionRelations": null,
     "relationRationale": "Lahn said he wants universal free breakfast and lunch.",
     "statementIds": [
-      "st-lahn-school-meals",
-      "st-lahn-iowa-grown"
+      "st-lahn-school-meals"
     ],
     "sourceIds": [
-      "src-radio-iowa-2026-09-08",
       "src-research-uncited"
     ],
-    "statementDate": "2026-09-08",
-    "verificationStatus": "verified",
+    "statementDate": null,
+    "verificationStatus": "unverified",
     "researchCutoff": "2026-10-12",
-    "evidenceLimitations": null,
+    "evidenceLimitations": "His goal of 80% Iowa-grown school food is confirmed (Radio Iowa, September 8, 2026); the universal-meals quote is not yet. The research does not cite a source for this position, so it is not counted in the match until verified.",
     "reviewStatus": "draft"
   },
   {
