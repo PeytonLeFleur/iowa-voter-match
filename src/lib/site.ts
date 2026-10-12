@@ -11,5 +11,13 @@ export function formatDate(iso: string): string {
   })
 }
 
+/** Formats YYYY, YYYY-MM, or YYYY-MM-DD without inventing missing precision. */
+export function formatPartialDate(iso: string): string {
+  const [y, m, d] = iso.split('-').map(Number)
+  if (!m) return String(y)
+  if (!d) return new Date(Date.UTC(y!, m - 1, 1)).toLocaleDateString('en-US', { year: 'numeric', month: 'long', timeZone: 'UTC' })
+  return formatDate(iso)
+}
+
 /** Prefix for raw asset URLs (next/link and next/image add basePath themselves). */
 export const assetPath = (p: string) => `${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}${p}`

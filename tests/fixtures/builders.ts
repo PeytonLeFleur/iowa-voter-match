@@ -4,7 +4,7 @@ import { CandidatePosition, CandidateStatement, Dataset, PolicyQuestion } from '
 export const CUTOFF = '2026-10-12'
 
 export const minWageQuestion = PolicyQuestion.parse({
-  id: 'q-min-wage', order: 1, slug: 'minimum-wage', title: 'Minimum wage', categoryId: 'cat-econ',
+  id: 'q-min-wage', order: 1, slug: 'minimum-wage', title: 'Minimum wage', categoryId: 'cat-econ', domain: 'economy',
   prompt: 'What should Iowa do about the minimum wage?', context: 'Fixture context.', issueIds: ['ISS-1'],
   options: [
     { id: 'raise', label: 'Raise the state minimum wage', description: 'Fixture.' },
@@ -55,6 +55,7 @@ export function baseDataset(): Dataset {
       { id: 'cand-b', slug: 'cand-b', name: 'Candidate B', sortName: 'B' },
     ],
     categories: [{ id: 'cat-econ', slug: 'economy', name: 'Economy', order: 1 }],
+    issueEvidence: [],
     issues: [{ id: 'ISS-1', slug: 'minimum-wage', title: 'Minimum wage', categoryId: 'cat-econ', summary: 'Fixture.' }],
     legislation: [],
     sources: [{ id: 'src-1', title: 'Fixture source', sourceType: 'news', url: 'https://example.org/a', publishedDate: '2026-01-01' }],

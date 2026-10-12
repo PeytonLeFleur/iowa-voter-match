@@ -20,7 +20,7 @@
   --color-accent-wash: #f1e6d4;
 
   /* Evidence states: neutral by design. "Not found" is gray, never error red. */
-  --color-unknown: #6a6a66;
+  --color-unknown: #585854;
   --color-unknown-wash: #ebe8e1;
 }
 

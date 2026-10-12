@@ -6,14 +6,19 @@ import { EVIDENCE_CODES } from '@/lib/evidence'
 
 const id = z.string().regex(/^[A-Za-z0-9][A-Za-z0-9._-]*$/, 'ids are URL-safe')
 const slug = z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/, 'slugs are lowercase-hyphenated')
-const isoDate = z.string().regex(/^\d{4}-\d{2}(-\d{2})?$/, 'dates are YYYY-MM or YYYY-MM-DD')
+/** YYYY, YYYY-MM, or YYYY-MM-DD: sources often give only a year or month. Never pad a guess. */
+const isoDate = z.string().regex(/^\d{4}(-\d{2}(-\d{2})?)?$/, 'dates are YYYY, YYYY-MM, or YYYY-MM-DD')
 const url = z.url()
 const text = z.string().trim().min(1)
 
 export const EvidenceCode = z.enum(EVIDENCE_CODES)
 export const VerificationStatus = z.enum(['verified', 'unverified', 'source-unavailable'])
 export const ReviewStatus = z.enum(['draft', 'reviewed'])
-export const OptionRelation = z.enum(['aligned', 'partial', 'conflicting'])
+/** `unaddressed`: the documented stance does not speak to this option; no relation is inferred. */
+export const OptionRelation = z.enum(['aligned', 'partial', 'conflicting', 'unaddressed'])
+
+/** The seven analytic domains used to aggregate the 20 assessment questions. */
+export const Domain = z.enum(['economy', 'agriculture', 'education', 'health', 'rights', 'environment', 'government'])
 
 export const Meta = z.object({
   datasetVersion: z.string(),
@@ -31,8 +36,12 @@ export const Candidate = z.object({
   name: text,
   sortName: text,
   party: text.nullable().default(null),
+  role: text.nullable().default(null),
+  runningMate: text.nullable().default(null),
   summary: text.nullable().default(null),
   campaignUrl: url.nullable().default(null),
+  /** Topics the research lists as unanswered for this candidate. */
+  unansweredTopics: z.array(text).default([]),
 })
 
 export const IssueCategory = z.object({
@@ -77,9 +86,12 @@ export const Issue = z.object({
   /** Original research ID, preserved verbatim. */
   id,
   slug,
-  title: text,
+  /** null when the research references the issue only by ID; never invented. */
+  title: text.nullable(),
+  /** Set when the research covers several issues together under one heading. */
+  groupTitle: text.nullable().default(null),
   categoryId: id,
-  summary: text,
+  summary: text.nullable().default(null),
   legalFramework: text.nullable().default(null),
   concerns: z.array(text).default([]),
   policyAlternatives: z.array(z.object({ label: text, description: text.nullable().default(null) })).default([]),
@@ -87,7 +99,22 @@ export const Issue = z.object({
   legislationIds: z.array(id).default([]),
   sourceIds: z.array(id).default([]),
   unansweredQuestions: z.array(text).default([]),
+  /** Documented overlap or difference notes from the research. */
+  similarities: z.array(text).default([]),
+  differences: z.array(text).default([]),
   verifiedDate: isoDate.nullable().default(null),
+})
+
+/** A candidate's evidence on a framework issue, as classified in the research matrix. */
+export const IssueEvidence = z.object({
+  id,
+  issueId: id,
+  candidateId: id,
+  /** One or more codes, in the order the research lists them (e.g. EP and SP). */
+  evidenceCodes: z.array(EvidenceCode).min(1),
+  /** The research's description, verbatim. null for NDP with no further detail. */
+  detail: text.nullable(),
+  statementIds: z.array(id).default([]),
 })
 
 export const PolicyOption = z.object({
@@ -107,11 +134,14 @@ export const PolicyQuestion = z.object({
   slug,
   title: text,
   categoryId: id,
+  domain: Domain,
   prompt: text,
   context: text,
   learnMore: text.nullable().default(null),
   issueIds: z.array(id).min(1),
   options: z.array(PolicyOption).min(2),
+  /** Specific sub-questions the research could not answer for either candidate. */
+  unansweredQuestions: z.array(text).default([]),
   reviewStatus: ReviewStatus.default('draft'),
 })
 
@@ -121,6 +151,10 @@ export const CandidateStatement = z.object({
   /** Verbatim words. Only set when the research quotes the candidate directly. */
   quote: text.nullable(),
   summary: text,
+  /** How the research obtained it: the candidate's own words, or another outlet's paraphrase. */
+  attribution: z.enum(['direct', 'paraphrase']).default('direct'),
+  /** Outlet that reported it when different from the source (e.g. "via The Hill"). */
+  reportedVia: text.nullable().default(null),
   date: isoDate.nullable(),
   sourceId: id,
   videoTimestamp: z.string().regex(/^\d{1,2}(:\d{2}){1,2}$/).nullable().default(null),
@@ -175,6 +209,7 @@ export const Dataset = z.object({
   candidates: z.array(Candidate),
   categories: z.array(IssueCategory),
   issues: z.array(Issue),
+  issueEvidence: z.array(IssueEvidence),
   legislation: z.array(Legislation),
   sources: z.array(EvidenceSource),
   statements: z.array(CandidateStatement),
@@ -189,6 +224,8 @@ export type IssueCategory = z.infer<typeof IssueCategory>
 export type Legislation = z.infer<typeof Legislation>
 export type EvidenceSource = z.infer<typeof EvidenceSource>
 export type Issue = z.infer<typeof Issue>
+export type IssueEvidence = z.infer<typeof IssueEvidence>
+export type Domain = z.infer<typeof Domain>
 export type PolicyOption = z.infer<typeof PolicyOption>
 export type PolicyQuestion = z.infer<typeof PolicyQuestion>
 export type CandidateStatement = z.infer<typeof CandidateStatement>

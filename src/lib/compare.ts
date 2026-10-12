@@ -30,7 +30,7 @@ export function evidenceState(position: CandidatePosition | undefined): Evidence
 }
 
 export type Comparison =
-  | { kind: 'relation'; relation: OptionRelation }
+  | { kind: 'relation'; relation: Exclude<OptionRelation, 'unaddressed'> }
   | {
       kind: 'none'
       reason: 'user-unsure' | 'user-skipped' | 'not-comparable' | Exclude<EvidenceState, 'documented'>
@@ -47,7 +47,9 @@ export function compare(choice: UserChoice, position: CandidatePosition | undefi
   const state = evidenceState(position)
   if (state !== 'documented') return { kind: 'none', reason: state }
   const relation = position?.optionRelations?.[choice.optionId]
-  return relation ? { kind: 'relation', relation } : { kind: 'none', reason: 'not-comparable' }
+  return relation && relation !== 'unaddressed'
+    ? { kind: 'relation', relation }
+    : { kind: 'none', reason: 'not-comparable' }
 }
 
 export const EVIDENCE_STATE_COPY: Record<EvidenceState, { label: string; explanation: (cutoff: string) => string }> = {
@@ -84,7 +86,7 @@ export const EVIDENCE_STATE_COPY: Record<EvidenceState, { label: string; explana
   },
 }
 
-export const RELATION_COPY: Record<OptionRelation, string> = {
+export const RELATION_COPY: Record<Exclude<OptionRelation, 'unaddressed'>, string> = {
   aligned: 'Documented alignment with your choice',
   partial: 'Partial overlap with your choice',
   conflicting: 'Documented difference from your choice',

@@ -70,6 +70,7 @@ export function checkIntegrity(ds: Dataset, rawResearch: string | null): Integri
   const sources = index('source', ds.sources)
   const statements = index('statement', ds.statements)
   const questions = index('question', ds.questions)
+  index('issue-evidence', ds.issueEvidence)
   index('position', ds.positions)
   index('verification', ds.verifications)
 
@@ -96,6 +97,21 @@ export function checkIntegrity(ds: Dataset, rawResearch: string | null): Integri
     refs(e, 'legislationIds', i.legislationIds, legislation)
     refs(e, 'sourceIds', i.sourceIds, sources)
   }
+
+  // --- Issue evidence matrix ---------------------------------------------
+  const seenIssuePair = new Set<string>()
+  for (const ev of ds.issueEvidence) {
+    const e = `issue-evidence:${ev.id}`
+    refs(e, 'issueId', [ev.issueId], issues)
+    refs(e, 'candidateId', [ev.candidateId], candidates)
+    const pair = `${ev.candidateId}×${ev.issueId}`
+    if (seenIssuePair.has(pair)) err('one-issue-evidence', e, `more than one record for ${pair}`)
+    seenIssuePair.add(pair)
+  }
+  for (const c of ds.candidates)
+    for (const i of ds.issues)
+      if (!seenIssuePair.has(`${c.id}×${i.id}`))
+        completeness('issue-matrix', `issue-evidence:${c.id}×${i.id}`, 'missing record; record NDP explicitly')
 
   // --- Sources --------------------------------------------------------------
   for (const s of ds.sources) {
@@ -199,6 +215,8 @@ export function checkIntegrity(ds: Dataset, rawResearch: string | null): Integri
       if (p.comparableToUserPreference !== true) err('relations-comparable', e, 'option relations require comparableToUserPreference=true')
       if (p.statementIds.length === 0 || p.relationRationale === null)
         err('relations-cited', e, 'option relations must cite statements and give a rationale')
+      if (Object.values(p.optionRelations).every((r) => r === 'unaddressed'))
+        err('relations-empty', e, 'every option is unaddressed; set optionRelations to null and comparable to false')
       const expected = optionIds.get(p.questionId)
       if (expected) {
         const got = new Set(Object.keys(p.optionRelations))

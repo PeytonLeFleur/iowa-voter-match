@@ -1,1 +1,68 @@
-[]
+[
+  {
+    "id": "economy",
+    "slug": "economy",
+    "name": "Economy",
+    "order": 1
+  },
+  {
+    "id": "agriculture",
+    "slug": "agriculture",
+    "name": "Agriculture",
+    "order": 2
+  },
+  {
+    "id": "health",
+    "slug": "health",
+    "name": "Health",
+    "order": 3
+  },
+  {
+    "id": "education",
+    "slug": "education",
+    "name": "Education",
+    "order": 4
+  },
+  {
+    "id": "rights",
+    "slug": "rights",
+    "name": "Rights",
+    "order": 5
+  },
+  {
+    "id": "environment-energy",
+    "slug": "environment-energy",
+    "name": "Environment and energy",
+    "order": 6
+  },
+  {
+    "id": "public-safety",
+    "slug": "public-safety",
+    "name": "Public safety",
+    "order": 7
+  },
+  {
+    "id": "labor",
+    "slug": "labor",
+    "name": "Labor",
+    "order": 8
+  },
+  {
+    "id": "institutions",
+    "slug": "institutions",
+    "name": "Institutions",
+    "order": 9
+  },
+  {
+    "id": "family",
+    "slug": "family",
+    "name": "Family",
+    "order": 10
+  },
+  {
+    "id": "iowa-specific",
+    "slug": "iowa-specific",
+    "name": "Iowa-specific",
+    "order": 11
+  }
+]

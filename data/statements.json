@@ -1,1 +1,1316 @@
-[]
+[
+  {
+    "id": "st-sand-property-play-out",
+    "candidateId": "rob-sand",
+    "quote": null,
+    "summary": "Said the recent property tax changes should be given time to play out before they are adjusted, and that local officials “know their communities.”",
+    "attribution": "paraphrase",
+    "reportedVia": null,
+    "date": "2026-10-06",
+    "sourceId": "src-ipr-debate",
+    "videoTimestamp": null,
+    "issueIds": [
+      "1.01"
+    ],
+    "questionIds": [
+      "q01"
+    ],
+    "evidenceClass": "EP",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-lahn-rent-home",
+    "candidateId": "zach-lahn",
+    "quote": "You shouldn't have to rent your home from the government",
+    "summary": "Supports eliminating property taxes on primary residences over the long term.",
+    "attribution": "direct",
+    "reportedVia": null,
+    "date": "2026-10-06",
+    "sourceId": "src-ipr-debate",
+    "videoTimestamp": null,
+    "issueIds": [
+      "1.01"
+    ],
+    "questionIds": [
+      "q01"
+    ],
+    "evidenceClass": "EP",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-lahn-dc-5x",
+    "candidateId": "zach-lahn",
+    "quote": "Want to build a data center in Iowa when I'm Governor? Plan to pay 5x the normal property tax rate.",
+    "summary": "Proposed that data centers pay five times the normal property tax rate, with the revenue used for residential property tax relief.",
+    "attribution": "direct",
+    "reportedVia": null,
+    "date": "2026-02-19",
+    "sourceId": "src-x-lahn",
+    "videoTimestamp": null,
+    "issueIds": [
+      "1.01",
+      "6.59",
+      "11.101"
+    ],
+    "questionIds": [
+      "q01",
+      "q17"
+    ],
+    "evidenceClass": "SP",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-sand-tax-2025",
+    "candidateId": "rob-sand",
+    "quote": null,
+    "summary": "Said the flat tax is “of tremendous benefit” to the wealthiest and that some high earners “would feel some sense of patriotic willingness” given that “the budget's upside down.” He proposed no rate change.",
+    "attribution": "paraphrase",
+    "reportedVia": null,
+    "date": "2025-05-12",
+    "sourceId": "src-radio-iowa-2025-05-12",
+    "videoTimestamp": null,
+    "issueIds": [
+      "1.02"
+    ],
+    "questionIds": [
+      "q02"
+    ],
+    "evidenceClass": "EP",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-sand-tax-2026-06",
+    "candidateId": "rob-sand",
+    "quote": null,
+    "summary": "Said some reforms “have been necessary” but that he wants “to know where I am before I decide what direction I am going.”",
+    "attribution": "paraphrase",
+    "reportedVia": null,
+    "date": "2026-06-04",
+    "sourceId": "src-uncited-2026-06-04",
+    "videoTimestamp": null,
+    "issueIds": [
+      "1.02"
+    ],
+    "questionIds": [
+      "q02"
+    ],
+    "evidenceClass": "EP",
+    "verificationStatus": "unverified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-sand-tax-reasonable",
+    "candidateId": "rob-sand",
+    "quote": "Those income cuts, I think, were reasonable. My criticism was not of the cuts, it was the fact that they have left us with a $1.3 billion budget deficit",
+    "summary": "Called the income tax cuts reasonable and said his criticism was of the resulting budget deficit.",
+    "attribution": "direct",
+    "reportedVia": null,
+    "date": "2026",
+    "sourceId": "src-cbs2-sand",
+    "videoTimestamp": null,
+    "issueIds": [
+      "1.02"
+    ],
+    "questionIds": [
+      "q02"
+    ],
+    "evidenceClass": "EP",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-sand-tax-politifact",
+    "candidateId": "rob-sand",
+    "quote": null,
+    "summary": "His campaign told PolitiFact he would not repeal the income tax cuts.",
+    "attribution": "paraphrase",
+    "reportedVia": "Sand campaign statement to PolitiFact",
+    "date": "2026-09-17",
+    "sourceId": "src-politifact-2026-09-17",
+    "videoTimestamp": null,
+    "issueIds": [
+      "1.02"
+    ],
+    "questionIds": [
+      "q02"
+    ],
+    "evidenceClass": "EP",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-lahn-income-zero",
+    "candidateId": "zach-lahn",
+    "quote": "I would like to find a way to get the income taxes to zero",
+    "summary": "Wants to eliminate the state income tax over time, paid for by cutting waste. No timeline given.",
+    "attribution": "direct",
+    "reportedVia": null,
+    "date": "2026",
+    "sourceId": "src-itr",
+    "videoTimestamp": null,
+    "issueIds": [
+      "1.02"
+    ],
+    "questionIds": [
+      "q02"
+    ],
+    "evidenceClass": "EP",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-sand-housing",
+    "candidateId": "rob-sand",
+    "quote": null,
+    "summary": "Proposes zoning that allows duplexes, quadplexes and accessory dwelling units, faster permitting, and interest-free down payment aid.",
+    "attribution": "paraphrase",
+    "reportedVia": null,
+    "date": "2026",
+    "sourceId": "src-sand-plans",
+    "videoTimestamp": null,
+    "issueIds": [
+      "1.08"
+    ],
+    "questionIds": [
+      "q03"
+    ],
+    "evidenceClass": "SP",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-lahn-housing",
+    "candidateId": "zach-lahn",
+    "quote": null,
+    "summary": "Proposes banning hedge fund purchases of single-family homes, and an income tax abatement for young Iowans who stay, deposited into a down payment account.",
+    "attribution": "paraphrase",
+    "reportedVia": null,
+    "date": "2026",
+    "sourceId": "src-lahn-site",
+    "videoTimestamp": null,
+    "issueIds": [
+      "1.08",
+      "8.79"
+    ],
+    "questionIds": [
+      "q03"
+    ],
+    "evidenceClass": "SP",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-sand-farm",
+    "candidateId": "rob-sand",
+    "quote": null,
+    "summary": "Proposes higher taxes on out-of-state landowners, a ban on hedge funds and LLCs making large-scale land purchases, and an Office of Rural Prosperity.",
+    "attribution": "paraphrase",
+    "reportedVia": null,
+    "date": null,
+    "sourceId": "src-isl-farm",
+    "videoTimestamp": null,
+    "issueIds": [
+      "2.11",
+      "2.12",
+      "2.13"
+    ],
+    "questionIds": [
+      "q04"
+    ],
+    "evidenceClass": "SP",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-sand-tariffs",
+    "candidateId": "rob-sand",
+    "quote": "Farmers can't wait anymore",
+    "summary": "Criticized tariffs' effect on farmers.",
+    "attribution": "direct",
+    "reportedVia": null,
+    "date": "2026-10-06",
+    "sourceId": "src-ipr-debate",
+    "videoTimestamp": null,
+    "issueIds": [
+      "2.18"
+    ],
+    "questionIds": [
+      "q04"
+    ],
+    "evidenceClass": "EP",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-lahn-antitrust",
+    "candidateId": "zach-lahn",
+    "quote": "File antitrust suits against the big agricultural input companies that have formed monopolies and are extorting our farmers",
+    "summary": "Proposes state antitrust suits against large agricultural input companies, with more funding for the Attorney General.",
+    "attribution": "direct",
+    "reportedVia": null,
+    "date": "2026",
+    "sourceId": "src-lahn-site",
+    "videoTimestamp": null,
+    "issueIds": [
+      "2.11",
+      "2.12",
+      "2.13"
+    ],
+    "questionIds": [
+      "q04"
+    ],
+    "evidenceClass": "SP",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-lahn-land",
+    "candidateId": "zach-lahn",
+    "quote": null,
+    "summary": "Proposes confiscating land illegally owned by China and reselling it to young families and veterans, and higher property tax rates on institutional investors.",
+    "attribution": "paraphrase",
+    "reportedVia": null,
+    "date": "2026",
+    "sourceId": "src-lahn-site",
+    "videoTimestamp": null,
+    "issueIds": [
+      "2.11",
+      "2.12",
+      "2.13",
+      "10.97"
+    ],
+    "questionIds": [
+      "q04"
+    ],
+    "evidenceClass": "SP",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-sand-eminent",
+    "candidateId": "rob-sand",
+    "quote": "The idea that you would have your private property taken just because there's someone who thinks they can put it to better use, but it's not for public use, doesn't sit right with me",
+    "summary": "Opposes taking private property when it is not for public use.",
+    "attribution": "direct",
+    "reportedVia": null,
+    "date": null,
+    "sourceId": "src-kcau",
+    "videoTimestamp": null,
+    "issueIds": [
+      "2.15"
+    ],
+    "questionIds": [
+      "q05"
+    ],
+    "evidenceClass": "EP",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-lahn-eminent",
+    "candidateId": "zach-lahn",
+    "quote": "Absolutely oppose use of eminent domain for private company profit",
+    "summary": "Opposes eminent domain for private company profit.",
+    "attribution": "direct",
+    "reportedVia": null,
+    "date": "2026",
+    "sourceId": "src-lahn-policy",
+    "videoTimestamp": null,
+    "issueIds": [
+      "2.15"
+    ],
+    "questionIds": [
+      "q05"
+    ],
+    "evidenceClass": "EP",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-lahn-eminent-legal",
+    "candidateId": "zach-lahn",
+    "quote": "We'll see what the exact options are for that, and what the legality is of that... I think I can work with the Republican legislature",
+    "summary": "Said he is still examining legal options and expects to work with the legislature.",
+    "attribution": "direct",
+    "reportedVia": null,
+    "date": null,
+    "sourceId": "src-kcau",
+    "videoTimestamp": null,
+    "issueIds": [
+      "2.15"
+    ],
+    "questionIds": [
+      "q05"
+    ],
+    "evidenceClass": "GS",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-sand-water",
+    "candidateId": "rob-sand",
+    "quote": null,
+    "summary": "Proposes restoring water monitoring funding; income and per-acre property tax credits for farms with approved nutrient plans; verified, public manure plans; digesters; wetlands; a “dirty water” alert; and IWILL funding.",
+    "attribution": "paraphrase",
+    "reportedVia": null,
+    "date": "2026",
+    "sourceId": "src-sand-plans",
+    "videoTimestamp": null,
+    "issueIds": [
+      "6.51",
+      "6.52",
+      "6.53",
+      "6.60"
+    ],
+    "questionIds": [
+      "q06"
+    ],
+    "evidenceClass": "SP",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-sand-water-regulation",
+    "candidateId": "rob-sand",
+    "quote": null,
+    "summary": "On regulation: did not rule it out in August 2025; did not say in April 2026.",
+    "attribution": "paraphrase",
+    "reportedVia": null,
+    "date": "2026-04",
+    "sourceId": "src-ipr-water",
+    "videoTimestamp": null,
+    "issueIds": [
+      "6.51",
+      "6.52",
+      "6.53"
+    ],
+    "questionIds": [
+      "q06"
+    ],
+    "evidenceClass": "GS",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-lahn-water",
+    "candidateId": "zach-lahn",
+    "quote": "Give incentives to our farmers to use proven solutions",
+    "summary": "Proposes incentives for proven practices, refundable credits for deep-banding fertilizer, aid for buffer strips, and more monitoring.",
+    "attribution": "direct",
+    "reportedVia": null,
+    "date": "2026",
+    "sourceId": "src-lahn-site",
+    "videoTimestamp": null,
+    "issueIds": [
+      "6.51",
+      "6.52",
+      "6.53"
+    ],
+    "questionIds": [
+      "q06"
+    ],
+    "evidenceClass": "SP",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-lahn-water-right-thing",
+    "candidateId": "zach-lahn",
+    "quote": "I believe that people want to do the right thing in the first place",
+    "summary": "Expressed confidence in voluntary action by farmers.",
+    "attribution": "direct",
+    "reportedVia": null,
+    "date": null,
+    "sourceId": "src-research-uncited",
+    "videoTimestamp": null,
+    "issueIds": [
+      "6.51",
+      "6.52",
+      "6.53"
+    ],
+    "questionIds": [
+      "q06"
+    ],
+    "evidenceClass": "GS",
+    "verificationStatus": "unverified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-sand-cancer",
+    "candidateId": "rob-sand",
+    "quote": null,
+    "summary": "Proposes a cabinet-level cancer task force, $20 million for cancer research, higher tobacco and nicotine taxes, nitrate alerts, and radon disclosure by home inspectors.",
+    "attribution": "paraphrase",
+    "reportedVia": null,
+    "date": "2026-10-06",
+    "sourceId": "src-ipr-debate",
+    "videoTimestamp": null,
+    "issueIds": [
+      "3.24"
+    ],
+    "questionIds": [
+      "q07"
+    ],
+    "evidenceClass": "SP",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-lahn-cancer",
+    "candidateId": "zach-lahn",
+    "quote": "Conduct independent state safety tests on products used in Iowa",
+    "summary": "Proposes independent state safety testing of products used in Iowa and redirecting University of Iowa research; says environmental factors such as nitrates and glyphosate are “absolutely” involved.",
+    "attribution": "direct",
+    "reportedVia": null,
+    "date": "2026-05-19",
+    "sourceId": "src-icd-2026-05-19",
+    "videoTimestamp": null,
+    "issueIds": [
+      "3.24"
+    ],
+    "questionIds": [
+      "q07"
+    ],
+    "evidenceClass": "SP",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-lahn-screening",
+    "candidateId": "zach-lahn",
+    "quote": null,
+    "summary": "Supports expanded cancer screenings.",
+    "attribution": "paraphrase",
+    "reportedVia": null,
+    "date": "2026-10-07",
+    "sourceId": "src-kcrg-2026-10-07",
+    "videoTimestamp": null,
+    "issueIds": [
+      "3.24"
+    ],
+    "questionIds": [
+      "q07"
+    ],
+    "evidenceClass": "SP",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-sand-reimbursement",
+    "candidateId": "rob-sand",
+    "quote": null,
+    "summary": "Proposes raising Medicaid reimbursement rates.",
+    "attribution": "paraphrase",
+    "reportedVia": null,
+    "date": "2026",
+    "sourceId": "src-sand-affordable",
+    "videoTimestamp": null,
+    "issueIds": [
+      "3.21",
+      "3.22"
+    ],
+    "questionIds": [
+      "q08",
+      "q09"
+    ],
+    "evidenceClass": "SP",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-lahn-prompt-payment",
+    "candidateId": "zach-lahn",
+    "quote": null,
+    "summary": "Called for prompt payment for providers.",
+    "attribution": "paraphrase",
+    "reportedVia": null,
+    "date": null,
+    "sourceId": "src-research-uncited",
+    "videoTimestamp": null,
+    "issueIds": [
+      "3.21"
+    ],
+    "questionIds": [
+      "q08"
+    ],
+    "evidenceClass": "GS",
+    "verificationStatus": "unverified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-sand-medicaid",
+    "candidateId": "rob-sand",
+    "quote": "As governor, I'll get started ending the privatization of Medicaid on day one of my administration",
+    "summary": "Would begin ending privatized Medicaid managed care on his first day.",
+    "attribution": "direct",
+    "reportedVia": null,
+    "date": "2026",
+    "sourceId": "src-sand-affordable",
+    "videoTimestamp": null,
+    "issueIds": [
+      "3.22"
+    ],
+    "questionIds": [
+      "q09"
+    ],
+    "evidenceClass": "SP",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-lahn-medicaid",
+    "candidateId": "zach-lahn",
+    "quote": "I don't think the government would do a good job of delivering healthcare for the people of Iowa... I will not allow any of these companies to use AI in denying coverage from people",
+    "summary": "Opposes government-delivered health care and would bar managed care companies from using AI to deny coverage.",
+    "attribution": "direct",
+    "reportedVia": null,
+    "date": "2026-08-01",
+    "sourceId": "src-icd-2026-08-01",
+    "videoTimestamp": null,
+    "issueIds": [
+      "3.22",
+      "3.28"
+    ],
+    "questionIds": [
+      "q09"
+    ],
+    "evidenceClass": "EP",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-sand-school-aid",
+    "candidateId": "rob-sand",
+    "quote": null,
+    "summary": "Proposes a 5% increase in state school aid in his first year.",
+    "attribution": "paraphrase",
+    "reportedVia": null,
+    "date": "2026-10-06",
+    "sourceId": "src-ipr-debate",
+    "videoTimestamp": null,
+    "issueIds": [
+      "4.31"
+    ],
+    "questionIds": [
+      "q10"
+    ],
+    "evidenceClass": "SP",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-lahn-public-school",
+    "candidateId": "zach-lahn",
+    "quote": "The Governor Must Be the #1 Advocate for Public School Kids",
+    "summary": "Campaign site heading on public schools.",
+    "attribution": "direct",
+    "reportedVia": null,
+    "date": "2026",
+    "sourceId": "src-lahn-site",
+    "videoTimestamp": null,
+    "issueIds": [
+      "4.31"
+    ],
+    "questionIds": [
+      "q10"
+    ],
+    "evidenceClass": "GS",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-sand-esa-rules",
+    "candidateId": "rob-sand",
+    "quote": null,
+    "summary": "Proposes requiring annual audits, limiting tuition increases, implementing income limits, and ending the Odyssey arrangement for ESAs.",
+    "attribution": "paraphrase",
+    "reportedVia": null,
+    "date": "2026",
+    "sourceId": "src-sand-accountability",
+    "videoTimestamp": null,
+    "issueIds": [
+      "4.32"
+    ],
+    "questionIds": [
+      "q11"
+    ],
+    "evidenceClass": "SP",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-sand-esa-wealthiest",
+    "candidateId": "rob-sand",
+    "quote": "The wealthiest folks in Iowa, God bless them, good for them, they don't need help to send their kids to private school",
+    "summary": "Said the wealthiest families do not need help paying private school tuition.",
+    "attribution": "direct",
+    "reportedVia": null,
+    "date": "2026-10-06",
+    "sourceId": "src-ipr-debate",
+    "videoTimestamp": null,
+    "issueIds": [
+      "4.32"
+    ],
+    "questionIds": [
+      "q11"
+    ],
+    "evidenceClass": "EP",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-sand-esa-no-repeal",
+    "candidateId": "rob-sand",
+    "quote": "I support Iowa families making the decision that's best for their kids",
+    "summary": "Is not proposing repeal of ESAs.",
+    "attribution": "direct",
+    "reportedVia": null,
+    "date": null,
+    "sourceId": "src-research-uncited",
+    "videoTimestamp": null,
+    "issueIds": [
+      "4.32"
+    ],
+    "questionIds": [
+      "q11"
+    ],
+    "evidenceClass": "EP",
+    "verificationStatus": "unverified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-sand-esa-report",
+    "candidateId": "rob-sand",
+    "quote": null,
+    "summary": "As State Auditor, issued an ESA Policy Impact Report estimating that taxpayers paid about $258.7 million in FY26 for private school tuition that would otherwise have been paid privately.",
+    "attribution": "paraphrase",
+    "reportedVia": null,
+    "date": "2026-06",
+    "sourceId": "src-esa-report-coverage",
+    "videoTimestamp": null,
+    "issueIds": [
+      "4.32"
+    ],
+    "questionIds": [
+      "q11"
+    ],
+    "evidenceClass": "DA",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-lahn-esa-freedom",
+    "candidateId": "zach-lahn",
+    "quote": "Education savings accounts are a foundational freedom for Iowa's families",
+    "summary": "Called ESAs a foundational freedom for Iowa families.",
+    "attribution": "direct",
+    "reportedVia": null,
+    "date": "2026-07-10",
+    "sourceId": "src-iowapress-lahn",
+    "videoTimestamp": null,
+    "issueIds": [
+      "4.32"
+    ],
+    "questionIds": [
+      "q11"
+    ],
+    "evidenceClass": "EP",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-lahn-esa-expand",
+    "candidateId": "zach-lahn",
+    "quote": null,
+    "summary": "Said he would expand ESAs.",
+    "attribution": "paraphrase",
+    "reportedVia": null,
+    "date": "2026-05-05",
+    "sourceId": "src-icd-2026-05-05",
+    "videoTimestamp": null,
+    "issueIds": [
+      "4.32"
+    ],
+    "questionIds": [
+      "q11"
+    ],
+    "evidenceClass": "EP",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-lahn-esa-audits",
+    "candidateId": "zach-lahn",
+    "quote": null,
+    "summary": "Supports third-party audits of the ESA program.",
+    "attribution": "paraphrase",
+    "reportedVia": null,
+    "date": "2026-10-06",
+    "sourceId": "src-ipr-debate",
+    "videoTimestamp": null,
+    "issueIds": [
+      "4.32",
+      "9.83"
+    ],
+    "questionIds": [
+      "q11",
+      "q19"
+    ],
+    "evidenceClass": "EP",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-lahn-vaccine-jan",
+    "candidateId": "zach-lahn",
+    "quote": null,
+    "summary": "Radio Iowa reported he “would pull all COVID shots off the market in Iowa and end all childhood vaccine requirements connected to enrollment in Iowa schools.”",
+    "attribution": "paraphrase",
+    "reportedVia": null,
+    "date": "2026-01-27",
+    "sourceId": "src-radio-iowa-2026-01-27",
+    "videoTimestamp": null,
+    "issueIds": [
+      "3.30",
+      "5.48"
+    ],
+    "questionIds": [
+      "q12"
+    ],
+    "evidenceClass": "EP",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-lahn-vaccine-kcci",
+    "candidateId": "zach-lahn",
+    "quote": null,
+    "summary": "Answered “Yes” when asked if he would support eliminating school vaccine requirements.",
+    "attribution": "paraphrase",
+    "reportedVia": null,
+    "date": "2026-09",
+    "sourceId": "src-kcci-transcript",
+    "videoTimestamp": null,
+    "issueIds": [
+      "3.30",
+      "5.48"
+    ],
+    "questionIds": [
+      "q12"
+    ],
+    "evidenceClass": "EP",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-lahn-vaccine-benefits",
+    "candidateId": "zach-lahn",
+    "quote": "My very firm belief is that there are benefits from vaccination, of course",
+    "summary": "Said he believes vaccination has benefits.",
+    "attribution": "direct",
+    "reportedVia": null,
+    "date": "2026",
+    "sourceId": "src-cbs2-lahn",
+    "videoTimestamp": null,
+    "issueIds": [
+      "3.30"
+    ],
+    "questionIds": [
+      "q12"
+    ],
+    "evidenceClass": "GS",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-sand-abortion",
+    "candidateId": "rob-sand",
+    "quote": "I think that the six-week abortion ban goes too far... I can't unilaterally repeal a six-week ban, but I can stop us from making it worse",
+    "summary": "Opposes the six-week abortion ban and would veto further restrictions.",
+    "attribution": "direct",
+    "reportedVia": null,
+    "date": "2025",
+    "sourceId": "src-iowapress-sand",
+    "videoTimestamp": null,
+    "issueIds": [
+      "5.41"
+    ],
+    "questionIds": [
+      "q13"
+    ],
+    "evidenceClass": "EP",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-sand-roe",
+    "candidateId": "rob-sand",
+    "quote": null,
+    "summary": "Supports the Roe framework and would veto restrictions “including IVF, surrogacy and contraception.”",
+    "attribution": "paraphrase",
+    "reportedVia": null,
+    "date": "2026-09",
+    "sourceId": "src-gazette-2026-09",
+    "videoTimestamp": null,
+    "issueIds": [
+      "5.41",
+      "5.42"
+    ],
+    "questionIds": [
+      "q13"
+    ],
+    "evidenceClass": "EP",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-lahn-protect-life",
+    "candidateId": "zach-lahn",
+    "quote": "Yes, I would like to continue to protect life in our state.",
+    "summary": "Wants to continue protecting life in Iowa.",
+    "attribution": "direct",
+    "reportedVia": null,
+    "date": null,
+    "sourceId": "src-research-uncited",
+    "videoTimestamp": null,
+    "issueIds": [
+      "5.41"
+    ],
+    "questionIds": [
+      "q13"
+    ],
+    "evidenceClass": "EP",
+    "verificationStatus": "unverified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-lahn-conception",
+    "candidateId": "zach-lahn",
+    "quote": "If you believe that life begins at conception, then that decision is made for you.",
+    "summary": "Holds that life begins at conception.",
+    "attribution": "direct",
+    "reportedVia": null,
+    "date": null,
+    "sourceId": "src-research-uncited",
+    "videoTimestamp": null,
+    "issueIds": [
+      "5.41"
+    ],
+    "questionIds": [
+      "q13"
+    ],
+    "evidenceClass": "EP",
+    "verificationStatus": "unverified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-lahn-ivf",
+    "candidateId": "zach-lahn",
+    "quote": "I think we need to look at regulating that to promote and protect life",
+    "summary": "Said IVF should be examined for regulation to protect life.",
+    "attribution": "direct",
+    "reportedVia": null,
+    "date": "2026",
+    "sourceId": "src-iowapress-lahn-primary",
+    "videoTimestamp": null,
+    "issueIds": [
+      "5.42"
+    ],
+    "questionIds": [
+      "q13"
+    ],
+    "evidenceClass": "EP",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-sand-firearms",
+    "candidateId": "rob-sand",
+    "quote": null,
+    "summary": "Is a gun owner and hunter. Reported 2021 posts against permitless carry come from a GOP-aligned site and are not verified.",
+    "attribution": "paraphrase",
+    "reportedVia": null,
+    "date": null,
+    "sourceId": "src-research-uncited",
+    "videoTimestamp": null,
+    "issueIds": [
+      "5.45"
+    ],
+    "questionIds": [
+      "q14"
+    ],
+    "evidenceClass": "IND",
+    "verificationStatus": "unverified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-sand-sf418",
+    "candidateId": "rob-sand",
+    "quote": "You should not be fired from your job in the state of Iowa for being different. You should not be evicted from your apartment",
+    "summary": "Opposes SF 418's removal of gender identity from the Iowa Civil Rights Act.",
+    "attribution": "direct",
+    "reportedVia": "The Hill",
+    "date": "2025",
+    "sourceId": "src-gazette-2025-hill",
+    "videoTimestamp": null,
+    "issueIds": [
+      "5.46"
+    ],
+    "questionIds": [
+      "q15"
+    ],
+    "evidenceClass": "EP",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-sand-sf418-limits",
+    "candidateId": "rob-sand",
+    "quote": null,
+    "summary": "Said he could not restore the protections with a Republican legislature.",
+    "attribution": "paraphrase",
+    "reportedVia": null,
+    "date": null,
+    "sourceId": "src-research-uncited",
+    "videoTimestamp": null,
+    "issueIds": [
+      "5.46"
+    ],
+    "questionIds": [
+      "q15"
+    ],
+    "evidenceClass": "EP",
+    "verificationStatus": "unverified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-lahn-book",
+    "candidateId": "zach-lahn",
+    "quote": null,
+    "summary": "At the debate, said Sand “would allow a book on transgenderism to be put in an elementary school.” No documented statement on SF 418.",
+    "attribution": "paraphrase",
+    "reportedVia": null,
+    "date": "2026-10-06",
+    "sourceId": "src-hill-debate",
+    "videoTimestamp": null,
+    "issueIds": [
+      "5.46",
+      "4.37"
+    ],
+    "questionIds": [
+      "q15"
+    ],
+    "evidenceClass": "IND",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-sand-immigration",
+    "candidateId": "rob-sand",
+    "quote": "If you are working, if you are following the rules, and have no criminal record, if you're paying your taxes, why would you want people who are doing those things to feel unsafe in the state of Iowa?",
+    "summary": "Questioned why law-abiding, working immigrants should feel unsafe in Iowa.",
+    "attribution": "direct",
+    "reportedVia": null,
+    "date": null,
+    "sourceId": "src-isl-townhall",
+    "videoTimestamp": null,
+    "issueIds": [
+      "7.67"
+    ],
+    "questionIds": [
+      "q16"
+    ],
+    "evidenceClass": "GS",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-lahn-immigration",
+    "candidateId": "zach-lahn",
+    "quote": "We will ban benefits for illegal immigrants, and stop issuing H1B visas for jobs that Iowans can do in state government and in our universities.",
+    "summary": "Would ban state benefits for people in the country illegally and stop H-1B hiring in state government and universities; state contractors would disclose how many Iowans they hire.",
+    "attribution": "direct",
+    "reportedVia": null,
+    "date": "2026-05-19",
+    "sourceId": "src-icd-2026-05-19",
+    "videoTimestamp": null,
+    "issueIds": [
+      "7.67"
+    ],
+    "questionIds": [
+      "q16"
+    ],
+    "evidenceClass": "SP",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-sand-dc",
+    "candidateId": "rob-sand",
+    "quote": "I will end these tax breaks",
+    "summary": "Would end data center tax breaks and require data centers to cover their own costs, including utility cost increases; would block NDAs.",
+    "attribution": "direct",
+    "reportedVia": null,
+    "date": "2026",
+    "sourceId": "src-sand-plans",
+    "videoTimestamp": null,
+    "issueIds": [
+      "6.59",
+      "11.101",
+      "1.04"
+    ],
+    "questionIds": [
+      "q17"
+    ],
+    "evidenceClass": "SP",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-lahn-dc-moratorium",
+    "candidateId": "zach-lahn",
+    "quote": "I'm the candidate that's called for a moratorium on data centers within the state",
+    "summary": "Called for a data center moratorium, said each county should assess its own situation, and said there should be no incentives.",
+    "attribution": "direct",
+    "reportedVia": null,
+    "date": "2026-07-10",
+    "sourceId": "src-iowapress-lahn",
+    "videoTimestamp": null,
+    "issueIds": [
+      "6.59",
+      "11.101"
+    ],
+    "questionIds": [
+      "q17"
+    ],
+    "evidenceClass": "SP",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-lahn-dc-state",
+    "candidateId": "zach-lahn",
+    "quote": null,
+    "summary": "Called for data center regulation at the state level.",
+    "attribution": "paraphrase",
+    "reportedVia": null,
+    "date": "2026-08-24",
+    "sourceId": "src-icd-2026-08-24",
+    "videoTimestamp": null,
+    "issueIds": [
+      "6.59",
+      "11.101"
+    ],
+    "questionIds": [
+      "q17"
+    ],
+    "evidenceClass": "SP",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-sand-min-wage",
+    "candidateId": "rob-sand",
+    "quote": null,
+    "summary": "Proposes raising the minimum wage from $7.25 to $12 in phases, then indexing it.",
+    "attribution": "paraphrase",
+    "reportedVia": null,
+    "date": "2026-08-12",
+    "sourceId": "src-radio-iowa-2026-08-12",
+    "videoTimestamp": null,
+    "issueIds": [
+      "8.71"
+    ],
+    "questionIds": [
+      "q18"
+    ],
+    "evidenceClass": "SP",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-sand-min-wage-phases",
+    "candidateId": "rob-sand",
+    "quote": "You don't just flip the switch and say now it's $12",
+    "summary": "Said the increase would be phased in.",
+    "attribution": "direct",
+    "reportedVia": null,
+    "date": "2026-10",
+    "sourceId": "src-times-republican",
+    "videoTimestamp": null,
+    "issueIds": [
+      "8.71"
+    ],
+    "questionIds": [
+      "q18"
+    ],
+    "evidenceClass": "SP",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-lahn-min-wage",
+    "candidateId": "zach-lahn",
+    "quote": null,
+    "summary": "NBC News reported that he “wouldn't commit to raise the minimum wage” at the October 6 debate.",
+    "attribution": "paraphrase",
+    "reportedVia": null,
+    "date": "2026-10-06",
+    "sourceId": "src-nbc-debate",
+    "videoTimestamp": null,
+    "issueIds": [
+      "8.71"
+    ],
+    "questionIds": [
+      "q18"
+    ],
+    "evidenceClass": "GS",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-sand-auditor",
+    "candidateId": "rob-sand",
+    "quote": null,
+    "summary": "Proposes restoring the full powers of the Auditor's Office by reversing the 2023 law, making the PIE program mandatory, and extending whistleblower protections to all Iowans.",
+    "attribution": "paraphrase",
+    "reportedVia": null,
+    "date": "2026",
+    "sourceId": "src-sand-accountability",
+    "videoTimestamp": null,
+    "issueIds": [
+      "9.83"
+    ],
+    "questionIds": [
+      "q19"
+    ],
+    "evidenceClass": "SP",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-sand-local",
+    "candidateId": "rob-sand",
+    "quote": null,
+    "summary": "Called for more local control at the October 6 debate.",
+    "attribution": "paraphrase",
+    "reportedVia": null,
+    "date": "2026-10-06",
+    "sourceId": "src-ipr-debate",
+    "videoTimestamp": null,
+    "issueIds": [
+      "9.88"
+    ],
+    "questionIds": [
+      "q20"
+    ],
+    "evidenceClass": "EP",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-lahn-local",
+    "candidateId": "zach-lahn",
+    "quote": null,
+    "summary": "Said counties “should have far more control” and proposed suing the federal government on 10th Amendment grounds.",
+    "attribution": "paraphrase",
+    "reportedVia": null,
+    "date": "2026-10-06",
+    "sourceId": "src-ipr-debate",
+    "videoTimestamp": null,
+    "issueIds": [
+      "9.88"
+    ],
+    "questionIds": [
+      "q20"
+    ],
+    "evidenceClass": "EP",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-lahn-centralized",
+    "candidateId": "zach-lahn",
+    "quote": "I want to make sure that we do not have centralized power as much as possible",
+    "summary": "Favors decentralizing power.",
+    "attribution": "direct",
+    "reportedVia": null,
+    "date": "2026-07-10",
+    "sourceId": "src-iowapress-lahn",
+    "videoTimestamp": null,
+    "issueIds": [
+      "9.88"
+    ],
+    "questionIds": [
+      "q20"
+    ],
+    "evidenceClass": "EP",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  }
+]

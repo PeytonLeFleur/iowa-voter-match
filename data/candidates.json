@@ -1,4 +1,50 @@
 [
-  { "id": "rob-sand", "slug": "rob-sand", "name": "Rob Sand", "sortName": "Sand" },
-  { "id": "zach-lahn", "slug": "zach-lahn", "name": "Zach Lahn", "sortName": "Lahn" }
+  {
+    "id": "rob-sand",
+    "slug": "rob-sand",
+    "name": "Rob Sand",
+    "sortName": "Sand",
+    "party": "Democratic",
+    "role": "Iowa State Auditor since January 2019",
+    "runningMate": "Dave Muhlbauer",
+    "summary": "Democratic nominee; the only Democrat to qualify for the primary ballot. State Auditor since January 2019 (reelected in 2022 by 2,893 votes); assistant attorney general 2010 to 2017, prosecuting public corruption. Decorah native.",
+    "campaignUrl": "https://robsand.com",
+    "unansweredTopics": [
+      "Pipelines: HF 2104 and IUC criteria.",
+      "Medicaid: work rule timing, and the cost of ending managed care.",
+      "Water: HF 2771.",
+      "Elections: voting laws.",
+      "Immigration: ICE and 287(g).",
+      "Guns: a current firearms position.",
+      "Civil rights and schools: SF 579 and SF 496.",
+      "Labor: public-sector bargaining.",
+      "Costs: pre-K, school meals and the 5% aid increase."
+    ]
+  },
+  {
+    "id": "zach-lahn",
+    "slug": "zach-lahn",
+    "name": "Zach Lahn",
+    "sortName": "Lahn",
+    "party": "Republican",
+    "role": "Businessman and farmer; first run for office",
+    "runningMate": "State Rep. Derek Wulf",
+    "summary": "Republican nominee; won the June 2, 2026 five-way primary with 37.97% of the vote. No elected office. Former interim state director of Americans for Prosperity Montana; co-founded the Wonder private school in Wichita, Kansas, in 2018; family farm near Belle Plaine.",
+    "campaignUrl": "https://zachlahn.com",
+    "unansweredTopics": [
+      "Abortion: exceptions in his own words, and HF 2788.",
+      "Contraception.",
+      "Civil rights: SF 418 and SF 579.",
+      "Guns.",
+      "Immigration: ICE and E-Verify.",
+      "Labor: minimum wage and public-sector bargaining.",
+      "Child care.",
+      "Medicaid: work rule timing.",
+      "Taxes: offsets for eliminating taxes.",
+      "Pipelines: HF 2104.",
+      "Water: HF 2771.",
+      "Elections: voting laws.",
+      "Legal questions: how land confiscation would work, and the H-1B ban."
+    ]
+  }
 ]

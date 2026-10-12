@@ -1,0 +1,1937 @@
+[
+  {
+    "id": "ev-1-01-rob-sand",
+    "issueId": "1.01",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "EP"
+    ],
+    "detail": "Give the recent changes time to play out before adjusting them. He also said local officials \"know their communities\" (debate, paraphrase)."
+  },
+  {
+    "id": "ev-1-01-zach-lahn",
+    "issueId": "1.01",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "EP",
+      "SP"
+    ],
+    "detail": "Long-term elimination of property taxes on primary residences: \"You shouldn't have to rent your home from the government\" (debate). Higher rates on institutional investors (site). Data centers would \"pay 5x the normal property tax rate,\" with the money going \"to give property tax relief to Iowa residents\" (X, February 19, 2026). He has stated no plan for replacing local revenue."
+  },
+  {
+    "id": "ev-1-02-rob-sand",
+    "issueId": "1.02",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "EP",
+      "CF"
+    ],
+    "detail": "\"Those income cuts, I think, were reasonable. My criticism was not of the cuts, it was the fact that they have left us with a $1.3 billion budget deficit\" (CBS2). His campaign told PolitiFact (September 17, 2026) he would not repeal the cuts. PolitiFact rated false Lahn's ad claim that Sand \"wants to raise your taxes by $7,500 per year.\" See Deliverable F for his 2025 remarks."
+  },
+  {
+    "id": "ev-1-02-zach-lahn",
+    "issueId": "1.02",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "EP"
+    ],
+    "detail": "\"I would like to find a way to get the income taxes to zero,\" paid for by cutting waste, and \"No sales tax, no income tax, no property tax raises\" (ITR Foundation summary). He gives no timeline."
+  },
+  {
+    "id": "ev-1-03-rob-sand",
+    "issueId": "1.03",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "GS"
+    ],
+    "detail": "steel plant: \"We don't want to see a lot of upfront incentives.\" 5.5% corporate path: NDP"
+  },
+  {
+    "id": "ev-1-03-zach-lahn",
+    "issueId": "1.03",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "\"End tax credits and economic development funds for out-of-state and foreign corporations.\" 5.5%: NDP"
+  },
+  {
+    "id": "ev-1-04-rob-sand",
+    "issueId": "1.04",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "end data center breaks. Nuclear: NDP"
+  },
+  {
+    "id": "ev-1-04-zach-lahn",
+    "issueId": "1.04",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "no data center incentives. Nuclear: NDP"
+  },
+  {
+    "id": "ev-1-05-rob-sand",
+    "issueId": "1.05",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "EP",
+      "DA"
+    ],
+    "detail": "\"I would liken it to a fiscal time bomb. The fuse is the surplus\" (Little Village). He proposes cannabis revenue."
+  },
+  {
+    "id": "ev-1-05-zach-lahn",
+    "issueId": "1.05",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "GS"
+    ],
+    "detail": "Find \"ways that we're wasting money in government.\""
+  },
+  {
+    "id": "ev-1-06-rob-sand",
+    "issueId": "1.06",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "GS"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-1-06-zach-lahn",
+    "issueId": "1.06",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "GS"
+    ],
+    "detail": "\"food freedom policies\""
+  },
+  {
+    "id": "ev-1-07-rob-sand",
+    "issueId": "1.07",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "cap service and meter fees; approve return on equity; repeal limit on efficiency programs"
+  },
+  {
+    "id": "ev-1-07-zach-lahn",
+    "issueId": "1.07",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "IND"
+    ],
+    "detail": "IND. IUC criteria: NDP"
+  },
+  {
+    "id": "ev-1-08-rob-sand",
+    "issueId": "1.08",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "zoning for duplexes, quadplexes and ADUs; permitting; interest-free down payment aid"
+  },
+  {
+    "id": "ev-1-08-zach-lahn",
+    "issueId": "1.08",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "hedge fund home-buying ban; down payment account"
+  },
+  {
+    "id": "ev-1-09-rob-sand",
+    "issueId": "1.09",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "ban AI rent-pricing algorithms"
+  },
+  {
+    "id": "ev-1-09-zach-lahn",
+    "issueId": "1.09",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-1-10-rob-sand",
+    "issueId": "1.10",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "disclosure, no NDAs"
+  },
+  {
+    "id": "ev-1-10-zach-lahn",
+    "issueId": "1.10",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "refocus IEDA on Iowa firms; steel plant \"transformational\""
+  },
+  {
+    "id": "ev-2-11-rob-sand",
+    "issueId": "2.11",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "Higher taxes on out-of-state landowners; a ban on hedge funds and LLCs making large-scale land purchases; an \"Office of Rural Prosperity\" (Iowa Starting Line). He criticizes tariffs: \"Farmers can't wait anymore\" (debate)."
+  },
+  {
+    "id": "ev-2-11-zach-lahn",
+    "issueId": "2.11",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "\"File antitrust suits against the big agricultural input companies that have formed monopolies and are extorting our farmers\" (site), with more funding for the Attorney General (debate). Confiscate land illegally owned by China. Livestock diversification aid for fencing and water (debate)."
+  },
+  {
+    "id": "ev-2-12-rob-sand",
+    "issueId": "2.12",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "Higher taxes on out-of-state landowners; a ban on hedge funds and LLCs making large-scale land purchases; an \"Office of Rural Prosperity\" (Iowa Starting Line). He criticizes tariffs: \"Farmers can't wait anymore\" (debate)."
+  },
+  {
+    "id": "ev-2-12-zach-lahn",
+    "issueId": "2.12",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "\"File antitrust suits against the big agricultural input companies that have formed monopolies and are extorting our farmers\" (site), with more funding for the Attorney General (debate). Confiscate land illegally owned by China. Livestock diversification aid for fencing and water (debate)."
+  },
+  {
+    "id": "ev-2-13-rob-sand",
+    "issueId": "2.13",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "Higher taxes on out-of-state landowners; a ban on hedge funds and LLCs making large-scale land purchases; an \"Office of Rural Prosperity\" (Iowa Starting Line). He criticizes tariffs: \"Farmers can't wait anymore\" (debate)."
+  },
+  {
+    "id": "ev-2-13-zach-lahn",
+    "issueId": "2.13",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "\"File antitrust suits against the big agricultural input companies that have formed monopolies and are extorting our farmers\" (site), with more funding for the Attorney General (debate). Confiscate land illegally owned by China. Livestock diversification aid for fencing and water (debate)."
+  },
+  {
+    "id": "ev-2-14-rob-sand",
+    "issueId": "2.14",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-2-14-zach-lahn",
+    "issueId": "2.14",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "GS"
+    ],
+    "detail": "\"pathways and incentives for young farmers to access land\""
+  },
+  {
+    "id": "ev-2-15-rob-sand",
+    "issueId": "2.15",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "EP"
+    ],
+    "detail": "\"The idea that you would have your private property taken just because there's someone who thinks they can put it to better use, but it's not for public use, doesn't sit right with me\" (KCAU)."
+  },
+  {
+    "id": "ev-2-15-zach-lahn",
+    "issueId": "2.15",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "EP"
+    ],
+    "detail": "\"Absolutely oppose use of eminent domain for private company profit\" (site). \"We'll see what the exact options are for that, and what the legality is of that... I think I can work with the Republican legislature\" (KCAU)."
+  },
+  {
+    "id": "ev-2-16-rob-sand",
+    "issueId": "2.16",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-2-16-zach-lahn",
+    "issueId": "2.16",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-2-17-rob-sand",
+    "issueId": "2.17",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "manure plan verification, digesters"
+  },
+  {
+    "id": "ev-2-17-zach-lahn",
+    "issueId": "2.17",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "IND"
+    ],
+    "detail": "diversification aid"
+  },
+  {
+    "id": "ev-2-18-rob-sand",
+    "issueId": "2.18",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "EP"
+    ],
+    "detail": "critic"
+  },
+  {
+    "id": "ev-2-18-zach-lahn",
+    "issueId": "2.18",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "IND"
+    ],
+    "detail": "credited Trump diesel order; NDP on tariffs"
+  },
+  {
+    "id": "ev-2-19-rob-sand",
+    "issueId": "2.19",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "credits, wetlands"
+  },
+  {
+    "id": "ev-2-19-zach-lahn",
+    "issueId": "2.19",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "deep banding, buffers"
+  },
+  {
+    "id": "ev-2-20-rob-sand",
+    "issueId": "2.20",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "Office of Rural Prosperity; state jobs from any county"
+  },
+  {
+    "id": "ev-2-20-zach-lahn",
+    "issueId": "2.20",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "income tax abatement for rural graduates"
+  },
+  {
+    "id": "ev-3-21-rob-sand",
+    "issueId": "3.21",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "higher reimbursement. HF 2635: NDP"
+  },
+  {
+    "id": "ev-3-21-zach-lahn",
+    "issueId": "3.21",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "GS"
+    ],
+    "detail": "\"prompt payment for providers\""
+  },
+  {
+    "id": "ev-3-22-rob-sand",
+    "issueId": "3.22",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "\"As governor, I'll get started ending the privatization of Medicaid on day one of my administration\" (robsand.com). Raise reimbursement rates. Supports the Work Without Worry bill, which would remove income and asset limits for working Iowans with disabilities (KTIV, October 8, 2026)."
+  },
+  {
+    "id": "ev-3-22-zach-lahn",
+    "issueId": "3.22",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "EP"
+    ],
+    "detail": "\"I don't think the government would do a good job of delivering healthcare for the people of Iowa... I will not allow any of these companies to use AI in denying coverage from people\" (Iowa Capital Dispatch, August 1, 2026). On his AFP opposition to expansion: \"those worries have largely been addressed\" (Iowa Press)."
+  },
+  {
+    "id": "ev-3-23-rob-sand",
+    "issueId": "3.23",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "caregiver credit up to $2,000 (plus $1,000 for caregivers of veterans)"
+  },
+  {
+    "id": "ev-3-23-zach-lahn",
+    "issueId": "3.23",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-3-24-rob-sand",
+    "issueId": "3.24",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "A cabinet-level task force; $20 million for research; tobacco and nicotine taxes; nitrate alerts; radon disclosure by home inspectors (debate). He also points to lifestyle factors: \"if we really want to tackle the cancer crisis, we need to look at all of those things\" (debate)."
+  },
+  {
+    "id": "ev-3-24-zach-lahn",
+    "issueId": "3.24",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "\"Conduct independent state safety tests on products used in Iowa.\" Redirect University of Iowa research. Says environmental factors are \"absolutely\" involved, citing nitrates and glyphosate (Iowa Capital Dispatch, May 19, 2026). Expanded screenings (KCRG, October 7)."
+  },
+  {
+    "id": "ev-3-25-rob-sand",
+    "issueId": "3.25",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "GS"
+    ],
+    "detail": "ties the abortion law to the OB-GYN shortage"
+  },
+  {
+    "id": "ev-3-25-zach-lahn",
+    "issueId": "3.25",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-3-26-rob-sand",
+    "issueId": "3.26",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-3-26-zach-lahn",
+    "issueId": "3.26",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-3-27-rob-sand",
+    "issueId": "3.27",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "IND"
+    ],
+    "detail": "cannabis plan"
+  },
+  {
+    "id": "ev-3-27-zach-lahn",
+    "issueId": "3.27",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-3-28-rob-sand",
+    "issueId": "3.28",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "PBM regulation; Prescription Drug Review Board; surprise-bill law; medical debt"
+  },
+  {
+    "id": "ev-3-28-zach-lahn",
+    "issueId": "3.28",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "EP"
+    ],
+    "detail": "no AI denials"
+  },
+  {
+    "id": "ev-3-29-rob-sand",
+    "issueId": "3.29",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "GS"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-3-29-zach-lahn",
+    "issueId": "3.29",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-3-30-rob-sand",
+    "issueId": "3.30",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "IND"
+    ],
+    "detail": "His campaign attacks Lahn's mRNA stance. HPV consent law: NDP."
+  },
+  {
+    "id": "ev-3-30-zach-lahn",
+    "issueId": "3.30",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "EP",
+      "CF"
+    ],
+    "detail": "January 27, 2026: Radio Iowa reported he \"would pull all COVID shots off the market in Iowa and end all childhood vaccine requirements connected to enrollment in Iowa schools.\" September 2026, KCCI interview: answered \"Yes\" when asked if he would support eliminating school vaccine requirements. This comes from a transcript published by the Iowa Democratic Party (partisan); Studio 31 corroborates it. Later, on CBS2: \"My very firm belief is that there are benefits from vaccination, of course\" and \"Do I think that there's potential benefits from future mRNA technology? Of course there could be.\""
+  },
+  {
+    "id": "ev-4-31-rob-sand",
+    "issueId": "4.31",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "SP",
+      "DA"
+    ],
+    "detail": "A 5% increase in state aid in year one (debate). ESA rules: \"Requiring annual audits,\" \"Limiting tuition increases,\" \"Implementing income limits,\" and ending the Odyssey arrangement (Accountability plan). \"The wealthiest folks in Iowa, God bless them, good for them, they don't need help to send their kids to private school\" (debate). \"If you take public money, you take the public.\" He is not proposing repeal: \"I support Iowa families making the decision that's best for their kids.\" Documented action: his auditor's ESA report."
+  },
+  {
+    "id": "ev-4-31-zach-lahn",
+    "issueId": "4.31",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "EP"
+    ],
+    "detail": "\"Education savings accounts are a foundational freedom for Iowa's families\" (Iowa Press, July 10, 2026). Would expand ESAs (Iowa Capital Dispatch, May 5, 2026, paraphrase). Supports third-party audits (debate). \"The Governor Must Be the #1 Advocate for Public School Kids\" (site)."
+  },
+  {
+    "id": "ev-4-32-rob-sand",
+    "issueId": "4.32",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "SP",
+      "DA"
+    ],
+    "detail": "A 5% increase in state aid in year one (debate). ESA rules: \"Requiring annual audits,\" \"Limiting tuition increases,\" \"Implementing income limits,\" and ending the Odyssey arrangement (Accountability plan). \"The wealthiest folks in Iowa, God bless them, good for them, they don't need help to send their kids to private school\" (debate). \"If you take public money, you take the public.\" He is not proposing repeal: \"I support Iowa families making the decision that's best for their kids.\" Documented action: his auditor's ESA report."
+  },
+  {
+    "id": "ev-4-32-zach-lahn",
+    "issueId": "4.32",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "EP"
+    ],
+    "detail": "\"Education savings accounts are a foundational freedom for Iowa's families\" (Iowa Press, July 10, 2026). Would expand ESAs (Iowa Capital Dispatch, May 5, 2026, paraphrase). Supports third-party audits (debate). \"The Governor Must Be the #1 Advocate for Public School Kids\" (site)."
+  },
+  {
+    "id": "ev-4-33-rob-sand",
+    "issueId": "4.33",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-4-33-zach-lahn",
+    "issueId": "4.33",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "IND"
+    ],
+    "detail": "wants \"hundreds of these types of schools\""
+  },
+  {
+    "id": "ev-4-34-rob-sand",
+    "issueId": "4.34",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-4-34-zach-lahn",
+    "issueId": "4.34",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "license revocation; flexibility"
+  },
+  {
+    "id": "ev-4-35-rob-sand",
+    "issueId": "4.35",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-4-35-zach-lahn",
+    "issueId": "4.35",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-4-36-rob-sand",
+    "issueId": "4.36",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "IND"
+    ],
+    "detail": "limits on children's social media"
+  },
+  {
+    "id": "ev-4-36-zach-lahn",
+    "issueId": "4.36",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "cut testing; mastery-based pacing; apprenticeships"
+  },
+  {
+    "id": "ev-4-37-rob-sand",
+    "issueId": "4.37",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "GS"
+    ],
+    "detail": "veto \"culture war bills\""
+  },
+  {
+    "id": "ev-4-37-zach-lahn",
+    "issueId": "4.37",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "IND"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-4-38-rob-sand",
+    "issueId": "4.38",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-4-38-zach-lahn",
+    "issueId": "4.38",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "IND"
+    ],
+    "detail": "\"gender ideology\" attack (paraphrase)"
+  },
+  {
+    "id": "ev-4-39-rob-sand",
+    "issueId": "4.39",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-4-39-zach-lahn",
+    "issueId": "4.39",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-4-40-rob-sand",
+    "issueId": "4.40",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "universal full-day pre-K for 3- and 4-year-olds: \"For every dollar you invest, you save $17 later on\""
+  },
+  {
+    "id": "ev-4-40-zach-lahn",
+    "issueId": "4.40",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-5-41-rob-sand",
+    "issueId": "5.41",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "EP"
+    ],
+    "detail": "\"I think that the six-week abortion ban goes too far... I can't unilaterally repeal a six-week ban, but I can stop us from making it worse\" (Iowa Press, 2025). He supports the Roe framework and would veto restrictions \"including IVF, surrogacy and contraception\" (The Gazette, September 2026)."
+  },
+  {
+    "id": "ev-5-41-zach-lahn",
+    "issueId": "5.41",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "EP"
+    ],
+    "detail": "\"Yes, I would like to continue to protect life in our state.\" \"If you believe that life begins at conception, then that decision is made for you.\" On IVF: \"I think we need to look at regulating that to promote and protect life\" (Iowa Press, primary). \"We are now banned for life from that clinic because we refused to discard the embryos\" (Radio Iowa, January 28, 2026)."
+  },
+  {
+    "id": "ev-5-42-rob-sand",
+    "issueId": "5.42",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "EP"
+    ],
+    "detail": "\"I think that the six-week abortion ban goes too far... I can't unilaterally repeal a six-week ban, but I can stop us from making it worse\" (Iowa Press, 2025). He supports the Roe framework and would veto restrictions \"including IVF, surrogacy and contraception\" (The Gazette, September 2026)."
+  },
+  {
+    "id": "ev-5-42-zach-lahn",
+    "issueId": "5.42",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "EP"
+    ],
+    "detail": "\"Yes, I would like to continue to protect life in our state.\" \"If you believe that life begins at conception, then that decision is made for you.\" On IVF: \"I think we need to look at regulating that to promote and protect life\" (Iowa Press, primary). \"We are now banned for life from that clinic because we refused to discard the embryos\" (Radio Iowa, January 28, 2026)."
+  },
+  {
+    "id": "ev-5-43-rob-sand",
+    "issueId": "5.43",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-5-43-zach-lahn",
+    "issueId": "5.43",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-5-44-rob-sand",
+    "issueId": "5.44",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-5-44-zach-lahn",
+    "issueId": "5.44",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "IND"
+    ],
+    "detail": "teacher license revocation"
+  },
+  {
+    "id": "ev-5-45-rob-sand",
+    "issueId": "5.45",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "IND"
+    ],
+    "detail": "gun owner, hunter. 2021 posts against permitless carry: SNV (GOP-aligned site)"
+  },
+  {
+    "id": "ev-5-45-zach-lahn",
+    "issueId": "5.45",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-5-46-rob-sand",
+    "issueId": "5.46",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "EP"
+    ],
+    "detail": "Opposes SF 418: \"You should not be fired from your job in the state of Iowa for being different. You should not be evicted from your apartment\" (The Gazette, 2025, via The Hill). Says he could not restore the protections with a Republican legislature. Opposes transgender girls and women in female sports. The quote \"girls' sports are for girls and boys' sports are for boys\" (Politico via Erin Reed) is secondary."
+  },
+  {
+    "id": "ev-5-46-zach-lahn",
+    "issueId": "5.46",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "IND"
+    ],
+    "detail": "Said at the debate that Sand \"would allow a book on transgenderism to be put in an elementary school\" (The Hill)."
+  },
+  {
+    "id": "ev-5-47-rob-sand",
+    "issueId": "5.47",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "EP"
+    ],
+    "detail": "Opposes SF 418: \"You should not be fired from your job in the state of Iowa for being different. You should not be evicted from your apartment\" (The Gazette, 2025, via The Hill). Says he could not restore the protections with a Republican legislature. Opposes transgender girls and women in female sports. The quote \"girls' sports are for girls and boys' sports are for boys\" (Politico via Erin Reed) is secondary."
+  },
+  {
+    "id": "ev-5-47-zach-lahn",
+    "issueId": "5.47",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "IND"
+    ],
+    "detail": "Said at the debate that Sand \"would allow a book on transgenderism to be put in an elementary school\" (The Hill)."
+  },
+  {
+    "id": "ev-5-48-rob-sand",
+    "issueId": "5.48",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "IND"
+    ],
+    "detail": "social media limits"
+  },
+  {
+    "id": "ev-5-48-zach-lahn",
+    "issueId": "5.48",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "EP"
+    ],
+    "detail": "end school vaccine requirements"
+  },
+  {
+    "id": "ev-5-49-rob-sand",
+    "issueId": "5.49",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-5-49-zach-lahn",
+    "issueId": "5.49",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "EP"
+    ],
+    "detail": "state regulation of Flock cameras (Iowa Capital Dispatch, August 24)"
+  },
+  {
+    "id": "ev-5-50-rob-sand",
+    "issueId": "5.50",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-5-50-zach-lahn",
+    "issueId": "5.50",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-6-51-rob-sand",
+    "issueId": "6.51",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "Restore water monitoring funding. Income and per-acre property tax credits for farms with approved nutrient plans. Verify manure plans, make manure records public, and fund digesters. Wetlands and grazing land. A \"dirty water\" alert. Fund IWILL. On regulation: in August 2025 he did not rule it out; in April 2026 he did not say (IPR)."
+  },
+  {
+    "id": "ev-6-51-zach-lahn",
+    "issueId": "6.51",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "\"Give incentives to our farmers to use proven solutions.\" Credits for deep-banding fertilizer; buffer strips. \"I believe that people want to do the right thing in the first place.\" More monitoring. \"Clean water is a pro-life issue\" (19th News)."
+  },
+  {
+    "id": "ev-6-52-rob-sand",
+    "issueId": "6.52",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "Restore water monitoring funding. Income and per-acre property tax credits for farms with approved nutrient plans. Verify manure plans, make manure records public, and fund digesters. Wetlands and grazing land. A \"dirty water\" alert. Fund IWILL. On regulation: in August 2025 he did not rule it out; in April 2026 he did not say (IPR)."
+  },
+  {
+    "id": "ev-6-52-zach-lahn",
+    "issueId": "6.52",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "\"Give incentives to our farmers to use proven solutions.\" Credits for deep-banding fertilizer; buffer strips. \"I believe that people want to do the right thing in the first place.\" More monitoring. \"Clean water is a pro-life issue\" (19th News)."
+  },
+  {
+    "id": "ev-6-53-rob-sand",
+    "issueId": "6.53",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "Restore water monitoring funding. Income and per-acre property tax credits for farms with approved nutrient plans. Verify manure plans, make manure records public, and fund digesters. Wetlands and grazing land. A \"dirty water\" alert. Fund IWILL. On regulation: in August 2025 he did not rule it out; in April 2026 he did not say (IPR)."
+  },
+  {
+    "id": "ev-6-53-zach-lahn",
+    "issueId": "6.53",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "\"Give incentives to our farmers to use proven solutions.\" Credits for deep-banding fertilizer; buffer strips. \"I believe that people want to do the right thing in the first place.\" More monitoring. \"Clean water is a pro-life issue\" (19th News)."
+  },
+  {
+    "id": "ev-6-54-rob-sand",
+    "issueId": "6.54",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-6-54-zach-lahn",
+    "issueId": "6.54",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-6-55-rob-sand",
+    "issueId": "6.55",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-6-55-zach-lahn",
+    "issueId": "6.55",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-6-56-rob-sand",
+    "issueId": "6.56",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "\"maintain and grow incentives for clean energy\"; plug-in solar. Siting: NDP"
+  },
+  {
+    "id": "ev-6-56-zach-lahn",
+    "issueId": "6.56",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-6-57-rob-sand",
+    "issueId": "6.57",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-6-57-zach-lahn",
+    "issueId": "6.57",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-6-58-rob-sand",
+    "issueId": "6.58",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "IRP; distributed energy; grid-enhancing tech"
+  },
+  {
+    "id": "ev-6-58-zach-lahn",
+    "issueId": "6.58",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-6-59-rob-sand",
+    "issueId": "6.59",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "Data centers \"pay their own way, including covering any increase in costs on utilities so that your bills don't go up one cent.\" Also: \"I will end these tax breaks,\" block NDAs, require union construction, and use integrated resource planning (IRP)."
+  },
+  {
+    "id": "ev-6-59-zach-lahn",
+    "issueId": "6.59",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "February 19: \"Plan to pay 5x the normal property tax rate.\" July 10: \"I'm the candidate that's called for a moratorium on data centers within the state,\" yet \"each county needs to look at what the unique situation in their county is\"; \"there should be no incentives.\" August 24: regulation \"at a state level\" (Iowa Capital Dispatch)."
+  },
+  {
+    "id": "ev-6-60-rob-sand",
+    "issueId": "6.60",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "EP"
+    ],
+    "detail": "fund IWILL"
+  },
+  {
+    "id": "ev-6-60-zach-lahn",
+    "issueId": "6.60",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "EP"
+    ],
+    "detail": "EP (secondary only)"
+  },
+  {
+    "id": "ev-7-61-rob-sand",
+    "issueId": "7.61",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "mandatory prison for theft of more than $10,000 in public funds"
+  },
+  {
+    "id": "ev-7-61-zach-lahn",
+    "issueId": "7.61",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-7-62-rob-sand",
+    "issueId": "7.62",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-7-62-zach-lahn",
+    "issueId": "7.62",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-7-63-rob-sand",
+    "issueId": "7.63",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "IND"
+    ],
+    "detail": "cannabis, \"three hots and a cot just for smoking pot\""
+  },
+  {
+    "id": "ev-7-63-zach-lahn",
+    "issueId": "7.63",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-7-64-rob-sand",
+    "issueId": "7.64",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-7-64-zach-lahn",
+    "issueId": "7.64",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-7-65-rob-sand",
+    "issueId": "7.65",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-7-65-zach-lahn",
+    "issueId": "7.65",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-7-66-rob-sand",
+    "issueId": "7.66",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-7-66-zach-lahn",
+    "issueId": "7.66",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-7-67-rob-sand",
+    "issueId": "7.67",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "GS"
+    ],
+    "detail": "\"If you are working, if you are following the rules, and have no criminal record, if you're paying your taxes, why would you want people who are doing those things to feel unsafe in the state of Iowa?\" (town hall video, via Iowa Starting Line)."
+  },
+  {
+    "id": "ev-7-67-zach-lahn",
+    "issueId": "7.67",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "\"We will ban benefits for illegal immigrants, and stop issuing H1B visas for jobs that Iowans can do in state government and in our universities.\" State contracts would have to disclose how many Iowans they hire (Iowa Capital Dispatch, May 19, 2026)."
+  },
+  {
+    "id": "ev-7-68-rob-sand",
+    "issueId": "7.68",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-7-68-zach-lahn",
+    "issueId": "7.68",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-7-69-rob-sand",
+    "issueId": "7.69",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-7-69-zach-lahn",
+    "issueId": "7.69",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-7-70-rob-sand",
+    "issueId": "7.70",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "bar convicted fraudsters from doing business with the state"
+  },
+  {
+    "id": "ev-7-70-zach-lahn",
+    "issueId": "7.70",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-8-71-rob-sand",
+    "issueId": "8.71",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "Raise it from $7.25 to $12 \"in phases,\" then index it (Radio Iowa, August 12, 2026). \"You don't just flip the switch and say now it's $12\" (Times-Republican, October 2026)."
+  },
+  {
+    "id": "ev-8-71-zach-lahn",
+    "issueId": "8.71",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "GS"
+    ],
+    "detail": "\"Wouldn't commit to raise the minimum wage\" (NBC News paraphrase of the debate)."
+  },
+  {
+    "id": "ev-8-72-rob-sand",
+    "issueId": "8.72",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "NDP",
+      "IND"
+    ],
+    "detail": "NDP (IND: union labor rule for data center construction)"
+  },
+  {
+    "id": "ev-8-72-zach-lahn",
+    "issueId": "8.72",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-8-73-rob-sand",
+    "issueId": "8.73",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-8-73-zach-lahn",
+    "issueId": "8.73",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-8-74-rob-sand",
+    "issueId": "8.74",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-8-74-zach-lahn",
+    "issueId": "8.74",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-8-75-rob-sand",
+    "issueId": "8.75",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-8-75-zach-lahn",
+    "issueId": "8.75",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "apprenticeships, trade school incentives"
+  },
+  {
+    "id": "ev-8-76-rob-sand",
+    "issueId": "8.76",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-8-76-zach-lahn",
+    "issueId": "8.76",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-8-77-rob-sand",
+    "issueId": "8.77",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-8-77-zach-lahn",
+    "issueId": "8.77",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-8-78-rob-sand",
+    "issueId": "8.78",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "less red tape for businesses with 10 or fewer employees"
+  },
+  {
+    "id": "ev-8-78-zach-lahn",
+    "issueId": "8.78",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "food freedom deregulation"
+  },
+  {
+    "id": "ev-8-79-rob-sand",
+    "issueId": "8.79",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "remote state jobs"
+  },
+  {
+    "id": "ev-8-79-zach-lahn",
+    "issueId": "8.79",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "tax abatement; in-state university quota"
+  },
+  {
+    "id": "ev-8-80-rob-sand",
+    "issueId": "8.80",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-8-80-zach-lahn",
+    "issueId": "8.80",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-9-81-rob-sand",
+    "issueId": "9.81",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "no NDAs; financial disclosure"
+  },
+  {
+    "id": "ev-9-81-zach-lahn",
+    "issueId": "9.81",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-9-82-rob-sand",
+    "issueId": "9.82",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "stock trading ban, blind trusts, mandatory prison for violations"
+  },
+  {
+    "id": "ev-9-82-zach-lahn",
+    "issueId": "9.82",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-9-83-rob-sand",
+    "issueId": "9.83",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "SP",
+      "DA"
+    ],
+    "detail": "Restore \"the full powers of the Auditor's Office\" by reversing the 2023 law; make the PIE program mandatory; extend whistleblower protections to all Iowans."
+  },
+  {
+    "id": "ev-9-83-zach-lahn",
+    "issueId": "9.83",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "EP"
+    ],
+    "detail": "Third-party ESA audits. Accused Sand of politicizing the auditor's office. Position on the 2023 law: NDP."
+  },
+  {
+    "id": "ev-9-84-rob-sand",
+    "issueId": "9.84",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-9-84-zach-lahn",
+    "issueId": "9.84",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-9-85-rob-sand",
+    "issueId": "9.85",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "top-four primary with approval voting"
+  },
+  {
+    "id": "ev-9-85-zach-lahn",
+    "issueId": "9.85",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-9-86-rob-sand",
+    "issueId": "9.86",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "GS"
+    ],
+    "detail": "praises independent redistricting"
+  },
+  {
+    "id": "ev-9-86-zach-lahn",
+    "issueId": "9.86",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-9-87-rob-sand",
+    "issueId": "9.87",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "GS"
+    ],
+    "detail": "criticizes limits placed on the next governor"
+  },
+  {
+    "id": "ev-9-87-zach-lahn",
+    "issueId": "9.87",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "EP"
+    ],
+    "detail": "\"I welcome the emergency powers being reduced... I would likely sign more legislation like that\""
+  },
+  {
+    "id": "ev-9-88-rob-sand",
+    "issueId": "9.88",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "EP"
+    ],
+    "detail": "more local control"
+  },
+  {
+    "id": "ev-9-88-zach-lahn",
+    "issueId": "9.88",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "EP"
+    ],
+    "detail": "counties \"should have far more control\"; sue the federal government on 10th Amendment grounds"
+  },
+  {
+    "id": "ev-9-89-rob-sand",
+    "issueId": "9.89",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "age limit of 78 for judges and officials"
+  },
+  {
+    "id": "ev-9-89-zach-lahn",
+    "issueId": "9.89",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-9-90-rob-sand",
+    "issueId": "9.90",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "term limits (3 statewide terms, 12 years in the legislature, 20 years total); cognitive and civics tests; required town halls"
+  },
+  {
+    "id": "ev-9-90-zach-lahn",
+    "issueId": "9.90",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "SNV"
+    ],
+    "detail": "term limits for \"many things\" but not governor"
+  },
+  {
+    "id": "ev-10-91-rob-sand",
+    "issueId": "10.91",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "GS"
+    ],
+    "detail": "\"making childcare more affordable for everyday Iowans\""
+  },
+  {
+    "id": "ev-10-91-zach-lahn",
+    "issueId": "10.91",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-10-92-rob-sand",
+    "issueId": "10.92",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-10-92-zach-lahn",
+    "issueId": "10.92",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-10-93-rob-sand",
+    "issueId": "10.93",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "Work Without Worry"
+  },
+  {
+    "id": "ev-10-93-zach-lahn",
+    "issueId": "10.93",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-10-94-rob-sand",
+    "issueId": "10.94",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-10-94-zach-lahn",
+    "issueId": "10.94",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-10-95-rob-sand",
+    "issueId": "10.95",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "universal school meals"
+  },
+  {
+    "id": "ev-10-95-zach-lahn",
+    "issueId": "10.95",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "EP"
+    ],
+    "detail": "\"I want to do universal free breakfast and free lunch in the state of Iowa\"; 80% Iowa-grown food"
+  },
+  {
+    "id": "ev-10-96-rob-sand",
+    "issueId": "10.96",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-10-96-zach-lahn",
+    "issueId": "10.96",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-10-97-rob-sand",
+    "issueId": "10.97",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "veteran caregiver credit"
+  },
+  {
+    "id": "ev-10-97-zach-lahn",
+    "issueId": "10.97",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "resell confiscated land to veterans"
+  },
+  {
+    "id": "ev-10-98-rob-sand",
+    "issueId": "10.98",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-10-98-zach-lahn",
+    "issueId": "10.98",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "higher in-state quotas"
+  },
+  {
+    "id": "ev-10-99-rob-sand",
+    "issueId": "10.99",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "IND"
+    ],
+    "detail": "PBM steering"
+  },
+  {
+    "id": "ev-10-99-zach-lahn",
+    "issueId": "10.99",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "IND"
+    ],
+    "detail": "local food sales"
+  },
+  {
+    "id": "ev-10-100-rob-sand",
+    "issueId": "10.100",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "GS"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-10-100-zach-lahn",
+    "issueId": "10.100",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "GS"
+    ],
+    "detail": "youth retention goals"
+  },
+  {
+    "id": "ev-11-101-rob-sand",
+    "issueId": "11.101",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "Data centers \"pay their own way, including covering any increase in costs on utilities so that your bills don't go up one cent.\" Also: \"I will end these tax breaks,\" block NDAs, require union construction, and use integrated resource planning (IRP)."
+  },
+  {
+    "id": "ev-11-101-zach-lahn",
+    "issueId": "11.101",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "SP"
+    ],
+    "detail": "February 19: \"Plan to pay 5x the normal property tax rate.\" July 10: \"I'm the candidate that's called for a moratorium on data centers within the state,\" yet \"each county needs to look at what the unique situation in their county is\"; \"there should be no incentives.\" August 24: regulation \"at a state level\" (Iowa Capital Dispatch)."
+  },
+  {
+    "id": "ev-11-102-rob-sand",
+    "issueId": "11.102",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-11-102-zach-lahn",
+    "issueId": "11.102",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "EP"
+    ],
+    "detail": "EP (state regulation)"
+  },
+  {
+    "id": "ev-11-103-rob-sand",
+    "issueId": "11.103",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "EP",
+      "DA"
+    ],
+    "detail": "\"I would liken it to a fiscal time bomb. The fuse is the surplus\" (Little Village). He proposes cannabis revenue."
+  },
+  {
+    "id": "ev-11-103-zach-lahn",
+    "issueId": "11.103",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "GS"
+    ],
+    "detail": "Find \"ways that we're wasting money in government.\""
+  },
+  {
+    "id": "ev-11-104-rob-sand",
+    "issueId": "11.104",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-11-104-zach-lahn",
+    "issueId": "11.104",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-11-105-rob-sand",
+    "issueId": "11.105",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-11-105-zach-lahn",
+    "issueId": "11.105",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-11-106-rob-sand",
+    "issueId": "11.106",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-11-106-zach-lahn",
+    "issueId": "11.106",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-11-107-rob-sand",
+    "issueId": "11.107",
+    "candidateId": "rob-sand",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  },
+  {
+    "id": "ev-11-107-zach-lahn",
+    "issueId": "11.107",
+    "candidateId": "zach-lahn",
+    "evidenceCodes": [
+      "NDP"
+    ],
+    "detail": null
+  }
+]

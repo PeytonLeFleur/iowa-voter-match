@@ -5,6 +5,7 @@ import meta from '@data/meta.json'
 import candidates from '@data/candidates.json'
 import categories from '@data/categories.json'
 import issues from '@data/issues.json'
+import issueEvidence from '@data/issue-evidence.json'
 import legislation from '@data/legislation.json'
 import sources from '@data/sources.json'
 import statements from '@data/statements.json'
@@ -14,7 +15,7 @@ import verifications from '@data/verifications.json'
 import { Dataset } from './schema'
 
 export const RAW_DATASET = {
-  meta, candidates, categories, issues, legislation, sources, statements, positions, questions, verifications,
+  meta, candidates, categories, issues, issueEvidence, legislation, sources, statements, positions, questions, verifications,
 }
 
 let cached: Dataset | null = null

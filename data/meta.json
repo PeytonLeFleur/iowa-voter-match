@@ -1,6 +1,6 @@
 {
-  "datasetVersion": "0.0.0",
-  "status": "scaffold",
+  "datasetVersion": "0.1.0",
+  "status": "release",
   "researchCutoff": "2026-10-12",
   "expectedIssueCount": 107,
   "expectedQuestionCount": 20,

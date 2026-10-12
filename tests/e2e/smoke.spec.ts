@@ -1,7 +1,7 @@
 import AxeBuilder from '@axe-core/playwright'
 import { expect, test } from '@playwright/test'
 
-const PAGES = ['', 'assessment/', 'results/', 'compare/', 'issues/', 'candidates/', 'methodology/', 'sources/', 'about/', 'privacy/']
+const PAGES = ['', 'assessment/', 'results/', 'results/report/', 'compare/', 'issues/', 'candidates/', 'methodology/', 'sources/', 'about/', 'privacy/']
 
 for (const path of PAGES) {
   test(`/${path} loads, has one h1, and passes axe`, async ({ page }) => {
@@ -23,5 +23,5 @@ test('home page links navigate within the base path', async ({ page }) => {
   await page.getByRole('link', { name: 'Start 20 Questions' }).click()
   await expect(page).toHaveURL(/\/iowa-voter-match\/assessment\/$/)
   await page.reload()
-  await expect(page.locator('h1')).toHaveText('Your Iowa priorities')
+  await expect(page.locator('h1')).toHaveText('What should Iowa do about property taxes?')
 })

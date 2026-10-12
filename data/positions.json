@@ -1,1 +1,1342 @@
-[]
+[
+  {
+    "id": "pos-q01-rob-sand",
+    "candidateId": "rob-sand",
+    "questionId": "q01",
+    "issueIds": [
+      "1.01"
+    ],
+    "evidenceClass": "EP",
+    "positionFound": true,
+    "positionSummary": "Give the recent property tax changes time to play out before adjusting them.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": true,
+    "optionRelations": {
+      "reduce-further": "conflicting",
+      "relief-preserve": "unaddressed",
+      "maintain-evaluate": "aligned",
+      "local-flexibility": "unaddressed"
+    },
+    "relationRationale": "Sand said the current changes should play out before being adjusted, which matches waiting to evaluate and differs from cutting further now. His remark that local officials “know their communities” is a paraphrase and does not establish a position on new local funding authority.",
+    "statementIds": [
+      "st-sand-property-play-out"
+    ],
+    "sourceIds": [
+      "src-ipr-debate"
+    ],
+    "statementDate": "2026-10-06",
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": "Reported as a paraphrase of the debate.",
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-q01-zach-lahn",
+    "candidateId": "zach-lahn",
+    "questionId": "q01",
+    "issueIds": [
+      "1.01"
+    ],
+    "evidenceClass": "EP",
+    "positionFound": true,
+    "positionSummary": "Long-term elimination of property taxes on primary residences; higher rates on institutional investors and data centers.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": "Eliminate property taxes on primary residences over the long term; tax data centers at 5x the normal rate.",
+    "comparableToUserPreference": true,
+    "optionRelations": {
+      "reduce-further": "aligned",
+      "relief-preserve": "unaddressed",
+      "maintain-evaluate": "conflicting",
+      "local-flexibility": "unaddressed"
+    },
+    "relationRationale": "Lahn's long-term goal of eliminating property taxes on primary residences matches further reduction and differs from holding the current reforms in place. He has stated no plan for replacing local revenue, so the relation to preserving services is not established.",
+    "statementIds": [
+      "st-lahn-rent-home",
+      "st-lahn-dc-5x"
+    ],
+    "sourceIds": [
+      "src-ipr-debate",
+      "src-x-lahn"
+    ],
+    "statementDate": "2026-10-06",
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": "He has pledged “no property tax raises” while proposing targeted increases on investors and data centers, and has not reconciled the two. No revenue replacement plan.",
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-q02-rob-sand",
+    "candidateId": "rob-sand",
+    "questionId": "q02",
+    "issueIds": [
+      "1.02",
+      "1.05",
+      "11.103"
+    ],
+    "evidenceClass": "CF",
+    "positionFound": true,
+    "positionSummary": "Statements on the income tax have shifted between 2025 and 2026; shown in date order.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": false,
+    "optionRelations": null,
+    "relationRationale": null,
+    "statementIds": [
+      "st-sand-tax-2025",
+      "st-sand-tax-2026-06",
+      "st-sand-tax-reasonable",
+      "st-sand-tax-politifact"
+    ],
+    "sourceIds": [
+      "src-cbs2-sand",
+      "src-politifact-2026-09-17",
+      "src-radio-iowa-2025-05-12",
+      "src-uncited-2026-06-04"
+    ],
+    "statementDate": "2026-09-17",
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": "The research classifies this as conflicting evidence. His most recent statements say he would not repeal the cuts; the 2025 remark proposed no rate change. No explanation for the shift was found.",
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-q02-zach-lahn",
+    "candidateId": "zach-lahn",
+    "questionId": "q02",
+    "issueIds": [
+      "1.02",
+      "1.05",
+      "11.103"
+    ],
+    "evidenceClass": "EP",
+    "positionFound": true,
+    "positionSummary": "Eliminate the state income tax over time, paid for by cutting waste.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": "Phase out the income tax through efficiency savings. No timeline.",
+    "comparableToUserPreference": true,
+    "optionRelations": {
+      "eliminate": "aligned",
+      "keep-rate": "conflicting",
+      "pause-cuts": "conflicting",
+      "raise-higher-incomes": "conflicting"
+    },
+    "relationRationale": "Lahn's stated goal is to get the income tax “to zero,” which differs from keeping, pausing at, or raising the current rate.",
+    "statementIds": [
+      "st-lahn-income-zero"
+    ],
+    "sourceIds": [
+      "src-itr"
+    ],
+    "statementDate": "2026",
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": "Quoted from an advocacy group's summary (ITR Foundation). No timeline or offsetting cuts specified.",
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-q03-rob-sand",
+    "candidateId": "rob-sand",
+    "questionId": "q03",
+    "issueIds": [
+      "1.08",
+      "1.09"
+    ],
+    "evidenceClass": "SP",
+    "positionFound": true,
+    "positionSummary": "Zoning reform for more housing types, faster permitting, and interest-free down payment aid.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": "Zoning for duplexes, quadplexes and ADUs; permitting; interest-free down payment aid.",
+    "comparableToUserPreference": true,
+    "optionRelations": {
+      "zoning": "aligned",
+      "investor-limits": "unaddressed",
+      "buyer-aid": "aligned",
+      "private-market": "unaddressed"
+    },
+    "relationRationale": "Sand's proposals include both zoning reform and down payment aid. His investor limits concern farmland, not homes.",
+    "statementIds": [
+      "st-sand-housing"
+    ],
+    "sourceIds": [
+      "src-sand-plans"
+    ],
+    "statementDate": "2026",
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": "The research does not name the specific plan document for these proposals.",
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-q03-zach-lahn",
+    "candidateId": "zach-lahn",
+    "questionId": "q03",
+    "issueIds": [
+      "1.08",
+      "1.09"
+    ],
+    "evidenceClass": "SP",
+    "positionFound": true,
+    "positionSummary": "Ban hedge fund purchases of single-family homes; down payment accounts for young Iowans who stay.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": "Hedge fund home-buying ban; income tax abatement deposited into a down payment account.",
+    "comparableToUserPreference": true,
+    "optionRelations": {
+      "zoning": "unaddressed",
+      "investor-limits": "aligned",
+      "buyer-aid": "partial",
+      "private-market": "unaddressed"
+    },
+    "relationRationale": "Lahn proposes a hedge fund home-buying ban. His down payment account is funded by an income tax abatement for young Iowans who stay, a narrower form of buyer assistance.",
+    "statementIds": [
+      "st-lahn-housing"
+    ],
+    "sourceIds": [
+      "src-lahn-site"
+    ],
+    "statementDate": "2026",
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": "Required years of residency for the abatement are unspecified.",
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-q04-rob-sand",
+    "candidateId": "rob-sand",
+    "questionId": "q04",
+    "issueIds": [
+      "2.11",
+      "2.12",
+      "2.13",
+      "2.18"
+    ],
+    "evidenceClass": "SP",
+    "positionFound": true,
+    "positionSummary": "Limit outside farmland ownership; Office of Rural Prosperity; critical of tariffs.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": "Higher taxes on out-of-state landowners; hedge fund and LLC land purchase ban; Office of Rural Prosperity.",
+    "comparableToUserPreference": true,
+    "optionRelations": {
+      "antitrust": "unaddressed",
+      "ownership-limits": "aligned",
+      "trade": "partial",
+      "limited-role": "unaddressed"
+    },
+    "relationRationale": "Sand proposes higher taxes on out-of-state landowners and a ban on large-scale hedge fund and LLC land purchases. He criticizes tariffs but proposes no state mechanism, so that relation is partial.",
+    "statementIds": [
+      "st-sand-farm",
+      "st-sand-tariffs"
+    ],
+    "sourceIds": [
+      "src-ipr-debate",
+      "src-isl-farm"
+    ],
+    "statementDate": "2026-10-06",
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": "Farm proposals are reported by Iowa Starting Line, a Democratic-leaning outlet.",
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-q04-zach-lahn",
+    "candidateId": "zach-lahn",
+    "questionId": "q04",
+    "issueIds": [
+      "2.11",
+      "2.12",
+      "2.13",
+      "2.18"
+    ],
+    "evidenceClass": "SP",
+    "positionFound": true,
+    "positionSummary": "State antitrust suits against agricultural input companies; confiscate land illegally owned by China.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": "Antitrust suits with more Attorney General funding; confiscate and resell land illegally owned by China; higher property tax on institutional investors.",
+    "comparableToUserPreference": true,
+    "optionRelations": {
+      "antitrust": "aligned",
+      "ownership-limits": "aligned",
+      "trade": "unaddressed",
+      "limited-role": "conflicting"
+    },
+    "relationRationale": "Lahn proposes antitrust suits and curbs on outside ownership, both active state roles. He has no documented position on tariffs.",
+    "statementIds": [
+      "st-lahn-antitrust",
+      "st-lahn-land"
+    ],
+    "sourceIds": [
+      "src-lahn-site"
+    ],
+    "statementDate": "2026",
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": "How confiscation or antitrust suits would work legally is not addressed.",
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-q05-rob-sand",
+    "candidateId": "rob-sand",
+    "questionId": "q05",
+    "issueIds": [
+      "2.15"
+    ],
+    "evidenceClass": "EP",
+    "positionFound": true,
+    "positionSummary": "Opposes taking private property when it is not for public use.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": true,
+    "optionRelations": {
+      "prohibit-private": "aligned",
+      "stricter-standards": "unaddressed",
+      "case-by-case": "conflicting"
+    },
+    "relationRationale": "Sand's statement opposes takings that are not for public use, the general principle in the first option. This does not establish a position on any specific bill.",
+    "statementIds": [
+      "st-sand-eminent"
+    ],
+    "sourceIds": [
+      "src-kcau"
+    ],
+    "statementDate": null,
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": "No bill named. Whether he would sign HF 2104 is not documented.",
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-q05-zach-lahn",
+    "candidateId": "zach-lahn",
+    "questionId": "q05",
+    "issueIds": [
+      "2.15"
+    ],
+    "evidenceClass": "EP",
+    "positionFound": true,
+    "positionSummary": "Absolutely opposes eminent domain for private company profit; still examining legal options.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": true,
+    "optionRelations": {
+      "prohibit-private": "aligned",
+      "stricter-standards": "unaddressed",
+      "case-by-case": "conflicting"
+    },
+    "relationRationale": "Lahn's campaign site states absolute opposition to eminent domain for private company profit, the general principle in the first option. He said he is still examining legal options.",
+    "statementIds": [
+      "st-lahn-eminent",
+      "st-lahn-eminent-legal"
+    ],
+    "sourceIds": [
+      "src-kcau",
+      "src-lahn-policy"
+    ],
+    "statementDate": "2026",
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": "No bill named. Whether he would sign HF 2104 is not documented.",
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-q06-rob-sand",
+    "candidateId": "rob-sand",
+    "questionId": "q06",
+    "issueIds": [
+      "6.51",
+      "6.52",
+      "6.53",
+      "6.60"
+    ],
+    "evidenceClass": "SP",
+    "positionFound": true,
+    "positionSummary": "Conservation tax credits, manure plan verification, wetlands, monitoring funding, a dirty water alert, and IWILL funding.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": "Income and per-acre property tax credits for approved nutrient plans; restore monitoring funding; dirty water alert; fund IWILL.",
+    "comparableToUserPreference": true,
+    "optionRelations": {
+      "incentives": "aligned",
+      "enforceable-limits": "unaddressed",
+      "monitoring": "partial",
+      "current-approach": "conflicting"
+    },
+    "relationRationale": "Sand proposes new farm tax credits (incentives) alongside more monitoring and alerts. These are major changes to the current approach. His position on enforceable limits is unclear: he did not rule them out in 2025 and did not say in 2026.",
+    "statementIds": [
+      "st-sand-water",
+      "st-sand-water-regulation"
+    ],
+    "sourceIds": [
+      "src-ipr-water",
+      "src-sand-plans"
+    ],
+    "statementDate": "2026-04",
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": "Silent on regulation in his 2026 plan.",
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-q06-zach-lahn",
+    "candidateId": "zach-lahn",
+    "questionId": "q06",
+    "issueIds": [
+      "6.51",
+      "6.52",
+      "6.53",
+      "6.60"
+    ],
+    "evidenceClass": "SP",
+    "positionFound": true,
+    "positionSummary": "Incentives for proven practices, deep-banding credits, buffer strip aid, and more monitoring.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": "Refundable credits for deep-banding fertilizer; aid for buffer strips; more monitoring.",
+    "comparableToUserPreference": true,
+    "optionRelations": {
+      "incentives": "aligned",
+      "enforceable-limits": "unaddressed",
+      "monitoring": "partial",
+      "current-approach": "conflicting"
+    },
+    "relationRationale": "Lahn proposes new incentives and more monitoring, which are changes to the current approach. He expressed confidence in voluntary action but did not state a position on enforceable limits.",
+    "statementIds": [
+      "st-lahn-water",
+      "st-lahn-water-right-thing"
+    ],
+    "sourceIds": [
+      "src-lahn-site",
+      "src-research-uncited"
+    ],
+    "statementDate": "2026",
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": null,
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-q07-rob-sand",
+    "candidateId": "rob-sand",
+    "questionId": "q07",
+    "issueIds": [
+      "3.24"
+    ],
+    "evidenceClass": "SP",
+    "positionFound": true,
+    "positionSummary": "Cabinet-level cancer task force, $20 million for research, tobacco and nicotine taxes, nitrate alerts, radon disclosure.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": "$20 million for cancer research; cabinet-level task force; higher tobacco and nicotine taxes; radon disclosure.",
+    "comparableToUserPreference": true,
+    "optionRelations": {
+      "research-task-force": "aligned",
+      "environmental-testing": "partial",
+      "prevention": "aligned",
+      "existing-programs": "conflicting"
+    },
+    "relationRationale": "Sand proposes research funding and a task force, plus prevention measures. Nitrate alerts address an environmental exposure but are not a testing program.",
+    "statementIds": [
+      "st-sand-cancer"
+    ],
+    "sourceIds": [
+      "src-ipr-debate"
+    ],
+    "statementDate": "2026-10-06",
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": null,
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-q07-zach-lahn",
+    "candidateId": "zach-lahn",
+    "questionId": "q07",
+    "issueIds": [
+      "3.24"
+    ],
+    "evidenceClass": "SP",
+    "positionFound": true,
+    "positionSummary": "Independent state safety testing of products; redirect University of Iowa research; expanded screenings.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": "Independent state safety testing of products used in Iowa; refocus University of Iowa research.",
+    "comparableToUserPreference": true,
+    "optionRelations": {
+      "research-task-force": "partial",
+      "environmental-testing": "aligned",
+      "prevention": "partial",
+      "existing-programs": "conflicting"
+    },
+    "relationRationale": "Lahn's central proposal is state testing of products used in Iowa. He would redirect research rather than add a task force, and supports expanded screening.",
+    "statementIds": [
+      "st-lahn-cancer",
+      "st-lahn-screening"
+    ],
+    "sourceIds": [
+      "src-icd-2026-05-19",
+      "src-kcrg-2026-10-07"
+    ],
+    "statementDate": "2026-10-07",
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": null,
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-q08-rob-sand",
+    "candidateId": "rob-sand",
+    "questionId": "q08",
+    "issueIds": [
+      "3.21"
+    ],
+    "evidenceClass": "SP",
+    "positionFound": true,
+    "positionSummary": "Raise Medicaid reimbursement rates.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": "Higher Medicaid reimbursement rates.",
+    "comparableToUserPreference": true,
+    "optionRelations": {
+      "reimbursement": "aligned",
+      "prompt-payment": "unaddressed",
+      "regional-care": "unaddressed",
+      "deregulate": "unaddressed"
+    },
+    "relationRationale": "Sand proposes higher reimbursement rates. His other rural health positions are not documented.",
+    "statementIds": [
+      "st-sand-reimbursement"
+    ],
+    "sourceIds": [
+      "src-sand-affordable"
+    ],
+    "statementDate": "2026",
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": null,
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-q08-zach-lahn",
+    "candidateId": "zach-lahn",
+    "questionId": "q08",
+    "issueIds": [
+      "3.21"
+    ],
+    "evidenceClass": "GS",
+    "positionFound": null,
+    "positionSummary": "Called for prompt payment for providers, without a specific proposal.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": false,
+    "optionRelations": null,
+    "relationRationale": null,
+    "statementIds": [
+      "st-lahn-prompt-payment"
+    ],
+    "sourceIds": [
+      "src-research-uncited"
+    ],
+    "statementDate": null,
+    "verificationStatus": "unverified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": "General statement; the research does not cite its source.",
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-q09-rob-sand",
+    "candidateId": "rob-sand",
+    "questionId": "q09",
+    "issueIds": [
+      "3.22"
+    ],
+    "evidenceClass": "SP",
+    "positionFound": true,
+    "positionSummary": "End privatized Medicaid managed care, starting on day one; raise reimbursement rates.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": "End Medicaid privatization starting on day one. No transition cost given.",
+    "comparableToUserPreference": true,
+    "optionRelations": {
+      "end-managed-care": "aligned",
+      "keep-with-oversight": "conflicting",
+      "keep-as-is": "conflicting"
+    },
+    "relationRationale": "Sand would end privatized managed care.",
+    "statementIds": [
+      "st-sand-medicaid",
+      "st-sand-reimbursement"
+    ],
+    "sourceIds": [
+      "src-sand-affordable"
+    ],
+    "statementDate": "2026",
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": null,
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-q09-zach-lahn",
+    "candidateId": "zach-lahn",
+    "questionId": "q09",
+    "issueIds": [
+      "3.22"
+    ],
+    "evidenceClass": "EP",
+    "positionFound": true,
+    "positionSummary": "Keep managed care; bar companies from using AI to deny coverage.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": true,
+    "optionRelations": {
+      "end-managed-care": "conflicting",
+      "keep-with-oversight": "aligned",
+      "keep-as-is": "partial"
+    },
+    "relationRationale": "Lahn opposes government-delivered health care and would add a specific rule (no AI coverage denials), which is added oversight of the companies.",
+    "statementIds": [
+      "st-lahn-medicaid"
+    ],
+    "sourceIds": [
+      "src-icd-2026-08-01"
+    ],
+    "statementDate": "2026-08-01",
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": "He previously opposed Medicaid expansion with AFP Montana and has said those concerns “have largely been addressed.”",
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-q10-rob-sand",
+    "candidateId": "rob-sand",
+    "questionId": "q10",
+    "issueIds": [
+      "4.31"
+    ],
+    "evidenceClass": "SP",
+    "positionFound": true,
+    "positionSummary": "A 5% increase in state school aid in year one.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": "5% increase in state aid in year one.",
+    "comparableToUserPreference": true,
+    "optionRelations": {
+      "increase-significantly": "aligned",
+      "modest-increases": "unaddressed",
+      "hold-steady": "conflicting"
+    },
+    "relationRationale": "Sand has named a 5% first-year increase. The research does not state recent increase levels, so its relation to “modest increases” is not established.",
+    "statementIds": [
+      "st-sand-school-aid"
+    ],
+    "sourceIds": [
+      "src-ipr-debate"
+    ],
+    "statementDate": "2026-10-06",
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": "No cost estimate.",
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-q10-zach-lahn",
+    "candidateId": "zach-lahn",
+    "questionId": "q10",
+    "issueIds": [
+      "4.31"
+    ],
+    "evidenceClass": "GS",
+    "positionFound": null,
+    "positionSummary": "Says the governor must be the top advocate for public school students; has named no aid figure.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": false,
+    "optionRelations": null,
+    "relationRationale": null,
+    "statementIds": [
+      "st-lahn-public-school"
+    ],
+    "sourceIds": [
+      "src-lahn-site"
+    ],
+    "statementDate": "2026",
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": null,
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-q11-rob-sand",
+    "candidateId": "rob-sand",
+    "questionId": "q11",
+    "issueIds": [
+      "4.32"
+    ],
+    "evidenceClass": "SP",
+    "positionFound": true,
+    "positionSummary": "Keep ESAs but add income limits, annual audits, and tuition increase limits.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": "Income limits, annual audits, tuition caps, and a “take the public” admission rule.",
+    "comparableToUserPreference": true,
+    "optionRelations": {
+      "expand": "conflicting",
+      "keep-universal": "conflicting",
+      "income-limits": "aligned",
+      "phase-out": "conflicting"
+    },
+    "relationRationale": "Sand proposes income limits and is not proposing repeal.",
+    "statementIds": [
+      "st-sand-esa-rules",
+      "st-sand-esa-wealthiest",
+      "st-sand-esa-no-repeal",
+      "st-sand-esa-report"
+    ],
+    "sourceIds": [
+      "src-esa-report-coverage",
+      "src-ipr-debate",
+      "src-research-uncited",
+      "src-sand-accountability"
+    ],
+    "statementDate": "2026-10-06",
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": null,
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-q11-zach-lahn",
+    "candidateId": "zach-lahn",
+    "questionId": "q11",
+    "issueIds": [
+      "4.32"
+    ],
+    "evidenceClass": "EP",
+    "positionFound": true,
+    "positionSummary": "ESAs are a foundational freedom; would expand them; supports third-party audits.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": true,
+    "optionRelations": {
+      "expand": "aligned",
+      "keep-universal": "partial",
+      "income-limits": "conflicting",
+      "phase-out": "conflicting"
+    },
+    "relationRationale": "Lahn defends the universal program and has said he would expand it.",
+    "statementIds": [
+      "st-lahn-esa-freedom",
+      "st-lahn-esa-expand",
+      "st-lahn-esa-audits"
+    ],
+    "sourceIds": [
+      "src-icd-2026-05-05",
+      "src-iowapress-lahn",
+      "src-ipr-debate"
+    ],
+    "statementDate": "2026-10-06",
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": "His support for expansion is an Iowa Capital Dispatch paraphrase.",
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-q12-rob-sand",
+    "candidateId": "rob-sand",
+    "questionId": "q12",
+    "issueIds": [
+      "5.48",
+      "3.30"
+    ],
+    "evidenceClass": "IND",
+    "positionFound": null,
+    "positionSummary": "His campaign has criticized Lahn's mRNA stance; no documented position on school vaccine requirements.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": false,
+    "optionRelations": null,
+    "relationRationale": null,
+    "statementIds": [],
+    "sourceIds": [],
+    "statementDate": null,
+    "verificationStatus": "unverified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": "Indirect evidence only. HPV consent law: no documented position.",
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-q12-zach-lahn",
+    "candidateId": "zach-lahn",
+    "questionId": "q12",
+    "issueIds": [
+      "5.48",
+      "3.30"
+    ],
+    "evidenceClass": "EP",
+    "positionFound": true,
+    "positionSummary": "Supports ending school vaccine requirements.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": true,
+    "optionRelations": {
+      "keep-requirements": "conflicting",
+      "easier-exemptions": "partial",
+      "end-requirements": "aligned"
+    },
+    "relationRationale": "Lahn has twice been reported supporting the end of school vaccine requirements. Making exemptions easier moves in the same direction but stops short of ending requirements.",
+    "statementIds": [
+      "st-lahn-vaccine-jan",
+      "st-lahn-vaccine-kcci",
+      "st-lahn-vaccine-benefits"
+    ],
+    "sourceIds": [
+      "src-cbs2-lahn",
+      "src-kcci-transcript",
+      "src-radio-iowa-2026-01-27"
+    ],
+    "statementDate": "2026-09",
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": "The September 2026 answer comes from a transcript published by the Iowa Democratic Party, corroborated by Studio 31. He later said vaccination has benefits; the research flags his mRNA statements as conflicting.",
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-q13-rob-sand",
+    "candidateId": "rob-sand",
+    "questionId": "q13",
+    "issueIds": [
+      "5.41",
+      "5.42"
+    ],
+    "evidenceClass": "EP",
+    "positionFound": true,
+    "positionSummary": "Opposes the six-week ban, supports the Roe framework, and would veto further restrictions.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": true,
+    "optionRelations": {
+      "further-restrict": "conflicting",
+      "keep-current": "conflicting",
+      "broaden-access": "aligned"
+    },
+    "relationRationale": "Sand says the six-week ban goes too far and supports the Roe framework.",
+    "statementIds": [
+      "st-sand-abortion",
+      "st-sand-roe"
+    ],
+    "sourceIds": [
+      "src-gazette-2026-09",
+      "src-iowapress-sand"
+    ],
+    "statementDate": "2026-09",
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": "He says he cannot repeal the six-week law unilaterally.",
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-q13-zach-lahn",
+    "candidateId": "zach-lahn",
+    "questionId": "q13",
+    "issueIds": [
+      "5.41",
+      "5.42"
+    ],
+    "evidenceClass": "EP",
+    "positionFound": true,
+    "positionSummary": "Holds that life begins at conception and wants to continue protecting life.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": true,
+    "optionRelations": {
+      "further-restrict": "unaddressed",
+      "keep-current": "unaddressed",
+      "broaden-access": "conflicting"
+    },
+    "relationRationale": "Lahn's statements oppose broadening access. Whether he would keep the current law or restrict it further is not established: a report that he called for a total ban is not verified.",
+    "statementIds": [
+      "st-lahn-protect-life",
+      "st-lahn-conception",
+      "st-lahn-ivf"
+    ],
+    "sourceIds": [
+      "src-iowapress-lahn-primary",
+      "src-research-uncited"
+    ],
+    "statementDate": "2026",
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": "Two of his abortion quotes are listed in the research without a named source. Exceptions and HF 2788: not verified.",
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-q14-rob-sand",
+    "candidateId": "rob-sand",
+    "questionId": "q14",
+    "issueIds": [
+      "5.45"
+    ],
+    "evidenceClass": "IND",
+    "positionFound": null,
+    "positionSummary": "Gun owner and hunter; no verified current firearms policy position.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": false,
+    "optionRelations": null,
+    "relationRationale": null,
+    "statementIds": [
+      "st-sand-firearms"
+    ],
+    "sourceIds": [
+      "src-research-uncited"
+    ],
+    "statementDate": null,
+    "verificationStatus": "unverified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": "Reported 2021 posts against permitless carry come from a GOP-aligned site and are not verified.",
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-q14-zach-lahn",
+    "candidateId": "zach-lahn",
+    "questionId": "q14",
+    "issueIds": [
+      "5.45"
+    ],
+    "evidenceClass": "NDP",
+    "positionFound": false,
+    "positionSummary": null,
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": null,
+    "optionRelations": null,
+    "relationRationale": null,
+    "statementIds": [],
+    "sourceIds": [],
+    "statementDate": null,
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": null,
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-q15-rob-sand",
+    "candidateId": "rob-sand",
+    "questionId": "q15",
+    "issueIds": [
+      "5.46"
+    ],
+    "evidenceClass": "EP",
+    "positionFound": true,
+    "positionSummary": "Opposes SF 418's removal of gender identity from the Iowa Civil Rights Act.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": true,
+    "optionRelations": {
+      "restore": "aligned",
+      "keep-sf-418": "conflicting"
+    },
+    "relationRationale": "Sand opposes the removal of gender identity protections.",
+    "statementIds": [
+      "st-sand-sf418",
+      "st-sand-sf418-limits"
+    ],
+    "sourceIds": [
+      "src-gazette-2025-hill",
+      "src-research-uncited"
+    ],
+    "statementDate": "2025",
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": "He says he could not restore the protections with a Republican legislature. He also opposes transgender girls and women competing in female sports, a separate question.",
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-q15-zach-lahn",
+    "candidateId": "zach-lahn",
+    "questionId": "q15",
+    "issueIds": [
+      "5.46"
+    ],
+    "evidenceClass": "IND",
+    "positionFound": null,
+    "positionSummary": "No documented statement on SF 418.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": false,
+    "optionRelations": null,
+    "relationRationale": null,
+    "statementIds": [
+      "st-lahn-book"
+    ],
+    "sourceIds": [
+      "src-hill-debate"
+    ],
+    "statementDate": "2026-10-06",
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": "His debate remark about a school library book is indirect and does not establish a position on SF 418.",
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-q16-rob-sand",
+    "candidateId": "rob-sand",
+    "questionId": "q16",
+    "issueIds": [
+      "7.67"
+    ],
+    "evidenceClass": "GS",
+    "positionFound": null,
+    "positionSummary": "Questioned why law-abiding, working immigrants should feel unsafe; no specific policy.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": false,
+    "optionRelations": null,
+    "relationRationale": null,
+    "statementIds": [
+      "st-sand-immigration"
+    ],
+    "sourceIds": [
+      "src-isl-townhall"
+    ],
+    "statementDate": null,
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": "From a town hall video reported by Iowa Starting Line, a Democratic-leaning outlet. ICE cooperation and 287(g): no documented position.",
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-q16-zach-lahn",
+    "candidateId": "zach-lahn",
+    "questionId": "q16",
+    "issueIds": [
+      "7.67"
+    ],
+    "evidenceClass": "SP",
+    "positionFound": true,
+    "positionSummary": "Ban state benefits for people in the country illegally; end H-1B hiring in state government and universities.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": "Ban benefits for illegal immigrants; stop H-1B hiring in state government and universities; contractor disclosure of Iowan hires.",
+    "comparableToUserPreference": true,
+    "optionRelations": {
+      "cooperate-enforcement": "unaddressed",
+      "bar-benefits": "aligned",
+      "leave-to-federal": "unaddressed",
+      "worker-safety": "unaddressed"
+    },
+    "relationRationale": "Lahn proposes barring benefits. He has no documented position on police cooperation with federal enforcement.",
+    "statementIds": [
+      "st-lahn-immigration"
+    ],
+    "sourceIds": [
+      "src-icd-2026-05-19"
+    ],
+    "statementDate": "2026-05-19",
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": "H-1B status is federal; the state controls only its own hiring.",
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-q17-rob-sand",
+    "candidateId": "rob-sand",
+    "questionId": "q17",
+    "issueIds": [
+      "6.59",
+      "11.101",
+      "1.04",
+      "1.07"
+    ],
+    "evidenceClass": "SP",
+    "positionFound": true,
+    "positionSummary": "End data center tax breaks; data centers pay all of their own costs, including utility cost increases.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": "No tax breaks; cover 100% of costs; no NDAs; union construction; integrated resource planning.",
+    "comparableToUserPreference": true,
+    "optionRelations": {
+      "pay-own-way": "aligned",
+      "moratorium": "unaddressed",
+      "local-decision": "unaddressed",
+      "keep-incentives": "conflicting"
+    },
+    "relationRationale": "Sand would end tax breaks and require data centers to cover their own costs.",
+    "statementIds": [
+      "st-sand-dc"
+    ],
+    "sourceIds": [
+      "src-sand-plans"
+    ],
+    "statementDate": "2026",
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": null,
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-q17-zach-lahn",
+    "candidateId": "zach-lahn",
+    "questionId": "q17",
+    "issueIds": [
+      "6.59",
+      "11.101",
+      "1.04",
+      "1.07"
+    ],
+    "evidenceClass": "SP",
+    "positionFound": true,
+    "positionSummary": "No incentives; positions have moved from a 5x property tax to a moratorium to state-level regulation.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": true,
+    "optionRelations": {
+      "pay-own-way": "aligned",
+      "moratorium": "partial",
+      "local-decision": "partial",
+      "keep-incentives": "conflicting"
+    },
+    "relationRationale": "Lahn consistently opposes incentives and proposed a higher tax rate. He called for a moratorium and county-by-county decisions in July, then state-level regulation in August, so those relations are partial.",
+    "statementIds": [
+      "st-lahn-dc-5x",
+      "st-lahn-dc-moratorium",
+      "st-lahn-dc-state"
+    ],
+    "sourceIds": [
+      "src-icd-2026-08-24",
+      "src-iowapress-lahn",
+      "src-x-lahn"
+    ],
+    "statementDate": "2026-08-24",
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": "He has not said whether the 5x tax still applies. See the dated statements.",
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-q18-rob-sand",
+    "candidateId": "rob-sand",
+    "questionId": "q18",
+    "issueIds": [
+      "8.71"
+    ],
+    "evidenceClass": "SP",
+    "positionFound": true,
+    "positionSummary": "Raise the minimum wage to $12 in phases, then index it.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": "$12, phased in, then indexed. No timeline.",
+    "comparableToUserPreference": true,
+    "optionRelations": {
+      "raise-and-index": "aligned",
+      "raise-modestly": "partial",
+      "keep-federal": "conflicting",
+      "local-option": "unaddressed"
+    },
+    "relationRationale": "Sand proposes a phased increase to $12 with indexing.",
+    "statementIds": [
+      "st-sand-min-wage",
+      "st-sand-min-wage-phases"
+    ],
+    "sourceIds": [
+      "src-radio-iowa-2026-08-12",
+      "src-times-republican"
+    ],
+    "statementDate": "2026-10",
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": null,
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-q18-zach-lahn",
+    "candidateId": "zach-lahn",
+    "questionId": "q18",
+    "issueIds": [
+      "8.71"
+    ],
+    "evidenceClass": "GS",
+    "positionFound": null,
+    "positionSummary": "Declined to commit to raising the minimum wage.",
+    "documentedStance": null,
+    "declinedToCommit": true,
+    "proposal": null,
+    "comparableToUserPreference": false,
+    "optionRelations": null,
+    "relationRationale": null,
+    "statementIds": [
+      "st-lahn-min-wage"
+    ],
+    "sourceIds": [
+      "src-nbc-debate"
+    ],
+    "statementDate": "2026-10-06",
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": "Declining to commit is not the same as opposing an increase. Reported as an NBC News paraphrase.",
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-q19-rob-sand",
+    "candidateId": "rob-sand",
+    "questionId": "q19",
+    "issueIds": [
+      "9.81",
+      "9.82",
+      "9.83"
+    ],
+    "evidenceClass": "SP",
+    "positionFound": true,
+    "positionSummary": "Restore the Auditor's full powers by reversing the 2023 law; mandatory PIE program; whistleblower protections.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": "Reverse the 2023 law; make the PIE program mandatory; extend whistleblower protections to all Iowans.",
+    "comparableToUserPreference": true,
+    "optionRelations": {
+      "restore-auditor": "aligned",
+      "third-party-audits": "unaddressed",
+      "current-sufficient": "conflicting"
+    },
+    "relationRationale": "Sand proposes reversing the 2023 limits on the Auditor's Office.",
+    "statementIds": [
+      "st-sand-auditor"
+    ],
+    "sourceIds": [
+      "src-sand-accountability"
+    ],
+    "statementDate": "2026",
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": "Sand is the current State Auditor.",
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-q19-zach-lahn",
+    "candidateId": "zach-lahn",
+    "questionId": "q19",
+    "issueIds": [
+      "9.81",
+      "9.82",
+      "9.83"
+    ],
+    "evidenceClass": "EP",
+    "positionFound": true,
+    "positionSummary": "Supports third-party audits of the ESA program; no documented position on the 2023 law.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": true,
+    "optionRelations": {
+      "restore-auditor": "unaddressed",
+      "third-party-audits": "partial",
+      "current-sufficient": "unaddressed"
+    },
+    "relationRationale": "Lahn's support for third-party audits is specific to the ESA program, so it partially overlaps a broader reliance on independent audits.",
+    "statementIds": [
+      "st-lahn-esa-audits"
+    ],
+    "sourceIds": [
+      "src-ipr-debate"
+    ],
+    "statementDate": "2026-10-06",
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": null,
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-q20-rob-sand",
+    "candidateId": "rob-sand",
+    "questionId": "q20",
+    "issueIds": [
+      "9.88",
+      "9.85",
+      "9.87",
+      "5.49"
+    ],
+    "evidenceClass": "EP",
+    "positionFound": true,
+    "positionSummary": "Called for more local control.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": true,
+    "optionRelations": {
+      "more-local": "aligned",
+      "current-balance": "conflicting",
+      "more-uniform": "conflicting"
+    },
+    "relationRationale": "Sand called for more local control at the October 6 debate.",
+    "statementIds": [
+      "st-sand-local"
+    ],
+    "sourceIds": [
+      "src-ipr-debate"
+    ],
+    "statementDate": "2026-10-06",
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": "Reported as a paraphrase of the debate.",
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-q20-zach-lahn",
+    "candidateId": "zach-lahn",
+    "questionId": "q20",
+    "issueIds": [
+      "9.88",
+      "9.85",
+      "9.87",
+      "5.49"
+    ],
+    "evidenceClass": "EP",
+    "positionFound": true,
+    "positionSummary": "Counties should have far more control; favors decentralized power.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": true,
+    "optionRelations": {
+      "more-local": "aligned",
+      "current-balance": "conflicting",
+      "more-uniform": "conflicting"
+    },
+    "relationRationale": "Lahn said counties “should have far more control” and that he wants to avoid centralized power.",
+    "statementIds": [
+      "st-lahn-local",
+      "st-lahn-centralized"
+    ],
+    "sourceIds": [
+      "src-iowapress-lahn",
+      "src-ipr-debate"
+    ],
+    "statementDate": "2026-10-06",
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": null,
+    "reviewStatus": "draft"
+  }
+]

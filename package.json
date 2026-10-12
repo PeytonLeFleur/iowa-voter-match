@@ -13,7 +13,8 @@
     "test:watch": "vitest",
     "test:e2e": "playwright test",
     "validate": "tsx scripts/validate.ts",
-    "check": "npm run validate && npm run typecheck && npm run lint && npm run test"
+    "check": "npm run validate && npm run typecheck && npm run lint && npm run test",
+    "import:research": "tsx scripts/import-research.ts"
   },
   "dependencies": {
     "next": "^16.4.0",
