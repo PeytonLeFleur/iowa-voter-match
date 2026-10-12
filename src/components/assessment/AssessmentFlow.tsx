@@ -10,8 +10,10 @@ import ChoiceGroup from './ChoiceGroup'
 const UNSURE = 'unsure'
 const SKIPPED = 'skipped'
 
+export const UNSURE_LABEL = 'Not sure / need to learn more'
+
 export function choiceLabel(q: PolicyQuestion, choice: string | null | undefined): string {
-  if (choice === UNSURE) return 'Unsure or need more information'
+  if (choice === UNSURE) return UNSURE_LABEL
   if (choice === SKIPPED || choice == null) return 'No preference given'
   return q.options.find((o) => o.id === choice)?.label ?? 'No preference given'
 }
@@ -100,11 +102,11 @@ export default function AssessmentFlow({ questions }: { questions: PolicyQuestio
 
         <ChoiceGroup
           name={`choice-${q.id}`}
-          legend={q.prompt}
-          hint="Choose the option closest to your view, or say you’re unsure. There are no right answers."
+          legend="Which comes closest to what you think?"
+          hint="Pick one, or choose “Not sure.” There are no wrong answers."
           items={[
             ...q.options.map((o) => ({ value: o.id, label: o.label, description: o.description })),
-            { value: UNSURE, label: 'Unsure or need more information' },
+            { value: UNSURE, label: UNSURE_LABEL },
           ]}
           value={answer?.choice && answer.choice !== SKIPPED ? answer.choice : null}
           onChange={(v) => setChoice(q.id, v)}

@@ -7,16 +7,16 @@
     "categoryId": "economy",
     "domain": "economy",
     "prompt": "What should Iowa do about property taxes?",
-    "context": "SF 2472 caps most city and county levy growth at 2% and creates a homestead exemption of 10% of a home's value, with a $5,500 minimum and $20,000 maximum.",
-    "learnMore": null,
+    "context": "Property taxes are what you pay each year on a home or land. They pay for local things like roads, police, fire departments, and schools. Iowa recently passed a law that limits how fast most city and county property taxes can grow and gives homeowners a tax break.",
+    "learnMore": "The new law is SF 2472. It caps yearly growth in most city and county property taxes at 2% and takes 10% of a home's value off its taxable value (at least $5,500 and at most $20,000).",
     "issueIds": [
       "1.01"
     ],
     "options": [
       {
         "id": "reduce-further",
-        "label": "Reduce further",
-        "description": "Reduce property taxes further, even if this requires reductions in some local spending.",
+        "label": "Cut them more",
+        "description": "Lower property taxes more, even if cities and counties have to cut some spending.",
         "relatedIssueIds": [
           "1.01"
         ],
@@ -26,8 +26,8 @@
       },
       {
         "id": "relief-preserve",
-        "label": "Relief with services protected",
-        "description": "Prioritize tax relief while preserving funding for essential local services.",
+        "label": "Cut them, but protect local services",
+        "description": "Lower property taxes, but make sure things like police, fire, and roads keep their funding.",
         "relatedIssueIds": [
           "1.01"
         ],
@@ -37,8 +37,8 @@
       },
       {
         "id": "maintain-evaluate",
-        "label": "Wait and evaluate",
-        "description": "Maintain the current reforms until their effects can be evaluated.",
+        "label": "Wait and see",
+        "description": "Leave the new law alone for now and see how it works before changing anything.",
         "relatedIssueIds": [
           "1.01"
         ],
@@ -50,8 +50,8 @@
       },
       {
         "id": "local-flexibility",
-        "label": "More local flexibility",
-        "description": "Give local governments more flexibility to fund services.",
+        "label": "Let local governments decide",
+        "description": "Give cities and counties more freedom to decide how to pay for their services.",
         "relatedIssueIds": [
           "1.01",
           "9.88"
@@ -74,7 +74,7 @@
     "categoryId": "economy",
     "domain": "economy",
     "prompt": "What should Iowa do with the state income tax?",
-    "context": "Iowa's income tax is a flat 3.8%. The State Auditor has warned of a projected budget gap after recent cuts.",
+    "context": "The state income tax comes out of your paycheck. Iowa recently cut it to one rate for everyone: 3.8%. Lower taxes leave more money in your pocket, but also less money for state services.",
     "learnMore": null,
     "issueIds": [
       "1.02",
@@ -84,8 +84,8 @@
     "options": [
       {
         "id": "eliminate",
-        "label": "Phase it out",
-        "description": "Phase the income tax out over time, paid for by reducing state spending.",
+        "label": "Get rid of it over time",
+        "description": "Lower the income tax step by step until it's gone, and cut state spending to make up for it.",
         "relatedIssueIds": [
           "1.02"
         ],
@@ -95,8 +95,8 @@
       },
       {
         "id": "keep-rate",
-        "label": "Keep the current rate",
-        "description": "Keep the current 3.8% flat rate.",
+        "label": "Keep it at 3.8%",
+        "description": "Keep the income tax where it is now.",
         "relatedIssueIds": [
           "1.02"
         ],
@@ -106,8 +106,8 @@
       },
       {
         "id": "pause-cuts",
-        "label": "Pause further cuts",
-        "description": "Make no further cuts until the state budget is balanced.",
+        "label": "No more cuts for now",
+        "description": "Don't cut it any further until the state budget is balanced.",
         "relatedIssueIds": [
           "1.02",
           "1.05"
@@ -118,8 +118,8 @@
       },
       {
         "id": "raise-higher-incomes",
-        "label": "Raise rates on higher incomes",
-        "description": "Raise rates on higher incomes to address the budget gap.",
+        "label": "Raise it for high earners",
+        "description": "Have people who make the most money pay a higher rate.",
         "relatedIssueIds": [
           "1.02"
         ],
@@ -141,8 +141,8 @@
     "title": "Cost of living and housing affordability",
     "categoryId": "economy",
     "domain": "economy",
-    "prompt": "Which approach should Iowa prioritize to make housing more affordable?",
-    "context": "Proposals from both candidates focus on housing supply, investor purchases, and help for first-time buyers.",
+    "prompt": "What's the best way to make homes more affordable in Iowa?",
+    "context": "Buying or renting a home costs more than it used to. Ideas include building more homes, limiting big investors, and helping first-time buyers.",
     "learnMore": null,
     "issueIds": [
       "1.08",
@@ -151,8 +151,8 @@
     "options": [
       {
         "id": "zoning",
-        "label": "Allow more housing types",
-        "description": "Loosen zoning and permitting rules so more kinds of housing, such as duplexes and accessory units, can be built.",
+        "label": "Build more homes",
+        "description": "Change local rules so more kinds of homes, like duplexes and small backyard houses, can be built.",
         "relatedIssueIds": [
           "1.08"
         ],
@@ -162,8 +162,8 @@
       },
       {
         "id": "investor-limits",
-        "label": "Limit investor purchases",
-        "description": "Restrict large investors and hedge funds from buying single-family homes.",
+        "label": "Limit big investors",
+        "description": "Stop large investment companies from buying up houses.",
         "relatedIssueIds": [
           "1.08"
         ],
@@ -174,7 +174,7 @@
       {
         "id": "buyer-aid",
         "label": "Help first-time buyers",
-        "description": "Help first-time buyers with down payment assistance.",
+        "description": "Give first-time buyers help with their down payment.",
         "relatedIssueIds": [
           "1.08"
         ],
@@ -184,8 +184,8 @@
       },
       {
         "id": "private-market",
-        "label": "Leave it to the market",
-        "description": "Leave housing mainly to the private market, with few new state programs.",
+        "label": "Let the market handle it",
+        "description": "Keep government mostly out of it and let builders and buyers sort it out.",
         "relatedIssueIds": [
           "1.08"
         ],
@@ -204,8 +204,8 @@
     "title": "Farm profitability and agricultural policy",
     "categoryId": "agriculture",
     "domain": "agriculture",
-    "prompt": "What should the state do first to improve farm profitability?",
-    "context": "Farm income is shaped by input costs, land prices, trade, and who owns farmland.",
+    "prompt": "What should Iowa do first to help farmers make a living?",
+    "context": "What farmers earn depends on what they pay for seed, fertilizer, and equipment, what land costs, and how much they can sell to other countries.",
     "learnMore": null,
     "issueIds": [
       "2.11",
@@ -216,8 +216,8 @@
     "options": [
       {
         "id": "antitrust",
-        "label": "Challenge input monopolies",
-        "description": "Use state antitrust enforcement against large agricultural input companies.",
+        "label": "Go after big farm-supply companies",
+        "description": "Use laws against monopolies on the large companies that sell farmers seed, fertilizer, and equipment.",
         "relatedIssueIds": [
           "2.11",
           "2.12",
@@ -229,8 +229,8 @@
       },
       {
         "id": "ownership-limits",
-        "label": "Limit outside land ownership",
-        "description": "Limit outside investors and corporations from buying farmland.",
+        "label": "Limit who can buy farmland",
+        "description": "Stop outside investors and big corporations from buying up Iowa farmland.",
         "relatedIssueIds": [
           "2.11",
           "2.12",
@@ -243,7 +243,7 @@
       {
         "id": "trade",
         "label": "Push for open trade",
-        "description": "Press federal officials to reduce tariffs and expand export markets.",
+        "description": "Press the federal government to lower tariffs (taxes on imports and exports) so farmers can sell more overseas.",
         "relatedIssueIds": [
           "2.18"
         ],
@@ -253,8 +253,8 @@
       },
       {
         "id": "limited-role",
-        "label": "Keep the state's role limited",
-        "description": "Keep state involvement limited and let markets set farm economics.",
+        "label": "Stay out of it",
+        "description": "Keep the state's role small and let the market decide.",
         "relatedIssueIds": [
           "2.11"
         ],
@@ -275,17 +275,17 @@
     "title": "Eminent domain and landowner protections",
     "categoryId": "agriculture",
     "domain": "agriculture",
-    "prompt": "Should Iowa restrict eminent domain when the main beneficiary is a private company?",
-    "context": "Eminent domain lets the government take private property for public use with compensation. Its use for privately owned projects, such as CO2 pipelines, has been debated in Iowa.",
-    "learnMore": "Supporting a general principle is different from supporting a specific bill. Both candidates have stated the general principle; neither committed to signing HF 2104.",
+    "prompt": "Should landowners be forced to sell their land for a project that mainly helps a private company?",
+    "context": "“Eminent domain” lets the government make someone sell their land for a public project, like a road, as long as they're paid for it. In Iowa, people have argued about using it for privately owned projects, like carbon dioxide (CO2) pipelines.",
+    "learnMore": "Being against something in general is not the same as backing a specific bill. Both candidates have said they oppose taking land for private gain. Neither has said whether he would sign HF 2104, a bill on this issue.",
     "issueIds": [
       "2.15"
     ],
     "options": [
       {
         "id": "prohibit-private",
-        "label": "Prohibit it for private benefit",
-        "description": "Prohibit eminent domain when the main beneficiary is a private company.",
+        "label": "No, never",
+        "description": "Don't allow it when the project mainly benefits a private company.",
         "relatedIssueIds": [
           "2.15"
         ],
@@ -295,8 +295,8 @@
       },
       {
         "id": "stricter-standards",
-        "label": "Stricter standards",
-        "description": "Allow it only under stricter standards, with stronger landowner compensation.",
+        "label": "Only with stricter rules",
+        "description": "Allow it only with tougher rules and better pay for landowners.",
         "relatedIssueIds": [
           "2.15"
         ],
@@ -306,8 +306,8 @@
       },
       {
         "id": "case-by-case",
-        "label": "Case by case",
-        "description": "Keep current law and let regulators decide case by case.",
+        "label": "Decide case by case",
+        "description": "Keep the current law and let state regulators decide each project.",
         "relatedIssueIds": [
           "2.15"
         ],
@@ -329,8 +329,8 @@
     "title": "Drinking water, nitrates, and environmental regulation",
     "categoryId": "environment-energy",
     "domain": "environment",
-    "prompt": "What should be Iowa's main approach to reducing nitrates in drinking water?",
-    "context": "Nitrate runoff from farmland affects drinking water in parts of Iowa. Current policy relies mostly on voluntary conservation practices.",
+    "prompt": "What's the best way to keep farm runoff out of Iowa's drinking water?",
+    "context": "Fertilizer from farm fields can wash into rivers and wells. At high levels, a chemical from it called nitrate can make drinking water unsafe. Right now, Iowa mostly relies on farmers taking voluntary steps.",
     "learnMore": null,
     "issueIds": [
       "6.51",
@@ -341,8 +341,8 @@
     "options": [
       {
         "id": "incentives",
-        "label": "Expand farmer incentives",
-        "description": "Expand incentives and tax credits for farmers who adopt conservation practices.",
+        "label": "Pay farmers to help",
+        "description": "Give farmers more money and tax breaks for practices that reduce runoff.",
         "relatedIssueIds": [
           "6.51",
           "2.19"
@@ -353,8 +353,8 @@
       },
       {
         "id": "enforceable-limits",
-        "label": "Enforceable limits",
-        "description": "Set enforceable limits on farm nutrient runoff.",
+        "label": "Set rules farmers must follow",
+        "description": "Set limits on farm runoff that farmers are required to meet.",
         "relatedIssueIds": [
           "6.51"
         ],
@@ -364,8 +364,8 @@
       },
       {
         "id": "monitoring",
-        "label": "Monitoring and alerts first",
-        "description": "Focus first on expanding water monitoring and public alerts.",
+        "label": "Test the water more",
+        "description": "Test water more often and warn people when it isn't safe.",
         "relatedIssueIds": [
           "6.52"
         ],
@@ -375,8 +375,8 @@
       },
       {
         "id": "current-approach",
-        "label": "Keep the current approach",
-        "description": "Keep the current voluntary approach without major changes.",
+        "label": "Keep things as they are",
+        "description": "Keep the current voluntary approach.",
         "relatedIssueIds": [
           "6.51"
         ],
@@ -397,8 +397,8 @@
     "title": "Cancer prevention and public health",
     "categoryId": "health",
     "domain": "health",
-    "prompt": "What should be Iowa's main approach to its high cancer rates?",
-    "context": "Both candidates rank cancer as a top priority and both oppose legal immunity for pesticide makers.",
+    "prompt": "What should Iowa focus on to fight cancer?",
+    "context": "Cancer is a major concern in Iowa, and both candidates call it a top priority.",
     "learnMore": null,
     "issueIds": [
       "3.24"
@@ -406,8 +406,8 @@
     "options": [
       {
         "id": "research-task-force",
-        "label": "Research and coordination",
-        "description": "Fund more cancer research and a coordinated state task force.",
+        "label": "Research and a state team",
+        "description": "Spend more on cancer research and set up a state team to lead the effort.",
         "relatedIssueIds": [
           "3.24"
         ],
@@ -417,8 +417,8 @@
       },
       {
         "id": "environmental-testing",
-        "label": "Test environmental exposures",
-        "description": "Investigate and test environmental exposures such as farm chemicals and consumer products.",
+        "label": "Look for causes in the environment",
+        "description": "Study and test things people are exposed to, like farm chemicals and everyday products.",
         "relatedIssueIds": [
           "3.24"
         ],
@@ -428,8 +428,8 @@
       },
       {
         "id": "prevention",
-        "label": "Prevention and screening",
-        "description": "Focus on prevention, such as tobacco taxes, screening, and radon awareness.",
+        "label": "Prevention and checkups",
+        "description": "Focus on prevention, like higher tobacco taxes, cancer screenings, and testing homes for radon gas.",
         "relatedIssueIds": [
           "3.24"
         ],
@@ -439,8 +439,8 @@
       },
       {
         "id": "existing-programs",
-        "label": "Existing programs",
-        "description": "Rely mainly on existing federal and university programs.",
+        "label": "Use programs we already have",
+        "description": "Rely mostly on current federal and university programs.",
         "relatedIssueIds": [
           "3.24"
         ],
@@ -459,8 +459,8 @@
     "title": "Rural hospitals and health care access",
     "categoryId": "health",
     "domain": "health",
-    "prompt": "How should Iowa support rural hospitals and access to care?",
-    "context": "Rural hospitals depend heavily on Medicaid and Medicare payments.",
+    "prompt": "How should Iowa help hospitals and clinics in small towns?",
+    "context": "Many rural hospitals depend on payments from Medicaid and Medicare, which are government health programs.",
     "learnMore": null,
     "issueIds": [
       "3.21"
@@ -468,8 +468,8 @@
     "options": [
       {
         "id": "reimbursement",
-        "label": "Raise reimbursement rates",
-        "description": "Raise Medicaid reimbursement rates paid to providers.",
+        "label": "Pay them more for Medicaid patients",
+        "description": "Raise how much the state pays doctors and hospitals to treat Medicaid patients.",
         "relatedIssueIds": [
           "3.21",
           "3.22"
@@ -480,8 +480,8 @@
       },
       {
         "id": "prompt-payment",
-        "label": "Faster payment",
-        "description": "Require insurers to pay providers promptly and simplify billing.",
+        "label": "Make insurers pay faster",
+        "description": "Require insurance companies to pay hospitals on time and make billing simpler.",
         "relatedIssueIds": [
           "3.21"
         ],
@@ -491,8 +491,8 @@
       },
       {
         "id": "regional-care",
-        "label": "Regional care centers",
-        "description": "Support consolidation into regional care centers rather than keeping every facility.",
+        "label": "Combine into regional centers",
+        "description": "Support larger regional hospitals instead of keeping every small one open.",
         "relatedIssueIds": [
           "3.21"
         ],
@@ -502,8 +502,8 @@
       },
       {
         "id": "deregulate",
-        "label": "Fewer regulations",
-        "description": "Reduce regulations and let providers compete.",
+        "label": "Cut red tape",
+        "description": "Reduce rules and let health care providers compete.",
         "relatedIssueIds": [
           "3.21"
         ],
@@ -524,8 +524,8 @@
     "title": "Medicaid and health coverage",
     "categoryId": "health",
     "domain": "health",
-    "prompt": "How should Iowa run its Medicaid program?",
-    "context": "Iowa Medicaid is administered by private managed care companies. A federal work requirement is scheduled to begin December 1, 2026.",
+    "prompt": "Who should run Iowa's Medicaid program?",
+    "context": "Medicaid is government health coverage for people with low incomes and people with disabilities. Right now, Iowa pays private insurance companies to manage it.",
     "learnMore": null,
     "issueIds": [
       "3.22"
@@ -533,8 +533,8 @@
     "options": [
       {
         "id": "end-managed-care",
-        "label": "Return to state administration",
-        "description": "End privately managed Medicaid and return to state administration.",
+        "label": "The state",
+        "description": "Stop using private companies and have the state run it again.",
         "relatedIssueIds": [
           "3.22"
         ],
@@ -544,8 +544,8 @@
       },
       {
         "id": "keep-with-oversight",
-        "label": "Keep it, with more oversight",
-        "description": "Keep private managed care, with stronger oversight of the companies.",
+        "label": "Private companies, watched more closely",
+        "description": "Keep private companies in charge, but keep a closer eye on them.",
         "relatedIssueIds": [
           "3.22"
         ],
@@ -556,7 +556,7 @@
       {
         "id": "keep-as-is",
         "label": "Keep it as it is",
-        "description": "Keep the current system mostly as it is.",
+        "description": "Keep the current system mostly the same.",
         "relatedIssueIds": [
           "3.22"
         ],
@@ -577,8 +577,8 @@
     "title": "Public school funding",
     "categoryId": "education",
     "domain": "education",
-    "prompt": "How should Iowa fund its public schools?",
-    "context": "The legislature sets the annual increase in per-pupil state aid to school districts.",
+    "prompt": "Should public schools get more money from the state?",
+    "context": "Each year, state lawmakers decide how much more money public schools get for each student.",
     "learnMore": null,
     "issueIds": [
       "4.31"
@@ -586,8 +586,8 @@
     "options": [
       {
         "id": "increase-significantly",
-        "label": "Increase significantly",
-        "description": "Increase state aid significantly, above recent annual increases.",
+        "label": "Yes, a lot more",
+        "description": "Give schools a bigger increase than they've gotten in recent years.",
         "relatedIssueIds": [
           "4.31"
         ],
@@ -597,8 +597,8 @@
       },
       {
         "id": "modest-increases",
-        "label": "Modest increases",
-        "description": "Continue modest annual increases similar to recent years.",
+        "label": "Yes, a little more",
+        "description": "Keep giving small yearly increases like recent years.",
         "relatedIssueIds": [
           "4.31"
         ],
@@ -608,8 +608,8 @@
       },
       {
         "id": "hold-steady",
-        "label": "Hold steady",
-        "description": "Hold funding steady and focus on efficiency and flexibility.",
+        "label": "About the same",
+        "description": "Keep funding steady and have schools find ways to save.",
         "relatedIssueIds": [
           "4.31"
         ],
@@ -628,17 +628,17 @@
     "title": "Private school tuition assistance and school choice",
     "categoryId": "education",
     "domain": "education",
-    "prompt": "What should Iowa do with Education Savings Accounts (state-funded private school tuition)?",
-    "context": "Iowa's ESA program is open to all families. The State Auditor's report put the FY2026 program cost at $329.6 million; other published figures conflict.",
-    "learnMore": "ESA cost figures conflict: the framework gives $8,148 per student for 2026-27; Iowa Starting Line reported $5,400 per student (unverified).",
+    "prompt": "Should the state help families pay for private school?",
+    "context": "Iowa gives families state money, called Education Savings Accounts (ESAs), to pay private school tuition. Any family can sign up, no matter how much they earn. The program costs the state hundreds of millions of dollars a year; published estimates differ.",
+    "learnMore": "Cost figures conflict. The State Auditor's report put the program at $329.6 million in 2026; another report gave a different per-student figure that has not been verified.",
     "issueIds": [
       "4.32"
     ],
     "options": [
       {
         "id": "expand",
-        "label": "Keep universal and expand",
-        "description": "Keep ESAs open to all families and expand the program.",
+        "label": "Yes, and grow the program",
+        "description": "Keep it open to every family and make it bigger.",
         "relatedIssueIds": [
           "4.32"
         ],
@@ -648,8 +648,8 @@
       },
       {
         "id": "keep-universal",
-        "label": "Keep as is",
-        "description": "Keep the universal program without major changes.",
+        "label": "Yes, keep it as it is",
+        "description": "Keep it open to every family with no big changes.",
         "relatedIssueIds": [
           "4.32"
         ],
@@ -659,8 +659,8 @@
       },
       {
         "id": "income-limits",
-        "label": "Add income limits",
-        "description": "Keep ESAs but limit eligibility by family income.",
+        "label": "Only for families who need it",
+        "description": "Keep it, but only for families below a certain income.",
         "relatedIssueIds": [
           "4.32"
         ],
@@ -670,8 +670,8 @@
       },
       {
         "id": "phase-out",
-        "label": "Phase out",
-        "description": "Phase out ESAs and return the funds to public schools.",
+        "label": "No, end it",
+        "description": "Phase it out and put the money back into public schools.",
         "relatedIssueIds": [
           "4.32"
         ],
@@ -690,8 +690,8 @@
     "title": "Parental rights and education policy",
     "categoryId": "education",
     "domain": "education",
-    "prompt": "Should Iowa require vaccinations for school enrollment?",
-    "context": "Iowa requires certain vaccinations for school enrollment, with exemptions.",
+    "prompt": "Should kids have to get certain vaccines to go to school?",
+    "context": "Iowa requires certain shots for kids to enroll in school. Families can ask for an exemption in some cases.",
     "learnMore": null,
     "issueIds": [
       "5.48",
@@ -700,8 +700,8 @@
     "options": [
       {
         "id": "keep-requirements",
-        "label": "Keep current requirements",
-        "description": "Keep current school vaccine requirements and exemptions.",
+        "label": "Yes, keep the current rules",
+        "description": "Keep the vaccine requirements and exemptions as they are.",
         "relatedIssueIds": [
           "5.48"
         ],
@@ -711,8 +711,8 @@
       },
       {
         "id": "easier-exemptions",
-        "label": "Easier exemptions",
-        "description": "Keep requirements but make exemptions easier for parents to obtain.",
+        "label": "Yes, but make it easier to opt out",
+        "description": "Keep the requirements, but make exemptions easier for parents to get.",
         "relatedIssueIds": [
           "5.48"
         ],
@@ -722,8 +722,8 @@
       },
       {
         "id": "end-requirements",
-        "label": "End requirements",
-        "description": "End vaccine requirements for school enrollment.",
+        "label": "No",
+        "description": "End vaccine requirements for going to school.",
         "relatedIssueIds": [
           "5.48"
         ],
@@ -745,7 +745,7 @@
     "categoryId": "rights",
     "domain": "rights",
     "prompt": "What should Iowa's abortion law be?",
-    "context": "Iowa law limits abortion after about six weeks of pregnancy, with exceptions.",
+    "context": "Iowa law bans most abortions after about six weeks of pregnancy, with some exceptions.",
     "learnMore": null,
     "issueIds": [
       "5.41",
@@ -754,8 +754,8 @@
     "options": [
       {
         "id": "further-restrict",
-        "label": "Restrict further",
-        "description": "Restrict abortion further than current law.",
+        "label": "Stricter than now",
+        "description": "Put more limits on abortion than current law does.",
         "relatedIssueIds": [
           "5.41"
         ],
@@ -767,8 +767,8 @@
       },
       {
         "id": "keep-current",
-        "label": "Keep current law",
-        "description": "Keep the current six-week law.",
+        "label": "Keep the current law",
+        "description": "Keep the six-week limit as it is.",
         "relatedIssueIds": [
           "5.41"
         ],
@@ -778,8 +778,8 @@
       },
       {
         "id": "broaden-access",
-        "label": "Broaden access",
-        "description": "Restore broader access, similar to the Roe v. Wade framework.",
+        "label": "Less strict than now",
+        "description": "Allow abortion later in pregnancy, closer to the rules under Roe v. Wade.",
         "relatedIssueIds": [
           "5.41"
         ],
@@ -801,8 +801,8 @@
     "title": "Firearm rights and public safety",
     "categoryId": "rights",
     "domain": "rights",
-    "prompt": "What should Iowa's approach to firearm laws be?",
-    "context": "Iowa's constitution protects the right to keep and bear arms (Art. I §1A).",
+    "prompt": "Should Iowa's gun laws change?",
+    "context": "Iowa's constitution protects the right to keep and bear arms. Adults in Iowa can generally carry a handgun without a permit.",
     "learnMore": null,
     "issueIds": [
       "5.45"
@@ -810,8 +810,8 @@
     "options": [
       {
         "id": "expand-rights",
-        "label": "Expand gun rights",
-        "description": "Further reduce restrictions on owning and carrying firearms.",
+        "label": "Fewer limits",
+        "description": "Loosen gun laws further.",
         "relatedIssueIds": [
           "5.45"
         ],
@@ -821,8 +821,8 @@
       },
       {
         "id": "keep-current",
-        "label": "Keep current law",
-        "description": "Keep current firearm laws as they are.",
+        "label": "Keep them as they are",
+        "description": "Leave current gun laws alone.",
         "relatedIssueIds": [
           "5.45"
         ],
@@ -832,8 +832,8 @@
       },
       {
         "id": "add-safety-measures",
-        "label": "Add safety measures",
-        "description": "Add new safety measures, such as permit or red-flag requirements.",
+        "label": "More safety rules",
+        "description": "Add rules like required permits, or “red flag” laws that let a court take guns from someone found to be dangerous.",
         "relatedIssueIds": [
           "5.45"
         ],
@@ -854,8 +854,8 @@
     "title": "Religious freedom and civil rights",
     "categoryId": "rights",
     "domain": "rights",
-    "prompt": "Should the Iowa Civil Rights Act protect people from discrimination based on gender identity?",
-    "context": "SF 418 removed gender identity as a protected class from the Iowa Civil Rights Act.",
+    "prompt": "Should Iowa's civil rights law include gender identity?",
+    "context": "Iowa's civil rights law makes it illegal to discriminate against people in things like jobs and housing because of who they are. A recent law (SF 418) removed gender identity (being transgender) from that list.",
     "learnMore": null,
     "issueIds": [
       "5.46"
@@ -863,8 +863,8 @@
     "options": [
       {
         "id": "restore",
-        "label": "Restore protection",
-        "description": "Restore gender identity as a protected class in the Iowa Civil Rights Act.",
+        "label": "Yes, add it back",
+        "description": "Put gender identity back into Iowa's civil rights law.",
         "relatedIssueIds": [
           "5.46"
         ],
@@ -876,8 +876,8 @@
       },
       {
         "id": "keep-sf-418",
-        "label": "Keep the current law",
-        "description": "Keep the law as amended by SF 418.",
+        "label": "No, keep the law as it is now",
+        "description": "Keep gender identity out of Iowa's civil rights law.",
         "relatedIssueIds": [
           "5.46"
         ],
@@ -900,8 +900,8 @@
     "title": "Immigration enforcement",
     "categoryId": "public-safety",
     "domain": "government",
-    "prompt": "What role should state government play in immigration?",
-    "context": "Immigration status is set by federal law; states control their own benefits, hiring, and cooperation with federal agencies.",
+    "prompt": "What should Iowa do about immigration?",
+    "context": "Immigration laws are mostly set by the federal government. States decide things like who gets state benefits and whether local police work with federal immigration agents.",
     "learnMore": null,
     "issueIds": [
       "7.67"
@@ -909,8 +909,8 @@
     "options": [
       {
         "id": "cooperate-enforcement",
-        "label": "Require cooperation",
-        "description": "Require state and local police to cooperate with federal immigration enforcement.",
+        "label": "Help federal agents",
+        "description": "Require state and local police to work with federal immigration enforcement.",
         "relatedIssueIds": [
           "7.67"
         ],
@@ -920,8 +920,8 @@
       },
       {
         "id": "bar-benefits",
-        "label": "Bar state benefits",
-        "description": "Bar people in the country illegally from state benefits.",
+        "label": "No state benefits for people here illegally",
+        "description": "Don't give state benefits to people who are in the country illegally.",
         "relatedIssueIds": [
           "7.67"
         ],
@@ -932,7 +932,7 @@
       {
         "id": "leave-to-federal",
         "label": "Leave it to the federal government",
-        "description": "Leave immigration enforcement to the federal government.",
+        "description": "Let the federal government handle immigration.",
         "relatedIssueIds": [
           "7.67"
         ],
@@ -943,7 +943,7 @@
       {
         "id": "worker-safety",
         "label": "Focus on law-abiding workers",
-        "description": "Focus on making law-abiding immigrant workers feel safe in Iowa.",
+        "description": "Focus on making immigrants who work and follow the law feel safe in Iowa.",
         "relatedIssueIds": [
           "7.67"
         ],
@@ -964,8 +964,8 @@
     "title": "Energy, data centers, and utility costs",
     "categoryId": "environment-energy",
     "domain": "environment",
-    "prompt": "How should Iowa handle large data centers?",
-    "context": "Data centers use large amounts of electricity and water and have received state tax incentives.",
+    "prompt": "How should Iowa handle big data centers?",
+    "context": "Data centers are huge buildings full of computers run by tech companies. They use a lot of electricity and water. Iowa has given them tax breaks to build here.",
     "learnMore": null,
     "issueIds": [
       "6.59",
@@ -976,8 +976,8 @@
     "options": [
       {
         "id": "pay-own-way",
-        "label": "No breaks; pay their own costs",
-        "description": "End tax breaks and require data centers to cover their own utility and infrastructure costs.",
+        "label": "No tax breaks; they pay their own way",
+        "description": "End the tax breaks and make them pay the full cost of the power, water, and roads they need.",
         "relatedIssueIds": [
           "6.59",
           "1.04"
@@ -988,8 +988,8 @@
       },
       {
         "id": "moratorium",
-        "label": "Pause new construction",
-        "description": "Pause new data center construction statewide.",
+        "label": "Pause new ones",
+        "description": "Stop new data centers from being built for now.",
         "relatedIssueIds": [
           "6.59"
         ],
@@ -999,8 +999,8 @@
       },
       {
         "id": "local-decision",
-        "label": "Let counties decide",
-        "description": "Let each county decide whether and how to allow data centers.",
+        "label": "Let each county decide",
+        "description": "Let counties decide whether and how to allow them.",
         "relatedIssueIds": [
           "6.59"
         ],
@@ -1010,8 +1010,8 @@
       },
       {
         "id": "keep-incentives",
-        "label": "Keep incentives",
-        "description": "Keep offering incentives to attract data centers for jobs and tax base.",
+        "label": "Keep the tax breaks",
+        "description": "Keep offering tax breaks to bring in jobs and tax money.",
         "relatedIssueIds": [
           "6.59",
           "1.04"
@@ -1031,8 +1031,8 @@
     "title": "Jobs, wages, and workforce development",
     "categoryId": "labor",
     "domain": "economy",
-    "prompt": "What should Iowa do about the state minimum wage, currently $7.25 an hour?",
-    "context": "Iowa's minimum wage matches the federal minimum of $7.25 an hour.",
+    "prompt": "Should Iowa raise its minimum wage?",
+    "context": "Iowa's minimum wage is $7.25 an hour, the same as the federal minimum.",
     "learnMore": null,
     "issueIds": [
       "8.71"
@@ -1040,8 +1040,8 @@
     "options": [
       {
         "id": "raise-and-index",
-        "label": "Raise and index",
-        "description": "Raise it in phases, for example to $12, and then adjust it automatically for inflation.",
+        "label": "Yes, and keep it rising with prices",
+        "description": "Raise it step by step (for example, to $12), then raise it automatically as prices go up.",
         "relatedIssueIds": [
           "8.71"
         ],
@@ -1051,8 +1051,8 @@
       },
       {
         "id": "raise-modestly",
-        "label": "Raise modestly",
-        "description": "Raise it modestly, without automatic adjustments.",
+        "label": "Yes, a little",
+        "description": "Raise it some, without automatic increases.",
         "relatedIssueIds": [
           "8.71"
         ],
@@ -1062,8 +1062,8 @@
       },
       {
         "id": "keep-federal",
-        "label": "Keep at $7.25",
-        "description": "Keep it at the federal minimum of $7.25.",
+        "label": "No, keep it at $7.25",
+        "description": "Keep it at $7.25, the federal minimum.",
         "relatedIssueIds": [
           "8.71"
         ],
@@ -1073,8 +1073,8 @@
       },
       {
         "id": "local-option",
-        "label": "Local option",
-        "description": "Let cities and counties set their own minimum wages.",
+        "label": "Let cities and counties decide",
+        "description": "Let each city or county set its own minimum wage.",
         "relatedIssueIds": [
           "8.71"
         ],
@@ -1093,8 +1093,8 @@
     "title": "Government transparency and accountability",
     "categoryId": "institutions",
     "domain": "government",
-    "prompt": "How should Iowa strengthen oversight of state government?",
-    "context": "A 2023 law limited the State Auditor's access to some records.",
+    "prompt": "How should Iowa keep watch over how the state spends taxpayer money?",
+    "context": "The State Auditor's office checks how state agencies spend taxpayer money. A 2023 law limited which records the Auditor can see.",
     "learnMore": null,
     "issueIds": [
       "9.81",
@@ -1104,8 +1104,8 @@
     "options": [
       {
         "id": "restore-auditor",
-        "label": "Restore auditor access",
-        "description": "Restore the State Auditor's full access to records by reversing the 2023 limits.",
+        "label": "Give the Auditor full access again",
+        "description": "Undo the 2023 limits so the State Auditor can see all records.",
         "relatedIssueIds": [
           "9.83"
         ],
@@ -1115,8 +1115,8 @@
       },
       {
         "id": "third-party-audits",
-        "label": "Independent audits",
-        "description": "Rely more on independent third-party audits of state programs.",
+        "label": "Use outside auditors",
+        "description": "Rely more on independent outside firms to check state programs.",
         "relatedIssueIds": [
           "9.83"
         ],
@@ -1126,8 +1126,8 @@
       },
       {
         "id": "current-sufficient",
-        "label": "Current oversight is enough",
-        "description": "Keep current oversight; it is sufficient.",
+        "label": "It's fine as it is",
+        "description": "Keep the current oversight; it's enough.",
         "relatedIssueIds": [
           "9.83"
         ],
@@ -1146,8 +1146,8 @@
     "title": "Elections, individual privacy, and state government authority",
     "categoryId": "institutions",
     "domain": "government",
-    "prompt": "Should more decisions be made by counties and cities rather than the state?",
-    "context": "The legislature decides which powers counties and cities hold. Related issues include voting methods, privacy, and executive power.",
+    "prompt": "Who should make more of the decisions: your city and county, or the state?",
+    "context": "State lawmakers decide what cities and counties are allowed to do on their own.",
     "learnMore": null,
     "issueIds": [
       "9.88",
@@ -1158,8 +1158,8 @@
     "options": [
       {
         "id": "more-local",
-        "label": "More local control",
-        "description": "Give counties and cities more control over local decisions.",
+        "label": "My city and county",
+        "description": "Let cities and counties make more of their own decisions.",
         "relatedIssueIds": [
           "9.88"
         ],
@@ -1169,8 +1169,8 @@
       },
       {
         "id": "current-balance",
-        "label": "Keep the current balance",
-        "description": "Keep the current balance between state and local authority.",
+        "label": "Keep it as it is",
+        "description": "Keep the current balance between the state and local governments.",
         "relatedIssueIds": [
           "9.88"
         ],
@@ -1180,8 +1180,8 @@
       },
       {
         "id": "more-uniform",
-        "label": "More uniform state rules",
-        "description": "Set more uniform statewide rules.",
+        "label": "The state",
+        "description": "Set more rules that are the same across the whole state.",
         "relatedIssueIds": [
           "9.88"
         ],

@@ -6,7 +6,7 @@ const IMPORTANCE = ['Doesn’t affect me', 'Slightly important', 'Moderately imp
 async function answer(page: Page, importance: string, option: string | 'unsure') {
   const groups = page.locator('fieldset')
   await groups.nth(0).getByText(importance, { exact: true }).click()
-  if (option === 'unsure') await groups.nth(1).getByText('Unsure or need more information').click()
+  if (option === 'unsure') await groups.nth(1).getByText('Not sure / need to learn more').click()
   else await groups.nth(1).getByText(option, { exact: true }).click()
 }
 
@@ -49,7 +49,7 @@ test('completes 20 screens, autosaves, and produces results with denominators', 
 
 test('editing importance on the results page updates analytics immediately', async ({ page }) => {
   await page.goto('assessment/?q=1')
-  await answer(page, 'Extremely passionate', 'Reduce further')
+  await answer(page, 'Extremely passionate', 'Cut them more')
   await page.goto('results/')
   await expect(page.getByText('1 of 1 rated issues')).toBeVisible()
   await page.getByLabel('Importance of Property taxes').selectOption({ label: 'Slightly important' })
@@ -58,7 +58,7 @@ test('editing importance on the results page updates analytics immediately', asy
 
 test('missing evidence is labeled neutrally, never as disagreement', async ({ page }) => {
   await page.goto('assessment/?q=14')
-  await answer(page, 'Extremely passionate', 'Keep current law')
+  await answer(page, 'Extremely passionate', 'Keep them as they are')
   await page.goto('compare/')
   const firearms = page.locator('article#firearms')
   await expect(firearms.getByText('No public position found')).toBeVisible()
@@ -68,7 +68,7 @@ test('missing evidence is labeled neutrally, never as disagreement', async ({ pa
 
 test('declined to commit is not opposition (minimum wage)', async ({ page }) => {
   await page.goto('assessment/?q=18')
-  await answer(page, 'Very important', 'Raise and index')
+  await answer(page, 'Very important', 'Yes, and keep it rising with prices')
   await page.goto('compare/')
   const mw = page.locator('article#minimum-wage')
   await expect(mw.getByText('No definite stance established')).toBeVisible()
@@ -99,7 +99,7 @@ test('candidate column order can be swapped and persists', async ({ page }) => {
 
 test('report renders and prints', async ({ page }) => {
   await page.goto('assessment/?q=9')
-  await answer(page, 'Extremely passionate', 'Keep it, with more oversight')
+  await answer(page, 'Extremely passionate', 'Private companies, watched more closely')
   await page.goto('results/report/')
   await expect(page.getByRole('heading', { name: 'My Iowa governor research brief' })).toBeVisible()
   await page.emulateMedia({ media: 'print' })

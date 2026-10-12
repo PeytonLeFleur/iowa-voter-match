@@ -130,7 +130,7 @@ export function checkIntegrity(ds: Dataset, rawResearch: string | null): Integri
     for (const o of q.options) {
       if (ids.has(o.id)) err('unique-id', `${e}/option:${o.id}`, 'duplicate option id within question')
       ids.add(o.id)
-      if (/\bunsure\b|need more information/i.test(o.label))
+      if (/\bunsure\b|\bnot sure\b|need (more information|to learn more)/i.test(o.label))
         err('built-in-unsure', `${e}/option:${o.id}`, '"Unsure" is provided by the interface; remove it from data')
       refs(`${e}/option:${o.id}`, 'relatedIssueIds', o.relatedIssueIds, issues)
       refs(`${e}/option:${o.id}`, 'legislationIds', o.legislationIds, legislation)
