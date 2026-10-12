@@ -17,8 +17,8 @@ export default function AboutPage() {
           campaign, or party.
         </p>
         <p>
-          The site does not endorse anyone or tell you who best matches your views. It shows its evidence, discloses
-          what is unknown, and leaves the decision to you. See the <Link href="/methodology/">methodology</Link> for
+          The site does not endorse anyone. It shows how closely each candidate’s documented positions match your
+          answers, shows the evidence behind every match, discloses what is unknown, and leaves the decision to you. See the <Link href="/methodology/">methodology</Link> for
           details.
         </p>
         <p>

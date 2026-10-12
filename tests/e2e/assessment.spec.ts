@@ -106,3 +106,21 @@ test('report renders and prints', async ({ page }) => {
   await expect(page.getByRole('button', { name: 'Print or save as PDF' })).toBeHidden()
   await expect(page.getByText('Medicaid and health coverage (Extremely passionate)')).toBeVisible()
 })
+
+test('match section shows weighted percentages with their basis and a closest match', async ({ page }) => {
+  const picks: [number, string][] = [
+    [1, 'Wait and see'], [2, 'Get rid of it over time'], [9, 'The state'], [11, 'Yes, and grow the program'],
+    [13, 'Less strict than now'], [17, 'No tax breaks; they pay their own way'], [18, 'Yes, and keep it rising with prices'],
+    [20, 'My city and county'],
+  ]
+  for (const [n, option] of picks) {
+    await page.goto(`assessment/?q=${n}`)
+    await answer(page, 'Very important', option)
+  }
+  await page.goto('results/#match')
+  const match = page.locator('#match')
+  await expect(match.getByText('Your closest match')).toBeVisible()
+  await expect(match.getByText(/agreement, based on \d+ of 8/).first()).toBeVisible()
+  await expect(match.getByText(/^\d+%$/).first()).toBeVisible()
+  await expect(match).not.toContainText('you should vote for')
+})

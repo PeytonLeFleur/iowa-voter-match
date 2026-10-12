@@ -2,7 +2,8 @@
 import Link from 'next/link'
 import { choiceLabel, importanceLabel } from '@/components/assessment/AssessmentFlow'
 import {
-  candidateCoverage, choiceOf, crossCandidate, importanceOf, importantUnknowns, positionFor, topPriorities, type Answers,
+  candidateCoverage, choiceOf, crossCandidate, importanceOf, importantUnknowns, matchOutcome, matchScore, positionFor,
+  topPriorities, type Answers,
 } from '@/lib/analytics'
 import { useCandidateOrder } from '@/lib/assessment/candidate-order'
 import { useAssessment } from '@/lib/assessment/store'
@@ -26,6 +27,14 @@ export default function ResearchBrief({ data }: { data: ClientData }) {
   const usedSourceIds = [...new Set(data.positions.flatMap((p) => p.statementIds)
     .map((sid) => data.statements.find((s) => s.id === sid)!.sourceId))]
 
+  const matches = ordered.map((c) => ({ c, m: matchScore(data, answers, c.id) }))
+  const outcome = matchOutcome(matches.map((x) => x.m))
+  const matchLine = (x: (typeof matches)[number]) =>
+    `${x.c.name}: ${x.m.value === null ? 'no comparable positions' : `${Math.round(x.m.value * 100)}% agreement`}, based on ${x.m.basis} of ${x.m.eligible} issues where the position is documented.`
+  const outcomeLine = outcome.kind === 'closest'
+    ? `Closest match: ${data.candidates.find((c) => c.id === outcome.candidateId)!.name} (by ${outcome.margin} points).`
+    : outcome.kind === 'near-tie' ? `Close to even (within ${outcome.margin} points).` : 'Not enough documented positions to name a closest match.'
+
   const describe = (cid: string, qid: string) => {
     const p = positionFor(data.positions, cid, qid)
     const st = evidenceState(p)
@@ -35,7 +44,8 @@ export default function ResearchBrief({ data }: { data: ClientData }) {
 
   const toMarkdown = () => {
     const lines = [`# My Iowa Voter Match research brief`, '', `Research current as of ${cutoff}. Generated ${new Date().toLocaleDateString('en-US')}.`, '',
-      'This brief does not recommend a candidate.', '', '## My 20 answers', '']
+      '## My match', '', outcomeLine, ...matches.map((x) => `- ${matchLine(x)}`),
+      'Undocumented positions are left out of each percentage, not counted as disagreement.', '', '## My 20 answers', '']
     for (const q of data.questions) lines.push(`- **${q.title}**: ${importanceLabel(importanceOf(answers, q.id))}; ${choiceLabel(q, answers[q.id]?.choice)}`)
     lines.push('', '## Documented positions on my answers', '')
     for (const q of data.questions) {
@@ -72,10 +82,17 @@ export default function ResearchBrief({ data }: { data: ClientData }) {
         <p className="text-xs font-semibold uppercase tracking-[0.14em] text-accent">Iowa Voter Match · Personal research brief</p>
         <h1 className="mt-2 text-4xl">My Iowa governor research brief</h1>
         <p className="mt-3 text-ink-soft">
-          Research current as of {cutoff}. This brief summarizes your answers and each candidate’s documented positions. It does not
-          recommend a candidate. “No public position found” means missing evidence, not opposition.
+          Research current as of {cutoff}. This brief summarizes your answers, each candidate’s documented positions, and how
+          closely each matches you. “No public position found” means missing evidence, not opposition.
         </p>
       </header>
+
+      <section className="mt-8 break-inside-avoid">
+        <h2 className="text-2xl">My match</h2>
+        <p className="mt-2 font-medium">{outcomeLine}</p>
+        <ul className="mt-2 space-y-1">{matches.map((x) => <li key={x.c.id}>{matchLine(x)}</li>)}</ul>
+        <p className="mt-2 text-sm text-ink-soft">Weighted by your importance ratings. Undocumented positions are left out of each percentage, not counted as disagreement.</p>
+      </section>
 
       <section className="mt-8 break-inside-avoid">
         <h2 className="text-2xl">My most important issues</h2>

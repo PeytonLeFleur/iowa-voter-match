@@ -190,3 +190,84 @@ export function importantUnknowns(data: ClientData, answers: Answers, candidateI
     .map((r) => ({ ...r, state: evidenceState(positionFor(data.positions, candidateId, r.item.id)) }))
     .filter((r) => r.state !== 'documented')
 }
+
+// Match percentage -------------------------------------------------------------
+/** Credit per documented relation. Unknown positions get no entry at all. */
+export const RELATION_CREDIT = { aligned: 1, partial: 0.5, conflicting: 0 } as const
+/** Weight for an issue the user chose a position on but didn't rate. */
+export const DEFAULT_WEIGHT = 2
+/** Fewer comparable issues than this and no closest match is named. */
+export const MIN_COMPARABLE = 3
+/** Matches within this many percentage points are reported as close to even. */
+export const NEAR_TIE_POINTS = 5
+
+export interface MatchItem {
+  question: PolicyQuestion
+  importance: ImportanceValue | null
+  weight: number
+  relation: 'aligned' | 'partial' | 'conflicting'
+}
+
+export interface CandidateMatch {
+  candidateId: string
+  /** Importance-weighted agreement, 0–1; null when nothing is comparable. */
+  value: number | null
+  /** Issues that count: user chose an option, weight > 0, candidate position documented and comparable. */
+  basis: number
+  /** Issues where the user chose an option with weight > 0 (comparable or not). */
+  eligible: number
+  earned: number
+  possible: number
+  agree: MatchItem[]
+  partly: MatchItem[]
+  disagree: MatchItem[]
+}
+
+/**
+ * How closely a candidate's documented positions match the user's choices,
+ * weighted by the user's importance ratings. Questions where the candidate's
+ * position is unknown, general, unverified, or conflicting are excluded from
+ * both numerator and denominator: missing evidence never counts for or against.
+ */
+export function matchScore(data: ClientData, answers: Answers, candidateId: string): CandidateMatch {
+  const items: MatchItem[] = []
+  let eligible = 0
+  for (const q of data.questions) {
+    const choice = choiceOf(answers, q)
+    if (choice.kind !== 'option') continue
+    const importance = importanceOf(answers, q.id)
+    const weight = importance ?? DEFAULT_WEIGHT
+    if (weight === 0) continue
+    eligible += 1
+    const cmp = compare(choice, positionFor(data.positions, candidateId, q.id))
+    if (cmp.kind === 'relation') items.push({ question: q, importance, weight, relation: cmp.relation })
+  }
+  const possible = items.reduce((s, i) => s + i.weight, 0)
+  const earned = items.reduce((s, i) => s + i.weight * RELATION_CREDIT[i.relation], 0)
+  const byWeight = (a: MatchItem, b: MatchItem) => b.weight - a.weight || a.question.order - b.question.order
+  return {
+    candidateId,
+    value: possible > 0 ? earned / possible : null,
+    basis: items.length,
+    eligible,
+    earned,
+    possible,
+    agree: items.filter((i) => i.relation === 'aligned').sort(byWeight),
+    partly: items.filter((i) => i.relation === 'partial').sort(byWeight),
+    disagree: items.filter((i) => i.relation === 'conflicting').sort(byWeight),
+  }
+}
+
+export type MatchOutcome =
+  | { kind: 'closest'; candidateId: string; margin: number }
+  | { kind: 'near-tie'; margin: number }
+  | { kind: 'not-enough'; reason: 'no-choices' | 'too-few-documented' }
+
+/** Names the closest match only when both candidates have enough documented positions to compare. */
+export function matchOutcome(matches: CandidateMatch[]): MatchOutcome {
+  if (matches.every((m) => m.eligible === 0)) return { kind: 'not-enough', reason: 'no-choices' }
+  if (matches.some((m) => m.basis < MIN_COMPARABLE || m.value === null)) return { kind: 'not-enough', reason: 'too-few-documented' }
+  const [a, b] = [...matches].sort((x, y) => y.value! - x.value!)
+  const margin = Math.round((a!.value! - b!.value!) * 100)
+  return margin < NEAR_TIE_POINTS ? { kind: 'near-tie', margin } : { kind: 'closest', candidateId: a!.candidateId, margin }
+}

@@ -14,6 +14,7 @@ import { RELATION_COPY } from '@/lib/compare'
 import { DOMAIN_LABELS, type ClientData } from '@/lib/client-data'
 import { formatRatio, ratio } from '@/lib/percent'
 import { formatDate } from '@/lib/site'
+import MatchSummary from './MatchSummary'
 import { HEAT, ImportanceSelect, Panel, Section, heatText } from './shared'
 
 const DOMAINS = Object.keys(DOMAIN_LABELS) as Domain[]
@@ -51,8 +52,8 @@ export default function ResultsDashboard({ data }: { data: ClientData }) {
         <p className="text-xs font-semibold uppercase tracking-[0.14em] text-accent">Your results</p>
         <h1 className="mt-2 text-4xl sm:text-5xl">Your priorities</h1>
         <p className="mt-4 text-lg text-ink-soft">
-          Your own answers come first. Candidate information follows, drawn only from documented public statements.
-          This page does not recommend a candidate or calculate a match score.
+          Your own answers come first. Candidate information follows, drawn only from documented public statements,
+          ending with how closely each candidate’s record matches yours.
         </p>
         {!hasAnswers && (
           <p className="mt-6 border-l-2 border-accent bg-accent-wash px-4 py-3">
@@ -73,6 +74,7 @@ export default function ResultsDashboard({ data }: { data: ClientData }) {
           <a href="#similarities">4. Similarities</a>
           <a href="#differences">5. Differences</a>
           <a href="#incomplete">6. Incomplete research</a>
+          <a href="#match">7. Your match</a>
         </nav>
       </header>
 
@@ -274,6 +276,12 @@ export default function ResultsDashboard({ data }: { data: ClientData }) {
             )
           })}
         </div>
+      </Section>
+
+      {/* 7 ─────────────────────────────────────────────────────────────── */}
+      <Section id="match" eyebrow="Part 7" title="Your match"
+        intro="How often each candidate’s documented positions match the positions you chose, weighted by how important each issue is to you.">
+        <MatchSummary data={data} answers={answers} ordered={ordered} />
       </Section>
 
       <aside className="no-print flex flex-wrap items-center justify-between gap-4 border-t border-ink pt-8">

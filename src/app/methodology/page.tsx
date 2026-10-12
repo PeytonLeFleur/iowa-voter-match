@@ -20,9 +20,8 @@ export default function MethodologyPage() {
           <h2>What this site does and does not do</h2>
           <p>
             Iowa Voter Match helps you see your own priorities and compare them with what each candidate has publicly
-            documented. It does not recommend a candidate, calculate a compatibility score, predict how you will vote,
-            or estimate whether a candidate will keep a promise. Those things cannot be established by applying numeric
-            weights to public statements.
+            documented. It shows a match percentage based only on documented positions. It does not endorse a candidate,
+            predict how you will vote, or estimate whether a candidate will keep a promise.
           </p>
         </section>
 
@@ -67,6 +66,27 @@ export default function MethodologyPage() {
             <li><strong className="text-ink">Proposal documentation:</strong> the share of issues with a documented, specific implementation proposal.</li>
             <li><strong className="text-ink">Answer completeness:</strong> the share of the 20 questions you answered.</li>
           </ul>
+        </section>
+
+        <section id="match">
+          <h2>How your match percentage is calculated</h2>
+          <p>
+            For each issue where you chose a position, a candidate earns full credit if their documented position aligns
+            with your choice, half credit if it partly overlaps, and none if it differs. Each issue is weighted by the
+            importance you gave it, from 0 (Doesn’t affect me) to 4 (Extremely passionate); unrated issues count as 2.
+            The percentage is the credit earned divided by the most that could be earned on the issues counted.
+          </p>
+          <p>
+            Only issues where the candidate has a verified explicit statement, specific proposal, or documented action
+            that speaks to your choice are counted. Issues where the position is not found, only general, indirect,
+            unverified, or conflicting are left out of that candidate’s percentage entirely, so each percentage shows how
+            many issues it is based on. A closest match is named only when both candidates have at least three comparable
+            issues, and results within five points are reported as close to even.
+          </p>
+          <p>
+            Which policy option a documented position supports is an editorial judgment made by reading the candidate’s
+            own statements. Each judgment and its reasoning is shown next to the evidence on the Compare page.
+          </p>
         </section>
 
         <section id="unknown-positions">

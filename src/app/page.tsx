@@ -47,15 +47,15 @@ export default function Home() {
           <h2 className="text-xl">How it works</h2>
           <p className="mt-3 text-ink-soft">
             For each of 20 issues you say how important it is to you and, if you want, which direction Iowa should
-            take. You see your own priorities first, then each candidate’s documented record on the issues you care
-            about.
+            take. You see your own priorities first, then each candidate’s documented record, and finally how closely
+            each one matches you.
           </p>
         </div>
         <div>
           <h2 className="text-xl">Evidence, not endorsements</h2>
           <p className="mt-3 text-ink-soft">
             Every candidate position links to its original source and date. Where no position has been documented,
-            we say so plainly. We never score candidates or tell you who to vote for.{' '}
+            we say so plainly, and it never counts for or against a candidate in your match.{' '}
             <Link href="/methodology/">Read the methodology</Link>.
           </p>
         </div>
