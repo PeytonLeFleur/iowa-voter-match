@@ -1,0 +1,13 @@
+{
+  "datasetVersion": "0.0.0",
+  "status": "scaffold",
+  "researchCutoff": "2026-10-12",
+  "expectedIssueCount": 107,
+  "expectedQuestionCount": 20,
+  "race": {
+    "id": "ia-gov-2026",
+    "state": "Iowa",
+    "office": "Governor",
+    "electionYear": 2026
+  }
+}
