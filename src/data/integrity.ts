@@ -140,8 +140,31 @@ export function checkIntegrity(ds: Dataset, rawResearch: string | null): Integri
     if (q.reviewStatus === 'draft') warn('review', e, 'question wording and options are an unreviewed draft')
   }
   const orders = ds.questions.map((q) => q.order).sort((a, b) => a - b)
-  if (ds.questions.length !== ds.meta.expectedQuestionCount)
-    completeness('question-count', 'questions', `expected ${ds.meta.expectedQuestionCount} questions, found ${ds.questions.length}`)
+  const core = ds.questions.filter((q) => q.tier === 'core')
+  if (core.length !== ds.meta.expectedQuestionCount)
+    completeness('question-count', 'questions', `expected ${ds.meta.expectedQuestionCount} core questions, found ${core.length}`)
+  if (ds.questions.some((q, i) => q.tier === 'core' && ds.questions.slice(0, i).some((x) => x.tier === 'deep' && x.order < q.order)))
+    err('question-order', 'questions', 'core questions must come before deeper questions')
+
+  // --- Assumptions: deep options may be pre-filled from core answers only ---
+  for (const q of ds.questions) {
+    const seen = new Map<string, string>()
+    for (const o of q.options) {
+      for (const a of o.assumeFrom) {
+        const e = `question:${q.id}/option:${o.id}`
+        if (q.tier !== 'deep') err('assume-tier', e, 'only deeper questions can be pre-filled by assumption')
+        const src = questions.get(a.questionId)
+        if (!src) { err('reference', e, `assumeFrom → unknown question "${a.questionId}"`); continue }
+        if (src.tier !== 'core') err('assume-tier', e, 'assumptions must come from a core question')
+        for (const oid of a.optionIds) {
+          if (!src.options.some((x) => x.id === oid)) err('reference', e, `assumeFrom → unknown option "${oid}" in ${src.id}`)
+          const key = `${a.questionId}:${oid}`
+          if (seen.has(key) && seen.get(key) !== o.id) err('assume-conflict', e, `${key} already assumes option "${seen.get(key)}"`)
+          seen.set(key, o.id)
+        }
+      }
+    }
+  }
   if (orders.some((o, i) => o !== i + 1))
     err('question-order', 'questions', `question order must run 1..${orders.length} without gaps: ${orders.join(',')}`)
   if (ds.issues.length !== ds.meta.expectedIssueCount)

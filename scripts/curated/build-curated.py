@@ -401,18 +401,21 @@ stmt("st-lahn-centralized", LAHN, "Favors decentralizing power.",
 # --------------------------------------------------------------------------
 # Questions (configuration for the 20 assessment screens)
 # --------------------------------------------------------------------------
-def opt(id, label, description, issues=(), legislation=(), explanation=None):
+def opt(id, label, description, issues=(), legislation=(), explanation=None, assume=()):
+    """assume: [(core_question_id, [option_ids])] - pre-fill this option for a voter who chose one of
+    those options AND rated that question Very important or higher. The voter can always change it."""
     return {"id": id, "label": label, "description": description, "relatedIssueIds": list(issues),
-            "legislationIds": list(legislation), "sourceIds": [], "explanation": explanation}
+            "legislationIds": list(legislation), "sourceIds": [], "explanation": explanation,
+            "assumeFrom": [{"questionId": q, "optionIds": list(o)} for q, o in assume]}
 
 questions = []
 
-def question(n, slug, title, category, domain, prompt, context, issues, options, learn_more=None, unanswered=()):
-    qid = f"q{n:02d}"
+def question(n, slug, title, category, domain, prompt, context, issues, options, learn_more=None, unanswered=(), tier="core"):
+    qid = f"q{n:02d}" if tier == "core" else f"d{n - 20:02d}"
     questions.append({
         "id": qid, "order": n, "slug": slug, "title": title, "categoryId": category, "domain": domain,
         "prompt": prompt, "context": context, "learnMore": learn_more, "issueIds": issues,
-        "options": options, "unansweredQuestions": list(unanswered), "reviewStatus": "draft",
+        "options": options, "unansweredQuestions": list(unanswered), "reviewStatus": "draft", "tier": tier,
     })
     return qid
 
@@ -420,6 +423,7 @@ question(1, "property-taxes", "Property taxes", "economy", "economy",
     "What should Iowa do about property taxes?",
     "Property taxes are what you pay each year on a home or land. They pay for local things like roads, police, fire departments, and schools. Iowa recently passed a law that limits how fast most city and county property taxes can grow and gives homeowners a tax break.",
     ["1.01"], [
+        opt("eliminate-homes", "Get rid of them on homes", "Phase out property taxes on people's homes completely over time.", ["1.01"]),
         opt("reduce-further", "Cut them more", "Lower property taxes more, even if cities and counties have to cut some spending.", ["1.01"]),
         opt("relief-preserve", "Cut them, but protect local services", "Lower property taxes, but make sure things like police, fire, and roads keep their funding.", ["1.01"]),
         opt("maintain-evaluate", "Wait and see", "Leave the new law alone for now and see how it works before changing anything.", ["1.01"], ["leg-sf-2472"]),
@@ -433,6 +437,7 @@ question(2, "income-tax-and-spending", "State income taxes and government spendi
     "The state income tax comes out of your paycheck. Iowa recently cut it to one rate for everyone: 3.8%. Lower taxes leave more money in your pocket, but also less money for state services.",
     ["1.02", "1.05", "11.103"], [
         opt("eliminate", "Get rid of it over time", "Lower the income tax step by step until it's gone, and cut state spending to make up for it.", ["1.02"]),
+        opt("cut-further", "Cut it more, but keep it", "Lower the rate further, but don't get rid of the income tax.", ["1.02"]),
         opt("keep-rate", "Keep it at 3.8%", "Keep the income tax where it is now.", ["1.02"]),
         opt("pause-cuts", "No more cuts for now", "Don't cut it any further until the state budget is balanced.", ["1.02", "1.05"]),
         opt("raise-higher-incomes", "Raise it for high earners", "Have people who make the most money pay a higher rate.", ["1.02"]),
@@ -467,6 +472,7 @@ question(5, "eminent-domain", "Eminent domain and landowner protections", "agric
         opt("prohibit-private", "No, never", "Don't allow it when the project mainly benefits a private company.", ["2.15"]),
         opt("stricter-standards", "Only with stricter rules", "Allow it only with tougher rules and better pay for landowners.", ["2.15"]),
         opt("case-by-case", "Decide case by case", "Keep the current law and let state regulators decide each project.", ["2.15"]),
+        opt("allow-public-benefit", "Yes, if it benefits the public", "Allow it for private projects that bring public benefits like jobs or lower energy costs, as long as owners are paid.", ["2.15"]),
     ],
     learn_more="Being against something in general is not the same as backing a specific bill. Both candidates have said they oppose taking land for private gain. Neither has said whether he would sign HF 2104, a bill on this issue.",
     unanswered=["Neither candidate said whether he would sign HF 2104.", "Neither addressed the Utilities Commission, Summit's permit, or IUC appointment criteria."])
@@ -520,6 +526,7 @@ question(10, "school-funding", "Public school funding", "education", "education"
         opt("increase-significantly", "Yes, a lot more", "Give schools a bigger increase than they've gotten in recent years.", ["4.31"]),
         opt("modest-increases", "Yes, a little more", "Keep giving small yearly increases like recent years.", ["4.31"]),
         opt("hold-steady", "About the same", "Keep funding steady and have schools find ways to save.", ["4.31"]),
+        opt("spend-less", "Less than now", "Spend less on public schools and return the savings to taxpayers.", ["4.31"]),
     ])
 
 question(11, "education-savings-accounts", "Private school tuition assistance and school choice", "education", "education",
@@ -537,6 +544,7 @@ question(12, "school-vaccine-requirements", "Parental rights and education polic
     "Should kids have to get certain vaccines to go to school?",
     "Iowa requires certain shots for kids to enroll in school. Families can ask for an exemption in some cases.",
     ["5.48", "3.30"], [
+        opt("stricter-requirements", "Yes, and make it harder to opt out", "Keep the requirements and make exemptions harder to get.", ["5.48"]),
         opt("keep-requirements", "Yes, keep the current rules", "Keep the vaccine requirements and exemptions as they are.", ["5.48"]),
         opt("easier-exemptions", "Yes, but make it easier to opt out", "Keep the requirements, but make exemptions easier for parents to get.", ["5.48"]),
         opt("end-requirements", "No", "End vaccine requirements for going to school.", ["5.48"]),
@@ -547,9 +555,11 @@ question(13, "abortion", "Abortion law and reproductive protections", "rights", 
     "What should Iowa's abortion law be?",
     "Iowa law bans most abortions after about six weeks of pregnancy, with some exceptions.",
     ["5.41", "5.42"], [
-        opt("further-restrict", "Stricter than now", "Put more limits on abortion than current law does.", ["5.41"], ["leg-hf-2788"]),
+        opt("ban-completely", "Ban it completely", "Ban all abortions, with no exceptions.", ["5.41"]),
+        opt("further-restrict", "Stricter than now, with exceptions", "Put more limits on abortion than current law does, but keep some exceptions.", ["5.41"], ["leg-hf-2788"]),
         opt("keep-current", "Keep the current law", "Keep the six-week limit as it is.", ["5.41"]),
-        opt("broaden-access", "Less strict than now", "Allow abortion later in pregnancy, closer to the rules under Roe v. Wade.", ["5.41"]),
+        opt("broaden-access", "Less strict than now", "Allow abortion later in pregnancy than current law does.", ["5.41"]),
+        opt("legal-most-cases", "Legal in most cases", "Protect abortion in state law for most of pregnancy, closer to the rules under Roe v. Wade.", ["5.41"]),
     ],
     unanswered=["Lahn's position on exceptions for rape, incest, or the life of the mother is not verified.", "Neither candidate addressed doctor liability."])
 
@@ -557,8 +567,10 @@ question(14, "firearms", "Firearm rights and public safety", "rights", "rights",
     "Should Iowa's gun laws change?",
     "Iowa's constitution protects the right to keep and bear arms. Adults in Iowa can generally carry a handgun without a permit.",
     ["5.45"], [
-        opt("expand-rights", "Fewer limits", "Loosen gun laws further.", ["5.45"]),
+        opt("remove-restrictions", "Remove most restrictions", "Get rid of most remaining state limits on owning and carrying guns.", ["5.45"]),
+        opt("expand-rights", "Fewer limits", "Loosen gun laws somewhat.", ["5.45"]),
         opt("keep-current", "Keep them as they are", "Leave current gun laws alone.", ["5.45"]),
+        opt("ban-some-guns", "Ban some types of guns", "Ban certain kinds of guns, such as assault-style rifles.", ["5.45"]),
         opt("add-safety-measures", "More safety rules", "Add rules like required permits, or “red flag” laws that let a court take guns from someone found to be dangerous.", ["5.45"]),
     ],
     unanswered=["The research does not establish a verified current firearms position for either candidate."])
@@ -597,6 +609,7 @@ question(18, "minimum-wage", "Jobs, wages, and workforce development", "labor", 
     "Should Iowa raise its minimum wage?",
     "Iowa's minimum wage is $7.25 an hour, the same as the federal minimum.",
     ["8.71"], [
+        opt("raise-15", "Yes, to $15 or more", "Raise it to at least $15 an hour.", ["8.71"]),
         opt("raise-and-index", "Yes, and keep it rising with prices", "Raise it step by step (for example, to $12), then raise it automatically as prices go up.", ["8.71"]),
         opt("raise-modestly", "Yes, a little", "Raise it some, without automatic increases.", ["8.71"]),
         opt("keep-federal", "No, keep it at $7.25", "Keep it at $7.25, the federal minimum.", ["8.71"]),
@@ -626,6 +639,7 @@ question(20, "state-and-local-authority", "Elections, individual privacy, and st
 # Positions: one per candidate per question
 # --------------------------------------------------------------------------
 positions = []
+PENDING_RELATIONS = {}
 stmt_by_id = {s["id"]: s for s in statements}
 
 def position(qid, cand, cls, summary=None, statements_=(), relations=None, rationale=None, proposal=None,
@@ -638,6 +652,11 @@ def position(qid, cand, cls, summary=None, statements_=(), relations=None, ratio
         verification = "unverified"
     else:
         verification = "verified" if any(s["verificationStatus"] == "verified" for s in sts) else "unverified"
+    if relations and verification != "verified":
+        # Mapping is drafted but inactive until a source confirms the statements.
+        PENDING_RELATIONS[(qid, cand)] = relations
+        relations = None
+        limitations = ((limitations + " ") if limitations else "") + "The research does not cite a source for this position, so it is not counted in the match until verified."
     found = True if cls in ("EP", "SP", "DA", "CF") else False if cls == "NDP" else None
     dates = sorted(s["date"] for s in sts if s["date"])
     positions.append({
@@ -801,12 +820,12 @@ position("q12", LAHN, "EP", "Supports ending school vaccine requirements.",
 position("q13", SAND, "EP", "Says the six-week ban goes too far; would veto further restrictions.",
     ["st-sand-abortion", "st-sand-roe"],
     {"further-restrict": "conflicting", "keep-current": "conflicting", "broaden-access": "aligned"},
-    "Sand says the six-week ban “goes too far,” which differs from keeping or tightening it, and would veto further restrictions.",
+    "Sand says the six-week ban “goes too far,” which differs from keeping or tightening it, and would veto further restrictions. Whether he supports protecting abortion for most of pregnancy is not established, so no relation is drawn for that option.",
     limitations="He says he cannot repeal the six-week law unilaterally. The research's report that he supports the Roe framework (The Gazette, September 2026) could not be located.")
 position("q13", LAHN, "EP", "Holds that life begins at conception and wants to continue protecting life.",
     ["st-lahn-protect-life", "st-lahn-conception", "st-lahn-ivf"],
     {"further-restrict": U, "keep-current": U, "broaden-access": "conflicting"},
-    "Lahn's statements oppose broadening access. Whether he would keep the current law or restrict it further is not established: a report that he called for a total ban is not verified.",
+    "Lahn's statements oppose broadening access. Whether he would keep the current law, restrict it further, or ban abortion completely is not established: a report that he called for a total ban is not verified.",
     limitations="Exceptions for rape, incest, or the life of the mother, and HF 2788: not verified.")
 
 # Q14
@@ -878,6 +897,415 @@ position("q20", LAHN, "EP", "Counties should have far more control; favors decen
     "Lahn said counties “should have far more control” and that he wants to avoid centralized power.")
 
 # --------------------------------------------------------------------------
+# Relations for options added to the core questions (fuller range of views)
+# --------------------------------------------------------------------------
+EXTRA_RELATIONS = {
+    ("q01", SAND): {"eliminate-homes": "conflicting"},
+    ("q01", LAHN): {"eliminate-homes": "aligned"},
+    ("q02", LAHN): {"cut-further": "partial"},
+    ("q05", SAND): {"allow-public-benefit": "conflicting"},
+    ("q05", LAHN): {"allow-public-benefit": "conflicting"},
+    ("q10", SAND): {"spend-less": "conflicting"},
+    ("q12", LAHN): {"stricter-requirements": "conflicting"},
+    ("q13", SAND): {"ban-completely": "conflicting"},
+    ("q13", LAHN): {"legal-most-cases": "conflicting"},
+    ("q18", SAND): {"raise-15": "partial"},
+}
+
+# ==========================================================================
+# GO DEEPER: optional questions for framework issues outside the core 20
+# where at least one candidate has a documented position.
+# ==========================================================================
+
+# Statements reused from the core layer also apply to these deeper questions.
+EXTRA_STATEMENT_QUESTIONS = {
+    "st-sand-roe": ["d01"], "st-lahn-ivf": ["d01"], "st-lahn-conception": ["d01"],
+    "st-lahn-housing": ["d03"], "st-lahn-medicaid": ["d06"],
+}
+
+stmt("st-lahn-out-of-state-credits", LAHN, "Would end state tax credits and development money for out-of-state and foreign corporations.",
+     "src-research-uncited", None, "SP", ["1.03", "1.10"], ["d02"],
+     quote="End tax credits and economic development funds for out-of-state and foreign corporations.")
+stmt("st-lahn-ieda", LAHN, "Would refocus the Iowa Economic Development Authority on Iowa-owned firms; called the proposed steel plant “transformational.”",
+     "src-research-uncited", None, "SP", ["1.10"], ["d02"], attribution="paraphrase")
+stmt("st-sand-steel-incentives", SAND, "On the proposed steel plant, cautioned against large up-front incentives.",
+     "src-research-uncited", None, "GS", ["1.03"], ["d02"],
+     quote="We don't want to see a lot of upfront incentives.")
+stmt("st-sand-incentive-disclosure", SAND, "Would require disclosure of state business incentives and bar nondisclosure agreements.",
+     "src-research-uncited", None, "SP", ["1.10"], ["d02"], attribution="paraphrase")
+
+stmt("st-sand-rural-office", SAND, "Proposes an Office of Rural Prosperity.",
+     "src-sand-opportunities", "2026", "SP", ["2.20"], ["d03"], attribution="paraphrase")
+stmt("st-sand-remote-jobs", SAND, "Would let people fill state jobs from any county, including remote work.",
+     "src-research-uncited", None, "SP", ["2.20", "8.79"], ["d03"], attribution="paraphrase")
+stmt("st-lahn-instate-quota", LAHN, "Would require state universities to admit a higher share of Iowa students.",
+     "src-research-uncited", None, "SP", ["10.98", "8.79"], ["d03", "d22"], attribution="paraphrase")
+
+stmt("st-sand-caregiver", SAND, "Proposes a caregiver tax credit, targeted by income.",
+     "src-sand-affordable", "2026", "SP", ["3.23", "10.97"], ["d04"],
+     quote="nonrefundable tax credit of up to $2,000 annually for caregivers, with an additional $1,000 for caretakers of veterans")
+
+stmt("st-sand-pbm", SAND, "Proposes regulating pharmacy benefit managers, a Prescription Drug Review Board, a surprise-billing law, and medical debt relief.",
+     "src-research-uncited", None, "SP", ["3.28"], ["d05"], attribution="paraphrase")
+
+stmt("st-lahn-teacher-license", LAHN, "Would revoke the licenses of teachers “caught pushing a political agenda.”",
+     "src-research-uncited", None, "SP", ["4.34", "5.44"], ["d07"], attribution="paraphrase")
+stmt("st-lahn-testing", LAHN, "Would drastically reduce standardized testing and move toward mastery-based pacing.",
+     "src-research-uncited", None, "SP", ["4.36"], ["d08"], attribution="paraphrase")
+stmt("st-sand-prek", SAND, "Proposes universal full-day pre-K for 3- and 4-year-olds.",
+     "src-research-uncited", None, "SP", ["4.40"], ["d09"],
+     quote="For every dollar you invest, you save $17 later on")
+stmt("st-sand-sports", SAND, "Opposes transgender girls and women competing in female sports.",
+     "src-research-uncited", None, "EP", ["5.47"], ["d10"], attribution="paraphrase",
+     reported_via="Politico, via Erin Reed (secondary)")
+stmt("st-sand-clean-energy", SAND, "Would maintain and grow incentives for clean energy and allow plug-in solar.",
+     "src-research-uncited", None, "SP", ["6.56", "6.58"], ["d11"], attribution="paraphrase")
+stmt("st-sand-public-theft", SAND, "Proposes mandatory prison for theft of more than $10,000 in public funds; proposed it every year as State Auditor.",
+     "src-research-uncited", None, "SP", ["7.61"], ["d12"], attribution="paraphrase")
+stmt("st-sand-fraud-ban", SAND, "Would bar people convicted of fraud from doing business with the state.",
+     "src-research-uncited", None, "SP", ["7.70"], ["d12"], attribution="paraphrase")
+stmt("st-lahn-apprenticeships", LAHN, "Proposes incentives for apprenticeships and trade school.",
+     "src-research-uncited", None, "SP", ["8.75", "4.36"], ["d13"], attribution="paraphrase")
+stmt("st-sand-small-biz", SAND, "Would reduce red tape for businesses with 10 or fewer employees.",
+     "src-research-uncited", None, "SP", ["8.78"], ["d14"], attribution="paraphrase")
+stmt("st-lahn-food-freedom", LAHN, "His first bill would be an “Iowa first food freedom bill” loosening rules on selling locally produced food.",
+     "src-research-uncited", None, "SP", ["8.78", "1.06"], ["d14"], attribution="paraphrase")
+stmt("st-sand-term-limits", SAND, "Proposes term limits (3 statewide terms, 12 years in the legislature, 20 years total), cognitive and civics tests, and required town halls.",
+     "src-research-uncited", None, "SP", ["9.90"], ["d15"], attribution="paraphrase")
+stmt("st-lahn-term-limits", LAHN, "Reportedly supports term limits for “many things” but not governor.",
+     "src-research-uncited", None, "SNV", ["9.90"], ["d15"], attribution="paraphrase", verified=False)
+stmt("st-sand-age-limit", SAND, "Proposes an age limit of 78 for judges and elected officials.",
+     "src-research-uncited", None, "SP", ["9.89"], ["d16"], attribution="paraphrase")
+stmt("st-sand-work-without-worry", SAND, "Supports the Work Without Worry bill, which would remove income and asset limits for working Iowans with disabilities.",
+     "src-ktiv-2026-10-08", "2026-10-08", "SP", ["10.93", "3.22"], ["d17"], attribution="paraphrase")
+stmt("st-sand-school-meals", SAND, "Proposes universal free school meals.",
+     "src-research-uncited", None, "SP", ["10.95"], ["d18"], attribution="paraphrase")
+stmt("st-lahn-school-meals", LAHN, "Wants universal free breakfast and lunch, with a goal of 80% Iowa-grown school food.",
+     "src-research-uncited", None, "EP", ["10.95"], ["d18"],
+     quote="I want to do universal free breakfast and free lunch in the state of Iowa")
+stmt("st-lahn-flock", LAHN, "Called for state regulation of Flock license-plate cameras.",
+     "src-icd-2026-08-24", "2026-08-24", "EP", ["5.49"], ["d19"], attribution="paraphrase")
+stmt("st-lahn-emergency", LAHN, "Welcomes limits on the governor's emergency powers and would likely sign more.",
+     "src-iowapress-lahn", "2026-07-10", "EP", ["9.87"], ["d20"],
+     quote="I welcome the emergency powers being reduced... I would likely sign more legislation like that")
+stmt("st-sand-emergency", SAND, "Has criticized the limits placed on the next governor's emergency powers.",
+     "src-research-uncited", None, "GS", ["9.87"], ["d20"], attribution="paraphrase")
+stmt("st-sand-top-four", SAND, "Proposes a top-four primary with approval voting.",
+     "src-research-uncited", None, "SP", ["9.85"], ["d21"], attribution="paraphrase")
+stmt("st-sand-cannabis", SAND, "Would legalize and tax cannabis, regulated through the Alcoholic Beverages Division, with priority grow licenses for small farms.",
+     "src-research-uncited", None, "SP", ["7.63", "3.27"], ["d23"], attribution="paraphrase")
+
+sources.append(src("src-ktiv-2026-10-08", "KTIV report (Work Without Worry)", "KTIV", "news", None, "2026-10-08", "KTIV, October 8, 2026"))
+
+for s in statements:
+    s["questionIds"] = sorted(set(s["questionIds"]) | set(EXTRA_STATEMENT_QUESTIONS.get(s["id"], [])))
+
+# ---- Deeper questions --------------------------------------------------------
+question(21, "ivf", "IVF and embryos", "rights", "rights",
+    "Should Iowa put rules on IVF (in vitro fertilization)?",
+    "IVF is a fertility treatment where eggs are fertilized outside the body. It can create extra embryos that are frozen or discarded. Iowa has no law specifically regulating IVF.",
+    ["5.42"], [
+        opt("regulate-protect-embryos", "Yes, to protect embryos", "Regulate IVF to limit how embryos are created and discarded.", ["5.42"],
+            assume=[("q13", ["ban-completely", "further-restrict"])]),
+        opt("keep-current", "Keep things as they are", "Leave IVF without new state rules.", ["5.42"]),
+        opt("protect-access", "Protect access by law", "Pass a law protecting people's right to use IVF.", ["5.42"],
+            assume=[("q13", ["broaden-access", "legal-most-cases"])]),
+    ], tier="deep")
+
+question(22, "business-incentives", "Business tax breaks", "economy", "economy",
+    "Should Iowa give tax breaks to companies to bring jobs here?",
+    "Iowa offers tax credits and other money to companies that build or expand in the state.",
+    ["1.03", "1.10"], [
+        opt("keep-offering", "Yes, keep offering them", "Keep using tax breaks to attract companies and jobs.", ["1.10"]),
+        opt("results-only", "Only if they deliver", "Give them only when companies hit promised jobs and investment, with deals made public.", ["1.10"]),
+        opt("iowa-firms-only", "Only for Iowa companies", "End tax breaks for out-of-state and foreign companies; focus on Iowa-owned businesses.", ["1.03", "1.10"]),
+        opt("end-all", "No, end them", "Stop giving companies special tax breaks.", ["1.03"]),
+    ], tier="deep")
+
+question(23, "keeping-young-iowans", "Keeping young people in Iowa", "economy", "economy",
+    "What's the best way to keep young people from moving away from Iowa?",
+    "Many young Iowans leave the state after school, especially from small towns.",
+    ["2.20", "8.79", "10.98"], [
+        opt("tax-breaks-stay", "Tax breaks for those who stay", "Give young people tax breaks for staying in Iowa, such as help with a down payment.", ["8.79"]),
+        opt("jobs-anywhere", "Jobs anywhere in the state", "Let people do state jobs from any county and invest in rural communities.", ["2.20"]),
+        opt("college-spots", "More college spots for Iowans", "Have state universities save more spots for Iowa students.", ["10.98"]),
+        opt("market", "Leave it to the market", "Let wages and job growth decide; no special programs.", ["8.79"]),
+    ], tier="deep")
+
+question(24, "family-caregivers", "Family caregivers", "health", "health",
+    "Should Iowa give a tax credit to people caring for an aging or disabled family member?",
+    "Many Iowans care for a parent, spouse, or relative at home without pay.",
+    ["3.23", "10.97"], [
+        opt("yes-credit", "Yes", "Give caregivers a state tax credit.", ["3.23"]),
+        opt("no-credit", "No", "Don't add a new tax credit.", ["3.23"]),
+    ], tier="deep")
+
+question(25, "prescription-drug-costs", "Prescription drug costs", "health", "health",
+    "Should Iowa regulate the middlemen that help set prescription drug prices?",
+    "Pharmacy benefit managers (PBMs) are companies that negotiate drug prices between insurers, drug makers, and pharmacies.",
+    ["3.28", "10.99"], [
+        opt("regulate", "Yes, regulate them", "Put state rules on PBMs and review high drug prices.", ["3.28"]),
+        opt("leave", "No, leave it to the market", "Don't add new state rules.", ["3.28"]),
+    ], tier="deep")
+
+question(26, "ai-coverage-denials", "Insurance coverage denials", "health", "health",
+    "Should insurance companies be allowed to use artificial intelligence (AI) to deny health coverage?",
+    "Some insurers use computer programs to review and deny claims.",
+    ["3.28", "3.22"], [
+        opt("ban", "No, ban it", "Don't let insurers use AI to deny coverage.", ["3.28"]),
+        opt("allow-with-review", "Only with a human review", "Allow it, but require a person to review any denial.", ["3.28"]),
+        opt("allow", "Yes, allow it", "Leave it to insurers.", ["3.28"]),
+    ], tier="deep")
+
+question(27, "teacher-political-agenda", "Teachers and politics in class", "education", "education",
+    "Should a teacher be able to lose their license for pushing political views in class?",
+    "Teaching licenses are issued by the state and can be taken away for misconduct.",
+    ["4.34", "5.44"], [
+        opt("yes-revoke", "Yes", "Allow the state to revoke the license of a teacher found pushing a political agenda.", ["4.34"]),
+        opt("no-revoke", "No", "Handle it locally through schools, not by taking away licenses.", ["4.34"]),
+    ], tier="deep")
+
+question(28, "standardized-testing", "Standardized testing", "education", "education",
+    "Should Iowa schools give fewer standardized tests?",
+    "Iowa students take statewide tests each year to measure progress.",
+    ["4.36"], [
+        opt("fewer", "Yes, fewer tests", "Cut back testing and let students move ahead when they master material.", ["4.36"]),
+        opt("same", "Keep them as they are", "Keep current testing.", ["4.36"]),
+        opt("more", "More testing", "Test more to hold schools accountable.", ["4.36"]),
+    ], tier="deep")
+
+question(29, "universal-preschool", "Preschool", "education", "education",
+    "Should Iowa offer free, full-day preschool for every 3- and 4-year-old?",
+    "Iowa currently offers free part-day preschool for 4-year-olds in most districts.",
+    ["4.40"], [
+        opt("yes-full-day", "Yes, for all 3- and 4-year-olds", "Offer free full-day preschool to every family that wants it.", ["4.40"]),
+        opt("keep-current", "Keep what we have", "Keep the current program.", ["4.40"]),
+        opt("no-expansion", "No new state preschool", "Leave preschool to families and private providers.", ["4.40"]),
+    ], tier="deep")
+
+question(30, "girls-sports", "Transgender athletes", "rights", "rights",
+    "Should transgender girls be allowed to play on girls' school sports teams?",
+    "Iowa law currently limits girls' school sports to students who were female at birth.",
+    ["5.47"], [
+        opt("no", "No", "Keep girls' teams limited to students who were female at birth.", ["5.47"]),
+        opt("case-by-case", "Decide case by case", "Let schools or athletic groups decide based on each situation.", ["5.47"]),
+        opt("yes", "Yes", "Let transgender girls play on girls' teams.", ["5.47"]),
+    ], tier="deep")
+
+question(31, "wind-and-solar", "Wind and solar energy", "environment-energy", "environment",
+    "Should Iowa keep giving incentives for wind and solar power?",
+    "Iowa gets a large share of its electricity from wind. The state has offered incentives for clean energy.",
+    ["6.56", "6.58"], [
+        opt("grow", "Yes, and grow them", "Keep and expand incentives for wind and solar, including small home solar.", ["6.56"]),
+        opt("keep", "Keep them as they are", "Keep current incentives.", ["6.56"]),
+        opt("end", "No, end them", "Stop giving incentives for wind and solar.", ["6.56"]),
+    ], tier="deep")
+
+question(32, "stealing-public-money", "Penalties for stealing public money", "public-safety", "government",
+    "Should stealing public money come with tougher penalties?",
+    "Public money includes taxes collected by the state, cities, counties, and schools.",
+    ["7.61", "7.70"], [
+        opt("tougher", "Yes, tougher penalties", "Require prison for stealing more than $10,000 in public funds, and bar fraudsters from state contracts.", ["7.61", "7.70"]),
+        opt("current", "Keep current law", "Leave penalties to judges under current law.", ["7.61"]),
+    ], tier="deep")
+
+question(33, "apprenticeships", "Job training", "labor", "economy",
+    "Should Iowa pay incentives for apprenticeships and trade school?",
+    "Apprenticeships let people learn a trade while earning a paycheck.",
+    ["8.75"], [
+        opt("yes", "Yes", "Offer incentives for apprenticeships and trade school.", ["8.75"]),
+        opt("no", "No", "Leave training to employers and students.", ["8.75"]),
+    ], tier="deep")
+
+question(34, "small-business-rules", "Rules for small businesses", "labor", "economy",
+    "Should Iowa cut rules for small businesses and people selling homemade food?",
+    "State rules cover licenses, inspections, and paperwork for businesses, including people who sell food they make at home.",
+    ["8.78", "1.06"], [
+        opt("cut-small-biz", "Cut red tape for small businesses", "Ease paperwork and rules for businesses with 10 or fewer employees.", ["8.78"]),
+        opt("food-freedom", "Loosen rules on homemade food", "Let people sell more food they make or grow with fewer state rules.", ["8.78", "1.06"]),
+        opt("keep", "Keep current rules", "Current rules protect consumers and workers.", ["8.78"]),
+    ], tier="deep")
+
+question(35, "term-limits", "Term limits", "institutions", "government",
+    "Should state lawmakers and statewide officials have term limits?",
+    "Iowa has no term limits for the legislature or statewide offices like governor.",
+    ["9.90"], [
+        opt("yes", "Yes", "Limit how many terms state officials can serve.", ["9.90"]),
+        opt("no", "No", "Let voters decide at each election.", ["9.90"]),
+    ], tier="deep")
+
+question(36, "age-limits", "Age limits for officials", "institutions", "government",
+    "Should there be an age limit for judges and elected officials?",
+    "Iowa judges must retire at 72; elected officials have no age limit.",
+    ["9.89"], [
+        opt("yes", "Yes", "Set a maximum age, such as 78, for judges and elected officials.", ["9.89"]),
+        opt("no", "No", "No age limits.", ["9.89"]),
+    ], tier="deep")
+
+question(37, "disability-work", "Working with a disability", "family", "health",
+    "Should Iowans with disabilities be able to earn more without losing Medicaid?",
+    "Income and savings limits can cause people with disabilities to lose Medicaid coverage if they earn more.",
+    ["10.93"], [
+        opt("yes", "Yes, remove the limits for workers", "Let working Iowans with disabilities keep coverage regardless of income or savings.", ["10.93"]),
+        opt("raise", "Raise the limits somewhat", "Allow more income before coverage ends.", ["10.93"]),
+        opt("keep", "Keep current limits", "Keep the current rules.", ["10.93"]),
+    ], tier="deep")
+
+question(38, "school-meals", "School meals", "family", "education",
+    "Should every Iowa student get free breakfast and lunch at school?",
+    "Today, free and reduced-price school meals depend on family income.",
+    ["10.95"], [
+        opt("yes", "Yes, free for all", "Make breakfast and lunch free for every student.", ["10.95"]),
+        opt("keep", "Keep income-based meals", "Keep free meals for families who qualify by income.", ["10.95"]),
+    ], tier="deep")
+
+question(39, "license-plate-cameras", "Surveillance cameras", "rights", "rights",
+    "Should the state set rules for license-plate-reading cameras?",
+    "Some Iowa cities and police use cameras that record the license plates of passing cars.",
+    ["5.49"], [
+        opt("regulate", "Yes, set state rules", "Set statewide rules on how these cameras and their data can be used.", ["5.49"]),
+        opt("local", "Let cities decide", "Leave it to local governments and police.", ["5.49"]),
+        opt("ban", "Ban them", "Don't allow these cameras.", ["5.49"]),
+    ], tier="deep")
+
+question(40, "emergency-powers", "Governor's emergency powers", "institutions", "government",
+    "Should the governor's emergency powers be limited further?",
+    "Iowa recently passed a law limiting what the next governor can do during an emergency.",
+    ["9.87"], [
+        opt("limit-more", "Yes, limit them more", "Put further limits on emergency powers.", ["9.87"]),
+        opt("keep", "Keep the new limits", "Keep the limits that were just passed.", ["9.87"]),
+        opt("restore", "Restore them", "Undo the new limits.", ["9.87"]),
+    ], tier="deep")
+
+question(41, "primary-elections", "How primaries work", "institutions", "government",
+    "Should Iowa switch to a primary where all candidates run on one ballot?",
+    "Today, each party holds its own primary. In a “top-four” primary, all candidates run together and the top four move on to November.",
+    ["9.85"], [
+        opt("top-four", "Yes, a top-four primary", "Put all candidates on one primary ballot and advance the top four.", ["9.85"]),
+        opt("keep", "Keep party primaries", "Keep separate primaries for each party.", ["9.85"]),
+    ], tier="deep")
+
+question(42, "college-admissions", "Iowa students at state universities", "family", "education",
+    "Should Iowa's state universities save more spots for Iowa students?",
+    "The University of Iowa, Iowa State, and UNI admit students from Iowa and other states.",
+    ["10.98"], [
+        opt("yes", "Yes", "Require a higher share of Iowa students.", ["10.98"]),
+        opt("no", "No", "Let universities decide admissions.", ["10.98"]),
+    ], tier="deep")
+
+question(43, "marijuana", "Marijuana", "public-safety", "government",
+    "Should Iowa legalize marijuana for adults?",
+    "Recreational marijuana is illegal in Iowa. Some neighboring states have legalized it.",
+    ["7.63", "3.27"], [
+        opt("legalize", "Yes, legalize and tax it", "Make it legal for adults and tax and regulate sales.", ["7.63"]),
+        opt("medical-only", "Medical use only", "Keep it limited to medical use.", ["3.27"]),
+        opt("keep-illegal", "No, keep it illegal", "Keep current law.", ["7.63"]),
+    ], tier="deep")
+
+# ---- Deeper positions --------------------------------------------------------
+stmt_by_id.update({s["id"]: s for s in statements})
+position("d01", SAND, "EP", "Would veto restrictions on IVF, surrogacy, and contraception.", ["st-sand-roe"],
+    {"regulate-protect-embryos": "conflicting", "keep-current": U, "protect-access": "partial"},
+    "Sand's campaign says he would veto bills threatening IVF. That opposes new IVF restrictions; it is not the same as passing a law protecting access.")
+position("d01", LAHN, "EP", "Says IVF should be examined for regulation to protect life.", ["st-lahn-ivf", "st-lahn-conception"],
+    {"regulate-protect-embryos": "aligned", "keep-current": "conflicting", "protect-access": "conflicting"},
+    "Lahn said “we need to look at regulating” IVF “to promote and protect life.”")
+position("d02", SAND, "SP", "Disclosure of incentives and no NDAs; cautious on large up-front incentives.",
+    ["st-sand-incentive-disclosure", "st-sand-steel-incentives"],
+    {"keep-offering": U, "results-only": "aligned", "iowa-firms-only": U, "end-all": U},
+    "Sand wants incentive deals disclosed and cautioned against large up-front incentives, consistent with tying them to results.")
+position("d02", LAHN, "SP", "End tax credits for out-of-state and foreign corporations; refocus on Iowa firms.",
+    ["st-lahn-out-of-state-credits", "st-lahn-ieda"],
+    {"keep-offering": "conflicting", "results-only": U, "iowa-firms-only": "aligned", "end-all": "partial"},
+    "Lahn would end incentives for out-of-state and foreign companies while refocusing on Iowa firms.")
+position("d03", SAND, "SP", "Office of Rural Prosperity; state jobs from any county.", ["st-sand-rural-office", "st-sand-remote-jobs"],
+    {"tax-breaks-stay": U, "jobs-anywhere": "aligned", "college-spots": U, "market": "conflicting"},
+    "Sand proposes rural investment and state jobs filled from anywhere in Iowa.")
+position("d03", LAHN, "SP", "Tax rebates for young Iowans who stay; more university spots for Iowans.",
+    ["st-lahn-housing", "st-lahn-instate-quota"],
+    {"tax-breaks-stay": "aligned", "jobs-anywhere": U, "college-spots": "aligned", "market": "conflicting"},
+    "Lahn proposes tax rebates for young people who stay and higher in-state admission quotas.")
+position("d04", SAND, "SP", "Caregiver tax credit up to $2,000, plus $1,000 for caregivers of veterans.", ["st-sand-caregiver"],
+    {"yes-credit": "aligned", "no-credit": "conflicting"}, "Sand proposes the credit.",
+    proposal="Nonrefundable credit up to $2,000 a year; $1,000 more for caretakers of veterans; about 57,000 eligible.")
+position("d04", LAHN, "NDP")
+position("d05", SAND, "SP", "Regulate PBMs; Prescription Drug Review Board.", ["st-sand-pbm"],
+    {"regulate": "aligned", "leave": "conflicting"}, "Sand proposes PBM regulation and a drug review board.")
+position("d05", LAHN, "NDP")
+position("d06", SAND, "NDP")
+position("d06", LAHN, "EP", "Would not allow insurers to use AI to deny coverage.", ["st-lahn-medicaid"],
+    {"ban": "aligned", "allow-with-review": "conflicting", "allow": "conflicting"},
+    "Lahn said he “will not allow any of these companies to use AI in denying coverage.”")
+position("d07", SAND, "NDP")
+position("d07", LAHN, "SP", "Revoke licenses of teachers caught pushing a political agenda.", ["st-lahn-teacher-license"],
+    {"yes-revoke": "aligned", "no-revoke": "conflicting"}, "Lahn proposes license revocation.")
+position("d08", SAND, "IND", "Has proposed limits on children's social media; no documented position on testing.", [])
+position("d08", LAHN, "SP", "Drastically reduce testing; mastery-based pacing.", ["st-lahn-testing"],
+    {"fewer": "aligned", "same": "conflicting", "more": "conflicting"}, "Lahn proposes cutting testing.")
+position("d09", SAND, "SP", "Universal full-day pre-K for 3- and 4-year-olds.", ["st-sand-prek"],
+    {"yes-full-day": "aligned", "keep-current": "conflicting", "no-expansion": "conflicting"}, "Sand proposes universal full-day pre-K.",
+    limitations="No cost estimate.")
+position("d09", LAHN, "NDP")
+position("d10", SAND, "EP", "Opposes transgender girls and women competing in female sports.", ["st-sand-sports"],
+    {"no": "aligned", "case-by-case": "conflicting", "yes": "conflicting"}, "Sand has said he opposes transgender girls competing in girls' sports.",
+    limitations="His quoted words come from a secondary report.")
+position("d10", LAHN, "IND", "No documented position on sports; debate remark about a school library book.", ["st-lahn-book"])
+position("d11", SAND, "SP", "Maintain and grow clean energy incentives; allow plug-in solar.", ["st-sand-clean-energy"],
+    {"grow": "aligned", "keep": "partial", "end": "conflicting"}, "Sand would maintain and grow the incentives.")
+position("d11", LAHN, "NDP")
+position("d12", SAND, "SP", "Mandatory prison for stealing more than $10,000 in public funds; bar fraudsters from state contracts.",
+    ["st-sand-public-theft", "st-sand-fraud-ban"], {"tougher": "aligned", "current": "conflicting"}, "Sand proposes both measures.")
+position("d12", LAHN, "NDP")
+position("d13", SAND, "NDP")
+position("d13", LAHN, "SP", "Incentives for apprenticeships and trade school.", ["st-lahn-apprenticeships"],
+    {"yes": "aligned", "no": "conflicting"}, "Lahn proposes the incentives.")
+position("d14", SAND, "SP", "Less red tape for businesses with 10 or fewer employees.", ["st-sand-small-biz"],
+    {"cut-small-biz": "aligned", "food-freedom": U, "keep": "conflicting"}, "Sand proposes easing rules for small businesses.")
+position("d14", LAHN, "SP", "A food freedom bill loosening rules on selling local food.", ["st-lahn-food-freedom"],
+    {"cut-small-biz": U, "food-freedom": "aligned", "keep": "conflicting"}, "Lahn proposes food freedom deregulation.")
+position("d15", SAND, "SP", "Term limits: 3 statewide terms, 12 years in the legislature, 20 years total.", ["st-sand-term-limits"],
+    {"yes": "aligned", "no": "conflicting"}, "Sand proposes term limits.")
+position("d15", LAHN, "SNV", "Reportedly supports term limits for “many things” but not governor; not verified.", ["st-lahn-term-limits"])
+position("d16", SAND, "SP", "Age limit of 78 for judges and officials.", ["st-sand-age-limit"],
+    {"yes": "aligned", "no": "conflicting"}, "Sand proposes an age limit.")
+position("d16", LAHN, "NDP")
+position("d17", SAND, "SP", "Supports the Work Without Worry bill.", ["st-sand-work-without-worry"],
+    {"yes": "aligned", "raise": "partial", "keep": "conflicting"}, "Work Without Worry would remove the limits for working Iowans with disabilities.")
+position("d17", LAHN, "NDP")
+position("d18", SAND, "SP", "Universal free school meals.", ["st-sand-school-meals"],
+    {"yes": "aligned", "keep": "conflicting"}, "Sand proposes universal school meals.")
+position("d18", LAHN, "EP", "Universal free breakfast and lunch; 80% Iowa-grown school food.", ["st-lahn-school-meals"],
+    {"yes": "aligned", "keep": "conflicting"}, "Lahn said he wants universal free breakfast and lunch.")
+position("d19", SAND, "NDP")
+position("d19", LAHN, "EP", "Called for state regulation of license-plate cameras.", ["st-lahn-flock"],
+    {"regulate": "aligned", "local": "conflicting", "ban": U}, "Lahn called for state-level regulation.")
+position("d20", SAND, "GS", "Has criticized the new limits on the next governor; no specific proposal.", ["st-sand-emergency"])
+position("d20", LAHN, "EP", "Welcomes the new limits and would likely sign more.", ["st-lahn-emergency"],
+    {"limit-more": "aligned", "keep": "partial", "restore": "conflicting"}, "Lahn said he “would likely sign more legislation like that.”")
+position("d21", SAND, "SP", "Top-four primary with approval voting.", ["st-sand-top-four"],
+    {"top-four": "aligned", "keep": "conflicting"}, "Sand proposes a top-four primary.")
+position("d21", LAHN, "NDP")
+position("d22", SAND, "NDP")
+position("d22", LAHN, "SP", "Higher in-state quotas at state universities.", ["st-lahn-instate-quota"],
+    {"yes": "aligned", "no": "conflicting"}, "Lahn proposes higher in-state quotas.")
+position("d23", SAND, "SP", "Legalize and tax cannabis for adults.", ["st-sand-cannabis"],
+    {"legalize": "aligned", "medical-only": "conflicting", "keep-illegal": "conflicting"}, "Sand would legalize and tax cannabis.")
+position("d23", LAHN, "NDP")
+
+# ---- Apply core relation additions and fill unaddressed options ---------------
+for p_ in positions:
+    extra = EXTRA_RELATIONS.get((p_["questionId"], p_["candidateId"]))
+    if p_["optionRelations"] is not None:
+        if extra:
+            p_["optionRelations"].update(extra)
+        q_ = next(q for q in questions if q["id"] == p_["questionId"])
+        for o in q_["options"]:
+            p_["optionRelations"].setdefault(o["id"], U)
+        p_["optionRelations"] = {o["id"]: p_["optionRelations"][o["id"]] for o in q_["options"]}
+    elif extra:
+        raise AssertionError(f"relations given for a position without relations: {p_['id']}")
+
+# --------------------------------------------------------------------------
 # Self-checks, then write
 # --------------------------------------------------------------------------
 def norm(s):
@@ -893,7 +1321,7 @@ for s in statements:
 src_ids = {s["id"] for s in sources}
 for s in statements:
     assert s["sourceId"] in src_ids, s["id"]
-assert len(questions) == 20
+assert len([q for q in questions if q["tier"] == "core"]) == 20
 for q in questions:
     for c in (SAND, LAHN):
         assert any(p["questionId"] == q["id"] and p["candidateId"] == c for p in positions), (q["id"], c)
@@ -924,4 +1352,7 @@ write("statements.json", statements)
 write("questions.json", questions)
 write("positions.json", positions)
 write("verifications.json", verifications)
+(ROOT / "research/verification/pending-relations.json").write_text(json.dumps(
+    {f"{q}|{c}": r for (q, c), r in PENDING_RELATIONS.items()}, indent=2) + "\n")
+print(f"{len(PENDING_RELATIONS)} drafted mappings waiting on source verification")
 print(f"{len(questions)} questions, {len(statements)} statements, {len(positions)} positions, {len(sources)} sources")

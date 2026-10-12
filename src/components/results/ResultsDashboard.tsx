@@ -5,9 +5,10 @@ import EvidenceBadge from '@/components/evidence/EvidenceBadge'
 import RatioBar from '@/components/viz/RatioBar'
 import type { Domain } from '@/data/schema'
 import {
-  candidateCoverage, choiceOf, compareWithCandidate, completeness, crossCandidate, domainImportance,
+  candidateCoverage, choiceOf, compareWithCandidate, completeness, coreQuestions, crossCandidate, deepQuestions, domainImportance,
   importanceDistribution, importanceOf, importantUnknowns, positionFor, topPriorities, type Answers,
 } from '@/lib/analytics'
+import { effectiveAnswers } from '@/lib/assessment/assume'
 import { useCandidateOrder } from '@/lib/assessment/candidate-order'
 import { useAssessment } from '@/lib/assessment/store'
 import { RELATION_COPY } from '@/lib/compare'
@@ -32,8 +33,9 @@ const DETAIL_VIEWS: { n: number; title: string; qids: string[] }[] = [
 export default function ResultsDashboard({ data }: { data: ClientData }) {
   const { state, hydrated, setImportance } = useAssessment()
   const { ordered, swap } = useCandidateOrder(data.candidates)
-  const answers: Answers = state.answers
-  const { questions } = data
+  const answers: Answers = effectiveAnswers(data.questions, state.answers)
+  const questions = coreQuestions(data.questions)
+  const deep = deepQuestions(data.questions)
   const cutoff = formatDate(data.meta.researchCutoff)
 
   if (!hydrated) return <p className="text-muted">Loading your answers…</p>
@@ -143,6 +145,29 @@ export default function ResultsDashboard({ data }: { data: ClientData }) {
           </div>
         </Panel>
 
+        {Object.keys(state.issueImportance).length > 0 && (
+          <Panel n={2} title="Other issues you rated" note="Issues outside the questions. They don’t change your match, but they show where the candidates have or haven’t taken a position.">
+            <ul className="divide-y divide-rule border-y border-rule">
+              {data.otherIssues
+                .filter((i) => state.issueImportance[i.id] !== undefined)
+                .sort((a, b) => state.issueImportance[b.id]! - state.issueImportance[a.id]!)
+                .map((i) => (
+                  <li key={i.id} className="grid gap-1 py-2 sm:grid-cols-[1fr_12rem_1fr]">
+                    <Link href={`/issues/${i.slug}/`} className="font-medium">{i.title}</Link>
+                    <span className="text-sm text-ink-soft">{importanceLabel(state.issueImportance[i.id])}</span>
+                    <span className="text-sm text-muted">
+                      {ordered.map((c) => {
+                        const codes = i.evidence.find((e) => e.candidateId === c.id)?.codes ?? ['NDP']
+                        const documented = codes.some((x) => ['EP', 'SP', 'DA'].includes(x))
+                        return `${c.name}: ${documented ? 'position documented' : 'no specific position found'}`
+                      }).join(' · ')}
+                    </span>
+                  </li>
+                ))}
+            </ul>
+          </Panel>
+        )}
+
         <div className="grid gap-12 md:grid-cols-2">
           <Panel n={6} title="Response completeness" note="A survey completion measure.">
             <div className="space-y-3">
@@ -180,6 +205,25 @@ export default function ResultsDashboard({ data }: { data: ClientData }) {
               </div>
             ))}
           </div>
+        </Panel>
+
+        <Panel n={5} title="Your deeper answers" note="The optional Go deeper round. Answers marked Assumed were filled in from a related answer you feel strongly about; change any of them.">
+          {deep.every((q) => !answers[q.id]) ? (
+            <p className="text-ink-soft">You haven’t done the Go deeper round. <Link href={`/assessment/?q=${questions.length + 1}`}>Answer more questions</Link> for a more complete match.</p>
+          ) : (
+            <ul className="grid gap-x-10 gap-y-3 md:grid-cols-2">
+              {deep.filter((q) => answers[q.id]).map((q) => (
+                <li key={q.id}>
+                  <span className="block text-sm text-muted">{q.title}</span>
+                  <span className="block">
+                    {choiceLabel(q, answers[q.id]?.choice)}
+                    {answers[q.id]?.assumedFrom && <span className="ml-2 rounded-sm bg-accent-wash px-1.5 py-0.5 text-[11px] font-semibold uppercase tracking-wide text-accent-deep">Assumed</span>}
+                  </span>
+                  <Link href={`/assessment/?q=${q.order}`} className="text-xs">Change<span className="sr-only"> {q.title}</span></Link>
+                </li>
+              ))}
+            </ul>
+          )}
         </Panel>
 
         <div className="grid gap-12 lg:grid-cols-2">

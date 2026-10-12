@@ -120,7 +120,40 @@ test('match section shows weighted percentages with their basis and a closest ma
   await page.goto('results/#match')
   const match = page.locator('#match')
   await expect(match.getByText('Your closest match')).toBeVisible()
-  await expect(match.getByText(/agreement, based on \d+ of 8/).first()).toBeVisible()
+  // 8 answered + 1 assumed (strong abortion view pre-fills the IVF question).
+  await expect(match.getByText(/agreement, based on \d+ of 9/).first()).toBeVisible()
+  await expect(match.getByText(/Includes 1 assumed answer/).first()).toBeVisible()
   await expect(match.getByText(/^\d+%$/).first()).toBeVisible()
   await expect(match).not.toContainText('you should vote for')
+})
+
+test('go deeper: strong view pre-fills a related question as assumed, and it can be changed', async ({ page }) => {
+  await page.goto('assessment/?q=13')
+  await answer(page, 'Extremely passionate', 'Ban it completely')
+  await page.goto('assessment/?q=review')
+  await page.getByRole('button', { name: 'Go deeper' }).click()
+  await expect(page.getByText('Go deeper · Question 1 of')).toBeVisible()
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText('Should Iowa put rules on IVF (in vitro fertilization)?')
+  await expect(page.getByText('Assumed answer')).toBeVisible()
+  await expect(page.locator('fieldset').nth(1).locator('input:checked')).toHaveValue('regulate-protect-embryos')
+
+  // The assumption shows up in results, marked as assumed and counted.
+  await page.goto('results/')
+  await expect(page.locator('#match').getByText(/Includes 1 assumed answer/).first()).toBeVisible()
+
+  // Overriding replaces the assumption.
+  await page.goto('assessment/?q=21')
+  await page.locator('fieldset').nth(1).getByText('Protect access by law', { exact: true }).click()
+  await expect(page.getByText('Assumed answer')).toHaveCount(0)
+  await page.goto('results/')
+  await expect(page.locator('#match').getByText(/assumed answer/)).toHaveCount(0)
+})
+
+test('go deeper ends with importance ratings for the remaining issues', async ({ page }) => {
+  await page.goto('assessment/?q=more')
+  await expect(page.getByRole('heading', { name: 'How much do these other issues matter to you?' })).toBeVisible()
+  const first = page.locator('select').first()
+  await first.selectOption({ label: 'Extremely passionate' })
+  await page.getByRole('button', { name: 'See my results' }).click()
+  await expect(page.getByRole('heading', { name: /Other issues you rated/ })).toBeVisible()
 })

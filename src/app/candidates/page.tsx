@@ -9,7 +9,7 @@ export const metadata: Metadata = { title: 'Candidates' }
 
 export default function CandidatesPage() {
   const ds = getDataset()
-  const qids = ds.questions.map((q) => q.id)
+  const qids = ds.questions.filter((q) => q.tier === 'core').map((q) => q.id)
   const byLastName = [...ds.candidates].sort((a, b) => a.sortName.localeCompare(b.sortName))
   return (
     <>

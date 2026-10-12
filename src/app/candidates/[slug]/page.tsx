@@ -27,7 +27,9 @@ export default async function CandidatePage({ params }: { params: Promise<{ slug
   const ds = getDataset()
   const c = ds.candidates.find((x) => x.slug === slug)
   if (!c) notFound()
-  const cov = coverage(c.id, ds.questions.map((q) => q.id), ds.positions)
+  const coreQs = ds.questions.filter((q) => q.tier === 'core')
+  const deepQs = ds.questions.filter((q) => q.tier === 'deep')
+  const cov = coverage(c.id, coreQs.map((q) => q.id), ds.positions)
   const ev = ds.issueEvidence.filter((e) => e.candidateId === c.id)
   const primary = (codes: string[]) => codes[0]
 
@@ -40,15 +42,15 @@ export default async function CandidatePage({ params }: { params: Promise<{ slug
       {c.campaignUrl && <p className="mt-2 text-sm">Campaign site: <a href={c.campaignUrl} rel="noopener noreferrer">{c.campaignUrl.replace(/^https?:\/\//, '')}</a></p>}
 
       <section className="mt-12">
-        <h2 className="text-2xl">Positions on the 20 assessment questions</h2>
-        <p className="mt-1 text-sm text-muted">Documented positions on {formatRatio(cov.documented, 'questions')}. Research current as of {formatDate(ds.meta.researchCutoff)}.</p>
+        <h2 className="text-2xl">Positions on the assessment questions</h2>
+        <p className="mt-1 text-sm text-muted">Documented positions on {formatRatio(cov.documented, 'of the 20 main questions')}; the last {deepQs.length} are optional Go deeper questions. Research current as of {formatDate(ds.meta.researchCutoff)}.</p>
         <ol className="mt-4 divide-y divide-rule border-y border-rule">
-          {ds.questions.map((q) => {
+          {[...coreQs, ...deepQs].map((q) => {
             const p = ds.positions.find((x) => x.candidateId === c.id && x.questionId === q.id)
             const st = evidenceState(p)
             return (
               <li key={q.id} className="grid gap-2 py-3 sm:grid-cols-[14rem_12rem_1fr]">
-                <Link href={`/compare/#${q.slug}`} className="font-medium">{q.order}. {q.title}</Link>
+                <Link href={`/compare/#${q.slug}`} className="font-medium">{q.tier === 'core' ? `${q.order}. ` : 'Deeper: '}{q.title}</Link>
                 <span><EvidenceBadge state={st} /></span>
                 <span className={`text-sm ${st === 'not-found' ? 'text-unknown' : 'text-ink-soft'}`}>{p?.positionSummary ?? 'No public position found.'}</span>
               </li>

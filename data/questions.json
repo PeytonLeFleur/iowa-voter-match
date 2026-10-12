@@ -14,6 +14,18 @@
     ],
     "options": [
       {
+        "id": "eliminate-homes",
+        "label": "Get rid of them on homes",
+        "description": "Phase out property taxes on people's homes completely over time.",
+        "relatedIssueIds": [
+          "1.01"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      },
+      {
         "id": "reduce-further",
         "label": "Cut them more",
         "description": "Lower property taxes more, even if cities and counties have to cut some spending.",
@@ -22,7 +34,8 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       },
       {
         "id": "relief-preserve",
@@ -33,7 +46,8 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       },
       {
         "id": "maintain-evaluate",
@@ -46,7 +60,8 @@
           "leg-sf-2472"
         ],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       },
       {
         "id": "local-flexibility",
@@ -58,13 +73,15 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       }
     ],
     "unansweredQuestions": [
       "Neither candidate addressed the levy cap rate, its exceptions, the EMS levy, or the state backfill."
     ],
-    "reviewStatus": "draft"
+    "reviewStatus": "draft",
+    "tier": "core"
   },
   {
     "id": "q02",
@@ -91,7 +108,20 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
+      },
+      {
+        "id": "cut-further",
+        "label": "Cut it more, but keep it",
+        "description": "Lower the rate further, but don't get rid of the income tax.",
+        "relatedIssueIds": [
+          "1.02"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
       },
       {
         "id": "keep-rate",
@@ -102,7 +132,8 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       },
       {
         "id": "pause-cuts",
@@ -114,7 +145,8 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       },
       {
         "id": "raise-higher-incomes",
@@ -125,14 +157,16 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       }
     ],
     "unansweredQuestions": [
       "SJR 11: no documented position for either candidate.",
       "Neither candidate has a plan for the FY2027 budget gap."
     ],
-    "reviewStatus": "draft"
+    "reviewStatus": "draft",
+    "tier": "core"
   },
   {
     "id": "q03",
@@ -158,7 +192,8 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       },
       {
         "id": "investor-limits",
@@ -169,7 +204,8 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       },
       {
         "id": "buyer-aid",
@@ -180,7 +216,8 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       },
       {
         "id": "private-market",
@@ -191,11 +228,13 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       }
     ],
     "unansweredQuestions": [],
-    "reviewStatus": "draft"
+    "reviewStatus": "draft",
+    "tier": "core"
   },
   {
     "id": "q04",
@@ -225,7 +264,8 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       },
       {
         "id": "ownership-limits",
@@ -238,7 +278,8 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       },
       {
         "id": "trade",
@@ -249,7 +290,8 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       },
       {
         "id": "limited-role",
@@ -260,13 +302,15 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       }
     ],
     "unansweredQuestions": [
       "Neither candidate named Iowa Code ch. 9H or 10B, or explained how land confiscation or antitrust suits would work legally."
     ],
-    "reviewStatus": "draft"
+    "reviewStatus": "draft",
+    "tier": "core"
   },
   {
     "id": "q05",
@@ -291,7 +335,8 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       },
       {
         "id": "stricter-standards",
@@ -302,7 +347,8 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       },
       {
         "id": "case-by-case",
@@ -313,14 +359,28 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
+      },
+      {
+        "id": "allow-public-benefit",
+        "label": "Yes, if it benefits the public",
+        "description": "Allow it for private projects that bring public benefits like jobs or lower energy costs, as long as owners are paid.",
+        "relatedIssueIds": [
+          "2.15"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
       }
     ],
     "unansweredQuestions": [
       "Neither candidate said whether he would sign HF 2104.",
       "Neither addressed the Utilities Commission, Summit's permit, or IUC appointment criteria."
     ],
-    "reviewStatus": "draft"
+    "reviewStatus": "draft",
+    "tier": "core"
   },
   {
     "id": "q06",
@@ -349,7 +409,8 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       },
       {
         "id": "enforceable-limits",
@@ -360,7 +421,8 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       },
       {
         "id": "monitoring",
@@ -371,7 +433,8 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       },
       {
         "id": "current-approach",
@@ -382,13 +445,15 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       }
     ],
     "unansweredQuestions": [
       "Neither candidate addressed HF 2771 water treatment funding or Iowa Flood Center funding."
     ],
-    "reviewStatus": "draft"
+    "reviewStatus": "draft",
+    "tier": "core"
   },
   {
     "id": "q07",
@@ -413,7 +478,8 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       },
       {
         "id": "environmental-testing",
@@ -424,7 +490,8 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       },
       {
         "id": "prevention",
@@ -435,7 +502,8 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       },
       {
         "id": "existing-programs",
@@ -446,11 +514,13 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       }
     ],
     "unansweredQuestions": [],
-    "reviewStatus": "draft"
+    "reviewStatus": "draft",
+    "tier": "core"
   },
   {
     "id": "q08",
@@ -476,7 +546,8 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       },
       {
         "id": "prompt-payment",
@@ -487,7 +558,8 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       },
       {
         "id": "regional-care",
@@ -498,7 +570,8 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       },
       {
         "id": "deregulate",
@@ -509,13 +582,15 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       }
     ],
     "unansweredQuestions": [
       "HF 2635: no documented position for either candidate."
     ],
-    "reviewStatus": "draft"
+    "reviewStatus": "draft",
+    "tier": "core"
   },
   {
     "id": "q09",
@@ -540,7 +615,8 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       },
       {
         "id": "keep-with-oversight",
@@ -551,7 +627,8 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       },
       {
         "id": "keep-as-is",
@@ -562,13 +639,15 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       }
     ],
     "unansweredQuestions": [
       "Neither candidate addressed the December 1 work requirement start date, its exceptions, or verification."
     ],
-    "reviewStatus": "draft"
+    "reviewStatus": "draft",
+    "tier": "core"
   },
   {
     "id": "q10",
@@ -593,7 +672,8 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       },
       {
         "id": "modest-increases",
@@ -604,7 +684,8 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       },
       {
         "id": "hold-steady",
@@ -615,11 +696,25 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
+      },
+      {
+        "id": "spend-less",
+        "label": "Less than now",
+        "description": "Spend less on public schools and return the savings to taxpayers.",
+        "relatedIssueIds": [
+          "4.31"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
       }
     ],
     "unansweredQuestions": [],
-    "reviewStatus": "draft"
+    "reviewStatus": "draft",
+    "tier": "core"
   },
   {
     "id": "q11",
@@ -644,7 +739,8 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       },
       {
         "id": "keep-universal",
@@ -655,7 +751,8 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       },
       {
         "id": "income-limits",
@@ -666,7 +763,8 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       },
       {
         "id": "phase-out",
@@ -677,11 +775,13 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       }
     ],
     "unansweredQuestions": [],
-    "reviewStatus": "draft"
+    "reviewStatus": "draft",
+    "tier": "core"
   },
   {
     "id": "q12",
@@ -699,6 +799,18 @@
     ],
     "options": [
       {
+        "id": "stricter-requirements",
+        "label": "Yes, and make it harder to opt out",
+        "description": "Keep the requirements and make exemptions harder to get.",
+        "relatedIssueIds": [
+          "5.48"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      },
+      {
         "id": "keep-requirements",
         "label": "Yes, keep the current rules",
         "description": "Keep the vaccine requirements and exemptions as they are.",
@@ -707,7 +819,8 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       },
       {
         "id": "easier-exemptions",
@@ -718,7 +831,8 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       },
       {
         "id": "end-requirements",
@@ -729,13 +843,15 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       }
     ],
     "unansweredQuestions": [
       "HPV consent law: no documented position for either candidate."
     ],
-    "reviewStatus": "draft"
+    "reviewStatus": "draft",
+    "tier": "core"
   },
   {
     "id": "q13",
@@ -753,9 +869,21 @@
     ],
     "options": [
       {
+        "id": "ban-completely",
+        "label": "Ban it completely",
+        "description": "Ban all abortions, with no exceptions.",
+        "relatedIssueIds": [
+          "5.41"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      },
+      {
         "id": "further-restrict",
-        "label": "Stricter than now",
-        "description": "Put more limits on abortion than current law does.",
+        "label": "Stricter than now, with exceptions",
+        "description": "Put more limits on abortion than current law does, but keep some exceptions.",
         "relatedIssueIds": [
           "5.41"
         ],
@@ -763,7 +891,8 @@
           "leg-hf-2788"
         ],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       },
       {
         "id": "keep-current",
@@ -774,25 +903,40 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       },
       {
         "id": "broaden-access",
         "label": "Less strict than now",
-        "description": "Allow abortion later in pregnancy, closer to the rules under Roe v. Wade.",
+        "description": "Allow abortion later in pregnancy than current law does.",
         "relatedIssueIds": [
           "5.41"
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
+      },
+      {
+        "id": "legal-most-cases",
+        "label": "Legal in most cases",
+        "description": "Protect abortion in state law for most of pregnancy, closer to the rules under Roe v. Wade.",
+        "relatedIssueIds": [
+          "5.41"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
       }
     ],
     "unansweredQuestions": [
       "Lahn's position on exceptions for rape, incest, or the life of the mother is not verified.",
       "Neither candidate addressed doctor liability."
     ],
-    "reviewStatus": "draft"
+    "reviewStatus": "draft",
+    "tier": "core"
   },
   {
     "id": "q14",
@@ -809,15 +953,28 @@
     ],
     "options": [
       {
-        "id": "expand-rights",
-        "label": "Fewer limits",
-        "description": "Loosen gun laws further.",
+        "id": "remove-restrictions",
+        "label": "Remove most restrictions",
+        "description": "Get rid of most remaining state limits on owning and carrying guns.",
         "relatedIssueIds": [
           "5.45"
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
+      },
+      {
+        "id": "expand-rights",
+        "label": "Fewer limits",
+        "description": "Loosen gun laws somewhat.",
+        "relatedIssueIds": [
+          "5.45"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
       },
       {
         "id": "keep-current",
@@ -828,7 +985,20 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
+      },
+      {
+        "id": "ban-some-guns",
+        "label": "Ban some types of guns",
+        "description": "Ban certain kinds of guns, such as assault-style rifles.",
+        "relatedIssueIds": [
+          "5.45"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
       },
       {
         "id": "add-safety-measures",
@@ -839,13 +1009,15 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       }
     ],
     "unansweredQuestions": [
       "The research does not establish a verified current firearms position for either candidate."
     ],
-    "reviewStatus": "draft"
+    "reviewStatus": "draft",
+    "tier": "core"
   },
   {
     "id": "q15",
@@ -872,7 +1044,8 @@
           "leg-sf-418"
         ],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       },
       {
         "id": "keep-sf-418",
@@ -885,13 +1058,15 @@
           "leg-sf-418"
         ],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       }
     ],
     "unansweredQuestions": [
       "SF 579 and facilities: no documented position for either candidate."
     ],
-    "reviewStatus": "draft"
+    "reviewStatus": "draft",
+    "tier": "core"
   },
   {
     "id": "q16",
@@ -916,7 +1091,8 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       },
       {
         "id": "bar-benefits",
@@ -927,7 +1103,8 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       },
       {
         "id": "leave-to-federal",
@@ -938,7 +1115,8 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       },
       {
         "id": "worker-safety",
@@ -949,13 +1127,15 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       }
     ],
     "unansweredQuestions": [
       "ICE cooperation, 287(g), E-Verify, SF 2340, and SF 2218: no documented position for either candidate."
     ],
-    "reviewStatus": "draft"
+    "reviewStatus": "draft",
+    "tier": "core"
   },
   {
     "id": "q17",
@@ -984,7 +1164,8 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       },
       {
         "id": "moratorium",
@@ -995,7 +1176,8 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       },
       {
         "id": "local-decision",
@@ -1006,7 +1188,8 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       },
       {
         "id": "keep-incentives",
@@ -1018,11 +1201,13 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       }
     ],
     "unansweredQuestions": [],
-    "reviewStatus": "draft"
+    "reviewStatus": "draft",
+    "tier": "core"
   },
   {
     "id": "q18",
@@ -1039,6 +1224,18 @@
     ],
     "options": [
       {
+        "id": "raise-15",
+        "label": "Yes, to $15 or more",
+        "description": "Raise it to at least $15 an hour.",
+        "relatedIssueIds": [
+          "8.71"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      },
+      {
         "id": "raise-and-index",
         "label": "Yes, and keep it rising with prices",
         "description": "Raise it step by step (for example, to $12), then raise it automatically as prices go up.",
@@ -1047,7 +1244,8 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       },
       {
         "id": "raise-modestly",
@@ -1058,7 +1256,8 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       },
       {
         "id": "keep-federal",
@@ -1069,7 +1268,8 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       },
       {
         "id": "local-option",
@@ -1080,11 +1280,13 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       }
     ],
     "unansweredQuestions": [],
-    "reviewStatus": "draft"
+    "reviewStatus": "draft",
+    "tier": "core"
   },
   {
     "id": "q19",
@@ -1111,7 +1313,8 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       },
       {
         "id": "third-party-audits",
@@ -1122,7 +1325,8 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       },
       {
         "id": "current-sufficient",
@@ -1133,11 +1337,13 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       }
     ],
     "unansweredQuestions": [],
-    "reviewStatus": "draft"
+    "reviewStatus": "draft",
+    "tier": "core"
   },
   {
     "id": "q20",
@@ -1165,7 +1371,8 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       },
       {
         "id": "current-balance",
@@ -1176,7 +1383,8 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       },
       {
         "id": "more-uniform",
@@ -1187,12 +1395,1213 @@
         ],
         "legislationIds": [],
         "sourceIds": [],
-        "explanation": null
+        "explanation": null,
+        "assumeFrom": []
       }
     ],
     "unansweredQuestions": [
       "Voter ID and early voting: no documented position for either candidate."
     ],
-    "reviewStatus": "draft"
+    "reviewStatus": "draft",
+    "tier": "core"
+  },
+  {
+    "id": "d01",
+    "order": 21,
+    "slug": "ivf",
+    "title": "IVF and embryos",
+    "categoryId": "rights",
+    "domain": "rights",
+    "prompt": "Should Iowa put rules on IVF (in vitro fertilization)?",
+    "context": "IVF is a fertility treatment where eggs are fertilized outside the body. It can create extra embryos that are frozen or discarded. Iowa has no law specifically regulating IVF.",
+    "learnMore": null,
+    "issueIds": [
+      "5.42"
+    ],
+    "options": [
+      {
+        "id": "regulate-protect-embryos",
+        "label": "Yes, to protect embryos",
+        "description": "Regulate IVF to limit how embryos are created and discarded.",
+        "relatedIssueIds": [
+          "5.42"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": [
+          {
+            "questionId": "q13",
+            "optionIds": [
+              "ban-completely",
+              "further-restrict"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "keep-current",
+        "label": "Keep things as they are",
+        "description": "Leave IVF without new state rules.",
+        "relatedIssueIds": [
+          "5.42"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      },
+      {
+        "id": "protect-access",
+        "label": "Protect access by law",
+        "description": "Pass a law protecting people's right to use IVF.",
+        "relatedIssueIds": [
+          "5.42"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": [
+          {
+            "questionId": "q13",
+            "optionIds": [
+              "broaden-access",
+              "legal-most-cases"
+            ]
+          }
+        ]
+      }
+    ],
+    "unansweredQuestions": [],
+    "reviewStatus": "draft",
+    "tier": "deep"
+  },
+  {
+    "id": "d02",
+    "order": 22,
+    "slug": "business-incentives",
+    "title": "Business tax breaks",
+    "categoryId": "economy",
+    "domain": "economy",
+    "prompt": "Should Iowa give tax breaks to companies to bring jobs here?",
+    "context": "Iowa offers tax credits and other money to companies that build or expand in the state.",
+    "learnMore": null,
+    "issueIds": [
+      "1.03",
+      "1.10"
+    ],
+    "options": [
+      {
+        "id": "keep-offering",
+        "label": "Yes, keep offering them",
+        "description": "Keep using tax breaks to attract companies and jobs.",
+        "relatedIssueIds": [
+          "1.10"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      },
+      {
+        "id": "results-only",
+        "label": "Only if they deliver",
+        "description": "Give them only when companies hit promised jobs and investment, with deals made public.",
+        "relatedIssueIds": [
+          "1.10"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      },
+      {
+        "id": "iowa-firms-only",
+        "label": "Only for Iowa companies",
+        "description": "End tax breaks for out-of-state and foreign companies; focus on Iowa-owned businesses.",
+        "relatedIssueIds": [
+          "1.03",
+          "1.10"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      },
+      {
+        "id": "end-all",
+        "label": "No, end them",
+        "description": "Stop giving companies special tax breaks.",
+        "relatedIssueIds": [
+          "1.03"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      }
+    ],
+    "unansweredQuestions": [],
+    "reviewStatus": "draft",
+    "tier": "deep"
+  },
+  {
+    "id": "d03",
+    "order": 23,
+    "slug": "keeping-young-iowans",
+    "title": "Keeping young people in Iowa",
+    "categoryId": "economy",
+    "domain": "economy",
+    "prompt": "What's the best way to keep young people from moving away from Iowa?",
+    "context": "Many young Iowans leave the state after school, especially from small towns.",
+    "learnMore": null,
+    "issueIds": [
+      "2.20",
+      "8.79",
+      "10.98"
+    ],
+    "options": [
+      {
+        "id": "tax-breaks-stay",
+        "label": "Tax breaks for those who stay",
+        "description": "Give young people tax breaks for staying in Iowa, such as help with a down payment.",
+        "relatedIssueIds": [
+          "8.79"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      },
+      {
+        "id": "jobs-anywhere",
+        "label": "Jobs anywhere in the state",
+        "description": "Let people do state jobs from any county and invest in rural communities.",
+        "relatedIssueIds": [
+          "2.20"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      },
+      {
+        "id": "college-spots",
+        "label": "More college spots for Iowans",
+        "description": "Have state universities save more spots for Iowa students.",
+        "relatedIssueIds": [
+          "10.98"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      },
+      {
+        "id": "market",
+        "label": "Leave it to the market",
+        "description": "Let wages and job growth decide; no special programs.",
+        "relatedIssueIds": [
+          "8.79"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      }
+    ],
+    "unansweredQuestions": [],
+    "reviewStatus": "draft",
+    "tier": "deep"
+  },
+  {
+    "id": "d04",
+    "order": 24,
+    "slug": "family-caregivers",
+    "title": "Family caregivers",
+    "categoryId": "health",
+    "domain": "health",
+    "prompt": "Should Iowa give a tax credit to people caring for an aging or disabled family member?",
+    "context": "Many Iowans care for a parent, spouse, or relative at home without pay.",
+    "learnMore": null,
+    "issueIds": [
+      "3.23",
+      "10.97"
+    ],
+    "options": [
+      {
+        "id": "yes-credit",
+        "label": "Yes",
+        "description": "Give caregivers a state tax credit.",
+        "relatedIssueIds": [
+          "3.23"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      },
+      {
+        "id": "no-credit",
+        "label": "No",
+        "description": "Don't add a new tax credit.",
+        "relatedIssueIds": [
+          "3.23"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      }
+    ],
+    "unansweredQuestions": [],
+    "reviewStatus": "draft",
+    "tier": "deep"
+  },
+  {
+    "id": "d05",
+    "order": 25,
+    "slug": "prescription-drug-costs",
+    "title": "Prescription drug costs",
+    "categoryId": "health",
+    "domain": "health",
+    "prompt": "Should Iowa regulate the middlemen that help set prescription drug prices?",
+    "context": "Pharmacy benefit managers (PBMs) are companies that negotiate drug prices between insurers, drug makers, and pharmacies.",
+    "learnMore": null,
+    "issueIds": [
+      "3.28",
+      "10.99"
+    ],
+    "options": [
+      {
+        "id": "regulate",
+        "label": "Yes, regulate them",
+        "description": "Put state rules on PBMs and review high drug prices.",
+        "relatedIssueIds": [
+          "3.28"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      },
+      {
+        "id": "leave",
+        "label": "No, leave it to the market",
+        "description": "Don't add new state rules.",
+        "relatedIssueIds": [
+          "3.28"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      }
+    ],
+    "unansweredQuestions": [],
+    "reviewStatus": "draft",
+    "tier": "deep"
+  },
+  {
+    "id": "d06",
+    "order": 26,
+    "slug": "ai-coverage-denials",
+    "title": "Insurance coverage denials",
+    "categoryId": "health",
+    "domain": "health",
+    "prompt": "Should insurance companies be allowed to use artificial intelligence (AI) to deny health coverage?",
+    "context": "Some insurers use computer programs to review and deny claims.",
+    "learnMore": null,
+    "issueIds": [
+      "3.28",
+      "3.22"
+    ],
+    "options": [
+      {
+        "id": "ban",
+        "label": "No, ban it",
+        "description": "Don't let insurers use AI to deny coverage.",
+        "relatedIssueIds": [
+          "3.28"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      },
+      {
+        "id": "allow-with-review",
+        "label": "Only with a human review",
+        "description": "Allow it, but require a person to review any denial.",
+        "relatedIssueIds": [
+          "3.28"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      },
+      {
+        "id": "allow",
+        "label": "Yes, allow it",
+        "description": "Leave it to insurers.",
+        "relatedIssueIds": [
+          "3.28"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      }
+    ],
+    "unansweredQuestions": [],
+    "reviewStatus": "draft",
+    "tier": "deep"
+  },
+  {
+    "id": "d07",
+    "order": 27,
+    "slug": "teacher-political-agenda",
+    "title": "Teachers and politics in class",
+    "categoryId": "education",
+    "domain": "education",
+    "prompt": "Should a teacher be able to lose their license for pushing political views in class?",
+    "context": "Teaching licenses are issued by the state and can be taken away for misconduct.",
+    "learnMore": null,
+    "issueIds": [
+      "4.34",
+      "5.44"
+    ],
+    "options": [
+      {
+        "id": "yes-revoke",
+        "label": "Yes",
+        "description": "Allow the state to revoke the license of a teacher found pushing a political agenda.",
+        "relatedIssueIds": [
+          "4.34"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      },
+      {
+        "id": "no-revoke",
+        "label": "No",
+        "description": "Handle it locally through schools, not by taking away licenses.",
+        "relatedIssueIds": [
+          "4.34"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      }
+    ],
+    "unansweredQuestions": [],
+    "reviewStatus": "draft",
+    "tier": "deep"
+  },
+  {
+    "id": "d08",
+    "order": 28,
+    "slug": "standardized-testing",
+    "title": "Standardized testing",
+    "categoryId": "education",
+    "domain": "education",
+    "prompt": "Should Iowa schools give fewer standardized tests?",
+    "context": "Iowa students take statewide tests each year to measure progress.",
+    "learnMore": null,
+    "issueIds": [
+      "4.36"
+    ],
+    "options": [
+      {
+        "id": "fewer",
+        "label": "Yes, fewer tests",
+        "description": "Cut back testing and let students move ahead when they master material.",
+        "relatedIssueIds": [
+          "4.36"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      },
+      {
+        "id": "same",
+        "label": "Keep them as they are",
+        "description": "Keep current testing.",
+        "relatedIssueIds": [
+          "4.36"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      },
+      {
+        "id": "more",
+        "label": "More testing",
+        "description": "Test more to hold schools accountable.",
+        "relatedIssueIds": [
+          "4.36"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      }
+    ],
+    "unansweredQuestions": [],
+    "reviewStatus": "draft",
+    "tier": "deep"
+  },
+  {
+    "id": "d09",
+    "order": 29,
+    "slug": "universal-preschool",
+    "title": "Preschool",
+    "categoryId": "education",
+    "domain": "education",
+    "prompt": "Should Iowa offer free, full-day preschool for every 3- and 4-year-old?",
+    "context": "Iowa currently offers free part-day preschool for 4-year-olds in most districts.",
+    "learnMore": null,
+    "issueIds": [
+      "4.40"
+    ],
+    "options": [
+      {
+        "id": "yes-full-day",
+        "label": "Yes, for all 3- and 4-year-olds",
+        "description": "Offer free full-day preschool to every family that wants it.",
+        "relatedIssueIds": [
+          "4.40"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      },
+      {
+        "id": "keep-current",
+        "label": "Keep what we have",
+        "description": "Keep the current program.",
+        "relatedIssueIds": [
+          "4.40"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      },
+      {
+        "id": "no-expansion",
+        "label": "No new state preschool",
+        "description": "Leave preschool to families and private providers.",
+        "relatedIssueIds": [
+          "4.40"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      }
+    ],
+    "unansweredQuestions": [],
+    "reviewStatus": "draft",
+    "tier": "deep"
+  },
+  {
+    "id": "d10",
+    "order": 30,
+    "slug": "girls-sports",
+    "title": "Transgender athletes",
+    "categoryId": "rights",
+    "domain": "rights",
+    "prompt": "Should transgender girls be allowed to play on girls' school sports teams?",
+    "context": "Iowa law currently limits girls' school sports to students who were female at birth.",
+    "learnMore": null,
+    "issueIds": [
+      "5.47"
+    ],
+    "options": [
+      {
+        "id": "no",
+        "label": "No",
+        "description": "Keep girls' teams limited to students who were female at birth.",
+        "relatedIssueIds": [
+          "5.47"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      },
+      {
+        "id": "case-by-case",
+        "label": "Decide case by case",
+        "description": "Let schools or athletic groups decide based on each situation.",
+        "relatedIssueIds": [
+          "5.47"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      },
+      {
+        "id": "yes",
+        "label": "Yes",
+        "description": "Let transgender girls play on girls' teams.",
+        "relatedIssueIds": [
+          "5.47"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      }
+    ],
+    "unansweredQuestions": [],
+    "reviewStatus": "draft",
+    "tier": "deep"
+  },
+  {
+    "id": "d11",
+    "order": 31,
+    "slug": "wind-and-solar",
+    "title": "Wind and solar energy",
+    "categoryId": "environment-energy",
+    "domain": "environment",
+    "prompt": "Should Iowa keep giving incentives for wind and solar power?",
+    "context": "Iowa gets a large share of its electricity from wind. The state has offered incentives for clean energy.",
+    "learnMore": null,
+    "issueIds": [
+      "6.56",
+      "6.58"
+    ],
+    "options": [
+      {
+        "id": "grow",
+        "label": "Yes, and grow them",
+        "description": "Keep and expand incentives for wind and solar, including small home solar.",
+        "relatedIssueIds": [
+          "6.56"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      },
+      {
+        "id": "keep",
+        "label": "Keep them as they are",
+        "description": "Keep current incentives.",
+        "relatedIssueIds": [
+          "6.56"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      },
+      {
+        "id": "end",
+        "label": "No, end them",
+        "description": "Stop giving incentives for wind and solar.",
+        "relatedIssueIds": [
+          "6.56"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      }
+    ],
+    "unansweredQuestions": [],
+    "reviewStatus": "draft",
+    "tier": "deep"
+  },
+  {
+    "id": "d12",
+    "order": 32,
+    "slug": "stealing-public-money",
+    "title": "Penalties for stealing public money",
+    "categoryId": "public-safety",
+    "domain": "government",
+    "prompt": "Should stealing public money come with tougher penalties?",
+    "context": "Public money includes taxes collected by the state, cities, counties, and schools.",
+    "learnMore": null,
+    "issueIds": [
+      "7.61",
+      "7.70"
+    ],
+    "options": [
+      {
+        "id": "tougher",
+        "label": "Yes, tougher penalties",
+        "description": "Require prison for stealing more than $10,000 in public funds, and bar fraudsters from state contracts.",
+        "relatedIssueIds": [
+          "7.61",
+          "7.70"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      },
+      {
+        "id": "current",
+        "label": "Keep current law",
+        "description": "Leave penalties to judges under current law.",
+        "relatedIssueIds": [
+          "7.61"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      }
+    ],
+    "unansweredQuestions": [],
+    "reviewStatus": "draft",
+    "tier": "deep"
+  },
+  {
+    "id": "d13",
+    "order": 33,
+    "slug": "apprenticeships",
+    "title": "Job training",
+    "categoryId": "labor",
+    "domain": "economy",
+    "prompt": "Should Iowa pay incentives for apprenticeships and trade school?",
+    "context": "Apprenticeships let people learn a trade while earning a paycheck.",
+    "learnMore": null,
+    "issueIds": [
+      "8.75"
+    ],
+    "options": [
+      {
+        "id": "yes",
+        "label": "Yes",
+        "description": "Offer incentives for apprenticeships and trade school.",
+        "relatedIssueIds": [
+          "8.75"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      },
+      {
+        "id": "no",
+        "label": "No",
+        "description": "Leave training to employers and students.",
+        "relatedIssueIds": [
+          "8.75"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      }
+    ],
+    "unansweredQuestions": [],
+    "reviewStatus": "draft",
+    "tier": "deep"
+  },
+  {
+    "id": "d14",
+    "order": 34,
+    "slug": "small-business-rules",
+    "title": "Rules for small businesses",
+    "categoryId": "labor",
+    "domain": "economy",
+    "prompt": "Should Iowa cut rules for small businesses and people selling homemade food?",
+    "context": "State rules cover licenses, inspections, and paperwork for businesses, including people who sell food they make at home.",
+    "learnMore": null,
+    "issueIds": [
+      "8.78",
+      "1.06"
+    ],
+    "options": [
+      {
+        "id": "cut-small-biz",
+        "label": "Cut red tape for small businesses",
+        "description": "Ease paperwork and rules for businesses with 10 or fewer employees.",
+        "relatedIssueIds": [
+          "8.78"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      },
+      {
+        "id": "food-freedom",
+        "label": "Loosen rules on homemade food",
+        "description": "Let people sell more food they make or grow with fewer state rules.",
+        "relatedIssueIds": [
+          "8.78",
+          "1.06"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      },
+      {
+        "id": "keep",
+        "label": "Keep current rules",
+        "description": "Current rules protect consumers and workers.",
+        "relatedIssueIds": [
+          "8.78"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      }
+    ],
+    "unansweredQuestions": [],
+    "reviewStatus": "draft",
+    "tier": "deep"
+  },
+  {
+    "id": "d15",
+    "order": 35,
+    "slug": "term-limits",
+    "title": "Term limits",
+    "categoryId": "institutions",
+    "domain": "government",
+    "prompt": "Should state lawmakers and statewide officials have term limits?",
+    "context": "Iowa has no term limits for the legislature or statewide offices like governor.",
+    "learnMore": null,
+    "issueIds": [
+      "9.90"
+    ],
+    "options": [
+      {
+        "id": "yes",
+        "label": "Yes",
+        "description": "Limit how many terms state officials can serve.",
+        "relatedIssueIds": [
+          "9.90"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      },
+      {
+        "id": "no",
+        "label": "No",
+        "description": "Let voters decide at each election.",
+        "relatedIssueIds": [
+          "9.90"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      }
+    ],
+    "unansweredQuestions": [],
+    "reviewStatus": "draft",
+    "tier": "deep"
+  },
+  {
+    "id": "d16",
+    "order": 36,
+    "slug": "age-limits",
+    "title": "Age limits for officials",
+    "categoryId": "institutions",
+    "domain": "government",
+    "prompt": "Should there be an age limit for judges and elected officials?",
+    "context": "Iowa judges must retire at 72; elected officials have no age limit.",
+    "learnMore": null,
+    "issueIds": [
+      "9.89"
+    ],
+    "options": [
+      {
+        "id": "yes",
+        "label": "Yes",
+        "description": "Set a maximum age, such as 78, for judges and elected officials.",
+        "relatedIssueIds": [
+          "9.89"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      },
+      {
+        "id": "no",
+        "label": "No",
+        "description": "No age limits.",
+        "relatedIssueIds": [
+          "9.89"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      }
+    ],
+    "unansweredQuestions": [],
+    "reviewStatus": "draft",
+    "tier": "deep"
+  },
+  {
+    "id": "d17",
+    "order": 37,
+    "slug": "disability-work",
+    "title": "Working with a disability",
+    "categoryId": "family",
+    "domain": "health",
+    "prompt": "Should Iowans with disabilities be able to earn more without losing Medicaid?",
+    "context": "Income and savings limits can cause people with disabilities to lose Medicaid coverage if they earn more.",
+    "learnMore": null,
+    "issueIds": [
+      "10.93"
+    ],
+    "options": [
+      {
+        "id": "yes",
+        "label": "Yes, remove the limits for workers",
+        "description": "Let working Iowans with disabilities keep coverage regardless of income or savings.",
+        "relatedIssueIds": [
+          "10.93"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      },
+      {
+        "id": "raise",
+        "label": "Raise the limits somewhat",
+        "description": "Allow more income before coverage ends.",
+        "relatedIssueIds": [
+          "10.93"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      },
+      {
+        "id": "keep",
+        "label": "Keep current limits",
+        "description": "Keep the current rules.",
+        "relatedIssueIds": [
+          "10.93"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      }
+    ],
+    "unansweredQuestions": [],
+    "reviewStatus": "draft",
+    "tier": "deep"
+  },
+  {
+    "id": "d18",
+    "order": 38,
+    "slug": "school-meals",
+    "title": "School meals",
+    "categoryId": "family",
+    "domain": "education",
+    "prompt": "Should every Iowa student get free breakfast and lunch at school?",
+    "context": "Today, free and reduced-price school meals depend on family income.",
+    "learnMore": null,
+    "issueIds": [
+      "10.95"
+    ],
+    "options": [
+      {
+        "id": "yes",
+        "label": "Yes, free for all",
+        "description": "Make breakfast and lunch free for every student.",
+        "relatedIssueIds": [
+          "10.95"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      },
+      {
+        "id": "keep",
+        "label": "Keep income-based meals",
+        "description": "Keep free meals for families who qualify by income.",
+        "relatedIssueIds": [
+          "10.95"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      }
+    ],
+    "unansweredQuestions": [],
+    "reviewStatus": "draft",
+    "tier": "deep"
+  },
+  {
+    "id": "d19",
+    "order": 39,
+    "slug": "license-plate-cameras",
+    "title": "Surveillance cameras",
+    "categoryId": "rights",
+    "domain": "rights",
+    "prompt": "Should the state set rules for license-plate-reading cameras?",
+    "context": "Some Iowa cities and police use cameras that record the license plates of passing cars.",
+    "learnMore": null,
+    "issueIds": [
+      "5.49"
+    ],
+    "options": [
+      {
+        "id": "regulate",
+        "label": "Yes, set state rules",
+        "description": "Set statewide rules on how these cameras and their data can be used.",
+        "relatedIssueIds": [
+          "5.49"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      },
+      {
+        "id": "local",
+        "label": "Let cities decide",
+        "description": "Leave it to local governments and police.",
+        "relatedIssueIds": [
+          "5.49"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      },
+      {
+        "id": "ban",
+        "label": "Ban them",
+        "description": "Don't allow these cameras.",
+        "relatedIssueIds": [
+          "5.49"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      }
+    ],
+    "unansweredQuestions": [],
+    "reviewStatus": "draft",
+    "tier": "deep"
+  },
+  {
+    "id": "d20",
+    "order": 40,
+    "slug": "emergency-powers",
+    "title": "Governor's emergency powers",
+    "categoryId": "institutions",
+    "domain": "government",
+    "prompt": "Should the governor's emergency powers be limited further?",
+    "context": "Iowa recently passed a law limiting what the next governor can do during an emergency.",
+    "learnMore": null,
+    "issueIds": [
+      "9.87"
+    ],
+    "options": [
+      {
+        "id": "limit-more",
+        "label": "Yes, limit them more",
+        "description": "Put further limits on emergency powers.",
+        "relatedIssueIds": [
+          "9.87"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      },
+      {
+        "id": "keep",
+        "label": "Keep the new limits",
+        "description": "Keep the limits that were just passed.",
+        "relatedIssueIds": [
+          "9.87"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      },
+      {
+        "id": "restore",
+        "label": "Restore them",
+        "description": "Undo the new limits.",
+        "relatedIssueIds": [
+          "9.87"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      }
+    ],
+    "unansweredQuestions": [],
+    "reviewStatus": "draft",
+    "tier": "deep"
+  },
+  {
+    "id": "d21",
+    "order": 41,
+    "slug": "primary-elections",
+    "title": "How primaries work",
+    "categoryId": "institutions",
+    "domain": "government",
+    "prompt": "Should Iowa switch to a primary where all candidates run on one ballot?",
+    "context": "Today, each party holds its own primary. In a “top-four” primary, all candidates run together and the top four move on to November.",
+    "learnMore": null,
+    "issueIds": [
+      "9.85"
+    ],
+    "options": [
+      {
+        "id": "top-four",
+        "label": "Yes, a top-four primary",
+        "description": "Put all candidates on one primary ballot and advance the top four.",
+        "relatedIssueIds": [
+          "9.85"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      },
+      {
+        "id": "keep",
+        "label": "Keep party primaries",
+        "description": "Keep separate primaries for each party.",
+        "relatedIssueIds": [
+          "9.85"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      }
+    ],
+    "unansweredQuestions": [],
+    "reviewStatus": "draft",
+    "tier": "deep"
+  },
+  {
+    "id": "d22",
+    "order": 42,
+    "slug": "college-admissions",
+    "title": "Iowa students at state universities",
+    "categoryId": "family",
+    "domain": "education",
+    "prompt": "Should Iowa's state universities save more spots for Iowa students?",
+    "context": "The University of Iowa, Iowa State, and UNI admit students from Iowa and other states.",
+    "learnMore": null,
+    "issueIds": [
+      "10.98"
+    ],
+    "options": [
+      {
+        "id": "yes",
+        "label": "Yes",
+        "description": "Require a higher share of Iowa students.",
+        "relatedIssueIds": [
+          "10.98"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      },
+      {
+        "id": "no",
+        "label": "No",
+        "description": "Let universities decide admissions.",
+        "relatedIssueIds": [
+          "10.98"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      }
+    ],
+    "unansweredQuestions": [],
+    "reviewStatus": "draft",
+    "tier": "deep"
+  },
+  {
+    "id": "d23",
+    "order": 43,
+    "slug": "marijuana",
+    "title": "Marijuana",
+    "categoryId": "public-safety",
+    "domain": "government",
+    "prompt": "Should Iowa legalize marijuana for adults?",
+    "context": "Recreational marijuana is illegal in Iowa. Some neighboring states have legalized it.",
+    "learnMore": null,
+    "issueIds": [
+      "7.63",
+      "3.27"
+    ],
+    "options": [
+      {
+        "id": "legalize",
+        "label": "Yes, legalize and tax it",
+        "description": "Make it legal for adults and tax and regulate sales.",
+        "relatedIssueIds": [
+          "7.63"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      },
+      {
+        "id": "medical-only",
+        "label": "Medical use only",
+        "description": "Keep it limited to medical use.",
+        "relatedIssueIds": [
+          "3.27"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      },
+      {
+        "id": "keep-illegal",
+        "label": "No, keep it illegal",
+        "description": "Keep current law.",
+        "relatedIssueIds": [
+          "7.63"
+        ],
+        "legislationIds": [],
+        "sourceIds": [],
+        "explanation": null,
+        "assumeFrom": []
+      }
+    ],
+    "unansweredQuestions": [],
+    "reviewStatus": "draft",
+    "tier": "deep"
   }
 ]

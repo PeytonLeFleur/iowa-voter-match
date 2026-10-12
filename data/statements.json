@@ -206,6 +206,7 @@
       "8.79"
     ],
     "questionIds": [
+      "d03",
       "q03"
     ],
     "evidenceClass": "SP",
@@ -669,6 +670,7 @@
       "3.28"
     ],
     "questionIds": [
+      "d06",
       "q09"
     ],
     "evidenceClass": "EP",
@@ -990,6 +992,7 @@
       "5.42"
     ],
     "questionIds": [
+      "d01",
       "q13"
     ],
     "evidenceClass": "EP",
@@ -1032,6 +1035,7 @@
       "5.41"
     ],
     "questionIds": [
+      "d01",
       "q13"
     ],
     "evidenceClass": "EP",
@@ -1053,6 +1057,7 @@
       "5.42"
     ],
     "questionIds": [
+      "d01",
       "q13"
     ],
     "evidenceClass": "EP",
@@ -1419,6 +1424,647 @@
     ],
     "evidenceClass": "EP",
     "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-lahn-out-of-state-credits",
+    "candidateId": "zach-lahn",
+    "quote": "End tax credits and economic development funds for out-of-state and foreign corporations.",
+    "summary": "Would end state tax credits and development money for out-of-state and foreign corporations.",
+    "attribution": "direct",
+    "reportedVia": null,
+    "date": null,
+    "sourceId": "src-research-uncited",
+    "videoTimestamp": null,
+    "issueIds": [
+      "1.03",
+      "1.10"
+    ],
+    "questionIds": [
+      "d02"
+    ],
+    "evidenceClass": "SP",
+    "verificationStatus": "unverified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-lahn-ieda",
+    "candidateId": "zach-lahn",
+    "quote": null,
+    "summary": "Would refocus the Iowa Economic Development Authority on Iowa-owned firms; called the proposed steel plant “transformational.”",
+    "attribution": "paraphrase",
+    "reportedVia": null,
+    "date": null,
+    "sourceId": "src-research-uncited",
+    "videoTimestamp": null,
+    "issueIds": [
+      "1.10"
+    ],
+    "questionIds": [
+      "d02"
+    ],
+    "evidenceClass": "SP",
+    "verificationStatus": "unverified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-sand-steel-incentives",
+    "candidateId": "rob-sand",
+    "quote": "We don't want to see a lot of upfront incentives.",
+    "summary": "On the proposed steel plant, cautioned against large up-front incentives.",
+    "attribution": "direct",
+    "reportedVia": null,
+    "date": null,
+    "sourceId": "src-research-uncited",
+    "videoTimestamp": null,
+    "issueIds": [
+      "1.03"
+    ],
+    "questionIds": [
+      "d02"
+    ],
+    "evidenceClass": "GS",
+    "verificationStatus": "unverified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-sand-incentive-disclosure",
+    "candidateId": "rob-sand",
+    "quote": null,
+    "summary": "Would require disclosure of state business incentives and bar nondisclosure agreements.",
+    "attribution": "paraphrase",
+    "reportedVia": null,
+    "date": null,
+    "sourceId": "src-research-uncited",
+    "videoTimestamp": null,
+    "issueIds": [
+      "1.10"
+    ],
+    "questionIds": [
+      "d02"
+    ],
+    "evidenceClass": "SP",
+    "verificationStatus": "unverified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-sand-rural-office",
+    "candidateId": "rob-sand",
+    "quote": null,
+    "summary": "Proposes an Office of Rural Prosperity.",
+    "attribution": "paraphrase",
+    "reportedVia": null,
+    "date": "2026",
+    "sourceId": "src-sand-opportunities",
+    "videoTimestamp": null,
+    "issueIds": [
+      "2.20"
+    ],
+    "questionIds": [
+      "d03"
+    ],
+    "evidenceClass": "SP",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-sand-remote-jobs",
+    "candidateId": "rob-sand",
+    "quote": null,
+    "summary": "Would let people fill state jobs from any county, including remote work.",
+    "attribution": "paraphrase",
+    "reportedVia": null,
+    "date": null,
+    "sourceId": "src-research-uncited",
+    "videoTimestamp": null,
+    "issueIds": [
+      "2.20",
+      "8.79"
+    ],
+    "questionIds": [
+      "d03"
+    ],
+    "evidenceClass": "SP",
+    "verificationStatus": "unverified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-lahn-instate-quota",
+    "candidateId": "zach-lahn",
+    "quote": null,
+    "summary": "Would require state universities to admit a higher share of Iowa students.",
+    "attribution": "paraphrase",
+    "reportedVia": null,
+    "date": null,
+    "sourceId": "src-research-uncited",
+    "videoTimestamp": null,
+    "issueIds": [
+      "10.98",
+      "8.79"
+    ],
+    "questionIds": [
+      "d03",
+      "d22"
+    ],
+    "evidenceClass": "SP",
+    "verificationStatus": "unverified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-sand-caregiver",
+    "candidateId": "rob-sand",
+    "quote": "nonrefundable tax credit of up to $2,000 annually for caregivers, with an additional $1,000 for caretakers of veterans",
+    "summary": "Proposes a caregiver tax credit, targeted by income.",
+    "attribution": "direct",
+    "reportedVia": null,
+    "date": "2026",
+    "sourceId": "src-sand-affordable",
+    "videoTimestamp": null,
+    "issueIds": [
+      "3.23",
+      "10.97"
+    ],
+    "questionIds": [
+      "d04"
+    ],
+    "evidenceClass": "SP",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-sand-pbm",
+    "candidateId": "rob-sand",
+    "quote": null,
+    "summary": "Proposes regulating pharmacy benefit managers, a Prescription Drug Review Board, a surprise-billing law, and medical debt relief.",
+    "attribution": "paraphrase",
+    "reportedVia": null,
+    "date": null,
+    "sourceId": "src-research-uncited",
+    "videoTimestamp": null,
+    "issueIds": [
+      "3.28"
+    ],
+    "questionIds": [
+      "d05"
+    ],
+    "evidenceClass": "SP",
+    "verificationStatus": "unverified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-lahn-teacher-license",
+    "candidateId": "zach-lahn",
+    "quote": null,
+    "summary": "Would revoke the licenses of teachers “caught pushing a political agenda.”",
+    "attribution": "paraphrase",
+    "reportedVia": null,
+    "date": null,
+    "sourceId": "src-research-uncited",
+    "videoTimestamp": null,
+    "issueIds": [
+      "4.34",
+      "5.44"
+    ],
+    "questionIds": [
+      "d07"
+    ],
+    "evidenceClass": "SP",
+    "verificationStatus": "unverified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-lahn-testing",
+    "candidateId": "zach-lahn",
+    "quote": null,
+    "summary": "Would drastically reduce standardized testing and move toward mastery-based pacing.",
+    "attribution": "paraphrase",
+    "reportedVia": null,
+    "date": null,
+    "sourceId": "src-research-uncited",
+    "videoTimestamp": null,
+    "issueIds": [
+      "4.36"
+    ],
+    "questionIds": [
+      "d08"
+    ],
+    "evidenceClass": "SP",
+    "verificationStatus": "unverified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-sand-prek",
+    "candidateId": "rob-sand",
+    "quote": "For every dollar you invest, you save $17 later on",
+    "summary": "Proposes universal full-day pre-K for 3- and 4-year-olds.",
+    "attribution": "direct",
+    "reportedVia": null,
+    "date": null,
+    "sourceId": "src-research-uncited",
+    "videoTimestamp": null,
+    "issueIds": [
+      "4.40"
+    ],
+    "questionIds": [
+      "d09"
+    ],
+    "evidenceClass": "SP",
+    "verificationStatus": "unverified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-sand-sports",
+    "candidateId": "rob-sand",
+    "quote": null,
+    "summary": "Opposes transgender girls and women competing in female sports.",
+    "attribution": "paraphrase",
+    "reportedVia": "Politico, via Erin Reed (secondary)",
+    "date": null,
+    "sourceId": "src-research-uncited",
+    "videoTimestamp": null,
+    "issueIds": [
+      "5.47"
+    ],
+    "questionIds": [
+      "d10"
+    ],
+    "evidenceClass": "EP",
+    "verificationStatus": "unverified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-sand-clean-energy",
+    "candidateId": "rob-sand",
+    "quote": null,
+    "summary": "Would maintain and grow incentives for clean energy and allow plug-in solar.",
+    "attribution": "paraphrase",
+    "reportedVia": null,
+    "date": null,
+    "sourceId": "src-research-uncited",
+    "videoTimestamp": null,
+    "issueIds": [
+      "6.56",
+      "6.58"
+    ],
+    "questionIds": [
+      "d11"
+    ],
+    "evidenceClass": "SP",
+    "verificationStatus": "unverified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-sand-public-theft",
+    "candidateId": "rob-sand",
+    "quote": null,
+    "summary": "Proposes mandatory prison for theft of more than $10,000 in public funds; proposed it every year as State Auditor.",
+    "attribution": "paraphrase",
+    "reportedVia": null,
+    "date": null,
+    "sourceId": "src-research-uncited",
+    "videoTimestamp": null,
+    "issueIds": [
+      "7.61"
+    ],
+    "questionIds": [
+      "d12"
+    ],
+    "evidenceClass": "SP",
+    "verificationStatus": "unverified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-sand-fraud-ban",
+    "candidateId": "rob-sand",
+    "quote": null,
+    "summary": "Would bar people convicted of fraud from doing business with the state.",
+    "attribution": "paraphrase",
+    "reportedVia": null,
+    "date": null,
+    "sourceId": "src-research-uncited",
+    "videoTimestamp": null,
+    "issueIds": [
+      "7.70"
+    ],
+    "questionIds": [
+      "d12"
+    ],
+    "evidenceClass": "SP",
+    "verificationStatus": "unverified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-lahn-apprenticeships",
+    "candidateId": "zach-lahn",
+    "quote": null,
+    "summary": "Proposes incentives for apprenticeships and trade school.",
+    "attribution": "paraphrase",
+    "reportedVia": null,
+    "date": null,
+    "sourceId": "src-research-uncited",
+    "videoTimestamp": null,
+    "issueIds": [
+      "8.75",
+      "4.36"
+    ],
+    "questionIds": [
+      "d13"
+    ],
+    "evidenceClass": "SP",
+    "verificationStatus": "unverified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-sand-small-biz",
+    "candidateId": "rob-sand",
+    "quote": null,
+    "summary": "Would reduce red tape for businesses with 10 or fewer employees.",
+    "attribution": "paraphrase",
+    "reportedVia": null,
+    "date": null,
+    "sourceId": "src-research-uncited",
+    "videoTimestamp": null,
+    "issueIds": [
+      "8.78"
+    ],
+    "questionIds": [
+      "d14"
+    ],
+    "evidenceClass": "SP",
+    "verificationStatus": "unverified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-lahn-food-freedom",
+    "candidateId": "zach-lahn",
+    "quote": null,
+    "summary": "His first bill would be an “Iowa first food freedom bill” loosening rules on selling locally produced food.",
+    "attribution": "paraphrase",
+    "reportedVia": null,
+    "date": null,
+    "sourceId": "src-research-uncited",
+    "videoTimestamp": null,
+    "issueIds": [
+      "8.78",
+      "1.06"
+    ],
+    "questionIds": [
+      "d14"
+    ],
+    "evidenceClass": "SP",
+    "verificationStatus": "unverified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-sand-term-limits",
+    "candidateId": "rob-sand",
+    "quote": null,
+    "summary": "Proposes term limits (3 statewide terms, 12 years in the legislature, 20 years total), cognitive and civics tests, and required town halls.",
+    "attribution": "paraphrase",
+    "reportedVia": null,
+    "date": null,
+    "sourceId": "src-research-uncited",
+    "videoTimestamp": null,
+    "issueIds": [
+      "9.90"
+    ],
+    "questionIds": [
+      "d15"
+    ],
+    "evidenceClass": "SP",
+    "verificationStatus": "unverified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-lahn-term-limits",
+    "candidateId": "zach-lahn",
+    "quote": null,
+    "summary": "Reportedly supports term limits for “many things” but not governor.",
+    "attribution": "paraphrase",
+    "reportedVia": null,
+    "date": null,
+    "sourceId": "src-research-uncited",
+    "videoTimestamp": null,
+    "issueIds": [
+      "9.90"
+    ],
+    "questionIds": [
+      "d15"
+    ],
+    "evidenceClass": "SNV",
+    "verificationStatus": "unverified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-sand-age-limit",
+    "candidateId": "rob-sand",
+    "quote": null,
+    "summary": "Proposes an age limit of 78 for judges and elected officials.",
+    "attribution": "paraphrase",
+    "reportedVia": null,
+    "date": null,
+    "sourceId": "src-research-uncited",
+    "videoTimestamp": null,
+    "issueIds": [
+      "9.89"
+    ],
+    "questionIds": [
+      "d16"
+    ],
+    "evidenceClass": "SP",
+    "verificationStatus": "unverified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-sand-work-without-worry",
+    "candidateId": "rob-sand",
+    "quote": null,
+    "summary": "Supports the Work Without Worry bill, which would remove income and asset limits for working Iowans with disabilities.",
+    "attribution": "paraphrase",
+    "reportedVia": null,
+    "date": "2026-10-08",
+    "sourceId": "src-ktiv-2026-10-08",
+    "videoTimestamp": null,
+    "issueIds": [
+      "10.93",
+      "3.22"
+    ],
+    "questionIds": [
+      "d17"
+    ],
+    "evidenceClass": "SP",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-sand-school-meals",
+    "candidateId": "rob-sand",
+    "quote": null,
+    "summary": "Proposes universal free school meals.",
+    "attribution": "paraphrase",
+    "reportedVia": null,
+    "date": null,
+    "sourceId": "src-research-uncited",
+    "videoTimestamp": null,
+    "issueIds": [
+      "10.95"
+    ],
+    "questionIds": [
+      "d18"
+    ],
+    "evidenceClass": "SP",
+    "verificationStatus": "unverified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-lahn-school-meals",
+    "candidateId": "zach-lahn",
+    "quote": "I want to do universal free breakfast and free lunch in the state of Iowa",
+    "summary": "Wants universal free breakfast and lunch, with a goal of 80% Iowa-grown school food.",
+    "attribution": "direct",
+    "reportedVia": null,
+    "date": null,
+    "sourceId": "src-research-uncited",
+    "videoTimestamp": null,
+    "issueIds": [
+      "10.95"
+    ],
+    "questionIds": [
+      "d18"
+    ],
+    "evidenceClass": "EP",
+    "verificationStatus": "unverified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-lahn-flock",
+    "candidateId": "zach-lahn",
+    "quote": null,
+    "summary": "Called for state regulation of Flock license-plate cameras.",
+    "attribution": "paraphrase",
+    "reportedVia": null,
+    "date": "2026-08-24",
+    "sourceId": "src-icd-2026-08-24",
+    "videoTimestamp": null,
+    "issueIds": [
+      "5.49"
+    ],
+    "questionIds": [
+      "d19"
+    ],
+    "evidenceClass": "EP",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-lahn-emergency",
+    "candidateId": "zach-lahn",
+    "quote": "I welcome the emergency powers being reduced... I would likely sign more legislation like that",
+    "summary": "Welcomes limits on the governor's emergency powers and would likely sign more.",
+    "attribution": "direct",
+    "reportedVia": null,
+    "date": "2026-07-10",
+    "sourceId": "src-iowapress-lahn",
+    "videoTimestamp": null,
+    "issueIds": [
+      "9.87"
+    ],
+    "questionIds": [
+      "d20"
+    ],
+    "evidenceClass": "EP",
+    "verificationStatus": "verified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-sand-emergency",
+    "candidateId": "rob-sand",
+    "quote": null,
+    "summary": "Has criticized the limits placed on the next governor's emergency powers.",
+    "attribution": "paraphrase",
+    "reportedVia": null,
+    "date": null,
+    "sourceId": "src-research-uncited",
+    "videoTimestamp": null,
+    "issueIds": [
+      "9.87"
+    ],
+    "questionIds": [
+      "d20"
+    ],
+    "evidenceClass": "GS",
+    "verificationStatus": "unverified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-sand-top-four",
+    "candidateId": "rob-sand",
+    "quote": null,
+    "summary": "Proposes a top-four primary with approval voting.",
+    "attribution": "paraphrase",
+    "reportedVia": null,
+    "date": null,
+    "sourceId": "src-research-uncited",
+    "videoTimestamp": null,
+    "issueIds": [
+      "9.85"
+    ],
+    "questionIds": [
+      "d21"
+    ],
+    "evidenceClass": "SP",
+    "verificationStatus": "unverified",
+    "supersededByIds": [],
+    "conflictsWithIds": []
+  },
+  {
+    "id": "st-sand-cannabis",
+    "candidateId": "rob-sand",
+    "quote": null,
+    "summary": "Would legalize and tax cannabis, regulated through the Alcoholic Beverages Division, with priority grow licenses for small farms.",
+    "attribution": "paraphrase",
+    "reportedVia": null,
+    "date": null,
+    "sourceId": "src-research-uncited",
+    "videoTimestamp": null,
+    "issueIds": [
+      "7.63",
+      "3.27"
+    ],
+    "questionIds": [
+      "d23"
+    ],
+    "evidenceClass": "SP",
+    "verificationStatus": "unverified",
     "supersededByIds": [],
     "conflictsWithIds": []
   }

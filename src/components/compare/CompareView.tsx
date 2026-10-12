@@ -9,6 +9,7 @@ import RatioBar from '@/components/viz/RatioBar'
 import {
   candidateCoverage, choiceOf, importanceOf, positionFor, proposalSpecificity, timeline, type Answers,
 } from '@/lib/analytics'
+import { effectiveAnswers } from '@/lib/assessment/assume'
 import { useCandidateOrder } from '@/lib/assessment/candidate-order'
 import { useAssessment } from '@/lib/assessment/store'
 import type { EvidenceState } from '@/lib/compare'
@@ -21,16 +22,18 @@ const STATES: EvidenceState[] = ['documented', 'general-only', 'declined-to-comm
 export default function CompareView({ data }: { data: ClientData }) {
   const { state, hydrated } = useAssessment()
   const { ordered, swap } = useCandidateOrder(data.candidates)
-  const [filter, setFilter] = useState<'important' | 'all'>('all')
+  const [filter, setFilter] = useState<'core' | 'deep' | 'important'>('core')
   const [timelineQ, setTimelineQ] = useState(data.questions[0]!.id)
-  const answers: Answers = state.answers
+  const answers: Answers = effectiveAnswers(data.questions, state.answers)
   const cutoff = formatDate(data.meta.researchCutoff)
-  const allIds = data.questions.map((q) => q.id)
+  const allIds = data.questions.filter((q) => q.tier === 'core').map((q) => q.id)
 
   const sorted = [...data.questions].sort(
     (a, b) => (importanceOf(answers, b.id) ?? -1) - (importanceOf(answers, a.id) ?? -1) || a.order - b.order,
   )
-  const shown = filter === 'important' ? sorted.filter((q) => (importanceOf(answers, q.id) ?? -1) >= 3) : sorted
+  const shown = filter === 'important'
+    ? sorted.filter((q) => (importanceOf(answers, q.id) ?? -1) >= 3)
+    : sorted.filter((q) => q.tier === filter)
 
   return (
     <div className="space-y-16">
@@ -117,10 +120,10 @@ export default function CompareView({ data }: { data: ClientData }) {
           </div>
           <div className="no-print flex flex-wrap gap-3 text-sm">
             <div role="group" aria-label="Filter questions" className="inline-flex overflow-hidden rounded border border-ink">
-              {(['all', 'important'] as const).map((f) => (
+              {(['core', 'deep', 'important'] as const).map((f) => (
                 <button key={f} type="button" aria-pressed={filter === f} onClick={() => setFilter(f)}
                   className={`px-3 py-2 ${filter === f ? 'bg-ink text-paper' : 'text-ink hover:bg-paper-deep'}`}>
-                  {f === 'all' ? 'All 20 questions' : 'Very important to me'}
+                  {f === 'core' ? 'Main 20 questions' : f === 'deep' ? 'Go deeper questions' : 'Very important to me'}
                 </button>
               ))}
             </div>
@@ -137,7 +140,7 @@ export default function CompareView({ data }: { data: ClientData }) {
             const choice = choiceOf(answers, q)
             return (
               <article key={q.id} id={q.slug} className="scroll-mt-6 border-t border-rule pt-6">
-                <p className="text-xs font-semibold uppercase tracking-[0.14em] text-accent">Question {q.order} · {q.title}</p>
+                <p className="text-xs font-semibold uppercase tracking-[0.14em] text-accent">{q.tier === 'deep' ? 'Go deeper' : `Question ${q.order}`} · {q.title}</p>
                 <h3 className="mt-1 text-2xl">{q.prompt}</h3>
                 <div className="mt-6 grid gap-8 md:grid-cols-3 md:gap-6">
                   <div className="flex flex-col gap-3 bg-paper-deep p-4">
@@ -149,7 +152,10 @@ export default function CompareView({ data }: { data: ClientData }) {
                       </div>
                       <div>
                         <dt className="text-xs font-semibold uppercase tracking-wide text-muted">Your preference</dt>
-                        <dd className="mt-0.5">{choiceLabel(q, answers[q.id]?.choice)}</dd>
+                        <dd className="mt-0.5">
+                          {choiceLabel(q, answers[q.id]?.choice)}
+                          {answers[q.id]?.assumedFrom && <span className="ml-2 rounded-sm bg-accent-wash px-1.5 py-0.5 text-[11px] font-semibold uppercase tracking-wide text-accent-deep">Assumed</span>}
+                        </dd>
                         {choice.kind === 'option' && (
                           <dd className="mt-1 text-ink-soft">{q.options.find((o) => o.id === choice.optionId)?.description}</dd>
                         )}

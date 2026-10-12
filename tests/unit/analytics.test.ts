@@ -9,40 +9,41 @@ import type { ImportanceValue } from '@/lib/importance'
 import type { Domain } from '@/data/schema'
 
 const ds = getDataset()
-const data: ClientData = { meta: ds.meta, candidates: ds.candidates, questions: ds.questions, positions: ds.positions, statements: ds.statements, sources: ds.sources }
+const core = ds.questions.filter((q) => q.tier === 'core')
+const data: ClientData = { meta: ds.meta, otherIssues: [], candidates: ds.candidates, questions: core, positions: ds.positions, statements: ds.statements, sources: ds.sources }
 const DOMAINS: Domain[] = ['economy', 'agriculture', 'education', 'health', 'rights', 'environment', 'government']
 const all = (importance: ImportanceValue | null, choice: string | null): Answers =>
-  Object.fromEntries(ds.questions.map((q) => [q.id, { importance, choice, updatedAt: '' }]))
+  Object.fromEntries(core.map((q) => [q.id, { importance, choice, updatedAt: '' }]))
 
 describe('analytics edge cases', () => {
-  it('has exactly 20 assessment screens', () => expect(ds.questions).toHaveLength(20))
+  it('has exactly 20 core assessment screens', () => expect(core).toHaveLength(20))
 
   it('every importance zero: no division by zero, all ranked equal', () => {
     const a = all(0, null)
-    const dist = importanceDistribution(ds.questions, a)
+    const dist = importanceDistribution(core, a)
     expect(dist.levels[0]!.count).toBe(20)
     expect(dist.highImportance).toEqual({ numerator: 0, denominator: 20, value: 0 })
-    for (const d of domainImportance(ds.questions, a, DOMAINS)) {
+    for (const d of domainImportance(core, a, DOMAINS)) {
       expect(d.normalized.value).toBe(0)
       expect(d.share.value).toBeNull() // 0 of 0 total points: no percentage
     }
-    expect(new Set(topPriorities(ds.questions, a).map((r) => r.rank))).toEqual(new Set([1]))
+    expect(new Set(topPriorities(core, a).map((r) => r.rank))).toEqual(new Set([1]))
   })
 
   it('every importance max: every area at 100%', () => {
-    for (const d of domainImportance(ds.questions, all(4, null), DOMAINS)) expect(d.normalized.value).toBe(1)
+    for (const d of domainImportance(core, all(4, null), DOMAINS)) expect(d.normalized.value).toBe(1)
   })
 
   it('nothing answered: no percentages, nothing fabricated', () => {
-    const dist = importanceDistribution(ds.questions, {})
+    const dist = importanceDistribution(core, {})
     expect(dist.highImportance.value).toBeNull()
-    for (const d of domainImportance(ds.questions, {}, DOMAINS)) expect(d.normalized.value).toBeNull()
+    for (const d of domainImportance(core, {}, DOMAINS)) expect(d.normalized.value).toBeNull()
     for (const c of ds.candidates) expect(compareWithCandidate(data, {}, c.id).comparable.value).toBeNull()
   })
 
   it('every preference unsure: no candidate relations at all', () => {
     const a = all(3, 'unsure')
-    expect(completeness(ds.questions, a).unsure.value).toBe(1)
+    expect(completeness(core, a).unsure.value).toBe(1)
     for (const c of ds.candidates) {
       const cmp = compareWithCandidate(data, a, c.id)
       expect(cmp.chosen).toBe(0)
@@ -51,12 +52,12 @@ describe('analytics edge cases', () => {
   })
 
   it('categories with identical priority values tie rather than being ordered arbitrarily', () => {
-    const d = domainImportance(ds.questions, all(2, null), DOMAINS)
+    const d = domainImportance(core, all(2, null), DOMAINS)
     expect(new Set(d.map((x) => x.normalized.value))).toEqual(new Set([0.5]))
   })
 
   it('unknown positions are their own bucket, excluded from the comparable denominator', () => {
-    const a = Object.fromEntries(ds.questions.map((q) => [q.id, { importance: 4 as const, choice: q.options[0]!.id, updatedAt: '' }]))
+    const a = Object.fromEntries(core.map((q) => [q.id, { importance: 4 as const, choice: q.options[0]!.id, updatedAt: '' }]))
     for (const c of ds.candidates) {
       const cmp = compareWithCandidate(data, a, c.id)
       const { aligned, partial, conflicting } = cmp.counts
@@ -68,9 +69,9 @@ describe('analytics edge cases', () => {
 
   it('modifying an answer after completion changes analytics', () => {
     const a = all(1, null)
-    const before = importanceDistribution(ds.questions, a).highImportance.numerator
+    const before = importanceDistribution(core, a).highImportance.numerator
     a['q01'] = { importance: 4, choice: null, updatedAt: '' }
-    expect(importanceDistribution(ds.questions, a).highImportance.numerator).toBe(before + 1)
+    expect(importanceDistribution(core, a).highImportance.numerator).toBe(before + 1)
   })
 
   it('documented overlap and difference come only from documented stances', () => {

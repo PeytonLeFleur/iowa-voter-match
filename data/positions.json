@@ -14,6 +14,7 @@
     "proposal": null,
     "comparableToUserPreference": true,
     "optionRelations": {
+      "eliminate-homes": "conflicting",
       "reduce-further": "conflicting",
       "relief-preserve": "unaddressed",
       "maintain-evaluate": "aligned",
@@ -47,6 +48,7 @@
     "proposal": "Eliminate property taxes on primary residences over the long term; tax data centers at 5x the normal rate.",
     "comparableToUserPreference": true,
     "optionRelations": {
+      "eliminate-homes": "aligned",
       "reduce-further": "aligned",
       "relief-preserve": "unaddressed",
       "maintain-evaluate": "conflicting",
@@ -121,6 +123,7 @@
     "comparableToUserPreference": true,
     "optionRelations": {
       "eliminate": "aligned",
+      "cut-further": "partial",
       "keep-rate": "conflicting",
       "pause-cuts": "conflicting",
       "raise-higher-incomes": "conflicting"
@@ -300,7 +303,8 @@
     "optionRelations": {
       "prohibit-private": "aligned",
       "stricter-standards": "unaddressed",
-      "case-by-case": "conflicting"
+      "case-by-case": "conflicting",
+      "allow-public-benefit": "conflicting"
     },
     "relationRationale": "Sand's statement opposes takings that are not for public use, the general principle in the first option. This does not establish a position on any specific bill.",
     "statementIds": [
@@ -332,7 +336,8 @@
     "optionRelations": {
       "prohibit-private": "aligned",
       "stricter-standards": "unaddressed",
-      "case-by-case": "conflicting"
+      "case-by-case": "conflicting",
+      "allow-public-benefit": "conflicting"
     },
     "relationRationale": "Lahn's campaign site states absolute opposition to eminent domain for private company profit, the general principle in the first option. He said he is still examining legal options.",
     "statementIds": [
@@ -639,7 +644,8 @@
     "optionRelations": {
       "increase-significantly": "aligned",
       "modest-increases": "unaddressed",
-      "hold-steady": "conflicting"
+      "hold-steady": "conflicting",
+      "spend-less": "conflicting"
     },
     "relationRationale": "Sand has named a 5% first-year increase. The research does not state recent increase levels, so its relation to “modest increases” is not established.",
     "statementIds": [
@@ -798,6 +804,7 @@
     "proposal": null,
     "comparableToUserPreference": true,
     "optionRelations": {
+      "stricter-requirements": "conflicting",
       "keep-requirements": "conflicting",
       "easier-exemptions": "partial",
       "end-requirements": "aligned"
@@ -837,11 +844,13 @@
     "proposal": null,
     "comparableToUserPreference": true,
     "optionRelations": {
+      "ban-completely": "conflicting",
       "further-restrict": "conflicting",
       "keep-current": "conflicting",
-      "broaden-access": "aligned"
+      "broaden-access": "aligned",
+      "legal-most-cases": "unaddressed"
     },
-    "relationRationale": "Sand says the six-week ban “goes too far,” which differs from keeping or tightening it, and would veto further restrictions.",
+    "relationRationale": "Sand says the six-week ban “goes too far,” which differs from keeping or tightening it, and would veto further restrictions. Whether he supports protecting abortion for most of pregnancy is not established, so no relation is drawn for that option.",
     "statementIds": [
       "st-sand-abortion",
       "st-sand-roe"
@@ -872,11 +881,13 @@
     "proposal": null,
     "comparableToUserPreference": true,
     "optionRelations": {
+      "ban-completely": "unaddressed",
       "further-restrict": "unaddressed",
       "keep-current": "unaddressed",
-      "broaden-access": "conflicting"
+      "broaden-access": "conflicting",
+      "legal-most-cases": "conflicting"
     },
-    "relationRationale": "Lahn's statements oppose broadening access. Whether he would keep the current law or restrict it further is not established: a report that he called for a total ban is not verified.",
+    "relationRationale": "Lahn's statements oppose broadening access. Whether he would keep the current law, restrict it further, or ban abortion completely is not established: a report that he called for a total ban is not verified.",
     "statementIds": [
       "st-lahn-protect-life",
       "st-lahn-conception",
@@ -1157,6 +1168,7 @@
     "proposal": "$12, phased in, then indexed. No timeline.",
     "comparableToUserPreference": true,
     "optionRelations": {
+      "raise-15": "partial",
       "raise-and-index": "aligned",
       "raise-modestly": "partial",
       "keep-federal": "conflicting",
@@ -1340,6 +1352,1301 @@
       "src-ipr-debate"
     ],
     "statementDate": "2026-10-06",
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": null,
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-d01-rob-sand",
+    "candidateId": "rob-sand",
+    "questionId": "d01",
+    "issueIds": [
+      "5.42"
+    ],
+    "evidenceClass": "EP",
+    "positionFound": true,
+    "positionSummary": "Would veto restrictions on IVF, surrogacy, and contraception.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": true,
+    "optionRelations": {
+      "regulate-protect-embryos": "conflicting",
+      "keep-current": "unaddressed",
+      "protect-access": "partial"
+    },
+    "relationRationale": "Sand's campaign says he would veto bills threatening IVF. That opposes new IVF restrictions; it is not the same as passing a law protecting access.",
+    "statementIds": [
+      "st-sand-roe"
+    ],
+    "sourceIds": [
+      "src-sand-healthier"
+    ],
+    "statementDate": "2026",
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": null,
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-d01-zach-lahn",
+    "candidateId": "zach-lahn",
+    "questionId": "d01",
+    "issueIds": [
+      "5.42"
+    ],
+    "evidenceClass": "EP",
+    "positionFound": true,
+    "positionSummary": "Says IVF should be examined for regulation to protect life.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": true,
+    "optionRelations": {
+      "regulate-protect-embryos": "aligned",
+      "keep-current": "conflicting",
+      "protect-access": "conflicting"
+    },
+    "relationRationale": "Lahn said “we need to look at regulating” IVF “to promote and protect life.”",
+    "statementIds": [
+      "st-lahn-ivf",
+      "st-lahn-conception"
+    ],
+    "sourceIds": [
+      "src-iowapress-lahn-primary"
+    ],
+    "statementDate": "2026-04-02",
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": null,
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-d02-rob-sand",
+    "candidateId": "rob-sand",
+    "questionId": "d02",
+    "issueIds": [
+      "1.03",
+      "1.10"
+    ],
+    "evidenceClass": "SP",
+    "positionFound": true,
+    "positionSummary": "Disclosure of incentives and no NDAs; cautious on large up-front incentives.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": false,
+    "optionRelations": null,
+    "relationRationale": "Sand wants incentive deals disclosed and cautioned against large up-front incentives, consistent with tying them to results.",
+    "statementIds": [
+      "st-sand-incentive-disclosure",
+      "st-sand-steel-incentives"
+    ],
+    "sourceIds": [
+      "src-research-uncited"
+    ],
+    "statementDate": null,
+    "verificationStatus": "unverified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": "The research does not cite a source for this position, so it is not counted in the match until verified.",
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-d02-zach-lahn",
+    "candidateId": "zach-lahn",
+    "questionId": "d02",
+    "issueIds": [
+      "1.03",
+      "1.10"
+    ],
+    "evidenceClass": "SP",
+    "positionFound": true,
+    "positionSummary": "End tax credits for out-of-state and foreign corporations; refocus on Iowa firms.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": false,
+    "optionRelations": null,
+    "relationRationale": "Lahn would end incentives for out-of-state and foreign companies while refocusing on Iowa firms.",
+    "statementIds": [
+      "st-lahn-out-of-state-credits",
+      "st-lahn-ieda"
+    ],
+    "sourceIds": [
+      "src-research-uncited"
+    ],
+    "statementDate": null,
+    "verificationStatus": "unverified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": "The research does not cite a source for this position, so it is not counted in the match until verified.",
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-d03-rob-sand",
+    "candidateId": "rob-sand",
+    "questionId": "d03",
+    "issueIds": [
+      "2.20",
+      "8.79",
+      "10.98"
+    ],
+    "evidenceClass": "SP",
+    "positionFound": true,
+    "positionSummary": "Office of Rural Prosperity; state jobs from any county.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": true,
+    "optionRelations": {
+      "tax-breaks-stay": "unaddressed",
+      "jobs-anywhere": "aligned",
+      "college-spots": "unaddressed",
+      "market": "conflicting"
+    },
+    "relationRationale": "Sand proposes rural investment and state jobs filled from anywhere in Iowa.",
+    "statementIds": [
+      "st-sand-rural-office",
+      "st-sand-remote-jobs"
+    ],
+    "sourceIds": [
+      "src-research-uncited",
+      "src-sand-opportunities"
+    ],
+    "statementDate": "2026",
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": null,
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-d03-zach-lahn",
+    "candidateId": "zach-lahn",
+    "questionId": "d03",
+    "issueIds": [
+      "2.20",
+      "8.79",
+      "10.98"
+    ],
+    "evidenceClass": "SP",
+    "positionFound": true,
+    "positionSummary": "Tax rebates for young Iowans who stay; more university spots for Iowans.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": true,
+    "optionRelations": {
+      "tax-breaks-stay": "aligned",
+      "jobs-anywhere": "unaddressed",
+      "college-spots": "aligned",
+      "market": "conflicting"
+    },
+    "relationRationale": "Lahn proposes tax rebates for young people who stay and higher in-state admission quotas.",
+    "statementIds": [
+      "st-lahn-housing",
+      "st-lahn-instate-quota"
+    ],
+    "sourceIds": [
+      "src-lahn-policy",
+      "src-research-uncited"
+    ],
+    "statementDate": "2026",
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": null,
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-d04-rob-sand",
+    "candidateId": "rob-sand",
+    "questionId": "d04",
+    "issueIds": [
+      "3.23",
+      "10.97"
+    ],
+    "evidenceClass": "SP",
+    "positionFound": true,
+    "positionSummary": "Caregiver tax credit up to $2,000, plus $1,000 for caregivers of veterans.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": "Nonrefundable credit up to $2,000 a year; $1,000 more for caretakers of veterans; about 57,000 eligible.",
+    "comparableToUserPreference": true,
+    "optionRelations": {
+      "yes-credit": "aligned",
+      "no-credit": "conflicting"
+    },
+    "relationRationale": "Sand proposes the credit.",
+    "statementIds": [
+      "st-sand-caregiver"
+    ],
+    "sourceIds": [
+      "src-sand-affordable"
+    ],
+    "statementDate": "2026",
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": null,
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-d04-zach-lahn",
+    "candidateId": "zach-lahn",
+    "questionId": "d04",
+    "issueIds": [
+      "3.23",
+      "10.97"
+    ],
+    "evidenceClass": "NDP",
+    "positionFound": false,
+    "positionSummary": null,
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": null,
+    "optionRelations": null,
+    "relationRationale": null,
+    "statementIds": [],
+    "sourceIds": [],
+    "statementDate": null,
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": null,
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-d05-rob-sand",
+    "candidateId": "rob-sand",
+    "questionId": "d05",
+    "issueIds": [
+      "3.28",
+      "10.99"
+    ],
+    "evidenceClass": "SP",
+    "positionFound": true,
+    "positionSummary": "Regulate PBMs; Prescription Drug Review Board.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": false,
+    "optionRelations": null,
+    "relationRationale": "Sand proposes PBM regulation and a drug review board.",
+    "statementIds": [
+      "st-sand-pbm"
+    ],
+    "sourceIds": [
+      "src-research-uncited"
+    ],
+    "statementDate": null,
+    "verificationStatus": "unverified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": "The research does not cite a source for this position, so it is not counted in the match until verified.",
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-d05-zach-lahn",
+    "candidateId": "zach-lahn",
+    "questionId": "d05",
+    "issueIds": [
+      "3.28",
+      "10.99"
+    ],
+    "evidenceClass": "NDP",
+    "positionFound": false,
+    "positionSummary": null,
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": null,
+    "optionRelations": null,
+    "relationRationale": null,
+    "statementIds": [],
+    "sourceIds": [],
+    "statementDate": null,
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": null,
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-d06-rob-sand",
+    "candidateId": "rob-sand",
+    "questionId": "d06",
+    "issueIds": [
+      "3.28",
+      "3.22"
+    ],
+    "evidenceClass": "NDP",
+    "positionFound": false,
+    "positionSummary": null,
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": null,
+    "optionRelations": null,
+    "relationRationale": null,
+    "statementIds": [],
+    "sourceIds": [],
+    "statementDate": null,
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": null,
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-d06-zach-lahn",
+    "candidateId": "zach-lahn",
+    "questionId": "d06",
+    "issueIds": [
+      "3.28",
+      "3.22"
+    ],
+    "evidenceClass": "EP",
+    "positionFound": true,
+    "positionSummary": "Would not allow insurers to use AI to deny coverage.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": true,
+    "optionRelations": {
+      "ban": "aligned",
+      "allow-with-review": "conflicting",
+      "allow": "conflicting"
+    },
+    "relationRationale": "Lahn said he “will not allow any of these companies to use AI in denying coverage.”",
+    "statementIds": [
+      "st-lahn-medicaid"
+    ],
+    "sourceIds": [
+      "src-icd-2026-08-01"
+    ],
+    "statementDate": "2026-08-01",
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": null,
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-d07-rob-sand",
+    "candidateId": "rob-sand",
+    "questionId": "d07",
+    "issueIds": [
+      "4.34",
+      "5.44"
+    ],
+    "evidenceClass": "NDP",
+    "positionFound": false,
+    "positionSummary": null,
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": null,
+    "optionRelations": null,
+    "relationRationale": null,
+    "statementIds": [],
+    "sourceIds": [],
+    "statementDate": null,
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": null,
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-d07-zach-lahn",
+    "candidateId": "zach-lahn",
+    "questionId": "d07",
+    "issueIds": [
+      "4.34",
+      "5.44"
+    ],
+    "evidenceClass": "SP",
+    "positionFound": true,
+    "positionSummary": "Revoke licenses of teachers caught pushing a political agenda.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": false,
+    "optionRelations": null,
+    "relationRationale": "Lahn proposes license revocation.",
+    "statementIds": [
+      "st-lahn-teacher-license"
+    ],
+    "sourceIds": [
+      "src-research-uncited"
+    ],
+    "statementDate": null,
+    "verificationStatus": "unverified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": "The research does not cite a source for this position, so it is not counted in the match until verified.",
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-d08-rob-sand",
+    "candidateId": "rob-sand",
+    "questionId": "d08",
+    "issueIds": [
+      "4.36"
+    ],
+    "evidenceClass": "IND",
+    "positionFound": null,
+    "positionSummary": "Has proposed limits on children's social media; no documented position on testing.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": false,
+    "optionRelations": null,
+    "relationRationale": null,
+    "statementIds": [],
+    "sourceIds": [],
+    "statementDate": null,
+    "verificationStatus": "unverified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": null,
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-d08-zach-lahn",
+    "candidateId": "zach-lahn",
+    "questionId": "d08",
+    "issueIds": [
+      "4.36"
+    ],
+    "evidenceClass": "SP",
+    "positionFound": true,
+    "positionSummary": "Drastically reduce testing; mastery-based pacing.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": false,
+    "optionRelations": null,
+    "relationRationale": "Lahn proposes cutting testing.",
+    "statementIds": [
+      "st-lahn-testing"
+    ],
+    "sourceIds": [
+      "src-research-uncited"
+    ],
+    "statementDate": null,
+    "verificationStatus": "unverified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": "The research does not cite a source for this position, so it is not counted in the match until verified.",
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-d09-rob-sand",
+    "candidateId": "rob-sand",
+    "questionId": "d09",
+    "issueIds": [
+      "4.40"
+    ],
+    "evidenceClass": "SP",
+    "positionFound": true,
+    "positionSummary": "Universal full-day pre-K for 3- and 4-year-olds.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": false,
+    "optionRelations": null,
+    "relationRationale": "Sand proposes universal full-day pre-K.",
+    "statementIds": [
+      "st-sand-prek"
+    ],
+    "sourceIds": [
+      "src-research-uncited"
+    ],
+    "statementDate": null,
+    "verificationStatus": "unverified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": "No cost estimate. The research does not cite a source for this position, so it is not counted in the match until verified.",
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-d09-zach-lahn",
+    "candidateId": "zach-lahn",
+    "questionId": "d09",
+    "issueIds": [
+      "4.40"
+    ],
+    "evidenceClass": "NDP",
+    "positionFound": false,
+    "positionSummary": null,
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": null,
+    "optionRelations": null,
+    "relationRationale": null,
+    "statementIds": [],
+    "sourceIds": [],
+    "statementDate": null,
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": null,
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-d10-rob-sand",
+    "candidateId": "rob-sand",
+    "questionId": "d10",
+    "issueIds": [
+      "5.47"
+    ],
+    "evidenceClass": "EP",
+    "positionFound": true,
+    "positionSummary": "Opposes transgender girls and women competing in female sports.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": false,
+    "optionRelations": null,
+    "relationRationale": "Sand has said he opposes transgender girls competing in girls' sports.",
+    "statementIds": [
+      "st-sand-sports"
+    ],
+    "sourceIds": [
+      "src-research-uncited"
+    ],
+    "statementDate": null,
+    "verificationStatus": "unverified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": "His quoted words come from a secondary report. The research does not cite a source for this position, so it is not counted in the match until verified.",
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-d10-zach-lahn",
+    "candidateId": "zach-lahn",
+    "questionId": "d10",
+    "issueIds": [
+      "5.47"
+    ],
+    "evidenceClass": "IND",
+    "positionFound": null,
+    "positionSummary": "No documented position on sports; debate remark about a school library book.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": false,
+    "optionRelations": null,
+    "relationRationale": null,
+    "statementIds": [
+      "st-lahn-book"
+    ],
+    "sourceIds": [
+      "src-hill-debate"
+    ],
+    "statementDate": "2026-10-06",
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": null,
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-d11-rob-sand",
+    "candidateId": "rob-sand",
+    "questionId": "d11",
+    "issueIds": [
+      "6.56",
+      "6.58"
+    ],
+    "evidenceClass": "SP",
+    "positionFound": true,
+    "positionSummary": "Maintain and grow clean energy incentives; allow plug-in solar.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": false,
+    "optionRelations": null,
+    "relationRationale": "Sand would maintain and grow the incentives.",
+    "statementIds": [
+      "st-sand-clean-energy"
+    ],
+    "sourceIds": [
+      "src-research-uncited"
+    ],
+    "statementDate": null,
+    "verificationStatus": "unverified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": "The research does not cite a source for this position, so it is not counted in the match until verified.",
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-d11-zach-lahn",
+    "candidateId": "zach-lahn",
+    "questionId": "d11",
+    "issueIds": [
+      "6.56",
+      "6.58"
+    ],
+    "evidenceClass": "NDP",
+    "positionFound": false,
+    "positionSummary": null,
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": null,
+    "optionRelations": null,
+    "relationRationale": null,
+    "statementIds": [],
+    "sourceIds": [],
+    "statementDate": null,
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": null,
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-d12-rob-sand",
+    "candidateId": "rob-sand",
+    "questionId": "d12",
+    "issueIds": [
+      "7.61",
+      "7.70"
+    ],
+    "evidenceClass": "SP",
+    "positionFound": true,
+    "positionSummary": "Mandatory prison for stealing more than $10,000 in public funds; bar fraudsters from state contracts.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": false,
+    "optionRelations": null,
+    "relationRationale": "Sand proposes both measures.",
+    "statementIds": [
+      "st-sand-public-theft",
+      "st-sand-fraud-ban"
+    ],
+    "sourceIds": [
+      "src-research-uncited"
+    ],
+    "statementDate": null,
+    "verificationStatus": "unverified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": "The research does not cite a source for this position, so it is not counted in the match until verified.",
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-d12-zach-lahn",
+    "candidateId": "zach-lahn",
+    "questionId": "d12",
+    "issueIds": [
+      "7.61",
+      "7.70"
+    ],
+    "evidenceClass": "NDP",
+    "positionFound": false,
+    "positionSummary": null,
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": null,
+    "optionRelations": null,
+    "relationRationale": null,
+    "statementIds": [],
+    "sourceIds": [],
+    "statementDate": null,
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": null,
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-d13-rob-sand",
+    "candidateId": "rob-sand",
+    "questionId": "d13",
+    "issueIds": [
+      "8.75"
+    ],
+    "evidenceClass": "NDP",
+    "positionFound": false,
+    "positionSummary": null,
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": null,
+    "optionRelations": null,
+    "relationRationale": null,
+    "statementIds": [],
+    "sourceIds": [],
+    "statementDate": null,
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": null,
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-d13-zach-lahn",
+    "candidateId": "zach-lahn",
+    "questionId": "d13",
+    "issueIds": [
+      "8.75"
+    ],
+    "evidenceClass": "SP",
+    "positionFound": true,
+    "positionSummary": "Incentives for apprenticeships and trade school.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": false,
+    "optionRelations": null,
+    "relationRationale": "Lahn proposes the incentives.",
+    "statementIds": [
+      "st-lahn-apprenticeships"
+    ],
+    "sourceIds": [
+      "src-research-uncited"
+    ],
+    "statementDate": null,
+    "verificationStatus": "unverified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": "The research does not cite a source for this position, so it is not counted in the match until verified.",
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-d14-rob-sand",
+    "candidateId": "rob-sand",
+    "questionId": "d14",
+    "issueIds": [
+      "8.78",
+      "1.06"
+    ],
+    "evidenceClass": "SP",
+    "positionFound": true,
+    "positionSummary": "Less red tape for businesses with 10 or fewer employees.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": false,
+    "optionRelations": null,
+    "relationRationale": "Sand proposes easing rules for small businesses.",
+    "statementIds": [
+      "st-sand-small-biz"
+    ],
+    "sourceIds": [
+      "src-research-uncited"
+    ],
+    "statementDate": null,
+    "verificationStatus": "unverified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": "The research does not cite a source for this position, so it is not counted in the match until verified.",
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-d14-zach-lahn",
+    "candidateId": "zach-lahn",
+    "questionId": "d14",
+    "issueIds": [
+      "8.78",
+      "1.06"
+    ],
+    "evidenceClass": "SP",
+    "positionFound": true,
+    "positionSummary": "A food freedom bill loosening rules on selling local food.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": false,
+    "optionRelations": null,
+    "relationRationale": "Lahn proposes food freedom deregulation.",
+    "statementIds": [
+      "st-lahn-food-freedom"
+    ],
+    "sourceIds": [
+      "src-research-uncited"
+    ],
+    "statementDate": null,
+    "verificationStatus": "unverified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": "The research does not cite a source for this position, so it is not counted in the match until verified.",
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-d15-rob-sand",
+    "candidateId": "rob-sand",
+    "questionId": "d15",
+    "issueIds": [
+      "9.90"
+    ],
+    "evidenceClass": "SP",
+    "positionFound": true,
+    "positionSummary": "Term limits: 3 statewide terms, 12 years in the legislature, 20 years total.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": false,
+    "optionRelations": null,
+    "relationRationale": "Sand proposes term limits.",
+    "statementIds": [
+      "st-sand-term-limits"
+    ],
+    "sourceIds": [
+      "src-research-uncited"
+    ],
+    "statementDate": null,
+    "verificationStatus": "unverified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": "The research does not cite a source for this position, so it is not counted in the match until verified.",
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-d15-zach-lahn",
+    "candidateId": "zach-lahn",
+    "questionId": "d15",
+    "issueIds": [
+      "9.90"
+    ],
+    "evidenceClass": "SNV",
+    "positionFound": null,
+    "positionSummary": "Reportedly supports term limits for “many things” but not governor; not verified.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": false,
+    "optionRelations": null,
+    "relationRationale": null,
+    "statementIds": [
+      "st-lahn-term-limits"
+    ],
+    "sourceIds": [
+      "src-research-uncited"
+    ],
+    "statementDate": null,
+    "verificationStatus": "unverified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": null,
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-d16-rob-sand",
+    "candidateId": "rob-sand",
+    "questionId": "d16",
+    "issueIds": [
+      "9.89"
+    ],
+    "evidenceClass": "SP",
+    "positionFound": true,
+    "positionSummary": "Age limit of 78 for judges and officials.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": false,
+    "optionRelations": null,
+    "relationRationale": "Sand proposes an age limit.",
+    "statementIds": [
+      "st-sand-age-limit"
+    ],
+    "sourceIds": [
+      "src-research-uncited"
+    ],
+    "statementDate": null,
+    "verificationStatus": "unverified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": "The research does not cite a source for this position, so it is not counted in the match until verified.",
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-d16-zach-lahn",
+    "candidateId": "zach-lahn",
+    "questionId": "d16",
+    "issueIds": [
+      "9.89"
+    ],
+    "evidenceClass": "NDP",
+    "positionFound": false,
+    "positionSummary": null,
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": null,
+    "optionRelations": null,
+    "relationRationale": null,
+    "statementIds": [],
+    "sourceIds": [],
+    "statementDate": null,
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": null,
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-d17-rob-sand",
+    "candidateId": "rob-sand",
+    "questionId": "d17",
+    "issueIds": [
+      "10.93"
+    ],
+    "evidenceClass": "SP",
+    "positionFound": true,
+    "positionSummary": "Supports the Work Without Worry bill.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": true,
+    "optionRelations": {
+      "yes": "aligned",
+      "raise": "partial",
+      "keep": "conflicting"
+    },
+    "relationRationale": "Work Without Worry would remove the limits for working Iowans with disabilities.",
+    "statementIds": [
+      "st-sand-work-without-worry"
+    ],
+    "sourceIds": [
+      "src-ktiv-2026-10-08"
+    ],
+    "statementDate": "2026-10-08",
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": null,
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-d17-zach-lahn",
+    "candidateId": "zach-lahn",
+    "questionId": "d17",
+    "issueIds": [
+      "10.93"
+    ],
+    "evidenceClass": "NDP",
+    "positionFound": false,
+    "positionSummary": null,
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": null,
+    "optionRelations": null,
+    "relationRationale": null,
+    "statementIds": [],
+    "sourceIds": [],
+    "statementDate": null,
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": null,
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-d18-rob-sand",
+    "candidateId": "rob-sand",
+    "questionId": "d18",
+    "issueIds": [
+      "10.95"
+    ],
+    "evidenceClass": "SP",
+    "positionFound": true,
+    "positionSummary": "Universal free school meals.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": false,
+    "optionRelations": null,
+    "relationRationale": "Sand proposes universal school meals.",
+    "statementIds": [
+      "st-sand-school-meals"
+    ],
+    "sourceIds": [
+      "src-research-uncited"
+    ],
+    "statementDate": null,
+    "verificationStatus": "unverified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": "The research does not cite a source for this position, so it is not counted in the match until verified.",
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-d18-zach-lahn",
+    "candidateId": "zach-lahn",
+    "questionId": "d18",
+    "issueIds": [
+      "10.95"
+    ],
+    "evidenceClass": "EP",
+    "positionFound": true,
+    "positionSummary": "Universal free breakfast and lunch; 80% Iowa-grown school food.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": false,
+    "optionRelations": null,
+    "relationRationale": "Lahn said he wants universal free breakfast and lunch.",
+    "statementIds": [
+      "st-lahn-school-meals"
+    ],
+    "sourceIds": [
+      "src-research-uncited"
+    ],
+    "statementDate": null,
+    "verificationStatus": "unverified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": "The research does not cite a source for this position, so it is not counted in the match until verified.",
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-d19-rob-sand",
+    "candidateId": "rob-sand",
+    "questionId": "d19",
+    "issueIds": [
+      "5.49"
+    ],
+    "evidenceClass": "NDP",
+    "positionFound": false,
+    "positionSummary": null,
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": null,
+    "optionRelations": null,
+    "relationRationale": null,
+    "statementIds": [],
+    "sourceIds": [],
+    "statementDate": null,
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": null,
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-d19-zach-lahn",
+    "candidateId": "zach-lahn",
+    "questionId": "d19",
+    "issueIds": [
+      "5.49"
+    ],
+    "evidenceClass": "EP",
+    "positionFound": true,
+    "positionSummary": "Called for state regulation of license-plate cameras.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": true,
+    "optionRelations": {
+      "regulate": "aligned",
+      "local": "conflicting",
+      "ban": "unaddressed"
+    },
+    "relationRationale": "Lahn called for state-level regulation.",
+    "statementIds": [
+      "st-lahn-flock"
+    ],
+    "sourceIds": [
+      "src-icd-2026-08-24"
+    ],
+    "statementDate": "2026-08-24",
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": null,
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-d20-rob-sand",
+    "candidateId": "rob-sand",
+    "questionId": "d20",
+    "issueIds": [
+      "9.87"
+    ],
+    "evidenceClass": "GS",
+    "positionFound": null,
+    "positionSummary": "Has criticized the new limits on the next governor; no specific proposal.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": false,
+    "optionRelations": null,
+    "relationRationale": null,
+    "statementIds": [
+      "st-sand-emergency"
+    ],
+    "sourceIds": [
+      "src-research-uncited"
+    ],
+    "statementDate": null,
+    "verificationStatus": "unverified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": null,
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-d20-zach-lahn",
+    "candidateId": "zach-lahn",
+    "questionId": "d20",
+    "issueIds": [
+      "9.87"
+    ],
+    "evidenceClass": "EP",
+    "positionFound": true,
+    "positionSummary": "Welcomes the new limits and would likely sign more.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": true,
+    "optionRelations": {
+      "limit-more": "aligned",
+      "keep": "partial",
+      "restore": "conflicting"
+    },
+    "relationRationale": "Lahn said he “would likely sign more legislation like that.”",
+    "statementIds": [
+      "st-lahn-emergency"
+    ],
+    "sourceIds": [
+      "src-iowapress-lahn"
+    ],
+    "statementDate": "2026-07-10",
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": null,
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-d21-rob-sand",
+    "candidateId": "rob-sand",
+    "questionId": "d21",
+    "issueIds": [
+      "9.85"
+    ],
+    "evidenceClass": "SP",
+    "positionFound": true,
+    "positionSummary": "Top-four primary with approval voting.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": false,
+    "optionRelations": null,
+    "relationRationale": "Sand proposes a top-four primary.",
+    "statementIds": [
+      "st-sand-top-four"
+    ],
+    "sourceIds": [
+      "src-research-uncited"
+    ],
+    "statementDate": null,
+    "verificationStatus": "unverified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": "The research does not cite a source for this position, so it is not counted in the match until verified.",
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-d21-zach-lahn",
+    "candidateId": "zach-lahn",
+    "questionId": "d21",
+    "issueIds": [
+      "9.85"
+    ],
+    "evidenceClass": "NDP",
+    "positionFound": false,
+    "positionSummary": null,
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": null,
+    "optionRelations": null,
+    "relationRationale": null,
+    "statementIds": [],
+    "sourceIds": [],
+    "statementDate": null,
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": null,
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-d22-rob-sand",
+    "candidateId": "rob-sand",
+    "questionId": "d22",
+    "issueIds": [
+      "10.98"
+    ],
+    "evidenceClass": "NDP",
+    "positionFound": false,
+    "positionSummary": null,
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": null,
+    "optionRelations": null,
+    "relationRationale": null,
+    "statementIds": [],
+    "sourceIds": [],
+    "statementDate": null,
+    "verificationStatus": "verified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": null,
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-d22-zach-lahn",
+    "candidateId": "zach-lahn",
+    "questionId": "d22",
+    "issueIds": [
+      "10.98"
+    ],
+    "evidenceClass": "SP",
+    "positionFound": true,
+    "positionSummary": "Higher in-state quotas at state universities.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": false,
+    "optionRelations": null,
+    "relationRationale": "Lahn proposes higher in-state quotas.",
+    "statementIds": [
+      "st-lahn-instate-quota"
+    ],
+    "sourceIds": [
+      "src-research-uncited"
+    ],
+    "statementDate": null,
+    "verificationStatus": "unverified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": "The research does not cite a source for this position, so it is not counted in the match until verified.",
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-d23-rob-sand",
+    "candidateId": "rob-sand",
+    "questionId": "d23",
+    "issueIds": [
+      "7.63",
+      "3.27"
+    ],
+    "evidenceClass": "SP",
+    "positionFound": true,
+    "positionSummary": "Legalize and tax cannabis for adults.",
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": false,
+    "optionRelations": null,
+    "relationRationale": "Sand would legalize and tax cannabis.",
+    "statementIds": [
+      "st-sand-cannabis"
+    ],
+    "sourceIds": [
+      "src-research-uncited"
+    ],
+    "statementDate": null,
+    "verificationStatus": "unverified",
+    "researchCutoff": "2026-10-12",
+    "evidenceLimitations": "The research does not cite a source for this position, so it is not counted in the match until verified.",
+    "reviewStatus": "draft"
+  },
+  {
+    "id": "pos-d23-zach-lahn",
+    "candidateId": "zach-lahn",
+    "questionId": "d23",
+    "issueIds": [
+      "7.63",
+      "3.27"
+    ],
+    "evidenceClass": "NDP",
+    "positionFound": false,
+    "positionSummary": null,
+    "documentedStance": null,
+    "declinedToCommit": false,
+    "proposal": null,
+    "comparableToUserPreference": null,
+    "optionRelations": null,
+    "relationRationale": null,
+    "statementIds": [],
+    "sourceIds": [],
+    "statementDate": null,
     "verificationStatus": "verified",
     "researchCutoff": "2026-10-12",
     "evidenceLimitations": null,

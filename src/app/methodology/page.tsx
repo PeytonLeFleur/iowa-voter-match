@@ -84,6 +84,13 @@ export default function MethodologyPage() {
             issues, and results within five points are reported as close to even.
           </p>
           <p>
+            Answers from the optional Go deeper round count the same way. When you rate a core question Very important or
+            higher, closely related deeper questions are pre-filled with the matching answer (for example, a strong view
+            on abortion pre-fills the IVF question). These are labeled Assumed, count in your match, and are replaced the
+            moment you answer yourself. Assumptions are made only between closely related questions, in both directions,
+            and only about your answers. Candidates’ positions are never assumed.
+          </p>
+          <p>
             Which policy option a documented position supports is an editorial judgment made by reading the candidate’s
             own statements. Each judgment and its reasoning is shown next to the evidence on the Compare page.
           </p>

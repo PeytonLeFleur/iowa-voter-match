@@ -14,9 +14,13 @@ const Answer = z.object({
   updatedAt: z.string(),
 })
 
+const Importance = z.union([z.literal(0), z.literal(1), z.literal(2), z.literal(3), z.literal(4)])
+
 const State = z.object({
   version: z.literal(1),
   answers: z.record(z.string(), Answer),
+  /** Importance-only ratings for framework issues outside the questions, keyed by issue ID. */
+  issueImportance: z.record(z.string(), Importance).default({}),
   completedAt: z.string().nullable(),
   /** Candidate column order for this visitor, randomized once. */
   candidateOrder: z.array(z.string()).nullable(),
@@ -25,7 +29,7 @@ const State = z.object({
 export type Answer = z.infer<typeof Answer>
 export type AssessmentState = z.infer<typeof State>
 
-export const EMPTY_STATE: AssessmentState = { version: 1, answers: {}, completedAt: null, candidateOrder: null }
+export const EMPTY_STATE: AssessmentState = { version: 1, answers: {}, issueImportance: {}, completedAt: null, candidateOrder: null }
 
 const listeners = new Set<() => void>()
 let cachedRaw: string | null | undefined
@@ -98,6 +102,13 @@ export function useAssessment() {
     setImportance: useCallback((qid: string, importance: Answer['importance']) => update(qid, { importance }), [update]),
     setChoice: useCallback((qid: string, choice: string | null) => update(qid, { choice }), [update]),
     markComplete: useCallback(() => write({ ...read(), completedAt: read().completedAt ?? now() }), []),
+    setIssueImportance: useCallback((issueId: string, v: z.infer<typeof Importance> | null) => {
+      const cur = read()
+      const next = { ...cur.issueImportance }
+      if (v === null) delete next[issueId]
+      else next[issueId] = v
+      write({ ...cur, issueImportance: next })
+    }, []),
     setCandidateOrder: useCallback((order: string[]) => write({ ...read(), candidateOrder: order }), []),
     reset: useCallback(() => {
       try { window.localStorage.removeItem(STORAGE_KEY) } catch { /* ignore */ }

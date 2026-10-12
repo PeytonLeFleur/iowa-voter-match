@@ -5,7 +5,7 @@ import type { ClientData } from '@/lib/client-data'
 import { baseDataset, opposesRaise, position, supportsRaise } from '../fixtures/builders'
 
 const toClient = (ds: ReturnType<typeof getDataset>): ClientData => ({
-  meta: ds.meta, candidates: ds.candidates, questions: ds.questions, positions: ds.positions, statements: ds.statements, sources: ds.sources,
+  meta: ds.meta, otherIssues: [], candidates: ds.candidates, questions: ds.questions, positions: ds.positions, statements: ds.statements, sources: ds.sources,
 })
 const ans = (importance: 0 | 1 | 2 | 3 | 4 | null, choice: string): Answers => ({ 'q-min-wage': { importance, choice, updatedAt: '' } })
 
@@ -54,7 +54,7 @@ describe('match percentage', () => {
   })
 
   const m = (candidateId: string, value: number | null, basis: number, eligible = 10): CandidateMatch =>
-    ({ candidateId, value, basis, eligible, earned: 0, possible: 0, agree: [], partly: [], disagree: [] })
+    ({ candidateId, value, basis, eligible, earned: 0, possible: 0, agree: [], partly: [], disagree: [], assumed: 0 })
 
   it('names a closest match only with enough documented positions on both sides', () => {
     expect(matchOutcome([m('a', 0.8, 6), m('b', 0.5, 5)])).toEqual({ kind: 'closest', candidateId: 'a', margin: 30 })

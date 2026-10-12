@@ -69,6 +69,11 @@ export default function MatchSummary({ data, answers, ordered }: { data: ClientD
             many issues each percentage is based on.
           </p>
           <p>
+            If you did the optional Go deeper round, those answers count too. When you feel strongly about a core question
+            (Very important or higher), closely related deeper questions are filled in with the matching answer and marked
+            Assumed. They count in your match until you change them.
+          </p>
+          <p>
             This compares your answers with public statements as of the research date. It cannot tell you what a
             candidate will do in office. <Link href="/methodology/#match">Full methodology</Link>.
           </p>
@@ -96,6 +101,9 @@ function CandidateCard({ candidate, m }: { candidate: Candidate; m: CandidateMat
       {m.basis > 0 && m.basis < MIN_COMPARABLE && (
         <p className="mt-1 text-xs text-muted">Based on very few issues; treat this percentage with caution.</p>
       )}
+      {m.assumed > 0 && (
+        <p className="mt-1 text-xs text-muted">Includes {m.assumed} assumed {m.assumed === 1 ? 'answer' : 'answers'}, marked below.</p>
+      )}
       <IssueList title="You agree on" items={m.agree} />
       <IssueList title="You partly agree on" items={m.partly} />
       <IssueList title="You disagree on" items={m.disagree} />
@@ -119,6 +127,7 @@ function IssueList({ title, items }: { title: string; items: MatchItem[] }) {
           <li key={i.question.id}>
             <Link href={`/compare/#${i.question.slug}`}>{i.question.title}</Link>
             <span className="text-muted"> · {importanceLabel(i.importance)}</span>
+            {i.assumedFrom && <span className="ml-1 rounded-sm bg-accent-wash px-1 text-[10px] font-semibold uppercase tracking-wide text-accent-deep">Assumed</span>}
           </li>
         ))}
       </ul>

@@ -125,6 +125,11 @@ export const PolicyOption = z.object({
   legislationIds: z.array(id).default([]),
   sourceIds: z.array(id).default([]),
   explanation: text.nullable().default(null),
+  /**
+   * Pre-fill this option for a voter who chose one of `optionIds` on a core question and rated it
+   * Very important or higher. Always shown as an assumption the voter can change.
+   */
+  assumeFrom: z.array(z.object({ questionId: id, optionIds: z.array(id).min(1) })).default([]),
 })
 
 /** One assessment screen. "Unsure" and "Skip" are built into the UI, not data. */
@@ -143,6 +148,8 @@ export const PolicyQuestion = z.object({
   /** Specific sub-questions the research could not answer for either candidate. */
   unansweredQuestions: z.array(text).default([]),
   reviewStatus: ReviewStatus.default('draft'),
+  /** core: the 20-question assessment. deep: the optional "Go deeper" round. */
+  tier: z.enum(['core', 'deep']).default('core'),
 })
 
 export const CandidateStatement = z.object({

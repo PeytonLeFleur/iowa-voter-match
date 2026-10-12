@@ -5,6 +5,7 @@ import {
   candidateCoverage, choiceOf, crossCandidate, importanceOf, importantUnknowns, matchOutcome, matchScore, positionFor,
   topPriorities, type Answers,
 } from '@/lib/analytics'
+import { effectiveAnswers } from '@/lib/assessment/assume'
 import { useCandidateOrder } from '@/lib/assessment/candidate-order'
 import { useAssessment } from '@/lib/assessment/store'
 import { compare, EVIDENCE_STATE_COPY, evidenceState, RELATION_COPY } from '@/lib/compare'
@@ -16,7 +17,9 @@ import { formatDate, formatPartialDate } from '@/lib/site'
 export default function ResearchBrief({ data }: { data: ClientData }) {
   const { state, hydrated } = useAssessment()
   const { ordered } = useCandidateOrder(data.candidates)
-  const answers: Answers = state.answers
+  const answers: Answers = effectiveAnswers(data.questions, state.answers)
+  // Core questions always; deeper questions only where the voter has (or is assumed to have) an answer.
+  const shownQuestions = data.questions.filter((q) => q.tier === 'core' || answers[q.id]?.choice != null)
   const cutoff = formatDate(data.meta.researchCutoff)
   if (!hydrated) return <p className="text-muted">Loading your answers…</p>
 
@@ -46,9 +49,9 @@ export default function ResearchBrief({ data }: { data: ClientData }) {
     const lines = [`# My Iowa Voter Match research brief`, '', `Research current as of ${cutoff}. Generated ${new Date().toLocaleDateString('en-US')}.`, '',
       '## My match', '', outcomeLine, ...matches.map((x) => `- ${matchLine(x)}`),
       'Undocumented positions are left out of each percentage, not counted as disagreement.', '', '## My 20 answers', '']
-    for (const q of data.questions) lines.push(`- **${q.title}**: ${importanceLabel(importanceOf(answers, q.id))}; ${choiceLabel(q, answers[q.id]?.choice)}`)
+    for (const q of shownQuestions) lines.push(`- **${q.title}**: ${importanceLabel(importanceOf(answers, q.id))}; ${choiceLabel(q, answers[q.id]?.choice)}${answers[q.id]?.assumedFrom ? ' (assumed)' : ''}`)
     lines.push('', '## Documented positions on my answers', '')
-    for (const q of data.questions) {
+    for (const q of shownQuestions) {
       lines.push(`### ${q.order}. ${q.title}`, `You: ${choiceLabel(q, answers[q.id]?.choice)}`)
       for (const c of ordered) {
         const cmp = compare(choiceOf(answers, q), positionFor(data.positions, c.id, q.id))
@@ -106,7 +109,7 @@ export default function ResearchBrief({ data }: { data: ClientData }) {
       <section className="mt-8">
         <h2 className="text-2xl">Research coverage</h2>
         <ul className="mt-2 space-y-1">
-          {ordered.map((c) => <li key={c.id}>{c.name}: documented positions on {formatRatio(candidateCoverage(data, c.id, data.questions.map((q) => q.id)).documented, 'of 20 questions')}.</li>)}
+          {ordered.map((c) => <li key={c.id}>{c.name}: documented positions on {formatRatio(candidateCoverage(data, c.id, data.questions.filter((q) => q.tier === 'core').map((q) => q.id)).documented, 'of the 20 main questions')}.</li>)}
         </ul>
       </section>
 
@@ -121,10 +124,10 @@ export default function ResearchBrief({ data }: { data: ClientData }) {
             </tr>
           </thead>
           <tbody>
-            {data.questions.map((q) => (
+            {shownQuestions.map((q) => (
               <tr key={q.id} className="break-inside-avoid border-b border-rule align-top">
-                <th scope="row" className="py-2 pr-3 font-medium">{q.order}. {q.title}</th>
-                <td className="py-2 pr-3">{importanceLabel(importanceOf(answers, q.id))}<br /><span className="text-ink-soft">{choiceLabel(q, answers[q.id]?.choice)}</span></td>
+                <th scope="row" className="py-2 pr-3 font-medium">{q.tier === 'core' ? `${q.order}. ` : ''}{q.title}</th>
+                <td className="py-2 pr-3">{importanceLabel(importanceOf(answers, q.id))}<br /><span className="text-ink-soft">{choiceLabel(q, answers[q.id]?.choice)}{answers[q.id]?.assumedFrom && ' (assumed)'}</span></td>
                 {ordered.map((c) => {
                   const cmp = compare(choiceOf(answers, q), positionFor(data.positions, c.id, q.id))
                   return (

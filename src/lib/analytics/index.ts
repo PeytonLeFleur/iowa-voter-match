@@ -2,7 +2,7 @@
 // Pure functions: same inputs, same outputs. Every percentage is a Ratio that
 // carries its numerator and denominator. Nothing here scores a candidate.
 import type { CandidatePosition, Domain, PolicyQuestion } from '@/data/schema'
-import type { Answer } from '@/lib/assessment/store'
+import type { EffectiveAnswer } from '@/lib/assessment/assume'
 import { coverage } from '@/lib/analytics/coverage'
 import { rankByImportance } from '@/lib/analytics/priorities'
 import { chronological, compare, evidenceState, type Comparison, type EvidenceState, type UserChoice } from '@/lib/compare'
@@ -10,7 +10,7 @@ import type { ClientData } from '@/lib/client-data'
 import { IMPORTANCE_LEVELS, type ImportanceValue } from '@/lib/importance'
 import { ratio, type Ratio } from '@/lib/percent'
 
-export type Answers = Record<string, Answer | undefined>
+export type Answers = Record<string, EffectiveAnswer | undefined>
 
 export const importanceOf = (answers: Answers, qid: string): ImportanceValue | null => answers[qid]?.importance ?? null
 
@@ -20,6 +20,9 @@ export function choiceOf(answers: Answers, q: PolicyQuestion): UserChoice {
   if (c && q.options.some((o) => o.id === c)) return { kind: 'option', optionId: c }
   return { kind: 'skipped' }
 }
+
+export const coreQuestions = (qs: PolicyQuestion[]) => qs.filter((q) => q.tier === 'core')
+export const deepQuestions = (qs: PolicyQuestion[]) => qs.filter((q) => q.tier === 'deep')
 
 export const positionFor = (positions: CandidatePosition[], candidateId: string, qid: string) =>
   positions.find((p) => p.candidateId === candidateId && p.questionId === qid)
@@ -204,6 +207,8 @@ export const NEAR_TIE_POINTS = 5
 export interface MatchItem {
   question: PolicyQuestion
   importance: ImportanceValue | null
+  /** Core question this answer was assumed from, if the voter didn't answer it directly. */
+  assumedFrom?: string
   weight: number
   relation: 'aligned' | 'partial' | 'conflicting'
 }
@@ -221,6 +226,8 @@ export interface CandidateMatch {
   agree: MatchItem[]
   partly: MatchItem[]
   disagree: MatchItem[]
+  /** How many of the counted issues use an assumed answer. */
+  assumed: number
 }
 
 /**
@@ -240,7 +247,7 @@ export function matchScore(data: ClientData, answers: Answers, candidateId: stri
     if (weight === 0) continue
     eligible += 1
     const cmp = compare(choice, positionFor(data.positions, candidateId, q.id))
-    if (cmp.kind === 'relation') items.push({ question: q, importance, weight, relation: cmp.relation })
+    if (cmp.kind === 'relation') items.push({ question: q, importance, weight, relation: cmp.relation, assumedFrom: answers[q.id]?.assumedFrom })
   }
   const possible = items.reduce((s, i) => s + i.weight, 0)
   const earned = items.reduce((s, i) => s + i.weight * RELATION_CREDIT[i.relation], 0)
@@ -255,6 +262,7 @@ export function matchScore(data: ClientData, answers: Answers, candidateId: stri
     agree: items.filter((i) => i.relation === 'aligned').sort(byWeight),
     partly: items.filter((i) => i.relation === 'partial').sort(byWeight),
     disagree: items.filter((i) => i.relation === 'conflicting').sort(byWeight),
+    assumed: items.filter((i) => i.assumedFrom).length,
   }
 }
 
