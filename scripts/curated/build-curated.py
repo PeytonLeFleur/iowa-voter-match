@@ -977,7 +977,7 @@ stmt("st-lahn-term-limits", LAHN, "Reportedly supports term limits for “many t
 stmt("st-sand-age-limit", SAND, "Proposes an age limit of 78 for judges and elected officials.",
      "src-research-uncited", None, "SP", ["9.89"], ["d16"], attribution="paraphrase")
 stmt("st-sand-work-without-worry", SAND, "Supports the Work Without Worry bill, which would remove income and asset limits for working Iowans with disabilities.",
-     "src-ktiv-2026-10-08", "2026-10-08", "SP", ["10.93", "3.22"], ["d17"], attribution="paraphrase")
+     "src-kttc-2026-10-08", "2026-10-08", "SP", ["10.93", "3.22"], ["d17"], attribution="paraphrase")
 stmt("st-sand-school-meals", SAND, "Proposes universal free school meals.",
      "src-research-uncited", None, "SP", ["10.95"], ["d18"], attribution="paraphrase")
 stmt("st-lahn-school-meals", LAHN, "Wants universal free breakfast and lunch, with a goal of 80% Iowa-grown school food.",
@@ -995,7 +995,7 @@ stmt("st-sand-top-four", SAND, "Proposes a top-four primary with approval voting
 stmt("st-sand-cannabis", SAND, "Would legalize and tax cannabis, regulated through the Alcoholic Beverages Division, with priority grow licenses for small farms.",
      "src-research-uncited", None, "SP", ["7.63", "3.27"], ["d23"], attribution="paraphrase")
 
-sources.append(src("src-ktiv-2026-10-08", "KTIV report (Work Without Worry)", "KTIV", "news", None, "2026-10-08", "KTIV, October 8, 2026"))
+
 
 for s in statements:
     s["questionIds"] = sorted(set(s["questionIds"]) | set(EXTRA_STATEMENT_QUESTIONS.get(s["id"], [])))
@@ -1202,22 +1202,78 @@ question(43, "marijuana", "Marijuana", "public-safety", "government",
         opt("keep-illegal", "No, keep it illegal", "Keep current law.", ["7.63"]),
     ], tier="deep")
 
-# ---- Deeper positions --------------------------------------------------------
+# ---- Apply the independent check of deeper-round statements ------------------
+# (research/verification/deep-check-2026-10-12.json). Only statements a source
+# supports become verified; overstated summaries are cut back to what it says.
+sources.extend([
+    src("src-sand-cannabis-plan", "Rob Sand's Plan to Legalize, Tax, and Regulate Adult-use Cannabis", "Rob Sand campaign", "campaign",
+        "https://robsand.com/issues/cannabis-plan", "2026", "cannabis plan"),
+    src("src-kcrg-2025-06-26", "Rob Sand says transgender women shouldn't compete in women's sports", "KCRG", "news",
+        "https://www.kcrg.com/2025/06/26/rob-sand-says-transgender-women-shouldnt-compete-womens-sports-campaign-could-signal-party-shift/", "2025-06-26", None),
+    src("src-kcrg-2026-08-06", "Iowa governor's race puts term limits debate in spotlight", "KCRG", "news",
+        "https://www.kcrg.com/2026/08/06/iowa-governors-race-puts-term-limits-debate-spotlight/", "2026-08-06", None),
+    src("src-kttc-2026-10-08", "Rob Sand backs Medicaid pay changes for disabled Iowans, proposes ending privatization", "KTTC (Gray Media)", "news",
+        "https://www.kttc.com/2026/10/08/rob-sand-backs-medicaid-pay-changes-disabled-iowans-proposes-ending-privatization/", "2026-10-08", "KTIV, October 8, 2026"),
+    src("src-radio-iowa-2026-09-08", "Two candidates call for more Iowa-grown food to be served in Iowa schools", "Radio Iowa", "news",
+        "https://www.radioiowa.com/2026/09/08/two-candidates-call-for-more-iowa-grown-food-to-be-served-in-iowa-schools/", "2026-09-08", None),
+])
+sources[:] = [s for s in sources if s["id"] != "src-ktiv-2026-10-08"]
+
+def confirm(sid, source, summary=None, quote="keep", date=None, cls=None):
+    s = stmt_by_id[sid]
+    s["sourceId"] = source
+    s["verificationStatus"] = "verified"
+    if summary: s["summary"] = summary
+    if quote != "keep": s["quote"] = quote
+    if date: s["date"] = date
+    if cls: s["evidenceClass"] = cls
+
 stmt_by_id.update({s["id"]: s for s in statements})
+for sid in ["st-lahn-out-of-state-credits", "st-lahn-instate-quota", "st-lahn-teacher-license", "st-lahn-testing"]:
+    confirm(sid, "src-lahn-policy", date="2026")
+for sid in ["st-sand-public-theft", "st-sand-fraud-ban", "st-sand-term-limits", "st-sand-age-limit", "st-sand-top-four"]:
+    confirm(sid, "src-sand-accountability", date="2026")
+for sid in ["st-sand-pbm", "st-sand-clean-energy", "st-sand-school-meals"]:
+    confirm(sid, "src-sand-affordable", date="2026")
+confirm("st-sand-remote-jobs", "src-sand-opportunities", date="2026")
+confirm("st-sand-cannabis", "src-sand-cannabis-plan", date="2026")
+confirm("st-sand-sports", "src-kcrg-2025-06-26", date="2025-06-26")
+stmt_by_id["st-sand-sports"]["reportedVia"] = None
+confirm("st-sand-work-without-worry", "src-kttc-2026-10-08")
+confirm("st-lahn-term-limits", "src-kcrg-2026-08-06", date="2026-08-06", cls="EP",
+        summary="Supports term limits for “many things” but not for governor.")
+# Overstated in the research: corrected to what the source says.
+confirm("st-sand-incentive-disclosure", "src-sand-datacenters", date="2026",
+        summary="Would block nondisclosure agreements on new data center deals. No general rule for disclosing all business incentives was found.")
+confirm("st-lahn-ieda", "src-lahn-policy", date="2026", summary="His campaign site says the state should prioritize Iowa-based companies.")
+confirm("st-lahn-food-freedom", "src-lahn-policy", date="2026", summary="His campaign site calls for “food freedom policies.”")
+confirm("st-sand-prek", "src-sand-affordable", date="2026", quote=None,
+        summary="Promises universal all-day pre-K, citing a “17 to 1” return on investment. The plan does not state which ages it covers.")
+s_ = stmt_by_id["st-sand-small-biz"]
+s_["summary"] = ("The research lists reducing red tape for businesses with 10 or fewer employees. His plan's “10 or fewer” language "
+                 "concerns access to state programs, and its red-tape language concerns housing permits, so this is not confirmed.")
+s_ = stmt_by_id["st-sand-steel-incentives"]
+s_["quote"] = None
+s_["summary"] = "On the proposed steel plant, cautioned against large up-front incentives (reported only by an industry aggregator)."
+s_["attribution"] = "paraphrase"
+stmt("st-lahn-iowa-grown", LAHN, "Wants 80% of school food to be grown in Iowa.",
+     "src-radio-iowa-2026-09-08", "2026-09-08", "SP", ["10.95"], ["d18"], attribution="paraphrase")
+stmt_by_id.update({s["id"]: s for s in statements})
+
+# ---- Deeper positions --------------------------------------------------------
 position("d01", SAND, "EP", "Would veto restrictions on IVF, surrogacy, and contraception.", ["st-sand-roe"],
     {"regulate-protect-embryos": "conflicting", "keep-current": U, "protect-access": "partial"},
     "Sand's campaign says he would veto bills threatening IVF. That opposes new IVF restrictions; it is not the same as passing a law protecting access.")
 position("d01", LAHN, "EP", "Says IVF should be examined for regulation to protect life.", ["st-lahn-ivf", "st-lahn-conception"],
     {"regulate-protect-embryos": "aligned", "keep-current": "conflicting", "protect-access": "conflicting"},
     "Lahn said “we need to look at regulating” IVF “to promote and protect life.”")
-position("d02", SAND, "SP", "Disclosure of incentives and no NDAs; cautious on large up-front incentives.",
-    ["st-sand-incentive-disclosure", "st-sand-steel-incentives"],
-    {"keep-offering": U, "results-only": "aligned", "iowa-firms-only": U, "end-all": U},
-    "Sand wants incentive deals disclosed and cautioned against large up-front incentives, consistent with tying them to results.")
-position("d02", LAHN, "SP", "End tax credits for out-of-state and foreign corporations; refocus on Iowa firms.",
+position("d02", SAND, "GS", "Cautioned against large up-front incentives for the steel plant and would block NDAs on new data center deals; no general position on business tax breaks.",
+    ["st-sand-incentive-disclosure", "st-sand-steel-incentives"])
+position("d02", LAHN, "SP", "End tax credits for out-of-state and foreign corporations; prioritize Iowa-based companies.",
     ["st-lahn-out-of-state-credits", "st-lahn-ieda"],
     {"keep-offering": "conflicting", "results-only": U, "iowa-firms-only": "aligned", "end-all": "partial"},
-    "Lahn would end incentives for out-of-state and foreign companies while refocusing on Iowa firms.")
+    "Lahn would end incentives for out-of-state and foreign companies while prioritizing Iowa firms.",
+    limitations="Reports (not independently confirmed) say he exempts the proposed foreign-owned steel mill, calling it a “once in a lifetime” exception.")
 position("d03", SAND, "SP", "Office of Rural Prosperity; state jobs from any county.", ["st-sand-rural-office", "st-sand-remote-jobs"],
     {"tax-breaks-stay": U, "jobs-anywhere": "aligned", "college-spots": U, "market": "conflicting"},
     "Sand proposes rural investment and state jobs filled from anywhere in Iowa.")
@@ -1242,9 +1298,9 @@ position("d07", LAHN, "SP", "Revoke licenses of teachers caught pushing a politi
 position("d08", SAND, "IND", "Has proposed limits on children's social media; no documented position on testing.", [])
 position("d08", LAHN, "SP", "Drastically reduce testing; mastery-based pacing.", ["st-lahn-testing"],
     {"fewer": "aligned", "same": "conflicting", "more": "conflicting"}, "Lahn proposes cutting testing.")
-position("d09", SAND, "SP", "Universal full-day pre-K for 3- and 4-year-olds.", ["st-sand-prek"],
-    {"yes-full-day": "aligned", "keep-current": "conflicting", "no-expansion": "conflicting"}, "Sand proposes universal full-day pre-K.",
-    limitations="No cost estimate.")
+position("d09", SAND, "SP", "Universal all-day pre-K.", ["st-sand-prek"],
+    {"yes-full-day": "aligned", "keep-current": "conflicting", "no-expansion": "conflicting"}, "Sand promises universal all-day pre-K.",
+    limitations="No cost estimate. His plan does not state which ages it covers; the research says 3- and 4-year-olds.")
 position("d09", LAHN, "NDP")
 position("d10", SAND, "EP", "Opposes transgender girls and women competing in female sports.", ["st-sand-sports"],
     {"no": "aligned", "case-by-case": "conflicting", "yes": "conflicting"}, "Sand has said he opposes transgender girls competing in girls' sports.",
@@ -1262,19 +1318,21 @@ position("d13", LAHN, "SP", "Incentives for apprenticeships and trade school.", 
 position("d14", SAND, "SP", "Less red tape for businesses with 10 or fewer employees.", ["st-sand-small-biz"],
     {"cut-small-biz": "aligned", "food-freedom": U, "keep": "conflicting"}, "Sand proposes easing rules for small businesses.")
 position("d14", LAHN, "SP", "A food freedom bill loosening rules on selling local food.", ["st-lahn-food-freedom"],
-    {"cut-small-biz": U, "food-freedom": "aligned", "keep": "conflicting"}, "Lahn proposes food freedom deregulation.")
+    {"cut-small-biz": U, "food-freedom": "partial", "keep": U}, "Lahn's site calls for “food freedom policies” without details, so this is a partial match.")
 position("d15", SAND, "SP", "Term limits: 3 statewide terms, 12 years in the legislature, 20 years total.", ["st-sand-term-limits"],
     {"yes": "aligned", "no": "conflicting"}, "Sand proposes term limits.")
-position("d15", LAHN, "SNV", "Reportedly supports term limits for “many things” but not governor; not verified.", ["st-lahn-term-limits"])
+position("d15", LAHN, "EP", "Supports term limits for “many things” but not for governor.", ["st-lahn-term-limits"],
+    {"yes": "partial", "no": "conflicting"}, "Lahn supports term limits for many offices but not governor, so he partly matches “Yes.”")
 position("d16", SAND, "SP", "Age limit of 78 for judges and officials.", ["st-sand-age-limit"],
-    {"yes": "aligned", "no": "conflicting"}, "Sand proposes an age limit.")
+    {"yes": "aligned", "no": "conflicting"}, "Sand proposes an age limit.",
+    limitations="His plan states 78; KCRG reports he is flexible on the exact age.")
 position("d16", LAHN, "NDP")
 position("d17", SAND, "SP", "Supports the Work Without Worry bill.", ["st-sand-work-without-worry"],
     {"yes": "aligned", "raise": "partial", "keep": "conflicting"}, "Work Without Worry would remove the limits for working Iowans with disabilities.")
 position("d17", LAHN, "NDP")
 position("d18", SAND, "SP", "Universal free school meals.", ["st-sand-school-meals"],
     {"yes": "aligned", "keep": "conflicting"}, "Sand proposes universal school meals.")
-position("d18", LAHN, "EP", "Universal free breakfast and lunch; 80% Iowa-grown school food.", ["st-lahn-school-meals"],
+position("d18", LAHN, "EP", "Universal free breakfast and lunch; 80% Iowa-grown school food.", ["st-lahn-school-meals", "st-lahn-iowa-grown"],
     {"yes": "aligned", "keep": "conflicting"}, "Lahn said he wants universal free breakfast and lunch.")
 position("d19", SAND, "NDP")
 position("d19", LAHN, "EP", "Called for state regulation of license-plate cameras.", ["st-lahn-flock"],
@@ -1327,8 +1385,9 @@ for q in questions:
         assert any(p["questionId"] == q["id"] and p["candidateId"] == c for p in positions), (q["id"], c)
 
 check = json.loads((ROOT / "research/verification/source-check-2026-10-12.json").read_text())
+deep_check = json.loads((ROOT / "research/verification/deep-check-2026-10-12.json").read_text())
 verifications = []
-for v in check["statements"]:
+for v in check["statements"] + deep_check["statements"]:
     if v["statementId"] not in stmt_by_id:
         continue
     if v.get("quoteFound") is False or v.get("summarySupported") in ("false", "partial"):
@@ -1338,8 +1397,8 @@ for v in check["statements"]:
     else:
         result = "unconfirmed"
     verifications.append({
-        "id": f"ver-{v['statementId']}", "entityType": "statement", "entityId": v["statementId"],
-        "verifiedDate": CUTOFF, "method": "Independent web check of the original source (research/verification/source-check-2026-10-12.json)",
+        "id": f"ver-{v['statementId']}" + ("" if not any(x["entityId"] == v["statementId"] for x in verifications) else "-2"), "entityType": "statement", "entityId": v["statementId"],
+        "verifiedDate": CUTOFF, "method": "Independent web check of the original source (research/verification/)",
         "result": result, "notes": v.get("notes") or None,
     })
 

@@ -432,15 +432,63 @@
     "originalCitation": "Statement listed in the research without a named source"
   },
   {
-    "id": "src-ktiv-2026-10-08",
-    "title": "KTIV report (Work Without Worry)",
-    "publisher": "KTIV",
+    "id": "src-sand-cannabis-plan",
+    "title": "Rob Sand's Plan to Legalize, Tax, and Regulate Adult-use Cannabis",
+    "publisher": "Rob Sand campaign",
+    "sourceType": "campaign",
+    "url": "https://robsand.com/issues/cannabis-plan",
+    "publishedDate": "2026",
+    "accessedDate": "2026-10-12",
+    "availability": "unknown",
+    "archiveUrl": null,
+    "originalCitation": "cannabis plan"
+  },
+  {
+    "id": "src-kcrg-2025-06-26",
+    "title": "Rob Sand says transgender women shouldn't compete in women's sports",
+    "publisher": "KCRG",
     "sourceType": "news",
-    "url": null,
+    "url": "https://www.kcrg.com/2025/06/26/rob-sand-says-transgender-women-shouldnt-compete-womens-sports-campaign-could-signal-party-shift/",
+    "publishedDate": "2025-06-26",
+    "accessedDate": "2026-10-12",
+    "availability": "unknown",
+    "archiveUrl": null,
+    "originalCitation": null
+  },
+  {
+    "id": "src-kcrg-2026-08-06",
+    "title": "Iowa governor's race puts term limits debate in spotlight",
+    "publisher": "KCRG",
+    "sourceType": "news",
+    "url": "https://www.kcrg.com/2026/08/06/iowa-governors-race-puts-term-limits-debate-spotlight/",
+    "publishedDate": "2026-08-06",
+    "accessedDate": "2026-10-12",
+    "availability": "unknown",
+    "archiveUrl": null,
+    "originalCitation": null
+  },
+  {
+    "id": "src-kttc-2026-10-08",
+    "title": "Rob Sand backs Medicaid pay changes for disabled Iowans, proposes ending privatization",
+    "publisher": "KTTC (Gray Media)",
+    "sourceType": "news",
+    "url": "https://www.kttc.com/2026/10/08/rob-sand-backs-medicaid-pay-changes-disabled-iowans-proposes-ending-privatization/",
     "publishedDate": "2026-10-08",
-    "accessedDate": null,
+    "accessedDate": "2026-10-12",
     "availability": "unknown",
     "archiveUrl": null,
     "originalCitation": "KTIV, October 8, 2026"
+  },
+  {
+    "id": "src-radio-iowa-2026-09-08",
+    "title": "Two candidates call for more Iowa-grown food to be served in Iowa schools",
+    "publisher": "Radio Iowa",
+    "sourceType": "news",
+    "url": "https://www.radioiowa.com/2026/09/08/two-candidates-call-for-more-iowa-grown-food-to-be-served-in-iowa-schools/",
+    "publishedDate": "2026-09-08",
+    "accessedDate": "2026-10-12",
+    "availability": "unknown",
+    "archiveUrl": null,
+    "originalCitation": null
   }
 ]

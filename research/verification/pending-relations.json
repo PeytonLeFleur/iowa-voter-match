@@ -1,48 +1,4 @@
 {
-  "d02|rob-sand": {
-    "keep-offering": "unaddressed",
-    "results-only": "aligned",
-    "iowa-firms-only": "unaddressed",
-    "end-all": "unaddressed"
-  },
-  "d02|zach-lahn": {
-    "keep-offering": "conflicting",
-    "results-only": "unaddressed",
-    "iowa-firms-only": "aligned",
-    "end-all": "partial"
-  },
-  "d05|rob-sand": {
-    "regulate": "aligned",
-    "leave": "conflicting"
-  },
-  "d07|zach-lahn": {
-    "yes-revoke": "aligned",
-    "no-revoke": "conflicting"
-  },
-  "d08|zach-lahn": {
-    "fewer": "aligned",
-    "same": "conflicting",
-    "more": "conflicting"
-  },
-  "d09|rob-sand": {
-    "yes-full-day": "aligned",
-    "keep-current": "conflicting",
-    "no-expansion": "conflicting"
-  },
-  "d10|rob-sand": {
-    "no": "aligned",
-    "case-by-case": "conflicting",
-    "yes": "conflicting"
-  },
-  "d11|rob-sand": {
-    "grow": "aligned",
-    "keep": "partial",
-    "end": "conflicting"
-  },
-  "d12|rob-sand": {
-    "tougher": "aligned",
-    "current": "conflicting"
-  },
   "d13|zach-lahn": {
     "yes": "aligned",
     "no": "conflicting"
@@ -51,39 +7,5 @@
     "cut-small-biz": "aligned",
     "food-freedom": "unaddressed",
     "keep": "conflicting"
-  },
-  "d14|zach-lahn": {
-    "cut-small-biz": "unaddressed",
-    "food-freedom": "aligned",
-    "keep": "conflicting"
-  },
-  "d15|rob-sand": {
-    "yes": "aligned",
-    "no": "conflicting"
-  },
-  "d16|rob-sand": {
-    "yes": "aligned",
-    "no": "conflicting"
-  },
-  "d18|rob-sand": {
-    "yes": "aligned",
-    "keep": "conflicting"
-  },
-  "d18|zach-lahn": {
-    "yes": "aligned",
-    "keep": "conflicting"
-  },
-  "d21|rob-sand": {
-    "top-four": "aligned",
-    "keep": "conflicting"
-  },
-  "d22|zach-lahn": {
-    "yes": "aligned",
-    "no": "conflicting"
-  },
-  "d23|rob-sand": {
-    "legalize": "aligned",
-    "medical-only": "conflicting",
-    "keep-illegal": "conflicting"
   }
 }
